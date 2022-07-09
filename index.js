@@ -284,4 +284,43 @@ function lightMode() {
     element.className = "light-mode";
 }
 
+function anadirListas() {
+        
+    var seleccion=document.getElementById('select3')
+    console.log(seleccion)
+    let myArray = null
+    console.log(cantidad)
+    season = seleccion.selectedIndex
+    console.log(season)
+    console.log(listaCancion)
+    archivo ="./Listas/2022Spring.txt"
+    console.log(archivo)
+    leerarchivo(archivo)
+    (async () => {
+        const text = await (await fetch(archivo)).text();
+        //div.innerHTML = text;
+    })();
+    console.log(text)
+
+}
+
+function leerarchivo(file)
+{
+    var archivo = new XMLHttpRequest();
+    archivo.open("GET", file, false);
+    archivo.onreadystatechange = function ()
+    {
+        if(archivo.readyState === 4)
+        {
+            if(archivo.status === 200 || archivo.status == 0)
+            {
+                var texto = archivo.responseText;
+                alert(texto);
+            }
+        }
+    }
+    archivo.send(null);
+
+}
+
 window.addEventListener('load', iniciar, false)
