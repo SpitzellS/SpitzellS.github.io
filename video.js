@@ -57,7 +57,7 @@ function nextSong() {
         info.innerHTML = "Video: " + lista[posicion].name;
         video.src=lista[posicion].link
         video.play()
-        aprendida.value = lista[posicion].aprendida ? "No Aprendida" : "Aprendida"
+        aprendida.value = lista[posicion].aprendida ? "Eliminada" : "Eliminar"
     } else {
         randomSong()
     }
@@ -76,7 +76,7 @@ function beforeSong() {
     info.innerHTML = "Video: " + lista[posicion].name;
     video.src=lista[posicion].link
     video.play()
-    aprendida.value = lista[posicion].aprendida ? "No Aprendida" : "Aprendida"
+    aprendida.value = lista[posicion].aprendida ? "Eliminada" : "Eliminar"
  }
 
  function randomSong() {
@@ -97,16 +97,16 @@ function beforeSong() {
     info.innerHTML = "Video: " + lista[posicion].name;
     video.src=lista[posicion].link
     video.play()
-    aprendida.value = lista[posicion].aprendida ? "No Aprendida" : "Aprendida"
+    aprendida.value = lista[posicion].aprendida ? "Eliminada" : "Eliminar"
 }
 
 function songAprendida() {
     if (!lista[posicion].aprendida) {
         lista[posicion].aprendida = true 
-        aprendida.value = "No Aprendida"
+        aprendida.value = "Eliminada"
     } else {
         lista[posicion].aprendida = false
-        aprendida.value = "Aprendida"
+        aprendida.value = "Eliminar"
     }
 }
 
