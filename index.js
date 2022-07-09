@@ -21,7 +21,6 @@ let posicion = 0
 let season = 0
 let loopBoolean = false
 let cantidad = null
-let prueba = "vamos a probar"
 
 function iniciar() { 
     var boton=document.getElementById('boton')
