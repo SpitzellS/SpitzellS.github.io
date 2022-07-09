@@ -5,6 +5,45 @@ body {
     font-size: 25px;
 }
 
+#modosPantalla {
+    float: left;
+    display: block;
+    position: relative;
+}
+#info {
+    margin-top: 40px;
+    display: block;
+    position: relative;
+}
+
+#video {
+    float: left;
+    display: block;
+    position: relative;
+}
+
+#botones {
+    margin-top: 360px;
+    border-collapse: collapse;
+    margin-right: 32em;
+    display: block;
+    position: relative;
+}
+
+#inputs {
+    border-collapse: collapse;
+    float: left;
+    display: block;
+}
+
+#tabla {
+    border-collapse: collapse;
+    float: left;
+    display: block;
+    top: 78px;
+    position: relative;
+}
+
 .dark-mode {
     background-color: black;
     color: white;
@@ -15,13 +54,10 @@ body {
     color: black;
 }
 
-table, th, td {
+th,td {
     border: 1px solid white;
     border-collapse: collapse;
-    float: right;
+    float: left;
     padding: 10px;
     position: relative;
-}
-table {
-    top: -400px;
 }

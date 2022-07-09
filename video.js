@@ -45,38 +45,43 @@ function accionLoop() {
 
 function nextSong() {
     if (!randomBoolean) {
-        y = posicion+1 > cantidad-1 ? 1 : posicion+1
+        y = posicion+1 > cantidad ? 1 : posicion+1
+        boolean = posicion+1 > cantidad
         posicion = y
-        while (lista[y].aprendida == true) {
+        while (lista[posicion-1].aprendida == true) {
             y = posicion+1 > cantidad-1 ? 0 : posicion+1
             posicion = y
-        }    
+        }
         var seleccion=document.getElementById('select1')
         opciones = seleccion.options.length - 1
-        document.title = lista[posicion].name
-        info.innerHTML = "Video: " + lista[posicion].name;
-        video.src=lista[posicion].link
+        document.title = lista[posicion-1].name
+        info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
+                            lista[posicion-1].tipo + ' ' + 
+                            lista[posicion-1].number
+        video.src=lista[posicion-1].link
         video.play()
-        aprendida.value = lista[posicion].aprendida ? "Añadir" : "Eliminar"
+        aprendida.value = lista[posicion-1].aprendida ? "Añadir" : "Eliminar"
     } else {
         randomSong()
     }
  }
 
 function beforeSong() {
-    y = posicion-2 < 0 ? cantidad-1 : posicion-1
+    y = posicion-2 < 0 ? cantidad : posicion-1
     posicion = y
-    while (lista[y].aprendida == true) {
+    while (lista[posicion-1].aprendida == true) {
         y = posicion-1 < 0 ? cantidad-1 : posicion-1
         posicion = y
-    } 
+    }
     var seleccion=document.getElementById('select1')
     opciones = seleccion.options.length - 1
-    document.title = lista[posicion].name
-    info.innerHTML = "Video: " + lista[posicion].name;
-    video.src=lista[posicion].link
+    document.title = lista[posicion-1].name
+    info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
+                        lista[posicion-1].tipo + ' ' + 
+                        lista[posicion-1].number
+    video.src=lista[posicion-1].link
     video.play()
-    aprendida.value = lista[posicion].aprendida ? "Añadir" : "Eliminar"
+    aprendida.value = lista[posicion-1].aprendida ? "Añadir" : "Eliminar"
  }
 
 function randomSong() {
@@ -94,7 +99,9 @@ function randomSong() {
     }
     posicion = x
     document.title = lista[posicion].name
-    info.innerHTML = "Video: " + lista[posicion].name;
+    info.innerHTML = "Video: " + lista[posicion].name + ' ' + 
+                        lista[posicion].tipo + ' ' + 
+                        lista[posicion].number
     video.src=lista[posicion].link
     video.play()
     aprendida.value = lista[posicion].aprendida ? "Añadir" : "Eliminar"

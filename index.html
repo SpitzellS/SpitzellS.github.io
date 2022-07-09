@@ -12,22 +12,19 @@
     <script src="index.js"></script>
     <script src="video.js"></script>
 
-    <button onclick="darkMode()">Darkmode</button>
-    <button onclick="lightMode()">Lightmode</button>
-    <div>
+    <div id="modosPantalla">
+        <button onclick="darkMode()">Darkmode</button>
+        <button onclick="lightMode()">Lightmode</button>
+    </div>
+
+    <div id="infovideo">
         <label id="info"> </label>
         <video id="video" width="700" height="350">  
             <source src="">   
         </video>
     </div>
-    <div>
-        <table id="tablaCanciones">
-            <tr>
-                <th>Lista de Canciones</th>
-            </tr>
-        </table>
-    </div>
-    <div>    
+
+    <div id="botones">    
         <input type="button" id="before" value="Anterior">
         <input type="button" id="retrasar" value="<<">
         <input type="button" id="boton" value="Reproducir">
@@ -38,12 +35,12 @@
         <input type="button" id="desaprender" value="Restaurar">
         <input type="button" id="rdm" value="Random">
         <input type="button" id="aprendida" value="Eliminar">
-
-        
     </div>
+
+    <div id="inputs">
     <input type="file" name="inputfile" id="inputfile">
     <br>
-    <div>
+
         <form>
             Elegir Season 
             <select id="select1" onChange="anadirOpciones()">
@@ -55,6 +52,15 @@
             </select>
         </form>
     </div>
+
+    <div id="tabla">
+        <table id="tablaCanciones">
+            <tr>
+                <th>Lista de Canciones</th>
+            </tr>
+        </table>
+    </div>
+    <!--
     <div>
         <form>
             Elegir lista
@@ -64,6 +70,8 @@
             </select>
         </form>
     </div>
+    -->
+    
     <!--
     <button onclick="button()"> OPEN FILE</button><br>
     <pre id="textarea"contenteditable spellcheck="false"></pre><br>
