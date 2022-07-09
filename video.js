@@ -57,7 +57,7 @@ function nextSong() {
         info.innerHTML = "Video: " + lista[posicion].name;
         video.src=lista[posicion].link
         video.play()
-        aprendida.value = lista[posicion].aprendida ? "Eliminada" : "Eliminar"
+        aprendida.value = lista[posicion].aprendida ? "Añadir" : "Eliminar"
     } else {
         randomSong()
     }
@@ -76,19 +76,19 @@ function beforeSong() {
     info.innerHTML = "Video: " + lista[posicion].name;
     video.src=lista[posicion].link
     video.play()
-    aprendida.value = lista[posicion].aprendida ? "Eliminada" : "Eliminar"
+    aprendida.value = lista[posicion].aprendida ? "Añadir" : "Eliminar"
  }
 
- function randomSong() {
+function randomSong() {
     var seleccion = document.getElementById('select2')
     opciones = seleccion.options.length - 1
-    let x = lista[posicion+1].number
+    let x = lista[posicion+1].id
     aprendidaBoolean = true
-    while (x == lista[posicion+1].number || aprendidaBoolean) {
+    while (x == lista[posicion+1].id || aprendidaBoolean) {
         x = Math.floor((Math.random() * opciones) + 2) - 1;
         aprendidaBoolean = false
         if (lista[x].aprendida == true) {
-            x == lista[posicion+1].number
+            x == lista[posicion+1].id
             aprendidaBoolean = true
         }
     }
@@ -97,17 +97,43 @@ function beforeSong() {
     info.innerHTML = "Video: " + lista[posicion].name;
     video.src=lista[posicion].link
     video.play()
-    aprendida.value = lista[posicion].aprendida ? "Eliminada" : "Eliminar"
+    aprendida.value = lista[posicion].aprendida ? "Añadir" : "Eliminar"
 }
 
 function songAprendida() {
     if (!lista[posicion].aprendida) {
         lista[posicion].aprendida = true 
         aprendida.value = "Eliminada"
+        eliminarCancionTabla(lista[posicion].id-1)
     } else {
         lista[posicion].aprendida = false
         aprendida.value = "Eliminar"
+        anadirCancionTabla(lista[posicion].id-1)
     }
+    console.log(lista)
+}
+
+function eliminarCancionTabla(posicion) {
+    let list = document.getElementById("tablaCanciones")
+    let cancion = document.getElementById('cancion-'+posicion)
+    cancion.remove()
+    console.log(list)
+}
+
+function anadirCancionTabla(posicion) {
+    let list = document.getElementById("tablaCanciones")
+    node = document.createElement("tr")
+    node2 = document.createElement("td")
+    list.appendChild(node)
+    let tr = list.lastChild
+    tr.appendChild(node2)
+    let td = tr.lastChild
+    textnode = document.createTextNode(lista[posicion-1].name)
+    td.appendChild(textnode)
+    anadirEventoLista(td, lista[posicion-1].id)
+    tr.id = 'cancion-'+lista[posicion-1].id
+    console.log(lista[posicion-1].id)
+    console.log(list)
 }
 
 function desaprenderTodo() {

@@ -1,9 +1,14 @@
 class Cancion {
-    constructor( name, link, number, aprendida) {
+    constructor( name, link, tipo, number, songName, artist, difficulty, aprendida, id) {
         this.name = name
         this.link = link
+        this.tipo = tipo
         this.number = number
+        this.songName = songName
+        this.artist = artist
+        this.difficulty = difficulty
         this.aprendida = aprendida
+        this.id = id
     }
 }
 
@@ -21,6 +26,7 @@ let posicion = 0
 let season = 0
 let loopBoolean = false
 let cantidad = null
+let texto
 
 function iniciar() { 
     var boton=document.getElementById('boton')
@@ -55,7 +61,9 @@ function iniciar() {
 function cambiarCancion()
 {
     var seleccion=document.getElementById('select2')
-    info.innerHTML = "Video: " + seleccion.options[seleccion.selectedIndex].text;
+    info.innerHTML = "Video: " + seleccion.options[seleccion.selectedIndex].text + ' ' + 
+                        lista[seleccion.selectedIndex-1].tipo + ' ' + 
+                        lista[seleccion.selectedIndex-1].number
     video.src=seleccion.options[seleccion.selectedIndex].value
     posicion = seleccion.selectedIndex-1
     document.title = seleccion.options[seleccion.selectedIndex].text
@@ -63,12 +71,14 @@ function cambiarCancion()
     video.play()
 }
 
+
 function anadirSeasons() {
     document.getElementById('inputfile').addEventListener('change', function() {
         borrarOpciones("select1")
         
         var fr=new FileReader()
         fr.onload=function(){
+            texto = fr.result
             cantidad = contarLineas(fr.result, '///')
             const myArray = fr.result.split("///");
             switch(cantidad) {
@@ -130,8 +140,13 @@ function anadirOpciones() {
                 lista[i] = new Cancion(
                     myArray2[0],
                     myArray2[1],
-                    i+1,
-                    false
+                    myArray2[2],
+                    myArray2[3],
+                    myArray2[4],
+                    myArray2[5],
+                    myArray2[6],
+                    false,
+                    i+1
                 )
             }
             crearLista(lista)
@@ -154,8 +169,13 @@ function anadirOpciones() {
                 lista[i] = new Cancion(
                     myArray2[0],
                     myArray2[1],
-                    i+1,
-                    false
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    false,
+                    i+1
                 )
             }
             crearLista(lista)
@@ -182,15 +202,34 @@ function crearLista(lista) {
     let textnode
     switch (count) {
         case 1:
-            for (i=1; i<lista.length;i++) {
-                let node = document.createElement("tr")
-                let node2 = document.createElement("td")
-                list.appendChild(node)
-                let tr = list.lastChild
-                tr.appendChild(node2)
-                let td = tr.lastChild
-                textnode = document.createTextNode(lista[i].name)
-                td.appendChild(textnode)
+            if(texto.split('///').length == 1) {
+                for (i=0; i<lista.length;i++) {
+                    let node = document.createElement("tr")
+                    let node2 = document.createElement("td")
+                    list.appendChild(node)
+                    let tr = list.lastChild
+                    tr.appendChild(node2)
+                    let td = tr.lastChild
+                    textnode = document.createTextNode(lista[i].name)
+                    td.appendChild(textnode)
+                    let i2 = i + 1
+                    tr.id = 'cancion-'+i2
+                    anadirEventoLista(td, i+1)
+                }
+            } else {
+                for (i=1; i<lista.length;i++) {
+                    let node = document.createElement("tr")
+                    let node2 = document.createElement("td")
+                    list.appendChild(node)
+                    let tr = list.lastChild
+                    tr.appendChild(node2)
+                    let td = tr.lastChild
+                    textnode = document.createTextNode(lista[i].name)
+                    td.appendChild(textnode)
+                    tr.id = 'cancion-'+i
+                    anadirEventoLista(td, i)
+                    
+                }
             }
             break;
         default:
@@ -201,12 +240,25 @@ function crearLista(lista) {
             }
             crearLista(lista)
     }
-
 }
+
+function anadirEventoLista(td, id) {
+    td.addEventListener('click', function() {
+        var seleccion=document.getElementById('select2')
+        info.innerHTML = "Video: " + seleccion.options[id].text + ' ' + 
+                            lista[id-1].tipo + ' ' + 
+                            lista[id-1].number
+        video.src=seleccion.options[id].value
+        posicion = id
+        document.title = seleccion.options[id].text
+        video.play()
+    })
+}
+
 function contarLineas(str, sep) {
     const arr = str.split(sep);
     return arr.filter(word => word !== '').length;
-  }
+}
 
 function random() {
     if (!randomBoolean) {
