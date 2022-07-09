@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Canciones </title>
+</head>
+<body>
+
+    <script src="index.js"></script>
+    <script src="video.js"></script>
+
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">Lightmode</button>
+    <div>
+        <label id="info"> </label>
+        <video id="video" width="700" height="350">  
+            <source src="">   
+        </video>
+    </div>
+    <div>
+        <table id="tablaCanciones">
+            <tr>
+                <th>Lista de Canciones</th>
+            </tr>
+        </table>
+    </div>
+    <div>    
+        <input type="button" id="before" value="Anterior">
+        <input type="button" id="retrasar" value="<<">
+        <input type="button" id="boton" value="Reproducir">
+        <input type="button" id="adelantar" value=">>">
+        <input type="button" id="next" value="Siguiente">
+        <input type="button" id="reiniciar" value="Reiniciar">
+        <input type="button" id="loop" value="Loop">
+        <input type="button" id="desaprender" value="Desaprender Todo">
+        <input type="button" id="rdm" value="Random">
+        <input type="button" id="aprendida" value="Aprendida">
+
+        
+    </div>
+    <input type="file" name="inputfile" id="inputfile">
+    <br>
+    <div>
+        <form>
+            Elegir Season 
+            <select id="select1" onChange="anadirOpciones()">
+                <option value="--">--</option>       
+            </select>
+            Elegir Cancion
+            <select id="select2" onChange="cambiarCancion()">
+                <option value="--">--</option>       
+            </select>
+        </form>
+    </div>
+    <!--
+    <button onclick="button()"> OPEN FILE</button><br>
+    <pre id="textarea"contenteditable spellcheck="false"></pre><br>
+    <button onclick="save()"> SAVE</button>
+    -->
+        
+</body>
+</html>
