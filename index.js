@@ -66,12 +66,13 @@ function cambiarCancion()
 {
     var seleccion=document.getElementById('select2')
     info.innerHTML = "Video: " + seleccion.options[seleccion.selectedIndex].text + ' ' + 
-                        lista[seleccion.selectedIndex-1].tipo + ' ' + 
-                        lista[seleccion.selectedIndex-1].number
+                        lista[seleccion.selectedIndex].tipo + ' ' + 
+                        lista[seleccion.selectedIndex].number
     video.src=seleccion.options[seleccion.selectedIndex].value
-    posicion = seleccion.selectedIndex-1
+    posicion = seleccion.selectedIndex
     document.title = seleccion.options[seleccion.selectedIndex].text
     actualizarInfo()
+    presionar()
     video.play()
 }
 
@@ -367,7 +368,6 @@ function anadirOpciones(direccion) {
 }
 
 function actualizarInfo() {
-    console.log('actualizando')
     
     let tabla = document.getElementById('tablaCancion')
     cont = tabla.childElementCount
@@ -387,23 +387,23 @@ function actualizarInfo() {
     tabla.appendChild(nodeName)
     tr = tabla.lastChild
     tr.appendChild(node2)
-    tr.id = lista[posicion].id
+    tr.id = lista[posicion-1].id
     let nombre = tr.lastChild
-    textnode = document.createTextNode(lista[posicion].name)
+    textnode = document.createTextNode(lista[posicion-1].name)
     nombre.appendChild(textnode)
 
     tabla.appendChild(nodeSongName)
     tr = tabla.lastChild
     tr.appendChild(node3)
     let songName = tr.lastChild
-    textnode = document.createTextNode(lista[posicion].songName)
+    textnode = document.createTextNode(lista[posicion-1].songName)
     songName.appendChild(textnode)
 
     tabla.appendChild(nodeType)
     tr = tabla.lastChild
     tr.appendChild(node4)
     let type = tr.lastChild
-    textnode = document.createTextNode(lista[posicion].tipo + ' ' + lista[posicion].number)
+    textnode = document.createTextNode(lista[posicion-1].tipo + ' ' + lista[posicion-1].number)
     type.appendChild(textnode)
 
 }

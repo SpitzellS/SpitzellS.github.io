@@ -44,12 +44,40 @@ function accionLoop() {
 }
 
 function nextSong() {
-    if (!randomBoolean) {
-        y = posicion+1 > cantidad ? 1 : posicion+1
-        boolean = posicion+1 > cantidad
+    if (!loopBoolean) {
+        if (!randomBoolean) {
+            y = posicion+1 > cantidad ? 1 : posicion+1
+            boolean = posicion+1 > cantidad
+            posicion = y
+            while (lista[posicion-1].aprendida == true) {
+                y = posicion+1 > cantidad-1 ? 0 : posicion+1
+                posicion = y
+            }
+            var seleccion=document.getElementById('select1')
+            opciones = seleccion.options.length - 1
+            document.title = lista[posicion-1].name
+            info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
+                                lista[posicion-1].tipo + ' ' + 
+                                lista[posicion-1].number
+            video.src=lista[posicion-1].link
+            video.play()
+            aprendida.value = lista[posicion-1].aprendida ? "Añadir" : "Eliminar"
+            actualizarInfo()
+        } else {
+            randomSong()
+            actualizarInfo()
+        }
+    } else {
+        accionReiniciar()
+    }
+ }
+
+function beforeSong() {
+    if (!loopBoolean) {
+        y = posicion-2 < 0 ? cantidad : posicion-1
         posicion = y
         while (lista[posicion-1].aprendida == true) {
-            y = posicion+1 > cantidad-1 ? 0 : posicion+1
+            y = posicion-1 < 0 ? cantidad-1 : posicion-1
             posicion = y
         }
         var seleccion=document.getElementById('select1')
@@ -61,27 +89,10 @@ function nextSong() {
         video.src=lista[posicion-1].link
         video.play()
         aprendida.value = lista[posicion-1].aprendida ? "Añadir" : "Eliminar"
+        actualizarInfo()
     } else {
-        randomSong()
+        accionReiniciar()
     }
- }
-
-function beforeSong() {
-    y = posicion-2 < 0 ? cantidad : posicion-1
-    posicion = y
-    while (lista[posicion-1].aprendida == true) {
-        y = posicion-1 < 0 ? cantidad-1 : posicion-1
-        posicion = y
-    }
-    var seleccion=document.getElementById('select1')
-    opciones = seleccion.options.length - 1
-    document.title = lista[posicion-1].name
-    info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
-                        lista[posicion-1].tipo + ' ' + 
-                        lista[posicion-1].number
-    video.src=lista[posicion-1].link
-    video.play()
-    aprendida.value = lista[posicion-1].aprendida ? "Añadir" : "Eliminar"
  }
 
 function randomSong() {
