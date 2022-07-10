@@ -19,9 +19,11 @@ class Season {
     }
 }
 
+
 let randomBoolean = false
 let lista = null
 let listaCancion = null
+let listaCancionModif = null
 let posicion = 0
 let loopBoolean = false
 let cantidad = null
@@ -84,52 +86,6 @@ function borrarOpciones(select) {
     const textnode2 = document.createTextNode("--")
     node2.appendChild(textnode2)
     list.appendChild(node2)
-}
-
-function crearLista(lista) {
-    count = document.getElementById("tablaCanciones").childElementCount
-    let list = document.getElementById("tablaCanciones")
-    let textnode
-    switch (count) {
-        case 1:
-            if(texto.split('///').length == 1) {
-                for (i=0; i<lista.length;i++) {
-                    let node = document.createElement("tr")
-                    let node2 = document.createElement("td")
-                    list.appendChild(node)
-                    let tr = list.lastChild
-                    tr.appendChild(node2)
-                    let td = tr.lastChild
-                    textnode = document.createTextNode(lista[i].name)
-                    td.appendChild(textnode)
-                    let i2 = i + 1
-                    tr.id = 'cancion-'+i2
-                    anadirEventoLista(td, i+1)
-                }
-            } else {
-                for (i=1; i<lista.length;i++) {
-                    let node = document.createElement("tr")
-                    let node2 = document.createElement("td")
-                    list.appendChild(node)
-                    let tr = list.lastChild
-                    tr.appendChild(node2)
-                    let td = tr.lastChild
-                    textnode = document.createTextNode(lista[i].name)
-                    td.appendChild(textnode)
-                    tr.id = 'cancion-'+i
-                    anadirEventoLista(td, i)
-                    
-                }
-            }
-            break;
-        default:
-            cont = count
-            while (cont != 1) {
-                list.removeChild(list.children[1])
-                cont--
-            }
-            crearLista(lista)
-    }
 }
 
 function anadirEventoLista(td, id) {
@@ -234,8 +190,6 @@ function anadirOpciones(direccion) {
                     i+1
                 )
             }
-            crearLista(lista)
-            
         })
         .catch(function (response) {
             // "Not Found"
