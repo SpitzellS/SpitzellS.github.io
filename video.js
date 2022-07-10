@@ -119,6 +119,13 @@ function songAprendida() {
         lista[posicion].aprendida = true 
         aprendida.value = "Eliminada"
         eliminarCancionTabla(lista[posicion-1].id)
+
+        listaCancionModif = new Array(1)
+
+        listaCancionModif[0] = new Season(
+            "Lista de Canciones Modificada",
+            listaCancion[0].list
+        )
     } else {
         lista[posicion].aprendida = false
         aprendida.value = "Eliminar"

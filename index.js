@@ -65,9 +65,7 @@ function iniciar() {
 function cambiarCancion()
 {
     var seleccion=document.getElementById('select2')
-    info.innerHTML = "Video: " + seleccion.options[seleccion.selectedIndex].text + ' ' + 
-                        lista[seleccion.selectedIndex].tipo + ' ' + 
-                        lista[seleccion.selectedIndex].number
+    info.innerHTML = "Video: " + seleccion.options[seleccion.selectedIndex].text
     video.src=seleccion.options[seleccion.selectedIndex].value
     posicion = seleccion.selectedIndex
     document.title = seleccion.options[seleccion.selectedIndex].text
@@ -171,13 +169,7 @@ function anadirOpciones(direccion) {
             
             lista = new Array(cantidad)
             for (i = 0; i < cantidad; i++) {
-                const node = document.createElement("option")
                 myArray2 = myArray[i].split('|')
-                const textnode = document.createTextNode(myArray2[0])
-                node.appendChild(textnode)
-                option = document.getElementById('select2').appendChild(node)
-                option.value = myArray2[1]
-                option.id = i + 1
                 lista[i] = new Cancion(
                     myArray2[0],
                     myArray2[1],
@@ -189,7 +181,10 @@ function anadirOpciones(direccion) {
                     false,
                     i+1
                 )
+                anadirOpciones2(myArray2, i)
             }
+            //ordenarAlf()
+            
         })
         .catch(function (response) {
             // "Not Found"
@@ -198,6 +193,14 @@ function anadirOpciones(direccion) {
 
 }
 
+function anadirOpciones2(myArray2, i) {
+    const node = document.createElement("option")
+    const textnode = document.createTextNode(myArray2[0] + ' OP ' + myArray2[3])
+    node.appendChild(textnode)
+    option = document.getElementById('select2').appendChild(node)
+    option.value = myArray2[1]
+    option.id = i + 1
+}
 function actualizarInfo() {
     
     let tabla = document.getElementById('tablaCancion')
@@ -207,15 +210,11 @@ function actualizarInfo() {
         cont--
     }
 
-    nodeName = document.createElement("tr")
     nodeSongName = document.createElement("tr")
-    nodeType = document.createElement("tr")
     nodeDiff = document.createElement("tr")
     nodeArtist = document.createElement("tr")
 
-    node2 = document.createElement("td")
     node3 = document.createElement("td")
-    node4 = document.createElement("td")
     node5 = document.createElement("td")
     node6 = document.createElement("td")
 
@@ -223,22 +222,15 @@ function actualizarInfo() {
     tr = tabla.lastChild
     tr.appendChild(node3)
     let songName = tr.lastChild
-    textnode = document.createTextNode(lista[posicion-1].songName)
+    textnode = document.createTextNode('Song Name: ' +lista[posicion-1].songName)
     songName.appendChild(textnode)
 
     tabla.appendChild(nodeArtist)
     tr = tabla.lastChild
     tr.appendChild(node6)
     let artist = tr.lastChild
-    textnode = document.createTextNode(lista[posicion-1].artist)
+    textnode = document.createTextNode('Artist: ' +lista[posicion-1].artist)
     artist.appendChild(textnode)
-
-    tabla.appendChild(nodeType)
-    tr = tabla.lastChild
-    tr.appendChild(node4)
-    let type = tr.lastChild
-    textnode = document.createTextNode(lista[posicion-1].tipo + ' ' + lista[posicion-1].number)
-    type.appendChild(textnode)
 
     tabla.appendChild(nodeDiff)
     tr = tabla.lastChild
@@ -246,6 +238,15 @@ function actualizarInfo() {
     let diff = tr.lastChild
     textnode = document.createTextNode('Diff: ' +lista[posicion-1].difficulty)
     diff.appendChild(textnode)
+}
+
+function ordenarAlf() {
+    console.log(cantidad)
+    let variable = new Array(cantidad-1)
+    console.log('antes')
+    for (i = 0; i < cantidad; i++) {
+        variable[i] = lista[i].name + ' ' + lista[i].tipo + ' ' + lista[i].number
+    }
 
 }
 
