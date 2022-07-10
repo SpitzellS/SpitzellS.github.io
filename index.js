@@ -256,10 +256,12 @@ function actualizarInfo() {
     nodeName = document.createElement("tr")
     nodeSongName = document.createElement("tr")
     nodeType = document.createElement("tr")
+    nodeDiff = document.createElement("tr")
 
     node2 = document.createElement("td")
     node3 = document.createElement("td")
     node4 = document.createElement("td")
+    node5 = document.createElement("td")
 
     tabla.appendChild(nodeName)
     tr = tabla.lastChild
@@ -282,6 +284,13 @@ function actualizarInfo() {
     let type = tr.lastChild
     textnode = document.createTextNode(lista[posicion-1].tipo + ' ' + lista[posicion-1].number)
     type.appendChild(textnode)
+
+    tabla.appendChild(nodeDiff)
+    tr = tabla.lastChild
+    tr.appendChild(node5)
+    let diff = tr.lastChild
+    textnode = document.createTextNode('Diff: ' +lista[posicion-1].difficulty)
+    diff.appendChild(textnode)
 
 }
 

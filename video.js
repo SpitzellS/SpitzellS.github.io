@@ -53,8 +53,6 @@ function nextSong() {
                 y = posicion+1 > cantidad-1 ? 0 : posicion+1
                 posicion = y
             }
-            var seleccion=document.getElementById('select1')
-            opciones = seleccion.options.length - 1
             document.title = lista[posicion-1].name
             info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
                                 lista[posicion-1].tipo + ' ' + 
@@ -80,8 +78,6 @@ function beforeSong() {
             y = posicion-1 < 0 ? cantidad-1 : posicion-1
             posicion = y
         }
-        var seleccion=document.getElementById('select1')
-        opciones = seleccion.options.length - 1
         document.title = lista[posicion-1].name
         info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
                             lista[posicion-1].tipo + ' ' + 
