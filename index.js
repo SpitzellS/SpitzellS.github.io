@@ -71,7 +71,7 @@ function cambiarCancion()
     video.src=seleccion.options[seleccion.selectedIndex].value
     posicion = seleccion.selectedIndex-1
     document.title = seleccion.options[seleccion.selectedIndex].text
-
+    actualizarInfo()
     video.play()
 }
 
@@ -292,6 +292,7 @@ function anadirAno() {
     var seleccion=document.getElementById('ano')
     elegido = seleccion.selectedIndex*2 +1
     anoElegido = seleccion.childNodes[elegido].value
+
 }
 
 function anadirSeason() {
@@ -299,7 +300,6 @@ function anadirSeason() {
     var seleccion=document.getElementById('season')
     elegido = seleccion.selectedIndex*2 +1
     seasonElegida = seleccion.childNodes[elegido].value
-    console.log(seasonElegida)
     direccionGitHub = direccion + anoElegido + seasonElegida + 'OPs.txt'
     anadirOpciones(direccionGitHub)
 }
@@ -361,8 +361,50 @@ function anadirOpciones(direccion) {
         })
         .catch(function (response) {
             // "Not Found"
-            console.log(response.statusText);
+            //console.log(response.statusText);
         });
+
+}
+
+function actualizarInfo() {
+    console.log('actualizando')
+    
+    let tabla = document.getElementById('tablaCancion')
+    cont = tabla.childElementCount
+    while (cont != 1) {
+        tabla.removeChild(tabla.children[1])
+        cont--
+    }
+
+    nodeName = document.createElement("tr")
+    nodeSongName = document.createElement("tr")
+    nodeType = document.createElement("tr")
+
+    node2 = document.createElement("td")
+    node3 = document.createElement("td")
+    node4 = document.createElement("td")
+
+    tabla.appendChild(nodeName)
+    tr = tabla.lastChild
+    tr.appendChild(node2)
+    tr.id = lista[posicion].id
+    let nombre = tr.lastChild
+    textnode = document.createTextNode(lista[posicion].name)
+    nombre.appendChild(textnode)
+
+    tabla.appendChild(nodeSongName)
+    tr = tabla.lastChild
+    tr.appendChild(node3)
+    let songName = tr.lastChild
+    textnode = document.createTextNode(lista[posicion].songName)
+    songName.appendChild(textnode)
+
+    tabla.appendChild(nodeType)
+    tr = tabla.lastChild
+    tr.appendChild(node4)
+    let type = tr.lastChild
+    textnode = document.createTextNode(lista[posicion].tipo + ' ' + lista[posicion].number)
+    type.appendChild(textnode)
 
 }
 

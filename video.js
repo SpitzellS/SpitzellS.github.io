@@ -140,8 +140,6 @@ function anadirCancionTabla(posicion) {
     td.appendChild(textnode)
     anadirEventoLista(td, lista[posicion-1].id)
     tr.id = 'cancion-'+lista[posicion-1].id
-    console.log(lista[posicion-1].id)
-    console.log(list)
 }
 
 function desaprenderTodo() {
