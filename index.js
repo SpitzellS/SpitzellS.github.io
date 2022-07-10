@@ -154,30 +154,29 @@ function anadirOpciones(direccion) {
             )
             cantidad = contarLineas(listaCancion[0].list, '\n')
             myArray = listaCancion[0].list.split("\n");
-            let arrayName = new Array(cantidad-1)
-            let arrayLink = new Array(cantidad-1)
-
             lista = new Array(cantidad)
+            myArray2 = new Array(cantidad)
             for (i = 0; i < cantidad; i++) {
-                myArray2 = myArray[i].split('|')
-                arrayName[i] = myArray2[0] + ' OP ' + myArray2[3]
-                arrayLink[i] = myArray2[1]
+                myArray2[i] = myArray[i].split('|')
+            }
+            myarray2 = ordenarAlf(myArray2)
+            for (i = 0; i < cantidad; i++) {
+                console.log(myarray2[i])
                 lista[i] = new Cancion(
-                    myArray2[0],
-                    myArray2[1],
-                    myArray2[2],
-                    myArray2[3],
-                    myArray2[4],
-                    myArray2[5],
-                    myArray2[6],
+                    myArray2[i][0],
+                    myArray2[i][1],
+                    myArray2[i][2],
+                    myArray2[i][3],
+                    myArray2[i][4],
+                    myArray2[i][5],
+                    myArray2[i][6],
                     false,
                     i+1
                 )
-                anadirOpciones2(myArray2, i)
+                anadirOpciones2(myArray2[i], i)
             }
-            console.log(arrayLink)
-            console.log(arrayName)
-            //ordenarAlf()
+            option = document.getElementById('select2')
+            console.log(option)
             
         })
         .catch(function (response) {
@@ -234,14 +233,9 @@ function actualizarInfo() {
     diff.appendChild(textnode)
 }
 
-function ordenarAlf() {
-    console.log(cantidad)
-    let variable = new Array(cantidad-1)
-    console.log('antes')
-    for (i = 0; i < cantidad; i++) {
-        variable[i] = lista[i].name + ' ' + lista[i].tipo + ' ' + lista[i].number
-    }
-
+function ordenarAlf(array) {
+    array2 = array.sort()
+    return array2
 }
 
 window.addEventListener('load', iniciar, false)
