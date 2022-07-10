@@ -86,18 +86,6 @@ function borrarOpciones(select) {
     list.appendChild(node2)
 }
 
-function anadirEventoLista(td, id) {
-    td.addEventListener('click', function() {
-        var seleccion=document.getElementById('select2')
-        info.innerHTML = "Video: " + seleccion.options[id].text + ' ' + 
-                            lista[id-1].tipo + ' ' + 
-                            lista[id-1].number
-        video.src=seleccion.options[id].value
-        posicion = id
-        document.title = seleccion.options[id].text
-        video.play()
-    })
-}
 
 function contarLineas(str, sep) {
     const arr = str.split(sep);
@@ -166,10 +154,14 @@ function anadirOpciones(direccion) {
             )
             cantidad = contarLineas(listaCancion[0].list, '\n')
             myArray = listaCancion[0].list.split("\n");
-            
+            let arrayName = new Array(cantidad-1)
+            let arrayLink = new Array(cantidad-1)
+
             lista = new Array(cantidad)
             for (i = 0; i < cantidad; i++) {
                 myArray2 = myArray[i].split('|')
+                arrayName[i] = myArray2[0] + ' OP ' + myArray2[3]
+                arrayLink[i] = myArray2[1]
                 lista[i] = new Cancion(
                     myArray2[0],
                     myArray2[1],
@@ -183,6 +175,8 @@ function anadirOpciones(direccion) {
                 )
                 anadirOpciones2(myArray2, i)
             }
+            console.log(arrayLink)
+            console.log(arrayName)
             //ordenarAlf()
             
         })
@@ -222,7 +216,7 @@ function actualizarInfo() {
     tr = tabla.lastChild
     tr.appendChild(node3)
     let songName = tr.lastChild
-    textnode = document.createTextNode('Song Name: ' +lista[posicion-1].songName)
+    textnode = document.createTextNode('Song: ' +lista[posicion-1].songName)
     songName.appendChild(textnode)
 
     tabla.appendChild(nodeArtist)

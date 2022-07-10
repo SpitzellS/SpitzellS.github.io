@@ -118,7 +118,6 @@ function songAprendida() {
     if (!lista[posicion].aprendida) {
         lista[posicion].aprendida = true 
         aprendida.value = "Eliminada"
-        eliminarCancionTabla(lista[posicion-1].id)
 
         listaCancionModif = new Array(1)
 
@@ -129,31 +128,7 @@ function songAprendida() {
     } else {
         lista[posicion].aprendida = false
         aprendida.value = "Eliminar"
-        anadirCancionTabla(lista[posicion-1].id)
     }
-}
-
-function eliminarCancionTabla(posicion) {
-    let list = document.getElementById("tablaCanciones")
-    console.log(lista)
-    console.log(list)
-    let cancion = document.getElementById('cancion-'+posicion)
-    cancion.remove()
-    console.log(list)
-}
-
-function anadirCancionTabla(posicion) {
-    let list = document.getElementById("tablaCanciones")
-    node = document.createElement("tr")
-    node2 = document.createElement("td")
-    list.appendChild(node)
-    let tr = list.lastChild
-    tr.appendChild(node2)
-    let td = tr.lastChild
-    textnode = document.createTextNode(lista[posicion-1].name)
-    td.appendChild(textnode)
-    anadirEventoLista(td, lista[posicion-1].id)
-    tr.id = 'cancion-'+lista[posicion-1].id
 }
 
 function desaprenderTodo() {
