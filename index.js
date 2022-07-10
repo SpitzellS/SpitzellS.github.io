@@ -1,9 +1,9 @@
 class Cancion {
-    constructor( name, link, tipo, number, songName, artist, difficulty, aprendida, id) {
+    constructor( name, tipo, number, link, songName, artist, difficulty, aprendida, id) {
         this.name = name
-        this.link = link
         this.tipo = tipo
         this.number = number
+        this.link = link
         this.songName = songName
         this.artist = artist
         this.difficulty = difficulty
@@ -153,15 +153,16 @@ function anadirOpciones(direccion) {
                 template
             )
             cantidad = contarLineas(listaCancion[0].list, '\n')
+            //arreglado = arreglar(listaCancion[0].list, cantidad)
             myArray = listaCancion[0].list.split("\n");
             lista = new Array(cantidad)
-            myArray2 = new Array(cantidad)
+            let myArray2 = new Array(cantidad)
             for (i = 0; i < cantidad; i++) {
                 myArray2[i] = myArray[i].split('|')
             }
+            
             myarray2 = ordenarAlf(myArray2)
             for (i = 0; i < cantidad; i++) {
-                console.log(myarray2[i])
                 lista[i] = new Cancion(
                     myArray2[i][0],
                     myArray2[i][1],
@@ -173,11 +174,10 @@ function anadirOpciones(direccion) {
                     false,
                     i+1
                 )
+
                 anadirOpciones2(myArray2[i], i)
             }
-            option = document.getElementById('select2')
-            console.log(option)
-            
+            option = document.getElementById('select2')   
         })
         .catch(function (response) {
             // "Not Found"
@@ -188,10 +188,10 @@ function anadirOpciones(direccion) {
 
 function anadirOpciones2(myArray2, i) {
     const node = document.createElement("option")
-    const textnode = document.createTextNode(myArray2[0] + ' OP ' + myArray2[3])
+    const textnode = document.createTextNode(myArray2[0] + ' OP ' + myArray2[2])
     node.appendChild(textnode)
     option = document.getElementById('select2').appendChild(node)
-    option.value = myArray2[1]
+    option.value = myArray2[3]
     option.id = i + 1
 }
 function actualizarInfo() {
