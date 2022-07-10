@@ -24,6 +24,31 @@
         </video>
     </div>
 
+    <div id="selects">
+        <form>
+            Elegir A&ntilde;o
+            <select id="ano" onChange="anadirAno()">
+                <option value="--">--</option>
+                <option value="2001">2001</option>
+                <option value="2022">2022</option>
+            </select>
+            <br>
+            Elegir Season
+            <select id="season" onChange="anadirSeason()">
+                <option value="--">--</option>
+                <option value="Winter">Winter</option>
+                <option value="Spring">Spring</option>
+                <option value="Summer">Summer</option>
+                <option value="Fall">Fall</option>
+            </select>
+            <br>
+            Elegir Cancion
+            <select id="select2" onChange="cambiarCancion()">
+                <option value="--">--</option>       
+            </select>
+        </form>
+    </div>
+
     <div id="botones">    
         <input type="button" id="before" value="Anterior">
         <input type="button" id="retrasar" value="<<">
@@ -46,10 +71,7 @@
             <select id="select1" onChange="anadirOpciones()">
                 <option value="--">--</option>       
             </select>
-            Elegir Cancion
-            <select id="select2" onChange="cambiarCancion()">
-                <option value="--">--</option>       
-            </select>
+
         </form>
     </div>
 
@@ -60,23 +82,6 @@
             </tr>
         </table>
     </div>
-    <!--
-    <div>
-        <form>
-            Elegir lista
-            <select id="select3" onChange="anadirListas()">
-                <option value="--">--</option>
-                <option value="2022Spring">2022 Spring</option>      
-            </select>
-        </form>
-    </div>
-    -->
-    
-    <!--
-    <button onclick="button()"> OPEN FILE</button><br>
-    <pre id="textarea"contenteditable spellcheck="false"></pre><br>
-    <button onclick="save()"> SAVE</button>
-    -->
         
 </body>
 </html>

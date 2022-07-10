@@ -33,13 +33,13 @@ body {
 #inputs {
     border-collapse: collapse;
     float: left;
-    display: block;
+    display: none;
 }
 
 #tabla {
     border-collapse: collapse;
     float: left;
-    display: block;
+    display: none;
     top: 78px;
     position: relative;
 }

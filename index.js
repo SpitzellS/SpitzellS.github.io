@@ -27,6 +27,10 @@ let season = 0
 let loopBoolean = false
 let cantidad = null
 let texto
+let direccion = "https://raw.githubusercontent.com/SpitzellS/SpitzellS.github.io/main/Listas/"
+let anoElegido = ''
+let seasonElegida = ''
+let direccionGitHub = ''
 
 function iniciar() { 
     var boton=document.getElementById('boton')
@@ -284,31 +288,81 @@ function lightMode() {
     element.className = "light-mode";
 }
 
-function anadirListas() {
-        
-    var seleccion=document.getElementById('select3')
-    console.log(seleccion)
-    let myArray = null
-    season = seleccion.selectedIndex
-    console.log(season)
-    fileRuta ="./Listas/2022Spring.txt"
-    console.log(fileRuta)
-    leerarchivo(fileRuta)
-
+function anadirAno() {
+    var seleccion=document.getElementById('ano')
+    elegido = seleccion.selectedIndex*2 +1
+    anoElegido = seleccion.childNodes[elegido].value
 }
 
-function leerarchivo(fileRuta)
-{
+function anadirSeason() {
+    direccionGitHub = ''
+    var seleccion=document.getElementById('season')
+    elegido = seleccion.selectedIndex*2 +1
+    seasonElegida = seleccion.childNodes[elegido].value
+    console.log(seasonElegida)
+    direccionGitHub = direccion + anoElegido + seasonElegida + 'OPs.txt'
+    anadirOpciones(direccionGitHub)
+}
 
-    var arrayData = new Array()
-    
-    archivo = fopen(fileRuta, 'r')
-    longitud = flength(archivo)
-    content = fread(archivo, length)
+function anadirOpciones(direccion) {
+    borrarOpciones('select2')
+    var seleccion=document.getElementById('select1')
+    let listaCancion = new Array(1)
+    const node = document.createElement("option")
 
-    console.log(archivo)
-    console.log(longitud)
-    console.log(content)
+    fetch(direccion)
+        .then(function (response) {
+            switch (response.status) {
+                // status "OK"
+                case 200:
+                    return response.text();
+                // status "Not Found"
+                case 404:
+                    throw response;
+            }
+        })
+        .then(function (template) {
+            listaCancion[0] = new Season(
+                "Lista de Canciones",
+                template
+            )
+            const textnode = document.createTextNode("Lista de Canciones")
+            node.appendChild(textnode)
+            option = document.getElementById('select1').appendChild(node)
+            option.value = "Lista de Canciones"
+            option.id = 1
+            season = seleccion.selectedIndex
+            cantidad = contarLineas(listaCancion[season].list, '\n')
+            myArray = listaCancion[season].list.split("\n");
+            
+            lista = new Array(cantidad)
+            for (i = 0; i < cantidad; i++) {
+                const node = document.createElement("option")
+                myArray2 = myArray[i].split('|')
+                const textnode = document.createTextNode(myArray2[0])
+                node.appendChild(textnode)
+                option = document.getElementById('select2').appendChild(node)
+                option.value = myArray2[1]
+                option.id = i + 1
+                lista[i] = new Cancion(
+                    myArray2[0],
+                    myArray2[1],
+                    myArray2[2],
+                    myArray2[3],
+                    myArray2[4],
+                    myArray2[5],
+                    myArray2[6],
+                    false,
+                    i+1
+                )
+            }
+            crearLista(lista)
+            
+        })
+        .catch(function (response) {
+            // "Not Found"
+            console.log(response.statusText);
+        });
 
 }
 
