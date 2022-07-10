@@ -23,17 +23,11 @@ body {
 }
 
 #botones {
-    margin-top: 360px;
     border-collapse: collapse;
     margin-right: 32em;
     display: block;
     position: relative;
-}
 
-#inputs {
-    border-collapse: collapse;
-    float: left;
-    display: none;
 }
 
 #tabla {

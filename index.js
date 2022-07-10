@@ -23,7 +23,6 @@ let randomBoolean = false
 let lista = null
 let listaCancion = null
 let posicion = 0
-let season = 0
 let loopBoolean = false
 let cantidad = null
 let texto
@@ -59,7 +58,6 @@ function iniciar() {
 
     video.addEventListener("ended", nextSong, false)
     
-    anadirSeasons()
  }
 
 function cambiarCancion()
@@ -74,119 +72,6 @@ function cambiarCancion()
     actualizarInfo()
     presionar()
     video.play()
-}
-
-
-function anadirSeasons() {
-    document.getElementById('inputfile').addEventListener('change', function() {
-        borrarOpciones("select1")
-        
-        var fr=new FileReader()
-        fr.onload=function(){
-            texto = fr.result
-            cantidad = contarLineas(fr.result, '///')
-            const myArray = fr.result.split("///");
-            switch(cantidad) {
-                case 1:
-                    listaCancion = new Array(1)
-                    const node = document.createElement("option")
-                    listaCancion[0] = new Season(
-                        "Lista de Canciones",
-                        myArray[0]
-                    )
-                    const textnode = document.createTextNode("Lista de Canciones")
-                    node.appendChild(textnode)
-                    option = document.getElementById('select1').appendChild(node)
-                    option.value = "Lista de Canciones"
-                    option.id = 1
-                    break;
-                default:
-                    listaCancion = new Array(cantidad/2)
-                    for (i = 0; i < cantidad/2; i++) {
-                        const node = document.createElement("option")
-                        myArray2 = myArray[i*2 + 1].split('///')
-                        myArray3 = myArray[i*2 + 2].split('///')
-                        listaCancion[i] = new Season(
-                            myArray2[0],
-                            myArray3[0]
-                        )
-                        const textnode = document.createTextNode(myArray2[0])
-                        node.appendChild(textnode)
-                        option = document.getElementById('select1').appendChild(node)
-                        option.value = myArray2[0]
-                        option.id = i + 1
-                    }
-                    break;
-            }
-        }
-        fr.readAsText(this.files[0]);
-    })
-}
-
-function anadirOpciones() {
-    borrarOpciones("select2")
-
-    var seleccion=document.getElementById('select1')
-    let myArray = null
-    switch (cantidad) {
-        case 1:
-            season = seleccion.selectedIndex - 1
-            cantidad = contarLineas(listaCancion[season].list, '\n')
-            myArray = listaCancion[season].list.split("\n");
-            lista = new Array(cantidad)
-            for (i = 0; i < cantidad; i++) {
-                const node = document.createElement("option")
-                myArray2 = myArray[i].split('|')
-                const textnode = document.createTextNode(myArray2[0])
-                node.appendChild(textnode)
-                option = document.getElementById('select2').appendChild(node)
-                option.value = myArray2[1]
-                option.id = i + 1
-                lista[i] = new Cancion(
-                    myArray2[0],
-                    myArray2[1],
-                    myArray2[2],
-                    myArray2[3],
-                    myArray2[4],
-                    myArray2[5],
-                    myArray2[6],
-                    false,
-                    i+1
-                )
-            }
-            crearLista(lista)
-            break;
-
-        default:
-            season = seleccion.selectedIndex-1
-            cantidad = contarLineas(listaCancion[season].list, '\n')
-        
-            myArray = listaCancion[season].list.split("\n");
-            lista = new Array(cantidad)
-            for (i = 1; i < cantidad; i++) {
-                const node = document.createElement("option")
-                myArray2 = myArray[i].split('|')
-                const textnode = document.createTextNode(myArray2[0])
-                node.appendChild(textnode)
-                option = document.getElementById('select2').appendChild(node)
-                option.value = myArray2[1]
-                option.id = i + 1
-                lista[i] = new Cancion(
-                    myArray2[0],
-                    myArray2[1],
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    false,
-                    i+1
-                )
-            }
-            crearLista(lista)
-        break;
-
-    }
 }
 
 function borrarOpciones(select) {
@@ -307,9 +192,7 @@ function anadirSeason() {
 
 function anadirOpciones(direccion) {
     borrarOpciones('select2')
-    var seleccion=document.getElementById('select1')
     let listaCancion = new Array(1)
-    const node = document.createElement("option")
 
     fetch(direccion)
         .then(function (response) {
@@ -327,14 +210,8 @@ function anadirOpciones(direccion) {
                 "Lista de Canciones",
                 template
             )
-            const textnode = document.createTextNode("Lista de Canciones")
-            node.appendChild(textnode)
-            option = document.getElementById('select1').appendChild(node)
-            option.value = "Lista de Canciones"
-            option.id = 1
-            season = seleccion.selectedIndex
-            cantidad = contarLineas(listaCancion[season].list, '\n')
-            myArray = listaCancion[season].list.split("\n");
+            cantidad = contarLineas(listaCancion[0].list, '\n')
+            myArray = listaCancion[0].list.split("\n");
             
             lista = new Array(cantidad)
             for (i = 0; i < cantidad; i++) {
