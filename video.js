@@ -63,7 +63,6 @@ function nextSong() {
             actualizarInfo()
         } else {
             randomSong()
-            actualizarInfo()
         }
     } else {
         accionReiniciar()
@@ -111,6 +110,7 @@ function randomSong() {
                         lista[posicion-1].number
     video.src=lista[posicion-1].link
     video.play()
+    actualizarInfo()
     aprendida.value = lista[posicion-1].aprendida ? "Añadir" : "Eliminar"
 }
 

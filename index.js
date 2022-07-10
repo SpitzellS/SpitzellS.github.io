@@ -257,19 +257,13 @@ function actualizarInfo() {
     nodeSongName = document.createElement("tr")
     nodeType = document.createElement("tr")
     nodeDiff = document.createElement("tr")
+    nodeArtist = document.createElement("tr")
 
     node2 = document.createElement("td")
     node3 = document.createElement("td")
     node4 = document.createElement("td")
     node5 = document.createElement("td")
-
-    tabla.appendChild(nodeName)
-    tr = tabla.lastChild
-    tr.appendChild(node2)
-    tr.id = lista[posicion-1].id
-    let nombre = tr.lastChild
-    textnode = document.createTextNode(lista[posicion-1].name)
-    nombre.appendChild(textnode)
+    node6 = document.createElement("td")
 
     tabla.appendChild(nodeSongName)
     tr = tabla.lastChild
@@ -277,6 +271,13 @@ function actualizarInfo() {
     let songName = tr.lastChild
     textnode = document.createTextNode(lista[posicion-1].songName)
     songName.appendChild(textnode)
+
+    tabla.appendChild(nodeArtist)
+    tr = tabla.lastChild
+    tr.appendChild(node6)
+    let artist = tr.lastChild
+    textnode = document.createTextNode(lista[posicion-1].artist)
+    artist.appendChild(textnode)
 
     tabla.appendChild(nodeType)
     tr = tabla.lastChild
