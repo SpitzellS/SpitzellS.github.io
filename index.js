@@ -121,7 +121,7 @@ function anadirAno() {
     var seleccion=document.getElementById('ano')
     elegido = seleccion.selectedIndex*2 +1
     anoElegido = seleccion.childNodes[elegido].value
-
+    
     borrarOpciones('season')
     opcion = document.getElementById('season')
     textnode = document.createTextNode("--")
@@ -144,15 +144,39 @@ function anadirAno() {
     textnode = document.createTextNode("Fall")
     fall.appendChild(textnode)
     opcion.appendChild(fall)
+
+    all = document.createElement("option")
+    textnode = document.createTextNode("All")
+    all.appendChild(textnode)
+    opcion.appendChild(all)
 }
 
 function anadirSeason() {
     direccionGitHub = ''
     var seleccion=document.getElementById('season')
     elegido = seleccion.selectedIndex
-    seasonElegida = seleccion.childNodes[elegido].value
-    direccionGitHub = direccion + anoElegido + '/' + anoElegido + seasonElegida + 'OPs.txt'
-    anadirOpciones(direccionGitHub)
+    
+    if (elegido == 5) {
+        let direccion1 = ''
+        let direccion2 = ''
+        let direccion3 = ''
+        let direccion4 = ''
+
+        direccion1 = direccion + anoElegido + '/' + anoElegido + 'Winter' + 'OPs.txt'
+        direccion2 = direccion + anoElegido + '/' + anoElegido + 'Spring' + 'OPs.txt'
+        direccion3 = direccion + anoElegido + '/' + anoElegido + 'Summer' + 'OPs.txt'
+        direccion4 = direccion + anoElegido + '/' + anoElegido + 'Fall' + 'OPs.txt'
+
+        anadirOpciones(direccion1)
+        anadirOpciones(direccion2)
+        anadirOpciones(direccion3)
+        anadirOpciones(direccion4)
+
+    } else {
+        seasonElegida = seleccion.childNodes[elegido].value
+        direccionGitHub = direccion + anoElegido + '/' + anoElegido + seasonElegida + 'OPs.txt'
+        anadirOpciones(direccionGitHub)
+    }
 }
 
 
