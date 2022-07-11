@@ -38,6 +38,10 @@ body {
     position: relative;
 }
 
+#desaprender {
+  display: none;
+}
+
 .dark-mode {
     background-color: black;
     color: white;

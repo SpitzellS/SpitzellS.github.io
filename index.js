@@ -182,8 +182,7 @@ function anadirOpciones(direccion) {
             for (i = 0; i < cantidad; i++) {
                 myArray2[i] = myArray[i].split('|')
             }
-            
-            myarray2 = ordenarAlf(myArray2)
+            myArray2 = ordenarAlf(myArray2)
             for (i = 0; i < cantidad; i++) {
                 lista[i] = new Cancion(
                     myArray2[i][0],
@@ -196,10 +195,10 @@ function anadirOpciones(direccion) {
                     false,
                     i+1
                 )
-
                 anadirOpciones2(myArray2[i], i)
             }
-            option = document.getElementById('select2')   
+            option = document.getElementById('select2')
+
         })
         .catch(function (response) {
             // "Not Found"
