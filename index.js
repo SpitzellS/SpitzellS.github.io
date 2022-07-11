@@ -1,5 +1,5 @@
 class Cancion {
-    constructor( name, tipo, number, link, songName, artist, difficulty, eliminada, id) {
+    constructor( name, tipo, number, link, songName, artist, difficulty, eliminada, id, season) {
         this.name = name
         this.tipo = tipo
         this.number = number
@@ -9,8 +9,14 @@ class Cancion {
         this.difficulty = difficulty
         this.eliminada = eliminada
         this.id = id
+        this.season = season
     }
 }
+
+let arrayLista = new Array(4)
+let arrayCantidad = new Array(4)
+let numero = 0
+let allBoolean = false
 
 let randomBoolean = false
 let eliminarBoolean = false
@@ -18,10 +24,12 @@ let loopBoolean = false
 let screenModeBoolean = false
 let minDiff = 0
 let maxDiff = 100
+let lista2 = new Array()
 let lista = null
 let listaCancion = ''
 let myArray = ''
 let posicion = 0
+let posicionTotal = 0
 let cantidad = null
 let direccion = "https://raw.githubusercontent.com/SpitzellS/SpitzellS.github.io/main/Listas/"
 let anoElegido = ''
@@ -64,8 +72,8 @@ function cambiarCancion()
     video.src=seleccion.options[seleccion.selectedIndex].value
     posicion = seleccion.selectedIndex
     document.title = seleccion.options[seleccion.selectedIndex].text
-    eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
-    actualizarInfo()
+    temp = seleccion.options[seleccion.selectedIndex].className
+    actualizarInfo(temp)
     presionar()
     video.play()
 }
@@ -157,6 +165,11 @@ function anadirSeason() {
     elegido = seleccion.selectedIndex
     
     if (elegido == 5) {
+        allBoolean = true
+    } else {
+        allBoolean = false
+    }
+    if (allBoolean) {
         let direccion1 = ''
         let direccion2 = ''
         let direccion3 = ''
@@ -167,20 +180,20 @@ function anadirSeason() {
         direccion3 = direccion + anoElegido + '/' + anoElegido + 'Summer' + 'OPs.txt'
         direccion4 = direccion + anoElegido + '/' + anoElegido + 'Fall' + 'OPs.txt'
 
-        anadirOpciones(direccion1)
-        anadirOpciones(direccion2)
-        anadirOpciones(direccion3)
-        anadirOpciones(direccion4)
+        anadirOpciones(direccion1, 0)
+        anadirOpciones(direccion2, 1)
+        anadirOpciones(direccion3, 2)
+        anadirOpciones(direccion4, 3)
 
     } else {
         seasonElegida = seleccion.childNodes[elegido].value
         direccionGitHub = direccion + anoElegido + '/' + anoElegido + seasonElegida + 'OPs.txt'
-        anadirOpciones(direccionGitHub)
+        anadirOpciones(direccionGitHub, 0)
     }
 }
 
 
-function anadirOpciones(direccion) {
+function anadirOpciones(direccion, temp) {
     borrarOpciones('select2')
     let listaCancion
 
@@ -201,42 +214,51 @@ function anadirOpciones(direccion) {
             //arreglado = arreglar(listaCancion[0].list, cantidad)
             myArray = listaCancion.split("\n");
             myArray.sort()
-            lista = new Array(cantidad)
             let myArray2 = new Array(cantidad)
             for (i = 0; i < cantidad; i++) {
                 myArray2[i] = myArray[i].split('|')
             }
             myArray2 = ordenarAlf(myArray2)
-            for (i = 0; i < cantidad; i++) {
-                lista[i] = new Cancion(
-                    myArray2[i][0],
-                    myArray2[i][1],
-                    myArray2[i][2],
-                    myArray2[i][3],
-                    myArray2[i][4],
-                    myArray2[i][5],
-                    myArray2[i][6],
-                    false,
-                    i+1
-                )
-                anadirOpciones2(myArray2[i], i)
-            }
-            option = document.getElementById('select2')
+            anadirLista(myArray2, temp, cantidad)
 
         })
         .catch(function (response) {
             // "Not Found"
             //console.log(response.statusText);
+            
         });
+        
 }
 
-function anadirOpciones2(myArray2, i) {
+function anadirLista(myArray2, temp, cantidad) {
+    lista = new Array(cantidad)
+    for (i = 0; i < cantidad; i++) {
+        lista[i] = new Cancion(
+            myArray2[i][0],
+            myArray2[i][1],
+            myArray2[i][2],
+            myArray2[i][3],
+            myArray2[i][4],
+            myArray2[i][5],
+            myArray2[i][6],
+            false,
+            i+1,
+            temp
+        )
+        anadirOpciones2(myArray2[i], i, temp)
+    }
+    arrayCantidad[temp] = cantidad
+    arrayLista[temp] = lista
+}
+
+function anadirOpciones2(myArray2, i, temp) {
     const node = document.createElement("option")
     const textnode = document.createTextNode(myArray2[0] + ' OP ' + myArray2[2])
     node.appendChild(textnode)
     option = document.getElementById('select2').appendChild(node)
     option.value = myArray2[3]
     option.id = i + 1
+    option.className = temp
 }
 
 function actualizarOpciones(myArray) {
@@ -263,7 +285,7 @@ function actualizarOpciones(myArray) {
     }
     option = document.getElementById('select2')   
 }
-function actualizarInfo() {
+function actualizarInfo(temp) {
     
     let tabla = document.getElementById('tablaCancion')
     cont = tabla.childElementCount
@@ -280,26 +302,69 @@ function actualizarInfo() {
     node5 = document.createElement("td")
     node6 = document.createElement("td")
 
-    tabla.appendChild(nodeSongName)
-    tr = tabla.lastChild
-    tr.appendChild(node3)
-    let songName = tr.lastChild
-    textnode = document.createTextNode('Song: ' +lista[posicion-1].songName)
-    songName.appendChild(textnode)
+    if (allBoolean) {
+        tabla.appendChild(nodeSongName)
+        tr = tabla.lastChild
+        tr.appendChild(node3)
+        let songName = tr.lastChild
+        numero = Number(temp)
 
-    tabla.appendChild(nodeArtist)
-    tr = tabla.lastChild
-    tr.appendChild(node6)
-    let artist = tr.lastChild
-    textnode = document.createTextNode('Artist: ' +lista[posicion-1].artist)
-    artist.appendChild(textnode)
+        switch(numero) {
+            case 0:
+                posicionTotal = posicion
+                break;
+            case 1:
+                posicionTotal = posicion - arrayCantidad[0]
+                break;
+            case 2:
+                posicionTotal = posicion - arrayCantidad[0] - arrayCantidad[1]
+                break;
+            case 3:
+                posicionTotal = posicion - arrayCantidad[0] - arrayCantidad[1] - arrayCantidad[2]
+                break;
+        }
 
-    tabla.appendChild(nodeDiff)
-    tr = tabla.lastChild
-    tr.appendChild(node5)
-    let diff = tr.lastChild
-    textnode = document.createTextNode('Diff: ' +lista[posicion-1].difficulty)
-    diff.appendChild(textnode)
+        textnode = document.createTextNode('Song: ' +arrayLista[numero][posicionTotal-1].songName)
+        songName.appendChild(textnode)
+    
+        tabla.appendChild(nodeArtist)
+        tr = tabla.lastChild
+        tr.appendChild(node6)
+        let artist = tr.lastChild
+        textnode = document.createTextNode('Artist: ' +arrayLista[numero][posicionTotal-1].artist)
+        artist.appendChild(textnode)
+    
+        tabla.appendChild(nodeDiff)
+        tr = tabla.lastChild
+        tr.appendChild(node5)
+        let diff = tr.lastChild
+        textnode = document.createTextNode('Diff: ' +arrayLista[numero][posicionTotal-1].difficulty)
+        diff.appendChild(textnode)
+
+    } else {
+        tabla.appendChild(nodeSongName)
+        tr = tabla.lastChild
+        tr.appendChild(node3)
+        let songName = tr.lastChild
+        //console.log(lista[posicion-1])
+        textnode = document.createTextNode('Song: ' +arrayLista[numero][posicion-1].songName)
+        songName.appendChild(textnode)
+    
+        tabla.appendChild(nodeArtist)
+        tr = tabla.lastChild
+        tr.appendChild(node6)
+        let artist = tr.lastChild
+        textnode = document.createTextNode('Artist: ' +arrayLista[numero][posicion-1].artist)
+        artist.appendChild(textnode)
+    
+        tabla.appendChild(nodeDiff)
+        tr = tabla.lastChild
+        tr.appendChild(node5)
+        let diff = tr.lastChild
+        textnode = document.createTextNode('Diff: ' +arrayLista[numero][posicion-1].difficulty)
+        diff.appendChild(textnode)
+    }
+
 }
 
 function ordenarAlf(array) {

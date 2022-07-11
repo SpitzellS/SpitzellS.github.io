@@ -63,7 +63,6 @@ function nextSong() {
                                     lista[posicion-1].number
                 video.src=lista[posicion-1].link
                 video.play()
-                eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
             } else {
                 nextSong()
             }
@@ -78,12 +77,116 @@ function nextSong() {
 
 function beforeSong() {
     if (!loopBoolean) {
-        y = posicion-2 < 0 ? cantidad : posicion-1
-        posicion = y
-        while (lista[posicion-1].eliminada == true) {
-            y = posicion-1 < 0 ? cantidad-1 : posicion-1
+        if(allBoolean) {
+            console.log('season:'+numero)
+            console.log('posicion:' +posicionTotal)
+            console.log(arrayCantidad)
+            switch(numero) {
+                case 0:
+                    y = posicionTotal-2 < 0 ? arrayCantidad[3] : posicionTotal-1
+                    posicionTotal = y
+                    if(y == arrayCantidad[3]) {
+                        numero = 3
+                    }
+                    break;
+                case 1:
+                    y = posicionTotal-2 < 0 ? arrayCantidad[0] : posicionTotal-1
+                    posicionTotal = y
+                    if(y == arrayCantidad[0]) {
+                        numero = 0
+                    }
+                    break;
+                case 2:
+                    y = posicionTotal-2 < 0 ? arrayCantidad[1] : posicionTotal-1
+                    posicionTotal = y
+                    if(y == arrayCantidad[1]) {
+                        numero = 1
+                    }
+                    break;
+                    
+                case 3:
+                    y = posicionTotal-2 < 0 ? arrayCantidad[2] : posicionTotal-1
+                    posicionTotal = y
+                    if(y == arrayCantidad[2]) {
+                        numero = 2
+                    }
+                    break;    
+            }
+
+            console.log(posicionTotal)
+
+        } else {
+            y = posicion-2 < 0 ? cantidad : posicion-1
             posicion = y
+            while (lista[posicion-1].eliminada == true) {
+                y = posicion-1 < 0 ? cantidad-1 : posicion-1
+                posicion = y
+            }
+            if(lista[posicion-1].difficulty > minDiff && lista[posicion-1].difficulty < maxDiff) {
+                document.title = lista[posicion-1].name
+                info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
+                                    lista[posicion-1].tipo + ' ' + 
+                                    lista[posicion-1].number
+                video.src=lista[posicion-1].link
+                video.play()
+            } else {
+                beforeSong()
+            }
+            actualizarInfo()
         }
+    } else {
+        accionReiniciar()
+    }
+ }
+
+function randomSong() {
+    if (allBoolean) {
+
+        numero = Math.floor((Math.random() * 4))
+        x = Math.floor((Math.random() * arrayCantidad[numero]+1))
+        
+        posicionTotal = x
+
+        switch(numero) {
+            case 0:
+                posicion = posicionTotal
+                break;
+            case 1:
+                posicion = posicionTotal + arrayCantidad[0]
+                break;
+            case 2:
+                posicion = posicionTotal + arrayCantidad[0] + arrayCantidad[1]
+                break;
+            case 3:
+                posicion = posicionTotal + arrayCantidad[0] + arrayCantidad[1] + arrayCantidad[2]
+                break;
+        }
+
+        if(arrayLista[numero][posicionTotal-1].difficulty > minDiff && arrayLista[numero][posicionTotal-1].difficulty < maxDiff) {
+            document.title = arrayLista[numero][posicionTotal-1].name
+            info.innerHTML = "Video: " + arrayLista[numero][posicionTotal-1].name + ' ' + 
+                                arrayLista[numero][posicionTotal-1].tipo + ' ' + 
+                                arrayLista[numero][posicionTotal-1].number
+            video.src=arrayLista[numero][posicionTotal-1].link
+            video.play()
+        } else {
+            randomSong()
+        }
+        actualizarInfo(numero)
+    } else {
+        var seleccion = document.getElementById('select2')
+        opciones = seleccion.options.length - 1
+        let x = lista[posicion-1].id
+        eliminadaBoolean = true
+        while (x == lista[posicion-1].id || eliminadaBoolean) {
+            x = Math.floor((Math.random() * opciones+1));
+            eliminadaBoolean = false
+            if (lista[x-1].eliminada == true) {
+                x == lista[posicion+1].id
+                eliminadaBoolean = true
+            }
+        }
+        posicion = x
         if(lista[posicion-1].difficulty > minDiff && lista[posicion-1].difficulty < maxDiff) {
             document.title = lista[posicion-1].name
             info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
@@ -93,40 +196,12 @@ function beforeSong() {
             video.play()
             eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
         } else {
-            beforeSong()
+            randomSong()
         }
         actualizarInfo()
-    } else {
-        accionReiniciar()
     }
- }
 
-function randomSong() {
-    var seleccion = document.getElementById('select2')
-    opciones = seleccion.options.length - 1
-    let x = lista[posicion-1].id
-    eliminadaBoolean = true
-    while (x == lista[posicion-1].id || eliminadaBoolean) {
-        x = Math.floor((Math.random() * opciones+1));
-        eliminadaBoolean = false
-        if (lista[x-1].eliminada == true) {
-            x == lista[posicion+1].id
-            eliminadaBoolean = true
-        }
-    }
-    posicion = x
-    if(lista[posicion-1].difficulty > minDiff && lista[posicion-1].difficulty < maxDiff) {
-        document.title = lista[posicion-1].name
-        info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
-                            lista[posicion-1].tipo + ' ' + 
-                            lista[posicion-1].number
-        video.src=lista[posicion-1].link
-        video.play()
-        eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
-    } else {
-        randomSong()
-    }
-    actualizarInfo()
+    
 }
 
 function accionEliminar() {
