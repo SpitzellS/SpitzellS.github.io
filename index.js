@@ -346,7 +346,6 @@ function actualizarInfo(temp) {
         tr = tabla.lastChild
         tr.appendChild(node3)
         let songName = tr.lastChild
-        //console.log(lista[posicion-1])
         textnode = document.createTextNode('Song: ' +arrayLista[numero][posicion-1].songName)
         songName.appendChild(textnode)
     

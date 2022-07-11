@@ -70,7 +70,7 @@ function nextSong() {
                             posicion++
                             if(y == 1) {
                                 numero = 2
-                                posicion = arrayCantidad[1] + 1
+                                posicion = arrayCantidad[0] + arrayCantidad[1] + 1
                             }
                             break;
                         case 2:
@@ -79,7 +79,7 @@ function nextSong() {
                             posicion++
                             if(y == 1) {
                                 numero = 3
-                                posicion = arrayCantidad[2] + 1
+                                posicion = arrayCantidad[0] + arrayCantidad[1] + arrayCantidad[2] + 1
                             }
                             break;
                         case 3:
