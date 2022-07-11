@@ -48,25 +48,85 @@ function nextSong() {
 
     if (!loopBoolean) {
         if (!randomBoolean) {
-            if(eliminarBoolean) {
-                y = posicion > cantidad ? 1 : posicion
-                eliminarBoolean = false
+            if(allBoolean) {
+                if(eliminarBoolean) {
+                    y = posicion > cantidad ? 1 : posicion
+                    eliminarBoolean = false
+                } else {
+    
+                    switch(numero) {
+                        case 0:
+                            y = posicionTotal+1> arrayCantidad[0] ? 1 : posicionTotal+1
+                            posicionTotal = y
+                            posicion++
+                            if(y == 1) {
+                                numero = 1
+                                posicion = arrayCantidad[0] + 1
+                            }
+                            break;
+                        case 1:
+                            y = posicionTotal+1 > arrayCantidad[1] ? 1 : posicionTotal+1
+                            posicionTotal = y
+                            posicion++
+                            if(y == 1) {
+                                numero = 2
+                                posicion = arrayCantidad[1] + 1
+                            }
+                            break;
+                        case 2:
+                            y = posicionTotal+1 > arrayCantidad[2] ? 1 : posicionTotal+1
+                            posicionTotal = y
+                            posicion++
+                            if(y == 1) {
+                                numero = 3
+                                posicion = arrayCantidad[2] + 1
+                            }
+                            break;
+                        case 3:
+                            y = posicionTotal+1 > arrayCantidad[3] ? 1 : posicionTotal+1
+                            posicionTotal = y
+                            posicion++
+                            if(y == 1) {
+                                numero = 0
+                                posicion = 1
+                            }
+                            break;    
+                    }
+
+                }
+
+                if(arrayLista[numero][posicionTotal-1].difficulty > minDiff && arrayLista[numero][posicionTotal-1].difficulty < maxDiff) {
+                    document.title = arrayLista[numero][posicionTotal-1].name
+                    info.innerHTML = "Video: " + arrayLista[numero][posicionTotal-1].name + ' ' + 
+                                        arrayLista[numero][posicionTotal-1].tipo + ' ' + 
+                                        arrayLista[numero][posicionTotal-1].number
+                    video.src=arrayLista[numero][posicionTotal-1].link
+                    video.play()
+                } else {
+                    nextSong()
+                }
+                actualizarInfo(numero)
+
             } else {
-                y = posicion+1 > cantidad ? 1 : posicion+1
+                if(eliminarBoolean) {
+                    y = posicion > cantidad ? 1 : posicion
+                    eliminarBoolean = false
+                } else {
+                    y = posicion+1 > cantidad ? 1 : posicion+1
+                }
+                posicion = y
+                if(lista[posicion-1].difficulty > minDiff && lista[posicion-1].difficulty < maxDiff) {
+                    document.title = lista[posicion-1].name
+                    info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
+                                        lista[posicion-1].tipo + ' ' + 
+                                        lista[posicion-1].number
+                    video.src=lista[posicion-1].link
+                    video.play()
+                } else {
+                    nextSong()
+                }
+                actualizarInfo(numero)
             }
-            boolean = posicion+1 > cantidad
-            posicion = y
-            if(lista[posicion-1].difficulty > minDiff && lista[posicion-1].difficulty < maxDiff) {
-                document.title = lista[posicion-1].name
-                info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
-                                    lista[posicion-1].tipo + ' ' + 
-                                    lista[posicion-1].number
-                video.src=lista[posicion-1].link
-                video.play()
-            } else {
-                nextSong()
-            }
-            actualizarInfo()
         } else {
             randomSong()
         }
@@ -78,9 +138,7 @@ function nextSong() {
 function beforeSong() {
     if (!loopBoolean) {
         if(allBoolean) {
-            console.log('season:'+numero)
-            console.log('posicion:' +posicionTotal)
-            console.log(arrayCantidad)
+
             switch(numero) {
                 case 0:
                     y = posicionTotal-2 < 0 ? arrayCantidad[3] : posicionTotal-1
@@ -113,15 +171,21 @@ function beforeSong() {
                     break;    
             }
 
-            console.log(posicionTotal)
+            if(arrayLista[numero][posicionTotal-1].difficulty > minDiff && arrayLista[numero][posicionTotal-1].difficulty < maxDiff) {
+                document.title = arrayLista[numero][posicionTotal-1].name
+                info.innerHTML = "Video: " + arrayLista[numero][posicionTotal-1].name + ' ' + 
+                                    arrayLista[numero][posicionTotal-1].tipo + ' ' + 
+                                    arrayLista[numero][posicionTotal-1].number
+                video.src=arrayLista[numero][posicionTotal-1].link
+                video.play()
+            } else {
+                beforeSong()
+            }
 
         } else {
             y = posicion-2 < 0 ? cantidad : posicion-1
             posicion = y
-            while (lista[posicion-1].eliminada == true) {
-                y = posicion-1 < 0 ? cantidad-1 : posicion-1
-                posicion = y
-            }
+
             if(lista[posicion-1].difficulty > minDiff && lista[posicion-1].difficulty < maxDiff) {
                 document.title = lista[posicion-1].name
                 info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
@@ -132,7 +196,7 @@ function beforeSong() {
             } else {
                 beforeSong()
             }
-            actualizarInfo()
+            actualizarInfo(numero)
         }
     } else {
         accionReiniciar()
@@ -198,7 +262,7 @@ function randomSong() {
         } else {
             randomSong()
         }
-        actualizarInfo()
+        actualizarInfo(numero)
     }
 
     
