@@ -16,6 +16,8 @@ let randomBoolean = false
 let eliminarBoolean = false
 let loopBoolean = false
 let screenModeBoolean = false
+let minDiff = 0
+let maxDiff = 100
 let lista = null
 let listaCancion = ''
 let myArray = ''
@@ -119,7 +121,6 @@ function anadirAno() {
     var seleccion=document.getElementById('ano')
     elegido = seleccion.selectedIndex*2 +1
     anoElegido = seleccion.childNodes[elegido].value
-    console.log(anoElegido)
 
     borrarOpciones('season')
     opcion = document.getElementById('season')
@@ -143,16 +144,14 @@ function anadirAno() {
     textnode = document.createTextNode("Fall")
     fall.appendChild(textnode)
     opcion.appendChild(fall)
-
 }
 
 function anadirSeason() {
     direccionGitHub = ''
     var seleccion=document.getElementById('season')
-    elegido = seleccion.selectedIndex*2 +1
+    elegido = seleccion.selectedIndex
     seasonElegida = seleccion.childNodes[elegido].value
     direccionGitHub = direccion + anoElegido + '/' + anoElegido + seasonElegida + 'OPs.txt'
-    console.log(direccionGitHub)
     anadirOpciones(direccionGitHub)
 }
 
@@ -224,9 +223,7 @@ function actualizarOpciones(myArray) {
     for (i = 0; i < cantidad; i++) {
         myArray2[i] = myArray[i].split('|')
     }
-    //console.log(myArray2)
     myarray2 = ordenarAlf(myArray2)
-    //console.log(myArray2)
     for (i = 0; i < cantidad; i++) {
         lista[i] = new Cancion(
             myArray2[i][0],
@@ -285,6 +282,36 @@ function actualizarInfo() {
 function ordenarAlf(array) {
     array2 = array.sort()
     return array2
+}
+
+function getVals(){
+    // Get slider values
+    var parent = this.parentNode;
+    var slides = parent.getElementsByTagName("input");
+      var slide1 = parseFloat( slides[0].value );
+      minDiff = slide1
+      var slide2 = parseFloat( slides[1].value );
+      maxDiff = slide2
+    // Neither slider will clip the other, so make sure we determine which is larger
+    if( slide1 > slide2 ){ var tmp = slide2; slide2 = slide1; slide1 = tmp; }
+    
+    var displayElement = parent.getElementsByClassName("rangeValues")[0];
+        displayElement.innerHTML = slide1 + " - " + slide2
+  }
+  
+window.onload = function(){
+    // Initialize Sliders
+    var sliderSections = document.getElementsByClassName("range-slider");
+        for( var x = 0; x < sliderSections.length; x++ ){
+          var sliders = sliderSections[x].getElementsByTagName("input");
+          for( var y = 0; y < sliders.length; y++ ){
+            if( sliders[y].type ==="range" ){
+              sliders[y].oninput = getVals;
+              // Manually trigger event first time to display values
+              sliders[y].oninput();
+            }
+          }
+        }
 }
 
 window.addEventListener('load', iniciar, false)
