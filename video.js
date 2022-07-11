@@ -62,7 +62,7 @@ function nextSong() {
                                 lista[posicion-1].number
             video.src=lista[posicion-1].link
             video.play()
-            eliminada.value = lista[posicion-1].eliminada ? "Añadir" : "Eliminar"
+            eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
             actualizarInfo()
         } else {
             randomSong()
@@ -86,7 +86,7 @@ function beforeSong() {
                             lista[posicion-1].number
         video.src=lista[posicion-1].link
         video.play()
-        eliminada.value = lista[posicion-1].eliminada ? "Añadir" : "Eliminar"
+        eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
         actualizarInfo()
     } else {
         accionReiniciar()
@@ -114,7 +114,7 @@ function randomSong() {
     video.src=lista[posicion-1].link
     video.play()
     actualizarInfo()
-    eliminada.value = lista[posicion-1].eliminada ? "Añadir" : "Eliminar"
+    eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
 }
 
 function accionEliminar() {

@@ -70,6 +70,7 @@ function cambiarCancion()
     video.src=seleccion.options[seleccion.selectedIndex].value
     posicion = seleccion.selectedIndex
     document.title = seleccion.options[seleccion.selectedIndex].text
+    eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
     actualizarInfo()
     presionar()
     video.play()
