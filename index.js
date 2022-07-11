@@ -12,13 +12,6 @@ class Cancion {
     }
 }
 
-class Season {
-    constructor(list) {
-        this.list = list
-    }
-}
-
-
 let randomBoolean = false
 let eliminarBoolean = false
 let loopBoolean = false
@@ -26,10 +19,8 @@ let screenModeBoolean = false
 let lista = null
 let listaCancion = ''
 let myArray = ''
-let listaCancionModif = null
 let posicion = 0
 let cantidad = null
-let texto
 let direccion = "https://raw.githubusercontent.com/SpitzellS/SpitzellS.github.io/main/Listas/"
 let anoElegido = ''
 let seasonElegida = ''
@@ -128,6 +119,7 @@ function anadirAno() {
     var seleccion=document.getElementById('ano')
     elegido = seleccion.selectedIndex*2 +1
     anoElegido = seleccion.childNodes[elegido].value
+    console.log(anoElegido)
 
     borrarOpciones('season')
     opcion = document.getElementById('season')
@@ -159,7 +151,8 @@ function anadirSeason() {
     var seleccion=document.getElementById('season')
     elegido = seleccion.selectedIndex*2 +1
     seasonElegida = seleccion.childNodes[elegido].value
-    direccionGitHub = direccion + anoElegido + seasonElegida + 'OPs.txt'
+    direccionGitHub = direccion + anoElegido + '/' + anoElegido + seasonElegida + 'OPs.txt'
+    console.log(direccionGitHub)
     anadirOpciones(direccionGitHub)
 }
 
