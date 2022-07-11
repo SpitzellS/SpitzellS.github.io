@@ -13,6 +13,7 @@ function presionar() {
 function accionReiniciar()
 {
   video.currentTime = 0;
+  video.play()
 }
 
 function accionRetrasar()
@@ -33,17 +34,20 @@ function accionAdelantar()
 
 function accionLoop() {
     if (!loopBoolean) {
-        video.addEventListener('ended', presionar, false)
+        //video.addEventListener('ended', presionar, false)
         loopBoolean = true
         loop.value = "Unloop"
     } else {
-        video.removeEventListener('ended', presionar, false)
+        //video.removeEventListener('ended', presionar, false)
         loopBoolean = false
         loop.value = "Loop"
     }
 }
 
 function nextSong() {
+
+    console.log(loopBoolean)
+    console.log(randomBoolean)
     if (!loopBoolean) {
         if (!randomBoolean) {
             y = posicion+1 > cantidad ? 1 : posicion+1

@@ -94,13 +94,9 @@ function contarLineas(str, sep) {
 
 function random() {
     if (!randomBoolean) {
-        video.removeEventListener('ended', nextSong, false)
-        video.addEventListener('ended', randomSong, false)
         randomBoolean = true
         rdm.value = "Unrandom"
     } else {
-        video.removeEventListener('ended', randomSong, false)
-        video.addEventListener('ended', nextSong, false)
         randomBoolean = false
         rdm.value = "Random"
     }
