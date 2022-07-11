@@ -14,8 +14,7 @@
     
 
     <div id="modosPantalla">
-        <button onclick="darkMode()">Darkmode</button>
-        <button onclick="lightMode()">Lightmode</button>
+        <input type="button" id="screenMode" onclick="darkMode()" value="Lightmode">
     </div>
 
     <div id="infovideo">
@@ -31,6 +30,8 @@
             Elegir A&ntilde;o
             <select id="ano" onChange="anadirAno()">
                 <option value="--">--</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
                 <option value="1998">1998</option>
                 <option value="1999">1999</option>
                 <option value="2001">2001</option>

@@ -21,12 +21,13 @@ class Season {
 
 let randomBoolean = false
 let eliminarBoolean = false
+let loopBoolean = false
+let screenModeBoolean = false
 let lista = null
 let listaCancion = ''
 let myArray = ''
 let listaCancionModif = null
 let posicion = 0
-let loopBoolean = false
 let cantidad = null
 let texto
 let direccion = "https://raw.githubusercontent.com/SpitzellS/SpitzellS.github.io/main/Listas/"
@@ -105,19 +106,51 @@ function random() {
 }
 
 function darkMode() {
-    var element = document.body;
-    element.className = "dark-mode";
+    if (!screenModeBoolean) {
+        var element = document.body;
+        element.className = "light-mode"
+        screenMode.value = "Darkmode"
+        screenModeBoolean = true
+    } else {
+        var element = document.body;
+        element.className = "dark-mode"
+        screenMode.value = "Lightmode"
+        screenModeBoolean = false
+    }
 }
 
 function lightMode() {
-    var element = document.body;
-    element.className = "light-mode";
+    var element = document.body
+    element.className = "light-mode"
 }
 
 function anadirAno() {
     var seleccion=document.getElementById('ano')
     elegido = seleccion.selectedIndex*2 +1
     anoElegido = seleccion.childNodes[elegido].value
+
+    borrarOpciones('season')
+    opcion = document.getElementById('season')
+    textnode = document.createTextNode("--")
+    winter = document.createElement("option")
+    textnode = document.createTextNode("Winter")
+    winter.appendChild(textnode)
+    opcion.appendChild(winter)
+
+    spring = document.createElement("option")
+    textnode = document.createTextNode("Spring")
+    spring.appendChild(textnode)
+    opcion.appendChild(spring)
+
+    summer = document.createElement("option")
+    textnode = document.createTextNode("Summer")
+    summer.appendChild(textnode)
+    opcion.appendChild(summer)
+
+    fall = document.createElement("option")
+    textnode = document.createTextNode("Fall")
+    fall.appendChild(textnode)
+    opcion.appendChild(fall)
 
 }
 
