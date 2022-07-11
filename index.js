@@ -1,5 +1,5 @@
 class Cancion {
-    constructor( name, tipo, number, link, songName, artist, difficulty, aprendida, id) {
+    constructor( name, tipo, number, link, songName, artist, difficulty, eliminada, id) {
         this.name = name
         this.tipo = tipo
         this.number = number
@@ -7,22 +7,23 @@ class Cancion {
         this.songName = songName
         this.artist = artist
         this.difficulty = difficulty
-        this.aprendida = aprendida
+        this.eliminada = eliminada
         this.id = id
     }
 }
 
 class Season {
-    constructor(name, list) {
-        this.name = name
+    constructor(list) {
         this.list = list
     }
 }
 
 
 let randomBoolean = false
+let eliminarBoolean = false
 let lista = null
-let listaCancion = null
+let listaCancion = ''
+let myArray = ''
 let listaCancionModif = null
 let posicion = 0
 let loopBoolean = false
@@ -43,7 +44,7 @@ function iniciar() {
     var before=document.getElementById('before')
     var desaprender=document.getElementById('desaprender')
     var rdm=document.getElementById('rdm')
-    var aprendida=document.getElementById('aprendida')
+    var eliminada=document.getElementById('eliminada')
 
     boton.addEventListener('click', presionar, false)
     reiniciar.addEventListener('click', accionReiniciar, false)
@@ -53,7 +54,7 @@ function iniciar() {
     next.addEventListener('click', nextSong)
     before.addEventListener('click', beforeSong)
     rdm.addEventListener('click', random)
-    aprendida.addEventListener('click', songAprendida)
+    eliminada.addEventListener('click', accionEliminar)
     desaprender.addEventListener('click', desaprenderTodo)
 
     info.innerHTML = "Video: "
@@ -128,9 +129,10 @@ function anadirSeason() {
     anadirOpciones(direccionGitHub)
 }
 
+
 function anadirOpciones(direccion) {
     borrarOpciones('select2')
-    let listaCancion = new Array(1)
+    let listaCancion
 
     fetch(direccion)
         .then(function (response) {
@@ -144,13 +146,11 @@ function anadirOpciones(direccion) {
             }
         })
         .then(function (template) {
-            listaCancion[0] = new Season(
-                "Lista de Canciones",
-                template
-            )
-            cantidad = contarLineas(listaCancion[0].list, '\n')
+            listaCancion = template
+            cantidad = contarLineas(listaCancion, '\n')
             //arreglado = arreglar(listaCancion[0].list, cantidad)
-            myArray = listaCancion[0].list.split("\n");
+            myArray = listaCancion.split("\n");
+            myArray.sort()
             lista = new Array(cantidad)
             let myArray2 = new Array(cantidad)
             for (i = 0; i < cantidad; i++) {
@@ -179,7 +179,6 @@ function anadirOpciones(direccion) {
             // "Not Found"
             //console.log(response.statusText);
         });
-
 }
 
 function anadirOpciones2(myArray2, i) {
@@ -189,6 +188,33 @@ function anadirOpciones2(myArray2, i) {
     option = document.getElementById('select2').appendChild(node)
     option.value = myArray2[3]
     option.id = i + 1
+}
+
+function actualizarOpciones(myArray) {
+    cantidad--
+    borrarOpciones('select2')
+    let myArray2 = new Array(cantidad)
+    for (i = 0; i < cantidad; i++) {
+        myArray2[i] = myArray[i].split('|')
+    }
+    //console.log(myArray2)
+    myarray2 = ordenarAlf(myArray2)
+    //console.log(myArray2)
+    for (i = 0; i < cantidad; i++) {
+        lista[i] = new Cancion(
+            myArray2[i][0],
+            myArray2[i][1],
+            myArray2[i][2],
+            myArray2[i][3],
+            myArray2[i][4],
+            myArray2[i][5],
+            myArray2[i][6],
+            false,
+            i+1
+        )
+        anadirOpciones2(myArray2[i], i)
+    }
+    option = document.getElementById('select2')   
 }
 function actualizarInfo() {
     

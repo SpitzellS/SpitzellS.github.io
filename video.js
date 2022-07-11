@@ -46,24 +46,23 @@ function accionLoop() {
 
 function nextSong() {
 
-    console.log(loopBoolean)
-    console.log(randomBoolean)
     if (!loopBoolean) {
         if (!randomBoolean) {
-            y = posicion+1 > cantidad ? 1 : posicion+1
+            if(eliminarBoolean) {
+                y = posicion > cantidad ? 1 : posicion
+                eliminarBoolean = false
+            } else {
+                y = posicion+1 > cantidad ? 1 : posicion+1
+            }
             boolean = posicion+1 > cantidad
             posicion = y
-            while (lista[posicion-1].aprendida == true) {
-                y = posicion+1 > cantidad-1 ? 0 : posicion+1
-                posicion = y
-            }
             document.title = lista[posicion-1].name
             info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
                                 lista[posicion-1].tipo + ' ' + 
                                 lista[posicion-1].number
             video.src=lista[posicion-1].link
             video.play()
-            aprendida.value = lista[posicion-1].aprendida ? "Añadir" : "Eliminar"
+            eliminada.value = lista[posicion-1].eliminada ? "Añadir" : "Eliminar"
             actualizarInfo()
         } else {
             randomSong()
@@ -77,7 +76,7 @@ function beforeSong() {
     if (!loopBoolean) {
         y = posicion-2 < 0 ? cantidad : posicion-1
         posicion = y
-        while (lista[posicion-1].aprendida == true) {
+        while (lista[posicion-1].eliminada == true) {
             y = posicion-1 < 0 ? cantidad-1 : posicion-1
             posicion = y
         }
@@ -87,7 +86,7 @@ function beforeSong() {
                             lista[posicion-1].number
         video.src=lista[posicion-1].link
         video.play()
-        aprendida.value = lista[posicion-1].aprendida ? "Añadir" : "Eliminar"
+        eliminada.value = lista[posicion-1].eliminada ? "Añadir" : "Eliminar"
         actualizarInfo()
     } else {
         accionReiniciar()
@@ -98,13 +97,13 @@ function randomSong() {
     var seleccion = document.getElementById('select2')
     opciones = seleccion.options.length - 1
     let x = lista[posicion-1].id
-    aprendidaBoolean = true
-    while (x == lista[posicion-1].id || aprendidaBoolean) {
+    eliminadaBoolean = true
+    while (x == lista[posicion-1].id || eliminadaBoolean) {
         x = Math.floor((Math.random() * opciones+1));
-        aprendidaBoolean = false
-        if (lista[x-1].aprendida == true) {
+        eliminadaBoolean = false
+        if (lista[x-1].eliminada == true) {
             x == lista[posicion+1].id
-            aprendidaBoolean = true
+            eliminadaBoolean = true
         }
     }
     posicion = x
@@ -115,29 +114,24 @@ function randomSong() {
     video.src=lista[posicion-1].link
     video.play()
     actualizarInfo()
-    aprendida.value = lista[posicion-1].aprendida ? "Añadir" : "Eliminar"
+    eliminada.value = lista[posicion-1].eliminada ? "Añadir" : "Eliminar"
 }
 
-function songAprendida() {
-    if (!lista[posicion].aprendida) {
-        lista[posicion].aprendida = true 
-        aprendida.value = "Eliminada"
-
-        listaCancionModif = new Array(1)
-
-        listaCancionModif[0] = new Season(
-            "Lista de Canciones Modificada",
-            listaCancion[0].list
-        )
+function accionEliminar() {
+    if (!lista[posicion].eliminada) {
+        lista[posicion].eliminada = true 
+        eliminada.value = "Eliminada"
+        myArray.splice(posicion-1,1)
+        actualizarOpciones(myArray)
+        eliminarBoolean = true
     } else {
-        lista[posicion].aprendida = false
-        aprendida.value = "Eliminar"
+        lista[posicion].eliminada = false
+        eliminada.value = "Eliminar"
     }
 }
 
 function desaprenderTodo() {
     for (i = 0; i < cantidad; i++) {
-        lista[i].aprendida = false
+        lista[i].eliminada = false
     }
-    console.log(lista)
 }
