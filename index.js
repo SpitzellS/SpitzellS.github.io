@@ -129,7 +129,6 @@ function actualizarOpciones2(arrayOpciones) {
     cantidad--
     borrarOpciones('selectCancion')
     let myArray2 = new Array(cantidad)
-    console.log(arrayOpciones)
 
     for (i = 0; i < cantidad; i++) {
         lista2[i] = new Cancion(
