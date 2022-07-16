@@ -11,6 +11,7 @@
 
     <script src="index.js"></script>
     <script src="video.js"></script>
+    <script src="opciones.js"></script>
     
 
     <div id="modosPantalla">
@@ -18,7 +19,8 @@
     </div>
 
     <div id="infovideo">
-        <label id="info"> </label>
+        <a id ='atributo' target="_blank"
+        href=''> <label id="info"> </label> </a>
         <video id="video" width="700" height="350" controls>  
             <source src="">   
         </video>
@@ -28,7 +30,7 @@
     <div id="selects">
         <form>
             Elegir A&ntilde;o
-            <select id="ano" onChange="anadirAno()">
+            <select id="selectAno" onChange="anadirAno()">
                 <option value="--">--</option>
                 <option value="1990">1990</option>
                 <option value="1991">1991</option>
@@ -44,7 +46,7 @@
             </select>
             <br>
             Elegir Season
-            <select id="season" onChange="anadirSeason()">
+            <select id="selectSeason" onChange="anadirSeason()">
                 <option value="--">--</option>
                 <option value="Winter">Winter</option>
                 <option value="Spring">Spring</option>
@@ -54,7 +56,7 @@
             </select>
             <br>
             Elegir Canci&oacute;n
-            <select id="select2" onChange="cambiarCancion()">
+            <select id="selectCancion" onChange="cambiarCancion()">
                 <option value="--">--</option>       
             </select>
             <br>
@@ -87,6 +89,20 @@
         <input type="button" id="eliminada" value="Eliminar">
     </div>
 
+    <div>
+        <div id=tablaInfo2>
+         <table id="tablaNombres">
+            <tr>
+                <th>Nombres: </th>
+            </tr>
+            <tr>
+                <td id="romaji">Romaji Title: </td>
+            </tr>
+            <tr>
+                <td id="english">English Title: </td>
+            </tr>
+        </table>
+    </div>
     <div id="tabla">
         <table id="tablaCanciones">
             <tr>

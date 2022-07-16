@@ -34,13 +34,21 @@ function accionAdelantar()
 
 function accionLoop() {
     if (!loopBoolean) {
-        //video.addEventListener('ended', presionar, false)
         loopBoolean = true
         loop.value = "Unloop"
     } else {
-        //video.removeEventListener('ended', presionar, false)
         loopBoolean = false
         loop.value = "Loop"
+    }
+}
+
+function random() {
+    if (!randomBoolean) {
+        randomBoolean = true
+        rdm.value = "Unrandom"
+    } else {
+        randomBoolean = false
+        rdm.value = "Random"
     }
 }
 
@@ -53,58 +61,22 @@ function nextSong() {
                     y = posicion > cantidad ? 1 : posicion
                     eliminarBoolean = false
                 } else {
-    
-                    switch(numero) {
-                        case 0:
-                            y = posicionTotal+1> arrayCantidad[0] ? 1 : posicionTotal+1
-                            posicionTotal = y
-                            posicion++
-                            if(y == 1) {
-                                numero = 1
-                                posicion = arrayCantidad[0] + 1
-                            }
-                            break;
-                        case 1:
-                            y = posicionTotal+1 > arrayCantidad[1] ? 1 : posicionTotal+1
-                            posicionTotal = y
-                            posicion++
-                            if(y == 1) {
-                                numero = 2
-                                posicion = arrayCantidad[0] + arrayCantidad[1] + 1
-                            }
-                            break;
-                        case 2:
-                            y = posicionTotal+1 > arrayCantidad[2] ? 1 : posicionTotal+1
-                            posicionTotal = y
-                            posicion++
-                            if(y == 1) {
-                                numero = 3
-                                posicion = arrayCantidad[0] + arrayCantidad[1] + arrayCantidad[2] + 1
-                            }
-                            break;
-                        case 3:
-                            y = posicionTotal+1 > arrayCantidad[3] ? 1 : posicionTotal+1
-                            posicionTotal = y
-                            posicion++
-                            if(y == 1) {
-                                numero = 0
-                                posicion = 1
-                            }
-                            break;    
-                    }
-
+                    y = posicion+1 > cantidad ? 1 : posicion+1
                 }
-
-                if(arrayLista[numero][posicionTotal-1].difficulty > minDiff && arrayLista[numero][posicionTotal-1].difficulty < maxDiff) {
-                    document.title = arrayLista[numero][posicionTotal-1].name
-                    info.innerHTML = "Video: " + arrayLista[numero][posicionTotal-1].name + ' ' + 
-                                        arrayLista[numero][posicionTotal-1].tipo + ' ' + 
-                                        arrayLista[numero][posicionTotal-1].number
-                    video.src=arrayLista[numero][posicionTotal-1].link
+                posicion = y
+                if(lista2[posicion-1].difficulty > minDiff && lista2[posicion-1].difficulty < maxDiff) {
+                    document.title = lista2[posicion-1].name
+                    info.innerHTML = "Video: " + lista2[posicion-1].name + ' ' + 
+                                        lista2[posicion-1].tipo + ' ' + 
+                                        lista2[posicion-1].number
+                    video.src=lista2[posicion-1].link
+                    var pagAnilist=document.getElementById('atributo')
+                    pagAnilist.href = anilistURL + lista2[posicion-1].anilistID
                     video.play()
                 } else {
                     nextSong()
                 }
+                eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                 actualizarInfo(numero)
 
             } else {
@@ -121,11 +93,15 @@ function nextSong() {
                                         lista[posicion-1].tipo + ' ' + 
                                         lista[posicion-1].number
                     video.src=lista[posicion-1].link
+                    var pagAnilist=document.getElementById('atributo')
+                    pagAnilist.href = anilistURL + lista[posicion-1].anilistID
                     video.play()
                 } else {
                     nextSong()
                 }
+                eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                 actualizarInfo(numero)
+                
             }
         } else {
             randomSong()
@@ -138,49 +114,23 @@ function nextSong() {
 function beforeSong() {
     if (!loopBoolean) {
         if(allBoolean) {
+            y = posicion-2 < 0 ? cantidad : posicion-1
+            posicion = y
 
-            switch(numero) {
-                case 0:
-                    y = posicionTotal-2 < 0 ? arrayCantidad[3] : posicionTotal-1
-                    posicionTotal = y
-                    if(y == arrayCantidad[3]) {
-                        numero = 3
-                    }
-                    break;
-                case 1:
-                    y = posicionTotal-2 < 0 ? arrayCantidad[0] : posicionTotal-1
-                    posicionTotal = y
-                    if(y == arrayCantidad[0]) {
-                        numero = 0
-                    }
-                    break;
-                case 2:
-                    y = posicionTotal-2 < 0 ? arrayCantidad[1] : posicionTotal-1
-                    posicionTotal = y
-                    if(y == arrayCantidad[1]) {
-                        numero = 1
-                    }
-                    break;
-                    
-                case 3:
-                    y = posicionTotal-2 < 0 ? arrayCantidad[2] : posicionTotal-1
-                    posicionTotal = y
-                    if(y == arrayCantidad[2]) {
-                        numero = 2
-                    }
-                    break;    
-            }
-
-            if(arrayLista[numero][posicionTotal-1].difficulty > minDiff && arrayLista[numero][posicionTotal-1].difficulty < maxDiff) {
-                document.title = arrayLista[numero][posicionTotal-1].name
-                info.innerHTML = "Video: " + arrayLista[numero][posicionTotal-1].name + ' ' + 
-                                    arrayLista[numero][posicionTotal-1].tipo + ' ' + 
-                                    arrayLista[numero][posicionTotal-1].number
-                video.src=arrayLista[numero][posicionTotal-1].link
+            if(lista2[posicion-1].difficulty > minDiff && lista2[posicion-1].difficulty < maxDiff) {
+                document.title = lista2[posicion-1].name
+                info.innerHTML = "Video: " + lista2[posicion-1].name + ' ' + 
+                                    lista2[posicion-1].tipo + ' ' + 
+                                    lista2[posicion-1].number
+                video.src=lista2[posicion-1].link
+                var pagAnilist=document.getElementById('atributo')
+                pagAnilist.href = anilistURL + lista2[posicion-1].anilistID
                 video.play()
             } else {
                 beforeSong()
             }
+            eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
+            actualizarInfo(numero)
 
         } else {
             y = posicion-2 < 0 ? cantidad : posicion-1
@@ -192,10 +142,13 @@ function beforeSong() {
                                     lista[posicion-1].tipo + ' ' + 
                                     lista[posicion-1].number
                 video.src=lista[posicion-1].link
+                var pagAnilist=document.getElementById('atributo')
+                pagAnilist.href = anilistURL + lista[posicion-1].anilistID
                 video.play()
             } else {
                 beforeSong()
             }
+            eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
             actualizarInfo(numero)
         }
     } else {
@@ -205,40 +158,35 @@ function beforeSong() {
 
 function randomSong() {
     if (allBoolean) {
-
-        numero = Math.floor((Math.random() * 4))
-        x = Math.floor((Math.random() * arrayCantidad[numero]+1))
-        
-        posicionTotal = x
-
-        switch(numero) {
-            case 0:
-                posicion = posicionTotal
-                break;
-            case 1:
-                posicion = posicionTotal + arrayCantidad[0]
-                break;
-            case 2:
-                posicion = posicionTotal + arrayCantidad[0] + arrayCantidad[1]
-                break;
-            case 3:
-                posicion = posicionTotal + arrayCantidad[0] + arrayCantidad[1] + arrayCantidad[2]
-                break;
+        var seleccion = document.getElementById('selectCancion')
+        opciones = seleccion.options.length - 1
+        let x = lista2[posicion-1].id
+        eliminadaBoolean = true
+        while (x == lista2[posicion-1].id || eliminadaBoolean) {
+            x = Math.floor((Math.random() * opciones+1));
+            eliminadaBoolean = false
+            if (lista2[x-1].eliminada == true) {
+                x == lista2[posicion+1].id
+                eliminadaBoolean = true
+            }
         }
-
-        if(arrayLista[numero][posicionTotal-1].difficulty > minDiff && arrayLista[numero][posicionTotal-1].difficulty < maxDiff) {
-            document.title = arrayLista[numero][posicionTotal-1].name
-            info.innerHTML = "Video: " + arrayLista[numero][posicionTotal-1].name + ' ' + 
-                                arrayLista[numero][posicionTotal-1].tipo + ' ' + 
-                                arrayLista[numero][posicionTotal-1].number
-            video.src=arrayLista[numero][posicionTotal-1].link
+        posicion = x
+        if(lista2[posicion-1].difficulty > minDiff && lista2[posicion-1].difficulty < maxDiff) {
+            document.title = lista2[posicion-1].name
+            info.innerHTML = "Video: " + lista2[posicion-1].name + ' ' + 
+                                lista2[posicion-1].tipo + ' ' + 
+                                lista2[posicion-1].number
+            video.src=lista2[posicion-1].link
+            var pagAnilist=document.getElementById('atributo')
+            pagAnilist.href = anilistURL + lista2[posicion-1].anilistID
             video.play()
+            eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
         } else {
             randomSong()
         }
         actualizarInfo(numero)
     } else {
-        var seleccion = document.getElementById('select2')
+        var seleccion = document.getElementById('selectCancion')
         opciones = seleccion.options.length - 1
         let x = lista[posicion-1].id
         eliminadaBoolean = true
@@ -257,6 +205,8 @@ function randomSong() {
                                 lista[posicion-1].tipo + ' ' + 
                                 lista[posicion-1].number
             video.src=lista[posicion-1].link
+            var pagAnilist=document.getElementById('atributo')
+            pagAnilist.href = anilistURL + lista[posicion-1].anilistID
             video.play()
             eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
         } else {
