@@ -219,15 +219,28 @@ function randomSong() {
 }
 
 function accionEliminar() {
-    if (!lista[posicion].eliminada) {
-        lista[posicion].eliminada = true 
-        eliminada.value = "Eliminada"
-        myArray.splice(posicion-1,1)
-        actualizarOpciones(myArray)
-        eliminarBoolean = true
+    if(allBoolean) {
+        if (!lista2[posicion].eliminada) {
+            lista2[posicion].eliminada = true 
+            eliminada.value = "Eliminada"
+            arrayOpciones.splice(posicion-1,1)
+            actualizarOpciones2(arrayOpciones)
+            eliminarBoolean = true
+        } else {
+            lista[posicion].eliminada = false
+            eliminada.value = "Eliminar"
+        }
     } else {
-        lista[posicion].eliminada = false
-        eliminada.value = "Eliminar"
+        if (!lista[posicion].eliminada) {
+            lista[posicion].eliminada = true 
+            eliminada.value = "Eliminada"
+            myArray.splice(posicion-1,1)
+            actualizarOpciones(myArray)
+            eliminarBoolean = true
+        } else {
+            lista[posicion].eliminada = false
+            eliminada.value = "Eliminar"
+        }
     }
 }
 

@@ -125,6 +125,32 @@ function actualizarOpciones(myArray) {
     option = document.getElementById('selectCancion')   
 }
 
+function actualizarOpciones2(arrayOpciones) {
+    cantidad--
+    borrarOpciones('selectCancion')
+    let myArray2 = new Array(cantidad)
+    console.log(arrayOpciones)
+
+    for (i = 0; i < cantidad; i++) {
+        lista2[i] = new Cancion(
+            arrayOpciones[i][0],
+            arrayOpciones[i][1],
+            arrayOpciones[i][2],
+            arrayOpciones[i][3],
+            arrayOpciones[i][4],
+            arrayOpciones[i][5],
+            arrayOpciones[i][6],
+            false,
+            i+1,
+            null,
+            arrayOpciones[i][7],
+            arrayOpciones[i][8]
+        )
+        anadirOpciones2(arrayOpciones[i], i)
+    }
+    option = document.getElementById('selectCancion')   
+}
+
 function actualizarInfo(temp) {
     
     let tabla = document.getElementById('tablaCancion')
