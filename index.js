@@ -171,6 +171,7 @@ function actualizarInfo(temp) {
     node6 = document.createElement("td")
 
     //Todas las Seasons
+    console.log(allBoolean)
     if (allBoolean) {
 
         tabla.appendChild(nodeSongName)
@@ -224,27 +225,27 @@ function actualizarInfo(temp) {
         tr = tabla.lastChild
         tr.appendChild(node3)
         let songName = tr.lastChild
-        textnode = document.createTextNode('Song: ' + arrayLista[numero][posicion-1].songName)
+        textnode = document.createTextNode('Song: ' + lista[posicion-1].songName)
         songName.appendChild(textnode)
     
         tabla.appendChild(nodeArtist)
         tr = tabla.lastChild
         tr.appendChild(node6)
         let artist = tr.lastChild
-        textnode = document.createTextNode('Artist: ' + arrayLista[numero][posicion-1].artist)
+        textnode = document.createTextNode('Artist: ' + lista[posicion-1].artist)
         artist.appendChild(textnode)
     
         tabla.appendChild(nodeDiff)
         tr = tabla.lastChild
         tr.appendChild(node5)
         let diff = tr.lastChild
-        textnode = document.createTextNode('Diff: ' + arrayLista[numero][posicion-1].difficulty)
+        textnode = document.createTextNode('Diff: ' + lista[posicion-1].difficulty)
         diff.appendChild(textnode)
 
         romajiTitle = document.getElementById('romaji')
-        romajiTitle.innerHTML = 'Romaji Title: ' + arrayLista[numero][posicion-1].name
+        romajiTitle.innerHTML = 'Romaji Title: ' + lista[posicion-1].name
         englishTitle = document.getElementById('english')
-        englishTitle.innerHTML = 'English Title: ' + arrayLista[numero][posicion-1].nameEnglish
+        englishTitle.innerHTML = 'English Title: ' + lista[posicion-1].nameEnglish
     }
 }
 
