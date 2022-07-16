@@ -7,6 +7,8 @@ function cambiarCancion()
     posicion = selectCancion.selectedIndex
     document.title = selectCancion.options[selectCancion.selectedIndex].text
     temp = selectCancion.options[selectCancion.selectedIndex].className
+    var pagAnilist=document.getElementById('atributo')
+    pagAnilist.href = anilistURL + temp
     //console.log(temp)
     actualizarInfo(temp)
     presionar()
@@ -166,7 +168,7 @@ function anadirOpciones(myArray2, i, temp) {
     option = document.getElementById('selectCancion').appendChild(node)
     option.value = myArray2[3]
     option.id = i + 1
-    option.className = temp
+    option.className = myArray2[7]
 }
 
 function anadirLista2(temp, cantidad) {
@@ -207,6 +209,6 @@ function anadirOpciones2(opcionArray, i, temp) {
     option.id = i + 1
 
     //POR COMPROBAR
-    option.className = temp
+    option.className = opcionArray[7]
 }
 

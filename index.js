@@ -171,7 +171,6 @@ function actualizarInfo(temp) {
     node6 = document.createElement("td")
 
     //Todas las Seasons
-    console.log(allBoolean)
     if (allBoolean) {
 
         tabla.appendChild(nodeSongName)
