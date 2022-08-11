@@ -132,7 +132,6 @@ function actualizarOpciones(myArray) {
 
 function actualizarOpciones2(arrayOpciones) {
     cantidad--
-    console.log(arrayOpciones)
     borrarOpciones('selectCancion')
 
     for (i = 0; i < arrayOpciones.length; i++) {
