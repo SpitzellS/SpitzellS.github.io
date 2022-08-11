@@ -27,8 +27,13 @@ let randomBoolean = false
 let eliminarBoolean = false
 let loopBoolean = false
 let screenModeBoolean = false
+
+//Sliders
 let minDiff = 0
 let maxDiff = 100
+let minAno
+let maxAno
+
 let lista = null
 var lista2 = null
 let listaCancion = ''
@@ -127,10 +132,10 @@ function actualizarOpciones(myArray) {
 
 function actualizarOpciones2(arrayOpciones) {
     cantidad--
+    console.log(arrayOpciones)
     borrarOpciones('selectCancion')
-    let myArray2 = new Array(cantidad)
 
-    for (i = 0; i < cantidad; i++) {
+    for (i = 0; i < arrayOpciones.length; i++) {
         lista2[i] = new Cancion(
             arrayOpciones[i][0],
             arrayOpciones[i][1],
@@ -281,6 +286,7 @@ window.onload = function(){
             }
           }
         }
+
 }
 
 window.addEventListener('load', iniciar, false)

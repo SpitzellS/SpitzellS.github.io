@@ -9,7 +9,6 @@ function cambiarCancion()
     temp = selectCancion.options[selectCancion.selectedIndex].className
     var pagAnilist=document.getElementById('atributo')
     pagAnilist.href = anilistURL + temp
-    //console.log(temp)
     actualizarInfo(temp)
     presionar()
     video.play()
@@ -33,7 +32,10 @@ function anadirAno() {
     var seleccion=document.getElementById('selectAno')
     var index = seleccion.selectedIndex*2 +1
     anoElegido = seleccion.childNodes[index].value
-    
+    //anoElegido = minAno
+    //minAnoElegido = minAno
+   //maxAnoElegido = maxAno
+
     borrarOpciones('selectSeason')
 
     resetSeason("Winter")
@@ -58,7 +60,9 @@ function resetSeason(temporada) {
 function anadirSeason() {
     direccionGitHub = ''
     var seleccion=document.getElementById('selectSeason')
+    //console.log(seleccion)
     elegido = seleccion.selectedIndex
+    //console.log(elegido)
     
     allBoolean = elegido == 5 ? true : false
 
@@ -81,7 +85,10 @@ function anadirSeason() {
 
     } else {
         seasonElegida = seleccion.childNodes[elegido].value
+        //console.log(seleccion.childNodes)
+        //console.log(seasonElegida)
         direccionGitHub = direccion + anoElegido + '/' + anoElegido + seasonElegida + 'OPs.txt'
+        //direccionGitHub = direccion + minAno + '/' + minAno + seasonElegida + 'OPs.txt'
         //ARREGLAR 0
         leerTexto(direccionGitHub, 0)
     }
@@ -172,7 +179,6 @@ function anadirOpciones(myArray2, i, temp) {
 }
 
 function anadirLista2(temp, cantidad) {
-    //console.log(arrayOpciones)
     lista2 = new Array(arrayOpciones.length)
     for (i = 0; i < arrayOpciones.length; i++) {
         lista2[i] = new Cancion(
