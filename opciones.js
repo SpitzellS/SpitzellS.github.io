@@ -29,12 +29,7 @@ function borrarOpciones(select) {
 
 //Funcion que resetea el selectSeason
 function anadirAno() {
-    var seleccion=document.getElementById('selectAno')
-    var index = seleccion.selectedIndex*2 +1
-    anoElegido = seleccion.childNodes[index].value
-    //anoElegido = minAno
-    //minAnoElegido = minAno
-   //maxAnoElegido = maxAno
+    anoElegido=document.getElementById('selectAno').value
 
     borrarOpciones('selectSeason')
 
@@ -60,9 +55,7 @@ function resetSeason(temporada) {
 function anadirSeason() {
     direccionGitHub = ''
     var seleccion=document.getElementById('selectSeason')
-    //console.log(seleccion)
     elegido = seleccion.selectedIndex
-    //console.log(elegido)
     
     allBoolean = elegido == 5 ? true : false
 
@@ -85,8 +78,6 @@ function anadirSeason() {
 
     } else {
         seasonElegida = seleccion.childNodes[elegido].value
-        //console.log(seleccion.childNodes)
-        //console.log(seasonElegida)
         direccionGitHub = direccion + anoElegido + '/' + anoElegido + seasonElegida + 'OPs.txt'
         //direccionGitHub = direccion + minAno + '/' + minAno + seasonElegida + 'OPs.txt'
         //ARREGLAR 0

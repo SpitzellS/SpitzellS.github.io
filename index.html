@@ -31,14 +31,13 @@
         <form>
 
             Elegir A&ntilde;o
-            <!--
-            <section class="range-slider2">
-                <span class="rangeValues2"></span>
-                <input value="2001" min="2001" max="2002" step="1" type="range">
-                <input value="2001" min="2001" max="2002" step="1" type="range">
-            </section>
-            -->
             
+            <section class="range-slider2" onchange="anadirAno()">
+                <span class="rangeValues2"></span>
+                <input id="selectAno" value="1990" min="1990" max="2022" step="1" type="range">
+            </section>
+            
+            <!--
             <select id="selectAno" onChange="anadirAno()">
                 <option value="--">--</option>
                 <option value="1990">1990</option>
@@ -63,7 +62,7 @@
                 <option value="2021">2021</option>
                 <option value="2022">2022</option>
             </select>
-            
+            -->
             <br>
             Elegir Season
             <select id="selectSeason" onChange="anadirSeason()">

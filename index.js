@@ -271,6 +271,16 @@ function getVals(){
     var displayElement = parent.getElementsByClassName("rangeValues")[0];
         displayElement.innerHTML = slide1 + " - " + slide2
   }
+
+function getVals2(){
+
+    var parent = this.parentNode;
+    var slides = parent.getElementsByTagName("input");
+    var slide1 = parseFloat( slides[0].value );
+    
+    var displayElement = parent.getElementsByClassName("rangeValues2")[0];
+        displayElement.innerHTML = slide1
+  }
   
 window.onload = function(){
     // Initialize Sliders
@@ -285,6 +295,17 @@ window.onload = function(){
             }
           }
         }
+    var sliderSections2 = document.getElementsByClassName("range-slider2");
+        for( var x = 0; x < sliderSections2.length; x++ ){
+          var sliders2 = sliderSections2[x].getElementsByTagName("input");
+          for( var y = 0; y < sliders2.length; y++ ){
+            if( sliders2[y].type ==="range" ){
+              sliders2[y].oninput = getVals2;
+              // Manually trigger event first time to display values
+              sliders2[y].oninput();
+            }
+          }
+        }    
 
 }
 
