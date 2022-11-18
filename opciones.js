@@ -29,7 +29,18 @@ function borrarOpciones(select) {
 
 //Funcion que resetea el selectSeason
 function anadirAno() {
+    cantidad = 0
+    cantidadTotal = 0
     anoElegido=document.getElementById('selectAno').value
+
+    variosAnos = minAno == maxAno ? false : true
+
+    if(variosAnos) {
+        leerVariosAnos()
+        document.getElementById("elegirSeason").style.visibility = "hidden"
+    } else {
+        document.getElementById("elegirSeason").style.visibility = "visible"
+    }
 
     borrarOpciones('selectSeason')
 
@@ -51,7 +62,7 @@ function resetSeason(temporada) {
 
 //Funcion que llama a leerTexto()
 // Si se elige 'All' --> Lo llama 4 veces
-// Si se elgie cualquier otra --> Lo llama 1 vez
+// Si se elige cualquier otra --> Lo llama 1 vez
 function anadirSeason() {
     direccionGitHub = ''
     var seleccion=document.getElementById('selectSeason')
@@ -79,12 +90,37 @@ function anadirSeason() {
     } else {
         seasonElegida = seleccion.childNodes[elegido].value
         direccionGitHub = direccion + anoElegido + '/' + anoElegido + seasonElegida + 'OPs.txt'
-        //direccionGitHub = direccion + minAno + '/' + minAno + seasonElegida + 'OPs.txt'
-        //ARREGLAR 0
-        leerTexto(direccionGitHub, 0)
+        leerTexto(direccionGitHub, elegido-1)
     }
 }
 
+function leerVariosAnos() {
+    direccionGitHub = ''
+    allBoolean = true
+    for (i=minAno; i<maxAno+1; i++) {
+        leerCadaAno(i)
+    }
+
+}
+
+function leerCadaAno(ano) {
+    let direccion1 = ''
+    let direccion2 = ''
+    let direccion3 = ''
+    let direccion4 = ''
+
+    direccion1 = direccion + ano + '/' + ano + 'Winter' + 'OPs.txt'
+    direccion2 = direccion + ano + '/' + ano + 'Spring' + 'OPs.txt'
+    direccion3 = direccion + ano + '/' + ano + 'Summer' + 'OPs.txt'
+    direccion4 = direccion + ano + '/' + ano + 'Fall' + 'OPs.txt'
+
+    arrayOpciones = []
+    leerTexto(direccion1, 0);
+    leerTexto(direccion2, 1);
+    leerTexto(direccion3, 2);
+    leerTexto(direccion4, 3);
+
+}
 
 function leerTexto(direccion, temp) {
     borrarOpciones('selectCancion')
@@ -105,22 +141,23 @@ function leerTexto(direccion, temp) {
             listaCancion = template
             cantidad = contarLineas(listaCancion, '\n')
             //arreglado = arreglar(listaCancion[0].list, cantidad)
-            myArray = listaCancion.split("\n");
+            myArray = listaCancion.split("\n")
             myArray.sort()
             let myArray2 = new Array(cantidad)
             for (i = 0; i < cantidad; i++) {
                 myArray2[i] = myArray[i].split('|')
             }
-
             guardarLista(myArray2)
 
-            if(allBoolean) {
+            if(allBoolean && !variosAnos) {
                 anadirLista2(temp, cantidad)
-                
+            } else if (variosAnos){
+                anadirLista3(temp, cantidad)
             } else {
                 myArray2 = ordenarAlf(myArray2)
                 anadirLista(myArray2, temp, cantidad)
             }
+
 
         })
         .catch(function (response) {
@@ -155,8 +192,6 @@ function anadirLista(myArray2, temp, cantidad) {
         )
         anadirOpciones(myArray2[i], i, temp)
     }
-    arrayCantidad[temp] = cantidad
-    arrayLista[temp] = lista
 }
 
 function anadirOpciones(myArray2, i, temp) {
@@ -170,6 +205,7 @@ function anadirOpciones(myArray2, i, temp) {
 }
 
 function anadirLista2(temp, cantidad) {
+    cantidadTotal = cantidadTotal + cantidad
     lista2 = new Array(arrayOpciones.length)
     for (i = 0; i < arrayOpciones.length; i++) {
         lista2[i] = new Cancion(
@@ -187,17 +223,12 @@ function anadirLista2(temp, cantidad) {
             arrayOpciones[i][8]
         )
         if(temp == 3) {
-            anadirOpciones2(arrayOpciones[i], i, temp)
+            anadirOpciones2(arrayOpciones[i], i)
         }
     }
-
-    //POR COMPROBAR
-    arrayCantidad[temp] = cantidad
-    arrayLista[temp] = lista
 }
 
-function anadirOpciones2(opcionArray, i, temp) {
-
+function anadirOpciones2(opcionArray, i) {
     const node = document.createElement("option")
     const textnode = document.createTextNode(opcionArray[0] + ' OP ' + opcionArray[2])
     node.appendChild(textnode)
@@ -207,5 +238,44 @@ function anadirOpciones2(opcionArray, i, temp) {
 
     //POR COMPROBAR
     option.className = opcionArray[7]
+
 }
 
+function anadirLista3(temp, cantidad) {
+    cantidadTotal = cantidadTotal + cantidad
+    //lista2 = arrayOpciones
+
+    anadirOpciones3(arrayOpciones,temp)
+}
+
+function anadirOpciones3(opcionArray,i) {
+    if(i==3) {
+        borrarOpciones("selectCancion")
+        for (j = 0; j < opcionArray.length; j++ ) {
+            lista2[j] = new Cancion(
+                arrayOpciones[j][0],
+                arrayOpciones[j][1],
+                arrayOpciones[j][2],
+                arrayOpciones[j][3],
+                arrayOpciones[j][4],
+                arrayOpciones[j][5],
+                arrayOpciones[j][6],
+                false,
+                j+1,
+                null,
+                arrayOpciones[j][7],
+                arrayOpciones[j][8])
+            const node = document.createElement("option")
+            const textnode = document.createTextNode(opcionArray[j][0] + ' OP ' + opcionArray[j][2])
+            node.appendChild(textnode)
+            option = document.getElementById('selectCancion').appendChild(node)
+            option.value = opcionArray[j][3]
+            option.id = j + 1
+        
+            //POR COMPROBAR
+            option.className = opcionArray[j][7]
+        }
+
+    }
+
+}

@@ -33,14 +33,17 @@ let minDiff = 0
 let maxDiff = 100
 let minAno
 let maxAno
+let variosAnos = true
 
 let lista = null
-var lista2 = null
+let lista2 = new Array()
+let lista3 = new Array()
 let listaCancion = ''
 let myArray = ''
 let posicion = 0
 let posicionTotal = 0
 let cantidad = null
+var cantidadTotal = 0
 let anilistURL = 'https://anilist.co/anime/'
 let anilistLink = ''
 let direccion = "https://raw.githubusercontent.com/SpitzellS/SpitzellS.github.io/main/Listas/"
@@ -183,23 +186,6 @@ function actualizarInfo(temp) {
         let songName = tr.lastChild
         numero = Number(temp)
 
-        /**
-        switch(numero) {
-            case 0:
-                posicionTotal = posicion
-                break;
-            case 1:
-                posicionTotal = posicion - arrayCantidad[0]
-                break;
-            case 2:
-                posicionTotal = posicion - arrayCantidad[0] - arrayCantidad[1]
-                break;
-            case 3:
-                posicionTotal = posicion - arrayCantidad[0] - arrayCantidad[1] - arrayCantidad[2]
-                break;
-        }
-        */
-
         textnode = document.createTextNode('Song: ' + lista2[posicion-1].songName)
         songName.appendChild(textnode)
     
@@ -277,9 +263,15 @@ function getVals2(){
     var parent = this.parentNode;
     var slides = parent.getElementsByTagName("input");
     var slide1 = parseFloat( slides[0].value );
-    
+    var slide2 = parseFloat( slides[1].value );
+
+    if( slide1 > slide2 ){ var tmp = slide2; slide2 = slide1; slide1 = tmp; }
+
+    minAno = slide1
+    maxAno = slide2
+
     var displayElement = parent.getElementsByClassName("rangeValues2")[0];
-        displayElement.innerHTML = slide1
+        displayElement.innerHTML = slide1 + " - " + slide2
   }
   
 window.onload = function(){
