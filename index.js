@@ -301,13 +301,6 @@ window.onload = function(){
 }
 
 
-function prueba(event) {
-    console.log("DASDAS")
-    if (event.altKey) {
-        console.log("PRUEBA")
-    }
-}
-
 window.addEventListener("keydown", function(event) {
 
     if(event.keyCode == 39) {
@@ -316,9 +309,11 @@ window.addEventListener("keydown", function(event) {
     } else if(event.keyCode == 37) {
         // Manipula el evento con KeyboardEvent.key
         beforeSong()
+    } else if(event.keyCode == 46) {
+        // Manipula el evento con KeyboardEvent.key
+        accionEliminar()
+        nextSong()
     }
-
-
 });
 
 window.addEventListener('load', iniciar, false)
