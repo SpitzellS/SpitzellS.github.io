@@ -298,7 +298,27 @@ window.onload = function(){
             }
           }
         }    
-
 }
+
+
+function prueba(event) {
+    console.log("DASDAS")
+    if (event.altKey) {
+        console.log("PRUEBA")
+    }
+}
+
+window.addEventListener("keydown", function(event) {
+
+    if(event.keyCode == 39) {
+        // Manipula el evento con KeyboardEvent.key
+        nextSong()
+    } else if(event.keyCode == 37) {
+        // Manipula el evento con KeyboardEvent.key
+        beforeSong()
+    }
+
+
+});
 
 window.addEventListener('load', iniciar, false)
