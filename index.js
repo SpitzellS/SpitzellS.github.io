@@ -15,6 +15,8 @@ class Cancion {
     }
 }
 
+let countBorrado = 0
+
 let arrayLista = new Array(4)
 let arrayCantidad = new Array(4)
 let numero = 0
@@ -41,6 +43,7 @@ let lista3 = new Array()
 let listaCancion = ''
 let myArray = ''
 let posicion = 0
+let posicion2 = 0
 let posicionTotal = 0
 let cantidad = null
 var cantidadTotal = 0
@@ -55,25 +58,23 @@ let direccionGitHub = ''
 function iniciar() { 
     var boton=document.getElementById('boton')
     var reiniciar=document.getElementById('reiniciar')
-    var retrasar=document.getElementById('retrasar')
-	var adelantar=document.getElementById('adelantar')
     var loop=document.getElementById('loop')
     var next=document.getElementById('next')
     var before=document.getElementById('before')
     var desaprender=document.getElementById('desaprender')
     var rdm=document.getElementById('rdm')
     var eliminada=document.getElementById('eliminada')
+    var restaurar=document.getElementById('restaurar')
 
     boton.addEventListener('click', presionar, false)
     reiniciar.addEventListener('click', accionReiniciar, false)
-    retrasar.addEventListener('click', accionRetrasar)
-	adelantar.addEventListener('click', accionAdelantar)
     loop.addEventListener('click', accionLoop)
     next.addEventListener('click', nextSong)
     before.addEventListener('click', beforeSong)
     rdm.addEventListener('click', random)
     eliminada.addEventListener('click', accionEliminar)
     desaprender.addEventListener('click', desaprenderTodo)
+    restaurar.addEventListener('click', restaurarTodo)
 
     info.innerHTML = "Video: "
 
@@ -138,26 +139,48 @@ function actualizarOpciones2(arrayOpciones) {
     borrarOpciones('selectCancion')
 
     for (i = 0; i < arrayOpciones.length; i++) {
-        lista2[i] = new Cancion(
-            arrayOpciones[i][0],
-            arrayOpciones[i][1],
-            arrayOpciones[i][2],
-            arrayOpciones[i][3],
-            arrayOpciones[i][4],
-            arrayOpciones[i][5],
-            arrayOpciones[i][6],
-            false,
-            i+1,
-            null,
-            arrayOpciones[i][7],
-            arrayOpciones[i][8]
-        )
-        anadirOpciones2(arrayOpciones[i], i)
-    }
-    option = document.getElementById('selectCancion')   
-}
+        let eliminada2
 
-function actualizarInfo(temp) {
+        if (localStorage.getItem('playlistSp')) {
+            let playlistSp = JSON.parse(localStorage.getItem('playlistSp'))
+            eliminada2 = playlistSp[arrayOpciones[i][3]] ? true : false
+            lista2[i] = new Cancion(
+                arrayOpciones[i][0],
+                arrayOpciones[i][1],
+                arrayOpciones[i][2],
+                arrayOpciones[i][3],
+                arrayOpciones[i][4],
+                arrayOpciones[i][5],
+                arrayOpciones[i][6],
+                eliminada2,
+                i+1,
+                null,
+                arrayOpciones[i][7],
+                arrayOpciones[i][8]
+            )
+        anadirOpciones2(arrayOpciones, i)
+        } else {
+            lista2[i] = new Cancion(
+                arrayOpciones[i][0],
+                arrayOpciones[i][1],
+                arrayOpciones[i][2],
+                arrayOpciones[i][3],
+                arrayOpciones[i][4],
+                arrayOpciones[i][5],
+                arrayOpciones[i][6],
+                eliminada2,
+                i+1,
+                null,
+                arrayOpciones[i][7],
+                arrayOpciones[i][8]
+            )
+        anadirOpciones2(arrayOpciones, i)
+        }
+    }
+    option = document.getElementById('selectCancion') 
+    }
+
+function actualizarInfo() {
     
     let tabla = document.getElementById('tablaCancion')
     cont = tabla.childElementCount
@@ -180,33 +203,66 @@ function actualizarInfo(temp) {
     //Todas las Seasons
     if (allBoolean) {
 
-        tabla.appendChild(nodeSongName)
-        tr = tabla.lastChild
-        tr.appendChild(node3)
-        let songName = tr.lastChild
-        numero = Number(temp)
+        if (localStorage.getItem('playlistSp')) {
 
-        textnode = document.createTextNode('Song: ' + lista2[posicion-1].songName)
-        songName.appendChild(textnode)
+            tabla.appendChild(nodeSongName)
+            tr = tabla.lastChild
+            tr.appendChild(node3)
+            let songName = tr.lastChild
+            numero = Number(temp)
     
-        tabla.appendChild(nodeArtist)
-        tr = tabla.lastChild
-        tr.appendChild(node6)
-        let artist = tr.lastChild
-        textnode = document.createTextNode('Artist: ' + lista2[posicion-1].artist)
-        artist.appendChild(textnode)
+            textnode = document.createTextNode('Song: ' + lista2[posicion-1].songName)
+            songName.appendChild(textnode)
+        
+            tabla.appendChild(nodeArtist)
+            tr = tabla.lastChild
+            tr.appendChild(node6)
+            let artist = tr.lastChild
+            textnode = document.createTextNode('Artist: ' + lista2[posicion-1].artist)
+            artist.appendChild(textnode)
+        
+            tabla.appendChild(nodeDiff)
+            tr = tabla.lastChild
+            tr.appendChild(node5)
+            let diff = tr.lastChild
+            textnode = document.createTextNode('Diff: ' + lista2[posicion-1].difficulty)
+            diff.appendChild(textnode)
     
-        tabla.appendChild(nodeDiff)
-        tr = tabla.lastChild
-        tr.appendChild(node5)
-        let diff = tr.lastChild
-        textnode = document.createTextNode('Diff: ' + lista2[posicion-1].difficulty)
-        diff.appendChild(textnode)
+            romajiTitle = document.getElementById('romaji')
+            romajiTitle.innerHTML = 'Romaji Title: ' + lista2[posicion-1].name
+            englishTitle = document.getElementById('english')
+            englishTitle.innerHTML = 'English Title: ' + lista2[posicion-1].nameEnglish
+        
+        } else {
+            tabla.appendChild(nodeSongName)
+            tr = tabla.lastChild
+            tr.appendChild(node3)
+            let songName = tr.lastChild
+            numero = Number(temp)
+    
+            textnode = document.createTextNode('Song: ' + lista2[posicion-1].songName)
+            songName.appendChild(textnode)
+        
+            tabla.appendChild(nodeArtist)
+            tr = tabla.lastChild
+            tr.appendChild(node6)
+            let artist = tr.lastChild
+            textnode = document.createTextNode('Artist: ' + lista2[posicion-1].artist)
+            artist.appendChild(textnode)
+        
+            tabla.appendChild(nodeDiff)
+            tr = tabla.lastChild
+            tr.appendChild(node5)
+            let diff = tr.lastChild
+            textnode = document.createTextNode('Diff: ' + lista2[posicion-1].difficulty)
+            diff.appendChild(textnode)
+    
+            romajiTitle = document.getElementById('romaji')
+            romajiTitle.innerHTML = 'Romaji Title: ' + lista2[posicion-1].name
+            englishTitle = document.getElementById('english')
+            englishTitle.innerHTML = 'English Title: ' + lista2[posicion-1].nameEnglish
 
-        romajiTitle = document.getElementById('romaji')
-        romajiTitle.innerHTML = 'Romaji Title: ' + lista2[posicion-1].name
-        englishTitle = document.getElementById('english')
-        englishTitle.innerHTML = 'English Title: ' + lista2[posicion-1].nameEnglish
+        }
 
     // Solo 1 Season
     } else {
