@@ -20,10 +20,11 @@ function cambiarCancion()
     actualizarInfo()
     presionar()
     video.play()
-    
+    /*
     setTimeout(function(){
         addTrack(selectCancion.options[selectCancion.selectedIndex].text, video.duration)
     }, 2000)
+    */
 }
 
 //Funcion que borra todas las opcions con el id pasado
