@@ -50,7 +50,6 @@ function deletePerm() {
             }))
         }
     }
-
 }
 
 function restaurarTodo() {

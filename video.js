@@ -39,8 +39,7 @@ function nextSong() {
     if (!loopBoolean) {
         if (!randomBoolean) {
             if(cue) {
-                var videoTrack = document.getElementById("video")
-                removeTrack(videoTrack.textTracks.length)
+                removeTrack()
             }
             if(allBoolean) {
 
@@ -112,8 +111,7 @@ function beforeSong() {
 
     if (!loopBoolean) {
         if(cue) {
-            var videoTrack = document.getElementById("video")
-            removeTrack(videoTrack.textTracks.length)
+            removeTrack()
         }
         if(allBoolean) {
                 y = posicion-2 < 0 ? cantidadTotal : posicion-1
@@ -172,8 +170,7 @@ function beforeSong() {
 
 function randomSong() {
     if(cue) {
-        var videoTrack = document.getElementById("video")
-        removeTrack(videoTrack.textTracks.length)
+        removeTrack()
     }
     if (allBoolean) {
             var seleccion = document.getElementById('selectCancion')
@@ -258,18 +255,27 @@ function accionEliminar() {
 
 function addTrack(name, duration) {
     var videoTrack = document.getElementById("video"), track
-    cue = new VTTCue(0, duration, name)
-    if(!videoTrack.textTracks[0]) {
-        track = videoTrack.addTextTrack("captions", "English", "en")
+    
+    if (isNaN(duration)) {
+        errorTrack = true
     } else {
-        track = videoTrack.textTracks[0]
+        errorTrack = false
+        cue = new VTTCue(0, duration, name)
+        if(!videoTrack.textTracks[0]) {
+            track = videoTrack.addTextTrack("captions", "English", "en")
+        } else {
+            track = videoTrack.textTracks[0]
+        }
+        track.addCue(cue)
     }
-    //track.mode = "showing"
-    track.addCue(cue)
 }
 
-function removeTrack(i) {
+function removeTrack() {
+    
     var videoTrack = document.getElementById("video"), track
-    track = videoTrack.textTracks[i-1]
-    track.removeCue(cue)
+    if(videoTrack.textTracks && errorTrack == false){
+        var videoTrack = document.getElementById("video"), track
+        track = videoTrack.textTracks[0]
+        track.removeCue(cue)
+    }
 }

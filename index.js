@@ -23,6 +23,7 @@ let numero = 0
 let allBoolean = false
 
 let cue
+let errorTrack = true
 
 var arrayOpciones = new Array()
 //arrayOpciones = []
