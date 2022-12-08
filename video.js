@@ -9,7 +9,7 @@ function presionar() {
         boton.value='Pausa'
     } 
 }
- 
+
 function accionReiniciar()
 {
   video.currentTime = 0;
@@ -70,7 +70,7 @@ function nextSong() {
                     setTimeout(function(){
                         var video = document.getElementById("video")
                         addTrack(lista2[posicion-1].name, video.duration)
-                    }, 1500)
+                    }, 3000)
                 }
             } else {
                 if(eliminarBoolean) {
@@ -99,7 +99,7 @@ function nextSong() {
                 setTimeout(function(){
                     var video = document.getElementById("video")
                     addTrack(lista[posicion-1].name, video.duration)
-                }, 1500)
+                }, 3000)
             }
         } else {
             randomSong()
@@ -141,7 +141,7 @@ function beforeSong() {
                     setTimeout(function(){
                         var video = document.getElementById("video")
                         addTrack(lista2[posicion-1].name, video.duration)
-                    }, 1500)
+                    }, 3000)
                 }
 
         } else {
@@ -165,7 +165,7 @@ function beforeSong() {
             setTimeout(function(){
                 var video = document.getElementById("video")
                 addTrack(lista[posicion-1].name, video.duration)
-            }, 1500)
+            }, 3000)
         }
     } else {
         accionReiniciar()
@@ -212,7 +212,7 @@ function randomSong() {
                 setTimeout(function(){
                     var video = document.getElementById("video")
                     addTrack(lista2[posicion-1].name, video.duration)
-                }, 1500)
+                }, 3000)
             }
 
     } else {
@@ -246,7 +246,7 @@ function randomSong() {
         setTimeout(function(){
             var video = document.getElementById("video")
             addTrack(lista[posicion-1].name, video.duration)
-        }, 1500)
+        }, 3000)
     }
 
     
