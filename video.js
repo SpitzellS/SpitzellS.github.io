@@ -62,7 +62,7 @@ function nextSong() {
                     }
                     eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                     actualizarInfo()
-                    addTrack(lista2[posicion-1].name)
+                    //addTrack(lista2[posicion-1].name)
                 }
             } else {
                 if(eliminarBoolean) {
@@ -87,7 +87,7 @@ function nextSong() {
                 }
                 eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                 actualizarInfo()
-                addTrack(lista[posicion-1].name)
+                //addTrack(lista[posicion-1].name)
             }
         } else {
             randomSong()
@@ -223,6 +223,7 @@ function accionEliminar() {
     eliminarBoolean = true
 }
 
+/*
 function addTrack(name) {
 
     var videoTrack = document.getElementById("video"), track
@@ -237,3 +238,4 @@ function addTrack(name) {
 
 }
 
+*/
