@@ -23,7 +23,7 @@ function cambiarCancion()
     
     setTimeout(function(){
         addTrack(selectCancion.options[selectCancion.selectedIndex].text, video.duration)
-    }, 3000)
+    }, 2000)
 }
 
 //Funcion que borra todas las opcions con el id pasado

@@ -70,7 +70,8 @@ function nextSong() {
                     setTimeout(function(){
                         var video = document.getElementById("video")
                         addTrack(lista2[posicion-1].name, video.duration)
-                    }, 3000)
+                        //console.log(video.textTracks)
+                    }, 2000)
                 }
             } else {
                 if(eliminarBoolean) {
@@ -99,7 +100,7 @@ function nextSong() {
                 setTimeout(function(){
                     var video = document.getElementById("video")
                     addTrack(lista[posicion-1].name, video.duration)
-                }, 3000)
+                }, 2000)
             }
         } else {
             randomSong()
@@ -141,7 +142,7 @@ function beforeSong() {
                     setTimeout(function(){
                         var video = document.getElementById("video")
                         addTrack(lista2[posicion-1].name, video.duration)
-                    }, 3000)
+                    }, 2000)
                 }
 
         } else {
@@ -165,7 +166,7 @@ function beforeSong() {
             setTimeout(function(){
                 var video = document.getElementById("video")
                 addTrack(lista[posicion-1].name, video.duration)
-            }, 3000)
+            }, 2000)
         }
     } else {
         accionReiniciar()
@@ -212,7 +213,7 @@ function randomSong() {
                 setTimeout(function(){
                     var video = document.getElementById("video")
                     addTrack(lista2[posicion-1].name, video.duration)
-                }, 3000)
+                }, 2000)
             }
 
     } else {
@@ -246,7 +247,7 @@ function randomSong() {
         setTimeout(function(){
             var video = document.getElementById("video")
             addTrack(lista[posicion-1].name, video.duration)
-        }, 3000)
+        }, 2000)
     }
 
     
@@ -265,13 +266,17 @@ function accionEliminar() {
 function addTrack(name, duration) {
     var videoTrack = document.getElementById("video"), track
     cue = new VTTCue(0, duration, name)
-    track = videoTrack.addTextTrack("captions", "English", "en")
+
+    if(!videoTrack.textTracks[0]) {
+        track = videoTrack.addTextTrack("captions", "English", "en")
+    } else {
+        track = videoTrack.textTracks[0]
+    }
     track.mode = "showing"
     track.addCue(cue)
 }
 
 function removeTrack(i) {
-
     var videoTrack = document.getElementById("video"), track
     track = videoTrack.textTracks[i-1]
     track.removeCue(cue)
