@@ -62,6 +62,7 @@ function nextSong() {
                     }
                     eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                     actualizarInfo()
+                    addTrack(lista2[posicion-1].name)
                 }
             } else {
                 if(eliminarBoolean) {
@@ -86,6 +87,7 @@ function nextSong() {
                 }
                 eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                 actualizarInfo()
+                addTrack(lista[posicion-1].name)
             }
         } else {
             randomSong()
@@ -93,6 +95,7 @@ function nextSong() {
     } else {
         accionReiniciar()
     }
+
  }
 
 function beforeSong() {
@@ -212,36 +215,6 @@ function randomSong() {
     
 }
 
-/*
-function accionEliminar() {
-    deletePerm()
-    if(allBoolean) {
-        console.log(lista2[posicion-1])
-        if (!lista2[posicion-1].eliminada) {
-            lista2[posicion-1].eliminada = true 
-            eliminada.value = "Eliminada"
-            actualizarOpciones2(arrayOpciones)
-            eliminarBoolean = true
-        } 
-        //else {
-        //    lista[posicion].eliminada = false
-        //    eliminada.value = "Eliminar"
-        //}
-    } else {
-        if (!lista[posicion].eliminada) {
-            lista[posicion].eliminada = true 
-            eliminada.value = "Eliminada"
-            myArray.splice(posicion-1,1)
-            actualizarOpciones(myArray)
-            eliminarBoolean = true
-        } else {
-            lista[posicion].eliminada = false
-            eliminada.value = "Eliminar"
-        }
-    }
-}
-*/
-
 function accionEliminar() {
     deletePerm()
     lista2[posicion-1].eliminada = true 
@@ -250,9 +223,17 @@ function accionEliminar() {
     eliminarBoolean = true
 }
 
+function addTrack(name) {
 
-function desaprenderTodo() {
-    for (i = 0; i < cantidad; i++) {
-        lista[i].eliminada = false
-    }
+    var videoTrack = document.getElementById("video"), track
+    cue = new VTTCue(0, 20, name)
+    track = videoTrack.addTextTrack("captions", "English", "en")
+    track.mode = "showing"
+    track.addCue(cue)
+    console.log(track)
+    setTimeout(function(){
+        track.removeCue(cue)
+    }, 20000);
+
 }
+

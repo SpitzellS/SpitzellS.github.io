@@ -16,6 +16,7 @@ function cambiarCancion()
     var pagAnilist=document.getElementById('atributo')
     pagAnilist.href = anilistURL + temp
     eliminada.value = "Eliminar"
+    addTrack(selectCancion.options[selectCancion.selectedIndex].text)
     actualizarInfo()
     presionar()
     video.play()

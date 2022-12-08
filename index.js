@@ -22,6 +22,8 @@ let arrayCantidad = new Array(4)
 let numero = 0
 let allBoolean = false
 
+let cue
+
 var arrayOpciones = new Array()
 //arrayOpciones = []
 
@@ -73,7 +75,6 @@ function iniciar() {
     before.addEventListener('click', beforeSong)
     rdm.addEventListener('click', random)
     eliminada.addEventListener('click', accionEliminar)
-    desaprender.addEventListener('click', desaprenderTodo)
     restaurar.addEventListener('click', restaurarTodo)
 
     info.innerHTML = "Video: "
