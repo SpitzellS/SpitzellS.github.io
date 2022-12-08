@@ -246,8 +246,6 @@ function randomSong() {
             addTrack(lista[posicion-1].name, video.duration)
         }, 2000)
     }
-
-    
 }
 
 function accionEliminar() {
@@ -258,18 +256,15 @@ function accionEliminar() {
     eliminarBoolean = true
 }
 
-
-
 function addTrack(name, duration) {
     var videoTrack = document.getElementById("video"), track
     cue = new VTTCue(0, duration, name)
-
     if(!videoTrack.textTracks[0]) {
         track = videoTrack.addTextTrack("captions", "English", "en")
     } else {
         track = videoTrack.textTracks[0]
     }
-    track.mode = "showing"
+    //track.mode = "showing"
     track.addCue(cue)
 }
 
