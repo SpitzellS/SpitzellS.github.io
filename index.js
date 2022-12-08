@@ -22,7 +22,7 @@ let arrayCantidad = new Array(4)
 let numero = 0
 let allBoolean = false
 
-//let cue
+let cue
 
 var arrayOpciones = new Array()
 //arrayOpciones = []
@@ -41,7 +41,6 @@ let variosAnos = true
 
 let lista = null
 let lista2 = new Array()
-let lista3 = new Array()
 let listaCancion = ''
 let myArray = ''
 let posicion = 0
