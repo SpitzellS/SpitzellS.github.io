@@ -1,12 +1,10 @@
 function presionar() {
     if(!video.paused && !video.ended)   { 
-        video.pause(); 
-        boton.value='Reproducir'
+        video.pause()
     } 
     else 
     { 
-        video.play(); 
-        boton.value='Pausa'
+        video.play()
     } 
 }
 
@@ -70,7 +68,6 @@ function nextSong() {
                     setTimeout(function(){
                         var video = document.getElementById("video")
                         addTrack(lista2[posicion-1].name, video.duration)
-                        //console.log(video.textTracks)
                     }, 2000)
                 }
             } else {

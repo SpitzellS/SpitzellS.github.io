@@ -58,7 +58,6 @@ let direccionGitHub = ''
 
 
 function iniciar() { 
-    var boton=document.getElementById('boton')
     var reiniciar=document.getElementById('reiniciar')
     var loop=document.getElementById('loop')
     var next=document.getElementById('next')
@@ -67,7 +66,6 @@ function iniciar() {
     var eliminada=document.getElementById('eliminada')
     var restaurar=document.getElementById('restaurar')
 
-    boton.addEventListener('click', presionar, false)
     reiniciar.addEventListener('click', accionReiniciar, false)
     loop.addEventListener('click', accionLoop)
     next.addEventListener('click', nextSong)
@@ -229,9 +227,9 @@ function actualizarInfo() {
             diff.appendChild(textnode)
     
             romajiTitle = document.getElementById('romaji')
-            romajiTitle.innerHTML = 'Romaji Title: ' + lista2[posicion-1].name
+            romajiTitle.innerHTML = 'Romaji: ' + lista2[posicion-1].name
             englishTitle = document.getElementById('english')
-            englishTitle.innerHTML = 'English Title: ' + lista2[posicion-1].nameEnglish
+            englishTitle.innerHTML = 'English: ' + lista2[posicion-1].nameEnglish
         
         } else {
             tabla.appendChild(nodeSongName)
@@ -258,9 +256,9 @@ function actualizarInfo() {
             diff.appendChild(textnode)
     
             romajiTitle = document.getElementById('romaji')
-            romajiTitle.innerHTML = 'Romaji Title: ' + lista2[posicion-1].name
+            romajiTitle.innerHTML = 'Romaji: ' + lista2[posicion-1].name
             englishTitle = document.getElementById('english')
-            englishTitle.innerHTML = 'English Title: ' + lista2[posicion-1].nameEnglish
+            englishTitle.innerHTML = 'English: ' + lista2[posicion-1].nameEnglish
 
         }
 
@@ -288,9 +286,9 @@ function actualizarInfo() {
         diff.appendChild(textnode)
 
         romajiTitle = document.getElementById('romaji')
-        romajiTitle.innerHTML = 'Romaji Title: ' + lista[posicion-1].name
+        romajiTitle.innerHTML = 'Romaji: ' + lista[posicion-1].name
         englishTitle = document.getElementById('english')
-        englishTitle.innerHTML = 'English Title: ' + lista[posicion-1].nameEnglish
+        englishTitle.innerHTML = 'English: ' + lista[posicion-1].nameEnglish
     }
 }
 
