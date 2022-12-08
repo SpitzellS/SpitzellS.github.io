@@ -22,7 +22,7 @@ let arrayCantidad = new Array(4)
 let numero = 0
 let allBoolean = false
 
-let cue
+//let cue
 
 var arrayOpciones = new Array()
 //arrayOpciones = []
@@ -63,7 +63,6 @@ function iniciar() {
     var loop=document.getElementById('loop')
     var next=document.getElementById('next')
     var before=document.getElementById('before')
-    var desaprender=document.getElementById('desaprender')
     var rdm=document.getElementById('rdm')
     var eliminada=document.getElementById('eliminada')
     var restaurar=document.getElementById('restaurar')

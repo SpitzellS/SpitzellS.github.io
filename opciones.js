@@ -2,6 +2,7 @@
 function cambiarCancion()
 {
     var selectCancion =document.getElementById('selectCancion')
+    var video = document.getElementById("video")
     info.innerHTML = "Video: " + selectCancion.options[selectCancion.selectedIndex].text
     video.src = selectCancion.options[selectCancion.selectedIndex].value
     posicion = selectCancion.selectedIndex
@@ -16,10 +17,13 @@ function cambiarCancion()
     var pagAnilist=document.getElementById('atributo')
     pagAnilist.href = anilistURL + temp
     eliminada.value = "Eliminar"
-    //addTrack(selectCancion.options[selectCancion.selectedIndex].text)
     actualizarInfo()
     presionar()
     video.play()
+    
+    setTimeout(function(){
+        addTrack(selectCancion.options[selectCancion.selectedIndex].text, video.duration)
+    }, 1500)
 }
 
 //Funcion que borra todas las opcions con el id pasado
