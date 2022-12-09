@@ -75,7 +75,7 @@ function iniciar() {
     restaurar.addEventListener('click', restaurarTodo)
 
     info.innerHTML = "Video: "
-
+        
     video.addEventListener("ended", nextSong, false)
     
  }

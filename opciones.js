@@ -20,8 +20,8 @@ function cambiarCancion()
     actualizarInfo()
     presionar()
     video.play()
-
     removeTrack()
+    errorTrack = true
 }
 
 //Funcion que borra todas las opcions con el id pasado
