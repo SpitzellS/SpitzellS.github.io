@@ -108,9 +108,9 @@ function nextSong() {
  }
 
 function beforeSong() {
-
+    
     if (!loopBoolean) {
-        if(cue) {
+        if(cue && errorBefore == false) {
             removeTrack()
         }
         if(allBoolean) {
@@ -118,8 +118,10 @@ function beforeSong() {
                 posicion = y
 
                 if(lista2[posicion-1].eliminada) {
+                    errorBefore = true
                     beforeSong()
                 } else {
+                    errorBefore = false
                     if(lista2[posicion-1].difficulty > minDiff && lista2[posicion-1].difficulty < maxDiff) {
                         document.title = lista2[posicion-1].name
                         info.innerHTML = "Video: " + lista2[posicion-1].name + ' ' + 

@@ -24,6 +24,7 @@ let allBoolean = false
 
 let cue
 let errorTrack = true
+let errorBefore = false
 
 var arrayOpciones = new Array()
 //arrayOpciones = []
