@@ -264,4 +264,5 @@ function accionEliminar() {
     eliminada.value = "Eliminada"
     actualizarOpciones2(arrayOpciones)
     eliminarBoolean = true
+    nextSong()
 }
