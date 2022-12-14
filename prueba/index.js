@@ -34,6 +34,7 @@ let allSoloAno = false
 let variosAnos = true
 let errorTrack = true
 let errorBefore = false
+let errorRemove = false
 
 //Sliders
 let minDiff = 0

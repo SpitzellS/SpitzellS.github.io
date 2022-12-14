@@ -38,10 +38,9 @@ function nextSong() {
 
     if (!loopBoolean) {
         if (!randomBoolean) {
-            if(cue) {
-                removeTrack()
-                errorTrack = true
-            }
+
+            errorRemove = removeTrack()
+                        
             if(variosAnos) {
 
                 y = posicion+1 > cantidadTotal ? 1 : posicion+1
@@ -64,11 +63,13 @@ function nextSong() {
                     }
                     eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                     actualizarInfo()
-                    
-                    setTimeout(function(){
-                        var video = document.getElementById("video")
-                        addTrack(lista2[posicion-1].name, video.duration)
-                    }, 2000)
+                    if(errorRemove) {
+                        setTimeout(function(){
+                            var video = document.getElementById("video")
+                            addTrack(lista2[posicion-1].name, video.duration)
+                        }, 2000)
+                    }
+
                 }
             } else {
                 if(eliminarBoolean) {
@@ -94,10 +95,12 @@ function nextSong() {
                 eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                 actualizarInfo()
 
-                setTimeout(function(){
-                    var video = document.getElementById("video")
-                    addTrack(lista[posicion-1].name, video.duration)
-                }, 2000)
+                if(errorRemove) {
+                    setTimeout(function(){
+                        var video = document.getElementById("video")
+                        addTrack(lista[posicion-1].name, video.duration)
+                    }, 2000)
+                }
             }
         } else {
             randomSong()
@@ -111,8 +114,8 @@ function nextSong() {
 function beforeSong() {
     
     if (!loopBoolean) {
-        if(cue && errorBefore == false) {
-            removeTrack()
+        if(!errorBefore) {
+            errorRemove = removeTrack()
         }
         if(variosAnos) {
                 y = posicion-2 < 0 ? cantidadTotal : posicion-1
@@ -137,10 +140,12 @@ function beforeSong() {
                     }
                     eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                     actualizarInfo()
-                    setTimeout(function(){
-                        var video = document.getElementById("video")
-                        addTrack(lista2[posicion-1].name, video.duration)
-                    }, 2000)
+                    if(errorRemove) {
+                        setTimeout(function(){
+                            var video = document.getElementById("video")
+                            addTrack(lista2[posicion-1].name, video.duration)
+                        }, 2000)
+                    }
                 }
 
         } else {
@@ -161,10 +166,12 @@ function beforeSong() {
             }
             eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
             actualizarInfo()
-            setTimeout(function(){
-                var video = document.getElementById("video")
-                addTrack(lista[posicion-1].name, video.duration)
-            }, 2000)
+            if(errorRemove) {
+                setTimeout(function(){
+                    var video = document.getElementById("video")
+                    addTrack(lista[posicion-1].name, video.duration)
+                }, 2000)
+            }
         }
     } else {
         accionReiniciar()
@@ -172,9 +179,8 @@ function beforeSong() {
  }
 
 function randomSong() {
-    if(cue) {
-        removeTrack()
-    }
+    errorRemove = removeTrack()
+
     if (variosAnos) {
             var seleccion = document.getElementById('selectCancion')
             opciones = seleccion.options.length - 1
@@ -207,10 +213,12 @@ function randomSong() {
                     randomSong()
                 }
                 actualizarInfo()
-                setTimeout(function(){
-                    var video = document.getElementById("video")
-                    addTrack(lista2[posicion-1].name, video.duration)
-                }, 2000)
+                if(errorRemove) {
+                    setTimeout(function(){
+                        var video = document.getElementById("video")
+                        addTrack(lista2[posicion-1].name, video.duration)
+                    }, 2000)
+                }
             }
 
     } else {
@@ -241,10 +249,12 @@ function randomSong() {
             randomSong()
         }
         actualizarInfo()
-        setTimeout(function(){
-            var video = document.getElementById("video")
-            addTrack(lista[posicion-1].name, video.duration)
-        }, 2000)
+        if(errorRemove) {
+            setTimeout(function(){
+                var video = document.getElementById("video")
+                addTrack(lista[posicion-1].name, video.duration)
+            }, 2000)
+        }
     }
 }
 

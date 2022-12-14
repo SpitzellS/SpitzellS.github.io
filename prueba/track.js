@@ -16,10 +16,23 @@ function addTrack(name, duration) {
 }
 
 function removeTrack() {
-    var videoTrack = document.getElementById("video"), track
-    if(videoTrack.textTracks && !errorTrack){
+    errorNext = false
+    if(cue) {
         var videoTrack = document.getElementById("video"), track
-        track = videoTrack.textTracks[0]
-        track.removeCue(cue)
+
+        if(videoTrack.textTracks && !errorTrack){
+            var videoTrack = document.getElementById("video"), track
+            track = videoTrack.textTracks[0]
+
+            while(videoTrack.textTracks[0].cues[0]) {
+                track.removeCue(videoTrack.textTracks[0].cues[0])
+            }
+            errorNext = true
+        }
+        errorTrack = true
+    } else {
+        errorNext = true
     }
+
+    return errorNext
 }
