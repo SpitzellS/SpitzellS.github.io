@@ -67,7 +67,7 @@ function nextSong() {
                         setTimeout(function(){
                             var video = document.getElementById("video")
                             addTrack(lista2[posicion-1].name, video.duration)
-                        }, 2000)
+                        }, 3000)
                     }
 
                 }
@@ -99,7 +99,7 @@ function nextSong() {
                     setTimeout(function(){
                         var video = document.getElementById("video")
                         addTrack(lista[posicion-1].name, video.duration)
-                    }, 2000)
+                    }, 3000)
                 }
             }
         } else {
@@ -144,7 +144,7 @@ function beforeSong() {
                         setTimeout(function(){
                             var video = document.getElementById("video")
                             addTrack(lista2[posicion-1].name, video.duration)
-                        }, 2000)
+                        }, 3000)
                     }
                 }
 
@@ -170,7 +170,7 @@ function beforeSong() {
                 setTimeout(function(){
                     var video = document.getElementById("video")
                     addTrack(lista[posicion-1].name, video.duration)
-                }, 2000)
+                }, 3000)
             }
         }
     } else {
@@ -217,7 +217,7 @@ function randomSong() {
                     setTimeout(function(){
                         var video = document.getElementById("video")
                         addTrack(lista2[posicion-1].name, video.duration)
-                    }, 2000)
+                    }, 3000)
                 }
             }
 
@@ -253,7 +253,7 @@ function randomSong() {
             setTimeout(function(){
                 var video = document.getElementById("video")
                 addTrack(lista[posicion-1].name, video.duration)
-            }, 2000)
+            }, 3000)
         }
     }
 }
