@@ -205,7 +205,7 @@ function actualizarInfo() {
             tr.appendChild(node3)
             let songName = tr.lastChild
             numero = Number(temp)
-    
+
             textnode = document.createTextNode('Song: ' + lista2[posicion-1].songName)
             songName.appendChild(textnode)
         

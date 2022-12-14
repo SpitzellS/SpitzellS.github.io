@@ -3,15 +3,17 @@ function cambiarCancion()
 {
     var selectCancion =document.getElementById('selectCancion')
     var video = document.getElementById("video")
-    info.innerHTML = "Video: " + selectCancion.options[selectCancion.selectedIndex].text
-    video.src = selectCancion.options[selectCancion.selectedIndex].value
     posicion = selectCancion.selectedIndex
-    cont3 = posicion
+    cont3 = selectCancion.options[selectCancion.selectedIndex].id
     for (i=0; i < cont3; i++) {
         if(lista2[i].eliminada) {
+            console.log(lista2[i])
             posicion++
         }
     }
+    console.log(posicion)
+    info.innerHTML = "Video: " + selectCancion.options[selectCancion.selectedIndex].text
+    video.src = selectCancion.options[selectCancion.selectedIndex].value
     document.title = selectCancion.options[selectCancion.selectedIndex].text
     temp = selectCancion.options[selectCancion.selectedIndex].className
     var pagAnilist=document.getElementById('atributo')
@@ -20,6 +22,7 @@ function cambiarCancion()
     actualizarInfo()
     presionar()
     video.play()
+    console.log()
 }
 
 //Funcion que borra todas las opcions con el id pasado
