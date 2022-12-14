@@ -38,9 +38,6 @@ function nextSong() {
 
     if (!loopBoolean) {
         if (!randomBoolean) {
-            if(cue) {
-                removeTrack()
-            }
             if(allBoolean) {
 
                 y = posicion+1 > cantidadTotal ? 1 : posicion+1
@@ -63,11 +60,7 @@ function nextSong() {
                     }
                     eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                     actualizarInfo()
-                    
-                    setTimeout(function(){
-                        var video = document.getElementById("video")
-                        addTrack(lista2[posicion-1].name, video.duration)
-                    }, 2000)
+
                 }
             } else {
                 if(eliminarBoolean) {
@@ -93,10 +86,6 @@ function nextSong() {
                 eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                 actualizarInfo()
 
-                setTimeout(function(){
-                    var video = document.getElementById("video")
-                    addTrack(lista[posicion-1].name, video.duration)
-                }, 2000)
             }
         } else {
             randomSong()
@@ -110,18 +99,13 @@ function nextSong() {
 function beforeSong() {
     
     if (!loopBoolean) {
-        if(cue && errorBefore == false) {
-            removeTrack()
-        }
         if(allBoolean) {
                 y = posicion-2 < 0 ? cantidadTotal : posicion-1
                 posicion = y
 
                 if(lista2[posicion-1].eliminada) {
-                    errorBefore = true
                     beforeSong()
                 } else {
-                    errorBefore = false
                     if(lista2[posicion-1].difficulty > minDiff && lista2[posicion-1].difficulty < maxDiff) {
                         document.title = lista2[posicion-1].name
                         info.innerHTML = "Video: " + lista2[posicion-1].name + ' ' + 
@@ -136,10 +120,7 @@ function beforeSong() {
                     }
                     eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                     actualizarInfo()
-                    setTimeout(function(){
-                        var video = document.getElementById("video")
-                        addTrack(lista2[posicion-1].name, video.duration)
-                    }, 2000)
+
                 }
 
         } else {
@@ -160,10 +141,6 @@ function beforeSong() {
             }
             eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
             actualizarInfo()
-            setTimeout(function(){
-                var video = document.getElementById("video")
-                addTrack(lista[posicion-1].name, video.duration)
-            }, 2000)
         }
     } else {
         accionReiniciar()
@@ -171,9 +148,6 @@ function beforeSong() {
  }
 
 function randomSong() {
-    if(cue) {
-        removeTrack()
-    }
     if (allBoolean) {
             var seleccion = document.getElementById('selectCancion')
             opciones = seleccion.options.length - 1
@@ -206,10 +180,6 @@ function randomSong() {
                     randomSong()
                 }
                 actualizarInfo()
-                setTimeout(function(){
-                    var video = document.getElementById("video")
-                    addTrack(lista2[posicion-1].name, video.duration)
-                }, 2000)
             }
 
     } else {
@@ -240,10 +210,6 @@ function randomSong() {
             randomSong()
         }
         actualizarInfo()
-        setTimeout(function(){
-            var video = document.getElementById("video")
-            addTrack(lista[posicion-1].name, video.duration)
-        }, 2000)
     }
 }
 
@@ -253,31 +219,4 @@ function accionEliminar() {
     eliminada.value = "Eliminada"
     actualizarOpciones2(arrayOpciones)
     eliminarBoolean = true
-}
-
-function addTrack(name, duration) {
-    var videoTrack = document.getElementById("video"), track
-    
-    if (isNaN(duration)) {
-        errorTrack = true
-    } else {
-        errorTrack = false
-        cue = new VTTCue(0, duration, name)
-        if(!videoTrack.textTracks[0]) {
-            track = videoTrack.addTextTrack("captions", "English", "en")
-        } else {
-            track = videoTrack.textTracks[0]
-        }
-        track.addCue(cue)
-    }
-}
-
-function removeTrack() {
-    
-    var videoTrack = document.getElementById("video"), track
-    if(videoTrack.textTracks && errorTrack == false){
-        var videoTrack = document.getElementById("video"), track
-        track = videoTrack.textTracks[0]
-        track.removeCue(cue)
-    }
 }
