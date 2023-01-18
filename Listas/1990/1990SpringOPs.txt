@@ -1,12 +1,13 @@
-Idol Tenshi Youkoso Youko|OP|1|https://nl.catbox.moe/o6cok5.webm|Youshun no Passage|Youko Tanaka|8.8
-Cyber City Oedo 808|OP|1|https://nl.catbox.moe/ecoa33.webm|Burning World ~Tsuioku no Command~|Hidemi Miura|11.5
-Mahou no Angel Sweet Mint|OP|1|https://nl.catbox.moe/muvm09.webm|Fushigi no Kuni no Sweet Mint|Hiroko Kasahara|11.5
-Tanoshii Moomin Ikka|OP|1|https://nl.catbox.moe/ebjb7z.webm|Yume no Sekai e|Emiko Shiratori|15.1
-AD Police|OP|1|https://nl.catbox.moe/r5sxg9.webm|Dead End City|Identity Crisis|16.0
-Tanoshii Moomin Ikka|OP|2|https://nl.catbox.moe/77lx8f.webm|Omajinai no Uta|Ponpin-tai|14.8
-Fushigi no Umi no Nadia|OP|1|https://nl.catbox.moe/csin81.webm|Blue Water|Miho Morikawa|21.2
-Ryokunohara Meikyuu|OP|1|https://nl.catbox.moe/ttvpmk.webm|Ryokunohara-za Flight Planet|Naoko Sugimoto|8.9
-Lodoss-tou Senki|OP|1|https://nl.catbox.moe/swl17v.webm|Adèsso e Fortrna ~Honoo to Eien~|Sherry|18.4
-NG Knight Lamune & 40|OP|2|https://nl.catbox.moe/3jk6uf.webm|Mezase 1-ban!!|Takeshi Kusao|13.8
-B.B.: BURNING BLOOD|OP|1|https://nl.catbox.moe/4h8yta.webm|BURNING BLOOD|Risa Yuuki|10.6
-NG Knight Lamune & 40|OP|1|https://nl.catbox.moe/631cfp.webm|Nekketsu! Yuusha Lamuness|Takeshi Kusao|13.8
+Sengoku Busho Retsuden Bakufu Doji Hissatsuman|OP|1|https://nl.catbox.moe/5v43l2.webm|Hissatsuman no Theme|Masayuki Yamamoto|4.0|16788|Sengoku Busho Retsuden Bakufu Doji Hissatsuman
+B.B.: Burning Blood|OP|1|https://nl.catbox.moe/4h8yta.webm|BURNING BLOOD|Risa Yuuki|11.7|9177|B.B.: Burning Blood
+AD Police|OP|1|https://nl.catbox.moe/r5sxg9.webm|Dead End City|Identity Crisis|19.7|1346|AD Police
+NG Knight Lamune & 40|OP|2|https://nl.catbox.moe/3jk6uf.webm|Mezase 1-ban!!|Takeshi Kusao|13.4|2084|Knights of Ramune & 40
+Tanoshii Moomin Ikka|OP|2|https://nl.catbox.moe/77lx8f.webm|Omajinai no Uta|Ponpin-tai|14.8|2150|Happy Moomin Family
+Idol Tenshi Youkoso Youko|OP|1|https://nl.catbox.moe/o6cok5.webm|Youshun no Passage|Youko Tanaka|11.2|4928|Idol Angel Welcome Yoko
+Lodoss-tou Senki|OP|1|https://nl.catbox.moe/swl17v.webm|Adèsso e Fortrna ~Honoo to Eien~|Sherry|22.5|207|Record of Lodoss War
+Ryokunohara Meikyuu|OP|1|https://nl.catbox.moe/ttvpmk.webm|Ryokunohara-za Flight Planet|Naoko Sugimoto|10.9|2219|Ryokunohara Labyrinth: Sparkling Phantom
+Mahou no Angel Sweet Mint|OP|1|https://nl.catbox.moe/muvm09.webm|Fushigi no Kuni no Sweet Mint|Hiroko Kasahara|12.4|2040|Magical Angel Sweet Mint
+Cyber City Oedo 808|OP|1|https://nl.catbox.moe/ecoa33.webm|Burning World ~Tsuioku no Command~|Hidemi Miura|14.8|1352|Cyber City Oedo 808
+Tanoshii Moomin Ikka|OP|1|https://nl.catbox.moe/ebjb7z.webm|Yume no Sekai e|Emiko Shiratori|13.0|2150|Happy Moomin Family
+Fushigi no Umi no Nadia|OP|1|https://nl.catbox.moe/csin81.webm|Blue Water|Miho Morikawa|23.2|1251|Nadia: The Secret of Blue Water
+NG Knight Lamune & 40|OP|1|https://nl.catbox.moe/631cfp.webm|Nekketsu! Yuusha Lamuness|Takeshi Kusao|16.8|2084|Knights of Ramune & 40
