@@ -1,18 +1,19 @@
-Honoo no Toukyuuji: Dodge Danpei|OP|1|https://nl.catbox.moe/8va42l.webm|Honoo no Go Fight|Tomoko Tokugaki with HOLE ME-tai|5.8
-Little Polar Bear: Shirokuma-kun, Fune ni Noru|OP|1|https://nl.catbox.moe/1ig487.webm|Aurora no Fushigi na Machi|PSY・S|10.1
-Mahou no Princess Minky Momo: Yume o Dakishimete|OP|2|https://nl.catbox.moe/8p2q50.webm|Yume o Dakishimete|Megumi Hayashibara|11.8
-Gekkou no Pierce: Yumemi to Gin no Bara no Kishidan|OP|1|https://nl.catbox.moe/ncevfd.webm|LOVE SONG|Kyosuke Himuro|4.3
-Marude Dameo|OP|1|https://nl.catbox.moe/x971wi.webm|San-byaku Roku-juu Go Ho no March|Kiyoko Suizenji|7.2
-Moero! Top Striker|OP|1|https://nl.catbox.moe/953pmu.webm|Dream Striker|Wakako Shimazaki|10.0
-Dragon Quest: Dai no Daibouken|OP|1|https://nl.catbox.moe/lhpg0d.webm|Yuusha yo Isoge!!|Jirou Dan|15.8
-Reporter Blues|OP|1|https://nl.catbox.moe/yksi5q.webm|Reporter Blues|Simona Patitucci|11.3
-Mahou no Princess Minky Momo: Yume o Dakishimete|OP|1|https://nl.catbox.moe/6v6dfj.webm|Yumemiru Heart|Manami Komori|8.8
-Watashi to Watashi: Futari no Lotte|OP|1|https://nl.catbox.moe/wmvzbf.webm|Image na Kankei|Wink|6.8
-Genji Tsuushin Agedama|OP|1|https://nl.catbox.moe/rgdec9.webm|Chinsei Mada Mada Agedaman|Kaori Honma|6.8
-Yokoyama Mitsuteru Sangokushi|OP|1|https://nl.catbox.moe/yez1cq.webm|Toki no Kawa|FENCE OF DEFENSE|10.5
-Ultraman Kids: Haha o Tazunete 3000-man Kounen|OP|1|https://nl.catbox.moe/lc706x.webm|Cosmos Adventure|Satoko Yamano|6.7
-Miracle Psychicer Seizan|OP|1|https://nl.catbox.moe/74stya.webm|POWER RIGHT|Toushuu Fukami|11.6
-Yokoyama Mitsuteru Sangokushi|OP|2|https://nl.catbox.moe/inh0e6.webm|Don't Look Back|FENCE OF DEFENSE|10.1
-Kinnikuman: Kinnikusei Oui Soudatsu-hen|OP|1|https://nl.catbox.moe/l8lofl.webm|Zudadan! Kinnikuman|Kenji Suzuki|6.9
-Otohime Connection|OP|1|https://nl.catbox.moe/8mnwnp.webm|Itsumo Soba ni Ite Hoshii|Pli:z|10.8
-Tanoshii Moomin Ikka: Bouken Nikki|OP|1|https://nl.catbox.moe/xgbnwa.webm|Hesomagarincho|Ado Mizumori & Tyrone Hashimoto|7.1
+Little Polar Bear: Shirokuma-kun, Fune ni Noru|OP|1|https://nl.catbox.moe/1ig487.webm|Aurora no Fushigi na Machi|PSY・S|11.2|118040|Little Polar Bear: Shirokuma-kun, Fune ni Noru
+Moero! Top Striker|OP|1|https://nl.catbox.moe/953pmu.webm|Dream Striker|Wakako Shimazaki|11.9|3438|Moero! Top Striker
+Chou Bakumatsu Shounen Seiki Takamaru|OP|1|https://nl.catbox.moe/glc7z2.webm|Neppu Shounen Roku -Come on Chanpon Tengoku-|Hiroko Kasahara|9.6|119958|Chou Bakumatsu Shounen Seiki Takamaru
+Mahou no Princess Minky Momo: Yume o Dakishimete|OP|2|https://nl.catbox.moe/8p2q50.webm|Yume o Dakishimete|Megumi Hayashibara|15.9|5953|Magical Princess Minky Momo: Hold on to Your Dreams
+Tanoshii Moomin Ikka: Bouken Nikki|OP|1|https://nl.catbox.moe/xgbnwa.webm|Hesomagarincho|Ado Mizumori & Tyrone Hashimoto|7.9|5712|Tanoshii Moomin Ikka: Bouken Nikki
+Gekkou no Pierce: Yumemi to Gin no Bara no Kishidan|OP|1|https://nl.catbox.moe/ncevfd.webm|LOVE SONG|Kyosuke Himuro|5.5|3813|Gekkou no Pierce: Yumemi to Gin no Bara no Kishidan
+Honoo no Toukyuuji: Dodge Danpei|OP|1|https://nl.catbox.moe/8va42l.webm|Honoo no Go Fight|Tomoko Tokugaki with HOLE ME-tai|6.5|2228|Fighting Dodgeball Boy Dodge Danpei
+Watashi to Watashi: Futari no Lotte|OP|1|https://nl.catbox.moe/wmvzbf.webm|Image na Kankei|Wink|8.6|3691|I and Myself: The Two Lottes
+Ultraman Kids: Haha o Tazunete 3000-man Kounen|OP|1|https://nl.catbox.moe/lc706x.webm|Cosmos Adventure|Satoko Yamano|6.9|8753|Ultraman Kids: Haha o Tazunete 3000-man Kounen
+Genji Tsuushin Agedama|OP|1|https://nl.catbox.moe/rgdec9.webm|Chinsei Mada Mada Agedaman|Kaori Honma|9.8|8215|Genji Tsuushin Agedama
+Marude Dameo|OP|1|https://nl.catbox.moe/x971wi.webm|San-byaku Roku-juu Go Ho no March|Kiyoko Suizenji|10.9|19873|Marude Dameo
+Mahou no Princess Minky Momo: Yume o Dakishimete|OP|1|https://nl.catbox.moe/6v6dfj.webm|Yumemiru Heart|Manami Komori|8.8|5953|Magical Princess Minky Momo: Hold on to Your Dreams
+Dragon Quest: Dai no Daibouken|OP|1|https://nl.catbox.moe/lhpg0d.webm|Yuusha yo Isoge!!|Jirou Dan|13.0|2229|Dragon Quest: The Adventure of Dai
+Yokoyama Mitsuteru Sangokushi|OP|1|https://nl.catbox.moe/yez1cq.webm|Toki no Kawa|FENCE OF DEFENSE|11.7|970|Yokoyama Mitsuteru Sangokushi
+Kinnikuman: Kinnikusei Oui Soudatsu-hen|OP|1|https://nl.catbox.moe/l8lofl.webm|Zudadan! Kinnikuman|Kenji Suzuki|7.8|3281|Kinnikuman: Scramble for the Throne
+Reporter Blues|OP|1|https://nl.catbox.moe/yksi5q.webm|Reporter Blues|Simona Patitucci|10.5|6674|Reporter Blues
+Yokoyama Mitsuteru Sangokushi|OP|2|https://nl.catbox.moe/inh0e6.webm|Don't Look Back|FENCE OF DEFENSE|13.6|970|Yokoyama Mitsuteru Sangokushi
+Miracle Psychicer Seizan|OP|1|https://nl.catbox.moe/74stya.webm|POWER RIGHT|Toushuu Fukami|8.2|16021|Miracle Psychicer Seizan
+Otohime Connection|OP|1|https://nl.catbox.moe/8mnwnp.webm|Itsumo Soba ni Ite Hoshii|Pli:z|11.7|10481|Otohime Connection
