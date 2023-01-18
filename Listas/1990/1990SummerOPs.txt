@@ -1,15 +1,16 @@
-Transformers Z|OP|1|https://nl.catbox.moe/1zuv1b.webm|Transformers Z no Theme|Ichiro Mizuki|25.3
-Nineteen 19|OP|2|https://nl.catbox.moe/wi8wqe.webm|I must change my life & love for me|Toshiki Kadomatsu|19.7
-Aki ga Ippai|OP|1|https://nl.catbox.moe/ngsrla.webm|Tadashii Party|Noriko Sakai|8.8
-Magical Taruruuto-kun|OP|1|https://nl.catbox.moe/kmm7k8.webm|Ore Taruruuto|TARAKO|10.6
-Karura Mau|OP|1|https://nl.catbox.moe/kaj2vd.webm|Maitobe Karura!|Shinichi Ishihara|11.2
-Mainichi ga Nichiyoubi|OP|1|https://nl.catbox.moe/0dmzge.webm|Mainichi ga Nichiyoubi|Fuki Nishina|10.8
-Soreike! Anpanman: Baikinman no Gyakushuu|OP|1|https://nl.catbox.moe/wvq6tt.webm|Anpanman no March|Dreaming|26.7
-Fuma no Kojirou: Seiken Sensou-hen|OP|1|https://nl.catbox.moe/mkx12a.webm|SHOUT|NIGHT HAWKS|6.8
-Robin Hood no Daibouken|OP|1|https://nl.catbox.moe/ioobr8.webm|Wood Walker|Satoko Shimonari|10.9
-Iczer Reborn|OP|1|https://nl.catbox.moe/f3fb0g.webm|-Chikai-ICZER-3... Kimi to|Maiko Yoshino|8.8
-Riki-Oh 2: Horobi no Ko|OP|1|https://nl.catbox.moe/82dg74.webm|Jesus Jesus|Eizo Sakamoto|18.2
-Tenjou-hen: Utsunomiko|OP|1|https://nl.catbox.moe/h4k2in.webm|Mirai e no Shinwa|Yoshimi Hamada|6.9
-Dragon Ball Z: Chikyuu Marugoto Choukessen|OP|1|https://nl.catbox.moe/xbexc9.webm|CHA-LA HEAD-CHA-LA|Hironobu Kageyama|63.8
-Nineteen 19|OP|1|https://nl.catbox.moe/zmv069.webm|Loving You|Toshiki Kadomatsu|19.2
-Karasu Tengu Kabuto|OP|1|https://nl.catbox.moe/rtp969.webm|KA・BU・TO|Akira Kushida|5.9
+Aki ga Ippai|OP|1|https://nl.catbox.moe/ngsrla.webm|Tadashii Party|Noriko Sakai|11.9|136490|Aki ga Ippai
+Fuma no Kojirou: Seiken Sensou-hen|OP|1|https://nl.catbox.moe/mkx12a.webm|SHOUT|NIGHT HAWKS|8.3|4855|Kojiro of the Fuma: Sacred Sword War Chapter
+Magical Taruruuto-kun|OP|1|https://nl.catbox.moe/kmm7k8.webm|Ore Taruruuto|TARAKO|10.3|5274|Magical Taruruuto-kun
+Transformers Z|OP|1|https://nl.catbox.moe/1zuv1b.webm|Transformers Z no Theme|Ichiro Mizuki|35.4|6038|Transformers: Zone
+Pokopon no Yukai na Saiyuuki|OP|1|https://nl.catbox.moe/828thi.webm|Fushigi no Mori no Pajama Party|Suginami Jidou Gasshou-dan|5.5|null|Pokopon no Yukai na Saiyuuki
+Nineteen 19|OP|2|https://nl.catbox.moe/wi8wqe.webm|I must change my life & love for me|Toshiki Kadomatsu|23.3|2468|Nineteen 19
+Tenjou-hen: Utsunomiko|OP|1|https://nl.catbox.moe/h4k2in.webm|Mirai e no Shinwa|Yoshimi Hamada|7.5|5922|Tenjou-hen: Utsunomiko
+Soreike! Anpanman: Baikinman no Gyakushuu|OP|1|https://nl.catbox.moe/wvq6tt.webm|Anpanman no March|Dreaming|35.1|10061|Soreike! Anpanman: Baikinman no Gyakushuu
+Karura Mau|OP|1|https://nl.catbox.moe/kaj2vd.webm|Maitobe Karura!|Shinichi Ishihara|9.4|2073|Karura Mau
+Dragon Ball Z: Chikyuu Marugoto Choukessen|OP|1|https://nl.catbox.moe/xbexc9.webm|CHA-LA HEAD-CHA-LA|Hironobu Kageyama|83.5|896|Dragon Ball Z: The Tree of Might
+Karasu Tengu Kabuto|OP|1|https://nl.catbox.moe/rtp969.webm|KA・BU・TO|Akira Kushida|7.8|2243|Karasu Tengu Kabuto
+Nineteen 19|OP|1|https://nl.catbox.moe/zmv069.webm|Loving You|Toshiki Kadomatsu|25.5|2468|Nineteen 19
+Mainichi ga Nichiyoubi|OP|1|https://nl.catbox.moe/0dmzge.webm|Mainichi ga Nichiyoubi|Fuki Nishina|11.6|2059|Everyday is Sunday
+Riki-Oh 2: Horobi no Ko|OP|1|https://nl.catbox.moe/82dg74.webm|Jesus Jesus|Eizo Sakamoto|18.6|3511|Riki-Oh 2: Child of Destruction
+Iczer Reborn|OP|1|https://nl.catbox.moe/f3fb0g.webm|-Chikai-ICZER-3... Kimi to|Maiko Yoshino|11.2|2292|Iczer Reborn
+Robin Hood no Daibouken|OP|1|https://nl.catbox.moe/ioobr8.webm|Wood Walker|Satoko Shimonari|12.5|2543|Robin Hood
