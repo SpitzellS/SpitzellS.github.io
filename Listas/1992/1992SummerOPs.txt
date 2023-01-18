@@ -1,13 +1,14 @@
-Hana no Mahoutsukai Mary Bell: Phoenix no Kagi|OP|1|https://nl.catbox.moe/v11w9c.webm|Watashi! Mary Bell|Chieko Honda|4.4
-Princess Army|OP|1|https://nl.catbox.moe/p6tr9b.webm|Aozora o Mitsuketa|Hiroko Sohma|7.8
-Tenchi Muyo! Ryo Ohki|OP|1|https://nl.catbox.moe/nq3osf.webm|Tenchi Muyou! Ryo-Ohki no Theme|Seikou Nagaoka|15.7
-Dragon Ball Z: Kyokugen Battle!! Sandai Super Saiyajin|OP|1|https://nl.catbox.moe/al9o96.webm|CHA-LA HEAD-CHA-LA|Hironobu Kageyama|61.8
-Ushio to Tora|OP|2|https://nl.catbox.moe/mshb8v.webm|Kedamono no yari|Shinya Iguchi|8.3
-Yadamon|OP|1|https://nl.catbox.moe/g6rksx.webm|Magical Dreamer|LINDBERG|18.1
-Nozomi Witches|OP|1|https://nl.catbox.moe/9kovlq.webm|Flash of Thunder|Miki Natsuyama|14.1
-Houkago no Tinker Bell|OP|1|https://nl.catbox.moe/dyvh8y.webm|Atama no Uchuu|KUKO|9.6
-Licca-chan no Nichiyoubi|OP|1|https://nl.catbox.moe/umvqz1.webm|Niji no Kimochi|Junko Iwao|8.8
-Dragon Quest: Dai no Daibouken Buchiya Bure!! Shinsei Rokudai Shoguo|OP|1|https://nl.catbox.moe/bher8x.webm|Yuusha yo Isoge!!|Jirou Dan|15.1
-Ushio to Tora|OP|1|https://nl.catbox.moe/a9xhfm.webm|Yuuki no Fighter|Yasu|10.4
-Tanoshii Moomin Ikka: Moomin Tani no Suisei|OP|1|https://nl.catbox.moe/gywxbw.webm|Shiawase no Morugaane|Emiko Shiratori|6.7
-Oyayubi Hime Monogatari|OP|1|https://nl.catbox.moe/xw6oxr.webm|Planetarium ni Youkoso|Yuki Matsuura|7.2
+Dragon Ball Z: Kyokugen Battle!! Sandai Super Saiyajin|OP|1|https://nl.catbox.moe/al9o96.webm|CHA-LA HEAD-CHA-LA|Hironobu Kageyama|84.8|900|Dragon Ball Z: Super Android 13!
+Princess Army|OP|1|https://nl.catbox.moe/p6tr9b.webm|Aozora o Mitsuketa|Hiroko Sohma|9.6|3605|Princess Army
+Ushio to Tora|OP|2|https://nl.catbox.moe/mshb8v.webm|Kedamono no Yari|Shinya Iguchi|9.9|842|Ushio & Tora
+Kero Kero Keroppi no Kyouryuu ga Deta|OP|1|https://nl.catbox.moe/kprub7.webm|Kero Kero Keroppi|Yoshiko Matsuo|21.4|null|Kero Kero Keroppi no Kyouryuu ga Deta
+Nozomi Witches|OP|1|https://nl.catbox.moe/9kovlq.webm|Flash of Thunder|Miki Natsuyama|17.2|2052|Nozomi Witches
+Dragon Quest: Dai no Daibouken Buchiya Bure!! Shinsei Rokudai Shoguo|OP|1|https://nl.catbox.moe/bher8x.webm|Yuusha yo Isoge!!|Jirou Dan|18.4|7364|Dragon Quest: Dai no Daibouken Buchiya Bure!! Shinsei Rokudai Shoguo
+Hana no Mahoutsukai Mary Bell: Phoenix no Kagi|OP|1|https://nl.catbox.moe/v11w9c.webm|Watashi! Mary Bell|Chieko Honda|6.3|9862|Hana no Mahoutsukai Mary Bell: Phoenix no Kagi
+Yadamon|OP|1|https://nl.catbox.moe/g6rksx.webm|Magical Dreamer|LINDBERG|17.0|2806|Yadamon: Magical Dreamer
+Houkago no Tinker Bell|OP|1|https://nl.catbox.moe/dyvh8y.webm|Atama no Uchuu|KŪKO|11.2|13299|Houkago no Tinker Bell
+Tanoshii Moomin Ikka: Moomin Tani no Suisei|OP|1|https://nl.catbox.moe/gywxbw.webm|Shiawase no Morugaane|Emiko Shiratori|8.6|2313|Comet in Moominland
+Tenchi Muyou! Ryououki|OP|1|https://nl.catbox.moe/nq3osf.webm|Tenchi Muyou! Ryououhki no Theme|Seikou Nagaoka|19.3|539|Tenchi Muyo! Ryo-Ohki
+Ushio to Tora|OP|1|https://nl.catbox.moe/a9xhfm.webm|Yuuki no Fighter|Yasu|11.0|842|Ushio & Tora
+Licca-chan no Nichiyoubi|OP|1|https://nl.catbox.moe/umvqz1.webm|Niji no Kimochi|Junko Iwao|8.9|8919|Licca-chan's Sunday
+Oyayubi Hime Monogatari|OP|1|https://nl.catbox.moe/xw6oxr.webm|Planetarium ni Youkoso|Yuki Matsuura|6.1|2783|Thumbelina: A Magical Story
