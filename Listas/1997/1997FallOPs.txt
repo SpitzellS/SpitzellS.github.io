@@ -1,25 +1,25 @@
-Vampire Princess Miyu|OP|1|https://nl.catbox.moe/ntwoym.webm|Shinma no Kodoh|Kagura|15.0
-Sakura Momoko Gekijou: Cojicoji|OP|1|https://nl.catbox.moe/ppnjnf.webm|Coji-Coji Ginza|Hoff Dylan|18.3
-Burn-Up Excess|OP|1|https://nl.catbox.moe/3be37q.webm|SHOW TIME|Mami Kingetsu|8.1
-Elf-ban Kakyuusei|OP|1|https://nl.catbox.moe/mbs5h4.webm|Tokimeki no Yukue|Mari Adachi|11.2
-Sakura Taisen|OP|1|https://nl.catbox.moe/shequl.webm|Geki! Teikoku Kageki-dan|Chisa Yokoyama & Teikoku Kageki-dan|37.2
-Wish|OP|1|https://nl.catbox.moe/3ko15x.webm|Wish|ALI PROJECT|23.4
-Mata Mata Saber Marionette J|OP|2|https://nl.catbox.moe/azllvu.webm|Hesitation|Megumi Hayashibara|13.2
-Dolittle-sensei Monogatari|OP|1|https://nl.catbox.moe/twcb15.webm|Dolittle-sensei no Uta|Jun Ichikawa・Aiko Saitou|13.2
-Dennou Sentai Voogie's★Angel|OP|1|https://nl.catbox.moe/mjybyx.webm|Motto Motto Radical Fight!|Angels|8.3
-Elf o Karu Mono-tachi II|OP|1|https://nl.catbox.moe/yg58e8.webm|Round 11|Naoko Hamasaki|13.0
-Dr. Slump|OP|2|https://nl.catbox.moe/666v9n.webm|Hello, I love you|YURIMARI|13.6
-Chou Mashin Eiyuuden Wataru|OP|1|https://nl.catbox.moe/2g9k9f.webm|Hitotsu no Heart de|Hitomi Mieno|8.5
-Virus Buster Serge|OP|1|https://nl.catbox.moe/d1lm4v.webm|Rainy Day and Day|Dragon Ash|10.1
-Mata Mata Saber Marionette J|OP|1|https://nl.catbox.moe/5mfb4w.webm|Sakaseruze! Dokyo-Bana|Yuka Imai|12.7
-Chou Mashin Eiyuuden Wataru|OP|2|https://nl.catbox.moe/3h7ipv.webm|POWER OF DREAM|Hitomi Mieno|11.5
-Rurouni Kenshin: Ishin Shishi e no Requiem|OP|1|https://nl.catbox.moe/szo2yc.webm|Niji|L'Arc~en~Ciel|9.8
-Shinkai Densetsu Meremanoid|OP|1|https://nl.catbox.moe/sfwgdf.webm|WILD MOON|VANILLA|9.6
-Kenpuu Denki Berserk|OP|1|https://nl.catbox.moe/zy4td5.webm|TELL ME WHY|PENPALS|43.2
-Battle Athletess Daiundoukai|OP|1|https://nl.catbox.moe/8juuha.webm|Tsubasa|Yukari Asakura|11.3
-Macross Dynamite 7|OP|1|https://nl.catbox.moe/23771j.webm|Dynamite Explosion|FIRE BOMBER|31.9
-Next Senki Ehrgeiz|OP|1|https://nl.catbox.moe/9u547n.webm|DREAM JACK|HUMMING BIRD|8.3
-Fortune Quest L|OP|1|https://nl.catbox.moe/1ndiib.webm|Good Fine Everday|sus 4|7.0
-Detatoko Princess|OP|1|https://nl.catbox.moe/xq9nft.webm|Chocolat au Lait|Yuki Matsuura|10.0
-Dr. Slump|OP|3|https://nl.catbox.moe/uqxkha.webm|Arale! Parale!|Dr. Slump All Stars|14.5
-Dr. Slump|OP|1|https://nl.catbox.moe/11j1xa.webm|Kao Dekaai|Funta|18.2
+Macross Dynamite 7|OP|1|https://nl.catbox.moe/23771j.webm|Dynamite Explosion|FIRE BOMBER|40.0|1398|Macross Dynamite 7
+Battle Athletess Daiundoukai|OP|1|https://nl.catbox.moe/8juuha.webm|Tsubasa|Yukari Asakura|11.9|1186|Battle Athletes Victory
+Fortune Quest L|OP|1|https://nl.catbox.moe/1ndiib.webm|Good Fine Everday|sus 4|9.6|3185|Fortune Quest L
+Elf o Karu Mono-tachi II|OP|1|https://nl.catbox.moe/yg58e8.webm|Round 11|Naoko Hamasaki|15.8|1046|Those Who Hunt Elves 2
+Rurouni Kenshin: Ishin Shishi e no Requiem|OP|1|https://nl.catbox.moe/szo2yc.webm|Niji|L'Arc~en~Ciel|14.1|46|Rurouni Kenshin: The Motion Picture
+Dr. Slump|OP|3|https://nl.catbox.moe/uqxkha.webm|Arale! Parale!|Dr. Slump All Stars|14.1|3312|Dr. Slump
+Chou Mashin Eiyuuden Wataru|OP|2|https://nl.catbox.moe/3h7ipv.webm|POWER OF DREAM|Hitomi Mieno|16.5|3432|Super Demon Hero Wataru
+Kenpuu Denki Berserk|OP|1|https://nl.catbox.moe/zy4td5.webm|TELL ME WHY|PENPALS|54.1|33|Berserk
+Dr. Slump|OP|2|https://nl.catbox.moe/666v9n.webm|Hello, I love you|YURIMARI|13.7|3312|Dr. Slump
+Sakura Taisen|OP|1|https://nl.catbox.moe/shequl.webm|Geki! Teikoku Kageki-dan|Chisa Yokoyama & Teikoku Kageki-dan|57.8|1165|Sakura Wars
+Detatoko Princess|OP|1|https://nl.catbox.moe/xq9nft.webm|Chocolat au Lait|Yuki Matsuura|13.1|2693|Suddenly Princess
+Kyuuketsuhime Miyu|OP|1|https://nl.catbox.moe/ntwoym.webm|Shinma no Kodou|Kagura feat. Kyouko Kishida|17.8|690|Vampire Princess Miyu
+Chou Mashin Eiyuuden Wataru|OP|1|https://nl.catbox.moe/2g9k9f.webm|Hitotsu no Heart de|Hitomi Mieno|10.8|3432|Super Demon Hero Wataru
+Dennou Sentai Voogie's★Angel|OP|1|https://nl.catbox.moe/mjybyx.webm|Motto Motto Radical Fight!|Angels|12.0|101178|Voogie's Angel
+Dolittle-sensei Monogatari|OP|1|https://nl.catbox.moe/twcb15.webm|Dolittle-sensei no Uta|Jun Ichikawa・Aiko Saitou|15.5|null|The Voyages of Doctor Dolittle
+Wish|OP|1|https://nl.catbox.moe/3ko15x.webm|Wish|ALI PROJECT|35.5|1958|Wish
+Elf-ban Kakyuusei: Anata dake o Mitsumete...|OP|1|https://nl.catbox.moe/mbs5h4.webm|Tokimeki no Yukue|Mari Adachi|13.9|661|Elf-ban Kakyuusei: Anata dake o Mitsumete...
+Virus Buster Serge|OP|1|https://nl.catbox.moe/d1lm4v.webm|Rainy Day and Day|Dragon Ash|12.3|2364|Virus Buster Serge
+Next Senki Ehrgeiz|OP|1|https://nl.catbox.moe/9u547n.webm|DREAM JACK|HUMMING BIRD|12.3|4929|Ehrgeiz
+Sakura Momoko Gekijou: Cojicoji|OP|1|https://nl.catbox.moe/ppnjnf.webm|Coji-Coji Ginza|Hoff Dylan|20.2|3869|Coji-Coji
+Burn Up Excess|OP|1|https://nl.catbox.moe/3be37q.webm|SHOW TIME|Mami Kingetsu|9.5|370|Burn-Up Excess
+Dr. Slump|OP|1|https://nl.catbox.moe/11j1xa.webm|Kao Dekaai|Funta|12.7|3312|Dr. Slump
+Mata Mata Saber Marionette J|OP|1|https://nl.catbox.moe/5mfb4w.webm|Sakaseruze! Dokyo-Bana|Yuka Imai|16.1|1191|Saber Marionette J Again
+Shinkai Densetsu Meremanoid|OP|1|https://nl.catbox.moe/sfwgdf.webm|WILD MOON|VANILLA|10.8|15579|Deep-Sea Legend Meremanoid
+Mata Mata Saber Marionette J|OP|2|https://nl.catbox.moe/azllvu.webm|Hesitation|Megumi Hayashibara|12.5|1191|Saber Marionette J Again

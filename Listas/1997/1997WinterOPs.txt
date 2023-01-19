@@ -1,15 +1,15 @@
-Kougyou Aika Volley Boys|OP|1|https://nl.catbox.moe/f6dto8.webm|Monku Aru no ka!|Kouji Yoshida|14.8
-Dragon Ball GT: Goku Gaiden! Yuuki no Akashi wa Suushinchuu|OP|1|https://nl.catbox.moe/vl9gkr.webm|DAN DAN Kokoro Hikareteku|FIELD OF VIEW|44.9
-Eat-Man|OP|1|https://nl.catbox.moe/f7gq9h.webm|Chiisana Koi no Melody|Kinniku Shoujo-tai|14.4
-Mach Go Go Go|OP|2|https://nl.catbox.moe/mbdydh.webm|Mach Go Go Go 1997|Kentaro Hayami|30.1
-Perfect Blue|OP|1|https://nl.catbox.moe/ni1ssb.webm|Omoide ni Dakarete Ima wa|MISA|18.6
-Jungle de Ikou!|OP|1|https://nl.catbox.moe/z0iwdy.webm|J|Masami Okui|16.3
-Kero Kero Chime|OP|2|https://nl.catbox.moe/cae8ze.webm|LOVE & PEACE|CHIECO|9.7
-Kero Kero Chime|OP|1|https://nl.catbox.moe/x7rbfn.webm|YOU'RE THE ONLY ONE|Love Connection|5.5
-Doraemon: Nobita no Nejimaki City Boukenki|OP|1|https://nl.catbox.moe/49jmyl.webm|Doraemon no Uta|Satoko Yamano & Nobuyo Oyama|60.7
-Mach Go Go Go|OP|1|https://nl.catbox.moe/81s8fb.webm|Junbaku no Energy|Kentaro Hayami|11.8
-Shinpi no Sekai El Hazard 2|OP|1|https://nl.catbox.moe/g2p8m7.webm|El Hazard 2 no Theme|Maria Kawamura|9.4
-Bakusou Kyoudai Let's & Go!! WGP|OP|1|https://nl.catbox.moe/11oimg.webm|GET THE WORLD|Hironobu Kageyama|14.8
-Gegege no Kitarou: Obake Nighter|OP|1|https://nl.catbox.moe/70819d.webm|Gegege no Kitarou|Ukadan|60.2
-Yuusha-Oh GaoGaiGar|OP|1|https://nl.catbox.moe/edeawz.webm|Yuusha-Ou Tanjou!|Masaaki Endoh|30.9
-Cutey Honey F|OP|1|https://nl.catbox.moe/ohudz4.webm|Cutey Honey|SALIA|24.1
+Kero Kero Chime|OP|2|https://nl.catbox.moe/cae8ze.webm|LOVE & PEACE|CHIECO|8.7|2074|Kero Kero Chime
+Kero Kero Chime|OP|1|https://nl.catbox.moe/x7rbfn.webm|YOU'RE THE ONLY ONE|Love Connection|6.9|2074|Kero Kero Chime
+Jungle de Ikou!|OP|1|https://nl.catbox.moe/z0iwdy.webm|J|Masami Okui|20.0|2524|Jungle de Ikou!
+Shinpi no Sekai El Hazard 2|OP|1|https://nl.catbox.moe/g2p8m7.webm|El Hazard 2 no Theme|Maria Kawamura|11.3|118|El-Hazard 2: The Magnificent World
+Perfect Blue|OP|1|https://nl.catbox.moe/ni1ssb.webm|Omoide ni Dakarete Ima wa|MISA|43.9|437|Perfect Blue
+Mach Go Go Go|OP|2|https://nl.catbox.moe/mbdydh.webm|Mach Go Go Go 1997|Kentaro Hayami|50.9|3571|Speed Racer X
+Cutey Honey F|OP|1|https://nl.catbox.moe/ohudz4.webm|Cutey Honey|SALIA|33.3|1853|Cutey Honey Flash
+Bakusou Kyoudai Let's & Go!! WGP|OP|1|https://nl.catbox.moe/11oimg.webm|GET THE WORLD|Hironobu Kageyama|21.5|2706|Bakusou Kyoudai Let's & Go!! WGP
+Gegege no Kitarou: Obake Nighter|OP|1|https://nl.catbox.moe/70819d.webm|Gegege no Kitarou|Ukadan|91.2|8156|Gegege no Kitarou: Obake Nighter
+Yuusha-Oh GaoGaiGar|OP|1|https://nl.catbox.moe/edeawz.webm|Yuusha-Ou Tanjou!|Masaaki Endoh|37.2|890|The King of Braves GaoGaiGar
+Eat-Man|OP|1|https://nl.catbox.moe/f7gq9h.webm|Chiisana Koi no Melody|Kinniku Shoujo-tai|15.4|1704|Eat-Man
+Mach Go Go Go|OP|1|https://nl.catbox.moe/81s8fb.webm|Junbaku no Energy|Kentaro Hayami|15.5|3571|Speed Racer X
+Kougyou Aika Volley Boys|OP|1|https://nl.catbox.moe/f6dto8.webm|Monku Aru no ka!|Kouji Yoshida|16.2|126071|Kougyou Aika Volley Boys
+Dragon Ball GT: Goku Gaiden! Yuuki no Akashi wa Suushinchuu|OP|1|https://nl.catbox.moe/vl9gkr.webm|DAN DAN Kokoro Hikareteku|FIELD OF VIEW|64.0|987|Dragon Ball GT: A Hero's Legacy
+Doraemon: Nobita no Nejimaki City Boukenki|OP|1|https://nl.catbox.moe/49jmyl.webm|Doraemon no Uta|Satoko Yamano & Nobuyo Oyama|78.0|2678|Doraemon: Nobita's Adventure in Clockwork City

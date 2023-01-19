@@ -1,16 +1,18 @@
-Elmer no Bouken: My Father's Dragon|OP|1|https://nl.catbox.moe/nf1ilp.webm|dragons' dance|YU-KI|7.4
-Yume no Crayon Oukoku|OP|1|https://nl.catbox.moe/ii7ddv.webm|N Paka March|Yuka Tokumitsu|13.9
-Bakusou Kyoudai Let's & Go!! WGP Bousou Mini Yonku Daitsuiseki|OP|1|https://nl.catbox.moe/fcw6yj.webm|GET THE WORLD - version XTO|Hironobu Kageyama|6.8
-Misutenaide Daisy|OP|1|https://nl.catbox.moe/fncp0t.webm|Girl Friend ~Boku no Kyouhansha~|SIDE-ONE|11.0
-Soreyuke! Uchuu Senkan Yamamoto Yohko II|OP|1|https://nl.catbox.moe/6z7hr7.webm|Souda, Zettai.|Masami Okui|9.2
-Hare Tokidoki Buta|OP|3|https://nl.catbox.moe/6lgopr.webm|BOO~Onaka ga Suku Hodo Waratte Mitai~|Gospellers|7.8
-Hare Tokidoki Buta|OP|1|https://nl.catbox.moe/gzk374.webm|Tsuyoki na Futari|Yumi Yoshimura (PUFFY)|5.3
-Master of Mosquiton '99|OP|2|https://nl.catbox.moe/rfzr25.webm|GOOD VIBRATION|Cyber Nation Network|10.2
-Gegege no Kitarou: Youkai Tokkyuu! Maboroshi no Kisha|OP|1|https://nl.catbox.moe/6lun25.webm|Gegege no Kitarou|Ukadan|60.1
-Hare Tokidoki Buta|OP|2|https://nl.catbox.moe/uxcdy1.webm|Karette Tokidoki Buta|TSUNAMI|11.4
-Cutey Honey Flash|OP|1|https://nl.catbox.moe/46hw3v.webm|Cutey Honey|SALIA|24.8
-Ryuuki Denshou|OP|1|https://nl.catbox.moe/l4a5p4.webm|Saisho no Yuki|Yuka Imai|5.1
-Recca no Honoo|OP|1|https://nl.catbox.moe/sis5r9.webm|Nanka Shiawase|the OYSTARS|18.1
-Chou Kousoku Gran Doll|OP|1|https://nl.catbox.moe/9w42y2.webm|Gran Hoshi no Kazoe Uta|Junko Iwao|14.5
-B'T X Neo|OP|1|https://nl.catbox.moe/i7i7gj.webm|A Piece of the Sun|Masaaki Endoh|11.2
-Master of Mosquiton '99|OP|1|https://nl.catbox.moe/gxs9wm.webm|The Power of Love|Cyber Nation Network|7.0
+Misutenaide Daisy|OP|1|https://nl.catbox.moe/fncp0t.webm|Girl Friend ~Boku no Kyouhansha~|SIDE-ONE|14.7|1936|Don't Leave Me Alone, Daisy
+Ryuuki Denshou|OP|1|https://nl.catbox.moe/l4a5p4.webm|Saisho no Yuki|Yuka Imai|6.7|3968|Dragoon
+Cutey Honey Flash|OP|1|https://nl.catbox.moe/46hw3v.webm|Cutey Honey|SALIA|35.9|6496|Cutey Honey Flash
+Azumi Mamma★Mia|OP|1|https://nl.catbox.moe/eq70x2.webm|MAMMA MIA|polly|5.7|108752|Azumi Mamma★Mia
+Soreyuke! Uchuu Senkan Yamamoto Yohko II|OP|1|https://nl.catbox.moe/6z7hr7.webm|Souda, Zettai.|Masami Okui|10.8|1671|Starship Girl Yamamoto Yohko II
+Hare Tokidoki Buta|OP|2|https://nl.catbox.moe/uxcdy1.webm|Karette Tokidoki Buta|TSUNAMI|10.3|2280|Tokyo Pig
+Recca no Honoo|OP|1|https://nl.catbox.moe/sis5r9.webm|Nanka Shiawase|the OYSTARS|18.9|238|Flame of Recca
+Master Mosquiton '99|OP|1|https://nl.catbox.moe/gxs9wm.webm|The Power of Love|Cyber Nation Network|10.5|1806|Master of Mosquiton '99
+Bakusou Kyoudai Let's & Go!! WGP Bousou Mini Yonku Daitsuiseki|OP|1|https://nl.catbox.moe/fcw6yj.webm|GET THE WORLD - version XTO|Hironobu Kageyama|9.6|9858|Bakusou Kyoudai Let's & Go!! WGP Bousou Mini Yonku Daitsuiseki
+Hare Tokidoki Buta|OP|1|https://nl.catbox.moe/gzk374.webm|Tsuyoki na Futari|Yumi Yoshimura (PUFFY)|7.2|2280|Tokyo Pig
+Soreike! Anpanman: Niji no Pyramid|OP|1|https://nl.catbox.moe/rm1ler.webm|Anpanman no March|Dreaming|37.8|9446|Soreike! Anpanman: Niji no Pyramid
+Elmer no Bouken: My Father's Dragon|OP|1|https://nl.catbox.moe/nf1ilp.webm|dragons' dance|YU-KI|6.9|6593|My Father's Dragon
+Chou Kousoku Gran Doll|OP|1|https://nl.catbox.moe/9w42y2.webm|Gran Hoshi no Kazoe Uta|Junko Iwao|14.7|1992|Hyper Speed GranDoll
+Yume no Crayon Oukoku|OP|1|https://nl.catbox.moe/ii7ddv.webm|N Paka March|Yuka Tokumitsu|14.9|4651|Yume no Crayon Oukoku
+Hare Tokidoki Buta|OP|3|https://nl.catbox.moe/6lgopr.webm|BOO~Onaka ga Suku Hodo Waratte Mitai~|Gospellers|7.6|2280|Tokyo Pig
+Master Mosquiton '99|OP|2|https://nl.catbox.moe/rfzr25.webm|GOOD VIBRATION|Cyber Nation Network|11.2|1806|Master of Mosquiton '99
+B'T X Neo|OP|1|https://nl.catbox.moe/i7i7gj.webm|A PIECE OF THE SUN|Masaaki Endoh|13.2|1736|B'T X Neo
+Gegege no Kitarou: Youkai Tokkyuu! Maboroshi no Kisha|OP|1|https://nl.catbox.moe/6lun25.webm|Gegege no Kitarou|Ukadan|89.2|8157|Gegege no Kitarou: Youkai Tokkyuu! Maboroshi no Kisha

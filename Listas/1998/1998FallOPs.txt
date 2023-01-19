@@ -1,33 +1,34 @@
-Yoiko|OP|1|https://nl.catbox.moe/modffe.webm|Akane-iro no Omoi|Juliana Schano|10.7
-Popolocrois Monogatari|OP|1|https://nl.catbox.moe/jgb9m4.webm|Natsu Kikyuu|Rie Otsuka|7.3
-Bubblegum Crisis: Tokyo 2040|OP|1|https://nl.catbox.moe/lhvbox.webm|Y'know|Akira Sudou|16.1
-Kareshi Kanojo no Jijou|OP|1|https://nl.catbox.moe/iwbbds.webm|Tenshi no Yubikiri|Mai Fukuda|20.1
-Majutsushi Orphen|OP|2|https://nl.catbox.moe/qk9kp8.webm|Kimi wa Majutsushi|Sharan Q|12.4
-Twin Bee Paradise|OP|1|https://nl.catbox.moe/4ehz53.webm|Twin memories|Mariko Kouda|4.3
-Devilman Lady|OP|1|https://nl.catbox.moe/d96wzx.webm|Devilman Lady Main Theme|Tokyo Philharmonic Chorus|15.5
-Starlight Scramble Renai Kouhosei|OP|1|https://nl.catbox.moe/1whxxx.webm|DREAM IT ~Anata ni Meguriaitai~|Ayako Kawasumi|11.4
-Master Keaton|OP|1|https://nl.catbox.moe/61kgff.webm|Railtown|Kuniaki Haishima|17.6
-Gasaraki|OP|1|https://nl.catbox.moe/a6xux7.webm|MESSAGE #9|Tomoko Tane|17.4
-Mamotte Shugogetten!|OP|1|https://nl.catbox.moe/9hpes6.webm|Saa!|SURFACE|17.9
-Glass no Kamen: Sen no Kamen o Motsu Shoujo|OP|1|https://nl.catbox.moe/aek1yl.webm|Hikari ni Naritai|Mahoro Hoshino|8.6
-Gasaraki|OP|2|https://nl.catbox.moe/kakkkl.webm|REMIX OF MESSAGE #9:typeM|Tomoko Tane|16.1
-Generator Gawl|OP|1|https://nl.catbox.moe/k9mkv1.webm|I WANT OUT|Yuki Saga|14.7
-Pocket Monsters: Pikachu no Fuyuyasumi|OP|1|https://nl.catbox.moe/ogxxco.webm|Fuyuyasumi Fan Club|Pokemon Kids (+Ikue Ootani)|13.5
-Super Doll Licca-chan|OP|2|https://nl.catbox.moe/rnmm1n.webm|Ashita no Kimi|Tomo Sakurai|8.2
-Super Doll Licca-chan|OP|1|https://nl.catbox.moe/5c6rlm.webm|Ne|Rooky|7.4
-Kaiketsu Jouki Tanteidan|OP|1|https://nl.catbox.moe/c3isil.webm|Kimi, Hohoenda Yoru|elika|11.1
-Totsugeki! Pappara-tai|OP|1|https://nl.catbox.moe/5sft2r.webm|Gizagiza MAKE A MOTION|Misty|5.0
-Future GPX Cyber Formula Sin|OP|2|https://nl.catbox.moe/wmau9k.webm|Soul of Rebirth ~Jidai no Kodou ni Nare~|Hironobu Kageyama|11.4
-Dokkiri Doctor|OP|1|https://nl.catbox.moe/xi7z2d.webm|Nenai, Nenai, Nenai|The Castanets|7.4
-Ojarumaru|OP|1|https://nl.catbox.moe/r174m4.webm|Utabito|Saburo Kitajima|15.8
-Chousoku Spinner|OP|2|https://nl.catbox.moe/bc6tgi.webm|LOOP&LOOP|Showtaro Morikubo|13.0
-Hanasaka Tenshi Tenten-kun|OP|1|https://nl.catbox.moe/w2lakr.webm|Class de Ichiban Sugoi Yatsu|Bra Bra Bravoes|5.8
-Let's Nupu Nupu|OP|1|https://nl.catbox.moe/2hqv44.webm|Maybe true|FANATIC◇CRISIS|12.2
-Majutsushi Orphen|OP|1|https://nl.catbox.moe/oaae9z.webm|Ai Just on my Love|Sharan Q|15.4
-Saber Marionette J to X|OP|1|https://nl.catbox.moe/q5iyeh.webm|Proof of Myself|Megumi Hayashibara|12.6
-Beast Wars II Chou Seimeitai Transformers: Lio Convoy Kiki Ippatsu! Movie|OP|1|https://nl.catbox.moe/9gx1re.webm|Space Dreamer ~Harukanaru Beast Wars~|Current of Air|13.8
-Touch: Are kara, Kimi wa... - Miss Lonely Yesterday|OP|1|https://nl.catbox.moe/7hg189.webm|Touch -Friday Night Version-|Natsumi Sawai & Quick-Times|12.6
-Chousoku Spinner|OP|1|https://nl.catbox.moe/scne0q.webm|SOMEDAY LET'S GO TOGETHER|rub-down|9.7
-Kurogane Communication|OP|1|https://nl.catbox.moe/p237eg.webm|my best friend|Yui Horie|9.3
-Eat-Man '98|OP|1|https://nl.catbox.moe/qutpgi.webm|Burning Blue|MAGIC|14.2
-Future GPX Cyber Formula Sin|OP|1|https://nl.catbox.moe/cgxhgn.webm|Pray|LAZY|13.7
+Majutsushi Orphen|OP|1|https://nl.catbox.moe/oaae9z.webm|Ai Just on my Love|Sharan Q|15.8|1017|Sorcerous Stabber Orphen
+Twin Bee Paradise|OP|1|https://nl.catbox.moe/4ehz53.webm|Twin memories|Mariko Kouda|5.7|4131|Twin Bee Paradise
+Super Doll Licca-chan|OP|2|https://nl.catbox.moe/rnmm1n.webm|Ashita no Kimi|Tomo Sakurai|13.6|2766|Super Doll Licca-chan
+Pocket Monsters: Pikachu no Fuyuyasumi|OP|1|https://nl.catbox.moe/ogxxco.webm|Fuyuyasumi Fan Club|Pokemon Kids (+Ikue Ootani)|17.7|4874|Pokémon: Pikachu's Winter Vacation
+Shinseki GPX Cyber Formula Sin|OP|1|https://nl.catbox.moe/cgxhgn.webm|Pray|LAZY|13.0|1395|Future GPX Cyber Formula Sin
+Master Keaton|OP|1|https://nl.catbox.moe/61kgff.webm|Railtown|Kuniaki Haishima|22.6|1483|Master Keaton
+Bubblegum Crisis: Tokyo 2040|OP|1|https://nl.catbox.moe/ryov1u.webm|Y'know|Akira Sudou|15.7|568|Bubblegum Crisis: Tokyo 2040
+Mamotte Shugogetten!|OP|1|https://nl.catbox.moe/9hpes6.webm|Saa!|SURFACE|22.2|626|Mamotte Shugogetten!
+Majutsushi Orphen|OP|2|https://nl.catbox.moe/qk9kp8.webm|Kimi wa Majutsushi|Sharan Q|13.0|1017|Sorcerous Stabber Orphen
+Saber Marionette J to X|OP|1|https://nl.catbox.moe/q5iyeh.webm|Proof of Myself|Megumi Hayashibara|14.1|1231|Saber Marionette J to X
+Glass no Kamen: Sen no Kamen o Motsu Shoujo|OP|1|https://nl.catbox.moe/aek1yl.webm|Hikari ni Naritai|Mahoro Hoshino|8.1|3734|Glass Mask: The Girl of a Thousand Masks
+Generator Gawl|OP|1|https://nl.catbox.moe/k9mkv1.webm|I WANT OUT|Yuki Saga|14.4|1022|Generator Gawl
+Touch: Are kara, Kimi wa... - Miss Lonely Yesterday|OP|1|https://nl.catbox.moe/7hg189.webm|Touch -Friday Night Version-|Natsumi Sawai & Quick-Times|16.3|1540|Touch: Miss Lonely Yesterday
+Beast Wars II Chou Seimeitai Transformers: Lio Convoy Kiki Ippatsu! Movie|OP|1|https://nl.catbox.moe/9gx1re.webm|SPACE DREAMER ~Harukanaru Beast Wars~|COA|12.2|5289|Beast Wars II Chou Seimeitai Transformers: Lio Convoy Kiki Ippatsu! Movie
+Devilman Lady|OP|1|https://nl.catbox.moe/d96wzx.webm|Devilman Lady Main Theme|Tokyo Philharmonic Chorus|21.8|1629|The Devil Lady
+Gasaraki|OP|1|https://nl.catbox.moe/a6xux7.webm|MESSAGE #9|Tomoko Tane|16.4|782|Gasaraki
+Ojarumaru|OP|1|https://nl.catbox.moe/r174m4.webm|Utabito|Saburo Kitajima|12.3|4459|Prince Mackaroo
+Eat-Man '98|OP|1|https://nl.catbox.moe/qutpgi.webm|Burning Blue|MAGIC|13.3|1599|Eat-Man '98
+Hanasaka Tenshi Tenten-kun|OP|1|https://nl.catbox.moe/w2lakr.webm|Class de Ichiban Sugoi Yatsu|Bra Bra Bravoes|6.5|9811|Hanasaka Tenshi Tenten-kun
+Gasaraki|OP|2|https://nl.catbox.moe/kakkkl.webm|REMIX OF MESSAGE #9:typeM|Tomoko Tane|15.7|782|Gasaraki
+Chousoku Spinner|OP|2|https://nl.catbox.moe/bc6tgi.webm|LOOP&LOOP|Showtaro Morikubo|12.8|2703|Super Yo-Yo
+Yoiko|OP|1|https://nl.catbox.moe/modffe.webm|Akane-iro no Omoi|Juliana Schano|14.1|4591|Yoiko
+Kareshi Kanojo no Jijou|OP|1|https://nl.catbox.moe/iwbbds.webm|Tenshi no Yubikiri|Mai Fukuda|26.2|145|His and Her Circumstances
+Dokkiri Doctor|OP|1|https://nl.catbox.moe/xi7z2d.webm|Nenai, Nenai, Nenai|The Castanets|11.2|4554|Dr. Dokkiri
+Chousoku Spinner|OP|1|https://nl.catbox.moe/scne0q.webm|SOMEDAY LET'S GO TOGETHER|rub-down|8.0|2703|Super Yo-Yo
+Jikuu Tantei Genshi-kun|OP|1|https://nl.catbox.moe/zsruse.webm|Power na Kimochi|Yukari Asakura|15.6|2281|Flint: The Time Detective
+Starlight Scramble Renai Kouhosei|OP|1|https://nl.catbox.moe/1whxxx.webm|DREAM IT ~Anata ni Meguriaitai~|Ayako Kawasumi|13.3|9500|Starlight Scramble Renai Kouhosei
+Popolocrois Monogatari|OP|1|https://nl.catbox.moe/jgb9m4.webm|Natsu Kikyuu|Rie Otsuka|7.5|4191|Popolocrois Story
+Let's Nupu Nupu|OP|1|https://nl.catbox.moe/2hqv44.webm|Maybe true|FANATIC◇CRISIS|14.0|21486|Let's Nupu Nupu
+Totsugeki! Pappara-tai|OP|1|https://nl.catbox.moe/5sft2r.webm|Gizagiza MAKE A MOTION|Misty|8.9|5278|Totsugeki! Pappara-tai
+Super Doll Licca-chan|OP|1|https://nl.catbox.moe/5c6rlm.webm|Ne|Rooky|9.4|2766|Super Doll Licca-chan
+Kurogane Communication|OP|1|https://nl.catbox.moe/p237eg.webm|my best friend|Yui Horie|13.1|1660|Kurogane Communication
+Kaiketsu Jouki Tanteidan|OP|1|https://nl.catbox.moe/c3isil.webm|Kimi, Hohoenda Yoru|elika|13.5|2704|Steam Detectives
+Shinseki GPX Cyber Formula Sin|OP|2|https://nl.catbox.moe/wmau9k.webm|Soul of Rebirth ~Jidai no Kodou ni Nare~|Hironobu Kageyama|15.3|1395|Future GPX Cyber Formula Sin
