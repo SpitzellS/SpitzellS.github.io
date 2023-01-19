@@ -1,29 +1,29 @@
-The Slayers|OP|1|https://nl.catbox.moe/a8zdlz.webm|Get along|Masami Okui & Megumi Hayashibara|30.5
-Sotsugyou V|OP|1|https://nl.catbox.moe/5w50ew.webm|Sailor V~Hanafubuki no Ran~|Aya Hisakawa, Hinako Kanamaru, Junko Shimakata, Yumi Touma, Hiromi Tsuru|13.3
-Mimi o Sumaseba|OP|1|https://nl.catbox.moe/618bxv.webm|Country Road|Olivia Newton-John|36.7
-Ai Tenshi Densetsu Wedding Peach|OP|2|https://nl.catbox.moe/67n115.webm|Wedding Wars -Ai wa Honoo-|Erina Nakajima|14.6
-Juusenshi Gulkeeva|OP|1|https://nl.catbox.moe/vne6r0.webm|Don't look back|ZNK|7.2
-H2|OP|1|https://nl.catbox.moe/pyndib.webm|Niji no Grand Slam|Toshinobu Kubota|13.5
-H2|OP|2|https://nl.catbox.moe/69pk1o.webm|BACK TO THE GROUND|Yoshifumi Ushima|13.3
-Bishoujo Senshi Sailor Moon SuperS|OP|1|https://nl.catbox.moe/gf6213.webm|Moonlight Densetsu|Sakurakko Club Sakura-gumi|37.3
-Hikyou Tanken Fam & Ihrlie: Ruin Explorer|OP|1|https://nl.catbox.moe/s5brqh.webm|Magical Beat!|Rica Matsumoto|10.9
-Shin Kidou Senki Gundam Wing|OP|2|https://nl.catbox.moe/edqzt4.webm|RHYTHM EMOTION|TWO-MIX|35.2
-Ike! Ina-chuu Takkyuu-bu|OP|2|https://nl.catbox.moe/c2ydf6.webm|Man-in Densha Hitomebore|SWITCH|12.9
-Ai Tenshi Densetsu Wedding Peach|OP|1|https://nl.catbox.moe/ij9q7i.webm|Yumemiru Ai Tenshi|FURIL|19.7
-Megami Tengoku|OP|1|https://nl.catbox.moe/6kqfah.webm|GET MY WAY|Masami Okui|15.4
-Magic Knight Rayearth|OP|1|https://nl.catbox.moe/1f9pur.webm|Kirai ni Narenai|Ayumi Nakamura|18.4
-Tenchi Muyo!|OP|1|https://nl.catbox.moe/ebrhx1.webm|Tenchi Muyo!|SONIA|13.3
-Shinpi no Sekai El Hazard|OP|1|https://nl.catbox.moe/flaaxk.webm|Shinpi no Sekai El Hazard Main Theme|Seikou Nagaoka|14.4
-Juuni Senshi Bakuretsu Eto Ranger|OP|1|https://nl.catbox.moe/rmzjcz.webm|Mada Mada Mada|Yumiko Shinmei|11.0
-Street Fighter II V|OP|1|https://nl.catbox.moe/nbkwtv.webm|Kaze Fuiteru|Yuki Kuroda|12.7
-Ike! Ina-chuu Takkyuu-bu|OP|1|https://nl.catbox.moe/ztnij1.webm|Shanimuni Shake! Shake!|SWITCH|12.5
-Kouryuu no Mimi|OP|1|https://nl.catbox.moe/jforsb.webm|Tenshou|Toshiyuki Morikawa|7.5
-Crayon Shin-chan: Unkokusai no Yabou|OP|1|https://nl.catbox.moe/cr0oxo.webm|Ora wa Ninkimono|Akiko Yajima|47.6
-Tobe! Isami|OP|1|https://nl.catbox.moe/t7vefa.webm|Heart o Migakukkyanai|TOKIO|9.1
-Street Fighter II V|OP|2|https://nl.catbox.moe/iasxpj.webm|Ima, Ashita no Tame ni|Shuji Honda|8.6
-Dirty Pair Flash 2|OP|1|https://nl.catbox.moe/wpeirt.webm|Thrill ni Koishite|Rica Matsumoto|13.0
-Fushigi Yuugi|OP|1|https://nl.catbox.moe/3u1m2y.webm|Itooshii Hito no Tame ni|Akemi Satou|21.8
-Azuki-chan|OP|1|https://nl.catbox.moe/pptf1u.webm|Suteki na Kimi|RAZZ MA TAZZ|16.3
-Magic Knight Rayearth|OP|2|https://nl.catbox.moe/h9pjbz.webm|Hikari to Kage o Dakishimeta Mama|Naomi Tamura|19.7
-Kyouryuu Boukenki Jura Tripper|OP|1|https://nl.catbox.moe/x7h3m8.webm|Boku-tachi no Start|Hironobu Kageyama|9.3
-Shin Kidou Senki Gundam Wing|OP|1|https://nl.catbox.moe/s99dsa.webm|JUST COMMUNICATION|TWO-MIX|38.3
+Shin Kidou Senki Gundam Wing|OP|2|https://nl.catbox.moe/edqzt4.webm|RHYTHM EMOTION|TWO-MIX|38.8|90|Mobile Suit Gundam Wing
+Ike! Ina-chuu Takkyuu-bu|OP|2|https://nl.catbox.moe/c2ydf6.webm|Man-in Densha Hitomebore|SWITCH|12.8|914|The Ping Pong Club
+H2|OP|1|https://nl.catbox.moe/pyndib.webm|Niji no Grand Slam|Toshinobu Kubota|14.7|386|H2
+Magic Knight Rayearth|OP|2|https://nl.catbox.moe/h9pjbz.webm|Hikari to Kage o Dakishimeta Mama|Naomi Tamura|24.6|1563|Magic Knight Rayearth
+Sotsugyou V|OP|1|https://nl.catbox.moe/5w50ew.webm|Sailor V~Hanafubuki no Ran~|Aya Hisakawa, Hinako Kanamaru, Junko Shimakata, Yumi Touma, Hiromi Tsuru|14.7|1643|Sailor Victory
+Juuni Senshi Bakuretsu Eto Ranger|OP|1|https://nl.catbox.moe/rmzjcz.webm|Mada Mada Mada|Yumiko Shinmei|9.0|2757|Eto Ranger
+Kouryuu no Mimi|OP|1|https://nl.catbox.moe/jforsb.webm|Tenshou|Toshiyuki Morikawa|11.4|2737|Ear of the Golden Dragon
+Dirty Pair Flash 2|OP|1|https://nl.catbox.moe/wpeirt.webm|Thrill ni Koishite|Rica Matsumoto|14.7|12343|Dirty Pair Flash 2
+Tobe! Isami|OP|1|https://nl.catbox.moe/t7vefa.webm|Heart o Migakukkyanai|TOKIO|8.7|3036|Soar High! Isami
+Street Fighter II V|OP|1|https://nl.catbox.moe/nbkwtv.webm|Kaze Fuiteru|Yuki Kuroda|13.8|876|Street Fighter II V
+Shinpi no Sekai El Hazard|OP|1|https://nl.catbox.moe/flaaxk.webm|Shinpi no Sekai El Hazard Main Theme|Seikou Nagaoka|18.6|117|El-Hazard: The Magnificent World
+Eiga Crayon Shin-chan: Unkokusai no Yabou|OP|1|https://nl.catbox.moe/cr0oxo.webm|Ora wa Ninkimono|Akiko Yajima|79.8|6217|Eiga Crayon Shin-chan: Unkokusai no Yabou
+Ai Tenshi Densetsu Wedding Peach|OP|2|https://nl.catbox.moe/0ury0j.webm|Wedding Wars -Ai wa Honoo-|Erina Nakajima|13.4|1533|Wedding Peach
+H2|OP|2|https://nl.catbox.moe/69pk1o.webm|BACK TO THE GROUND|Yoshifumi Ushima|15.0|386|H2
+Mimi o Sumaseba|OP|1|https://nl.catbox.moe/618bxv.webm|Country Road|Olivia Newton-John|58.9|585|Whisper of the Heart
+Tenchi Muyou!|OP|1|https://nl.catbox.moe/ebrhx1.webm|Tenchi Muyou!|SONIA|14.9|696|Tenchi Universe
+Ai Tenshi Densetsu Wedding Peach|OP|1|https://nl.catbox.moe/ij9q7i.webm|Yumemiru Ai Tenshi|FURIL|18.1|1533|Wedding Peach
+Bishoujo Senshi Sailor Moon SuperS|OP|1|https://nl.catbox.moe/gf6213.webm|Moonlight Densetsu|Sakurakko Club Sakura-gumi|53.8|3076|Sailor Moon SuperS
+Hikyou Tanken Fam & Ihrlie: Ruin Explorer|OP|1|https://nl.catbox.moe/s5brqh.webm|Magical Beat!|Rica Matsumoto|13.1|1181|Ruin Explorers: Fam & Ihrie
+Azuki-chan|OP|1|https://nl.catbox.moe/pptf1u.webm|Suteki na Kimi|RAZZ MA TAZZ|15.5|1893|Azuki-chan
+Juusenshi Gulkeeva|OP|1|https://nl.catbox.moe/vne6r0.webm|Don't look back|ZNX|10.0|3099|Juusenshi Gulkeeva
+Ike! Ina-chuu Takkyuu-bu|OP|1|https://nl.catbox.moe/ztnij1.webm|Shanimuni Shake! Shake!|SWITCH|11.7|914|The Ping Pong Club
+Magic Knight Rayearth|OP|1|https://nl.catbox.moe/1f9pur.webm|Kirai ni Narenai|Ayumi Nakamura|21.3|1563|Magic Knight Rayearth
+Slayers|OP|1|https://nl.catbox.moe/a8zdlz.webm|Get along|Masami Okui & Megumi Hayashibara|40.0|534|The Slayers
+Megami Tengoku|OP|1|https://nl.catbox.moe/6kqfah.webm|GET MY WAY|Masami Okui|17.1|2528|Megami Paradise
+Street Fighter II V|OP|2|https://nl.catbox.moe/iasxpj.webm|Ima, Ashita no Tame ni|Shuji Honda|9.2|876|Street Fighter II V
+Fushigi Yuugi|OP|1|https://nl.catbox.moe/3u1m2y.webm|Itooshii Hito no Tame ni|Akemi Satou|25.1|123|Curious Play
+Kyouryuu Boukenki Jura Tripper|OP|1|https://nl.catbox.moe/x7h3m8.webm|Boku-tachi no Start|Hironobu Kageyama|12.9|2487|Dino Adventure Jurassic Tripper
+Shin Kidou Senki Gundam Wing|OP|1|https://nl.catbox.moe/s99dsa.webm|JUST COMMUNICATION|TWO-MIX|41.2|90|Mobile Suit Gundam Wing

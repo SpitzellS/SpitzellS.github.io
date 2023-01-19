@@ -1,14 +1,13 @@
-Gokinjo Monogatari|OP|1|https://nl.catbox.moe/wklgal.webm|He・Ro・I・N|Rumi Shishido|14.2
-Gekijouban Macross 7: Ginga ga Ore o Yondeiru!|OP|1|https://nl.catbox.moe/vbro53.webm|SEVENTH MOON|Fire Bomber|32.2
-Mama wa Poyopoyo-Saurus ga Osuki|OP|1|https://nl.catbox.moe/psj3d1.webm|Beeper Love (Saurus Version)|NOW|13.7
-Ginga Ojou-sama Densetsu Yuna|OP|1|https://nl.catbox.moe/sc97rp.webm|Funny Funny Little Girl|Chisa Yokoyama|13.5
-Nurse Angel Ririka SOS|OP|1|https://nl.catbox.moe/9wbl93.webm|Koi o Suru Tabi ni Kizutsuki Yasuku...|Suirei|10.2
-Bamboo Bears|OP|2|https://nl.catbox.moe/cbk7ha.webm|Voice (in summer)|Takeshi Kusao|11.5
-Ninku the Movie|OP|1|https://nl.catbox.moe/wbl3id.webm|Kagayaki wa Kimi no Naka ni|Yume Suzuki|10.5
-Nurse Angel Ririka SOS|OP|2|https://nl.catbox.moe/kcb2mo.webm|Doo ni ka Koo ni ka|Eiko Minami|10.6
-Slam Dunk: Hoero Basketman Tamashii! Hanamichi to Rukawa no Atsuki Natsu|OP|1|https://nl.catbox.moe/7ii721.webm|Zettai ni Dare mo|ZYYG|23.8
-Hajimari no Boukensha-tachi: Legend of Crystania|OP|1|https://nl.catbox.moe/xe4hph.webm|Haruka na Inori|Hitomi Mieno|9.9
-Soreike! Anpanman: Yuureisen o Yattsukero!!|OP|1|https://nl.catbox.moe/imap5i.webm|Anpanman no March|Dreaming|29.6
-Mahou Shoujo Pretty Sammy|OP|1|https://nl.catbox.moe/v5nutg.webm|Chanto Yume o Mimasho!|Chisa Yokoyama|11.6
-Idol Project|OP|1|https://nl.catbox.moe/ke6ajl.webm|Don't Stop ~Suteki ni Meguri Aitai~|IDOL♡PROJECT|11.9
-Rakushou! Hyper Doll|OP|1|https://nl.catbox.moe/7wpubb.webm|Hyper-Doll|Yukana Nogami & Mayumi Iizuka|7.8
+Gekijouban Macross 7: Ginga ga Ore o Yondeiru!|OP|1|https://nl.catbox.moe/vbro53.webm|SEVENTH MOON|Fire Bomber|44.9|1400|Macross 7 the Movie: The Galaxy's Calling Me!
+Ginga Ojou-sama Densetsu Yuna|OP|1|https://nl.catbox.moe/sc97rp.webm|Funny Funny Little Girl|Chisa Yokoyama|16.2|2473|Galaxy Fraulein Yuna
+Idol Project|OP|1|https://nl.catbox.moe/ke6ajl.webm|Don't Stop! -Su・Te・Ki ni Meguri Aitai-|IDOL♡PROJECT|16.8|2072|Idol Project
+Mahou Shoujo Pretty Sammy|OP|1|https://nl.catbox.moe/v5nutg.webm|Chanto Yume o Mimasho!|Chisa Yokoyama|12.4|1918|Magical Girl Pretty Sammy
+Hajimari no Boukensha-tachi: Legend of Crystania|OP|1|https://nl.catbox.moe/xe4hph.webm|Haruka na Inori|Hitomi Mieno|10.0|515|Legend of Crystania: The Motion Picture
+Nurse Angel Ririka SOS|OP|1|https://nl.catbox.moe/9wbl93.webm|Koi o Suru Tabi ni Kizutsuki Yasuku...|Suirei|12.6|616|Nurse Angel Ririka SOS
+Rakushou! Hyper Doll|OP|1|https://nl.catbox.moe/7wpubb.webm|Hyper-Doll|Yukana Nogami & Mayumi Iizuka|9.7|2522|Hyper Doll
+Slam Dunk: Hoero Basketman Tamashii! Hanamichi to Rukawa no Atsuki Natsu|OP|1|https://nl.catbox.moe/7ii721.webm|Zettai ni Dare mo|ZYYG|32.3|2499|Slam Dunk: Hoero Basketman Tamashii! Hanamichi to Rukawa no Atsuki Natsu
+Soreike! Anpanman: Yuureisen o Yattsukero!!|OP|1|https://nl.catbox.moe/imap5i.webm|Anpanman no March|Dreaming|41.3|10058|Soreike! Anpanman: Yuureisen o Yattsukero!!
+Gokinjo Monogatari|OP|1|https://nl.catbox.moe/wklgal.webm|He・Ro・I・Ne|Rumi Shishido|18.2|852|Neighborhood Story
+Ninku the Movie|OP|1|https://nl.catbox.moe/wbl3id.webm|Kagayaki wa Kimi no Naka ni|Yume Suzuki|10.3|2851|Ninku the Movie
+Mama wa Poyopoyo-Saurus ga Osuki|OP|1|https://nl.catbox.moe/psj3d1.webm|Beeper Love (Saurus Version)|NOW|20.0|4782|Mama Loves the Poyopoyo-Saurus
+Nurse Angel Ririka SOS|OP|2|https://nl.catbox.moe/kcb2mo.webm|Doo ni ka Koo ni ka|Eiko Minami|12.3|616|Nurse Angel Ririka SOS

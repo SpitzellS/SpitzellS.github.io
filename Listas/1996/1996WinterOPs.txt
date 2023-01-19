@@ -1,15 +1,79 @@
-Kougyou Aika Volley Boys|OP|1|https://nl.catbox.moe/f6dto8.webm|Monku Aru no ka!|Kouji Yoshida|14.8
-Dragon Ball GT: Goku Gaiden! Yuuki no Akashi wa Suushinchuu|OP|1|https://nl.catbox.moe/vl9gkr.webm|DAN DAN Kokoro Hikareteku|FIELD OF VIEW|44.9
-Eat-Man|OP|1|https://nl.catbox.moe/f7gq9h.webm|Chiisana Koi no Melody|Kinniku Shoujo-tai|14.4
-Mach Go Go Go|OP|2|https://nl.catbox.moe/mbdydh.webm|Mach Go Go Go 1997|Kentaro Hayami|30.1
-Perfect Blue|OP|1|https://nl.catbox.moe/ni1ssb.webm|Omoide ni Dakarete Ima wa|MISA|18.6
-Jungle de Ikou!|OP|1|https://nl.catbox.moe/z0iwdy.webm|J|Masami Okui|16.3
-Kero Kero Chime|OP|2|https://nl.catbox.moe/cae8ze.webm|LOVE & PEACE|CHIECO|9.7
-Kero Kero Chime|OP|1|https://nl.catbox.moe/x7rbfn.webm|YOU'RE THE ONLY ONE|Love Connection|5.5
-Doraemon: Nobita no Nejimaki City Boukenki|OP|1|https://nl.catbox.moe/49jmyl.webm|Doraemon no Uta|Satoko Yamano & Nobuyo Oyama|60.7
-Mach Go Go Go|OP|1|https://nl.catbox.moe/81s8fb.webm|Junbaku no Energy|Kentaro Hayami|11.8
-Shinpi no Sekai El Hazard 2|OP|1|https://nl.catbox.moe/g2p8m7.webm|El Hazard 2 no Theme|Maria Kawamura|9.4
-Bakusou Kyoudai Let's & Go!! WGP|OP|1|https://nl.catbox.moe/11oimg.webm|GET THE WORLD|Hironobu Kageyama|14.8
-Gegege no Kitarou: Obake Nighter|OP|1|https://nl.catbox.moe/70819d.webm|Gegege no Kitarou|Ukadan|60.2
-Yuusha-Oh GaoGaiGar|OP|1|https://nl.catbox.moe/edeawz.webm|Yuusha-Ou Tanjou!|Masaaki Endoh|30.9
-Cutey Honey F|OP|1|https://nl.catbox.moe/ohudz4.webm|Cutey Honey|SALIA|24.1
+Meitantei Conan|OP|55|https://nl.catbox.moe/mzs4do.webm|SLEEPLESS|B'z|33.0|235|Detective Conan
+Meiken Lassie|OP|1|https://nl.catbox.moe/8kgifp.webm|Owaranai Monogatari|Jun Morioka|7.3|3425|Meiken Lassie
+Meitantei Conan|OP|30|https://nl.catbox.moe/bgl0hu.webm|tear drops|Caos Caos Caos|36.2|235|Detective Conan
+Rurouni Kenshin: Meiji Kenkaku Romantan|OP|1|https://nl.catbox.moe/g3zibr.webm|Sobakasu|JUDY AND MARY|45.3|45|Rurouni Kenshin
+Bakusou Kyoudai Let's & Go!!|OP|1|https://nl.catbox.moe/sa4f5o.webm|Winning Run! -Kaze ni Naritai-|Yukio Yamagata|15.3|2705|Bakusou Kyoudai Let's & Go!!
+Meitantei Conan|OP|10|https://nl.catbox.moe/ck4kr2.webm|Winter Bells|Mai Kuraki|48.9|235|Detective Conan
+Ayane-chan High Kick|OP|1|https://nl.catbox.moe/za84ae.webm|FIGHT FOR YOURSELF|THE STREET BEATS|15.5|2183|Ayane's High Kick
+Meitantei Conan|OP|41|https://nl.catbox.moe/7du22a.webm|Nazo|La PomPon|28.9|235|Detective Conan
+Meitantei Conan|OP|29|https://nl.catbox.moe/kzghu1.webm|SUMMER TIME GONE|Mai Kuraki|46.0|235|Detective Conan
+Meitantei Conan|OP|19|https://nl.catbox.moe/dardot.webm|Kumo ni Notte|U-ka saegusa IN db|26.6|235|Detective Conan
+Meitantei Conan|OP|40|https://nl.catbox.moe/bs0y4j.webm|WE GO|BREAKERZ|31.4|235|Detective Conan
+Bucket de Gohan|OP|1|https://nl.catbox.moe/gwn8nr.webm|Shiawase no Ou-sama|Papa Lunch Mama|9.7|9540|Ginpei the Penguin
+Meitantei Conan|OP|53|https://nl.catbox.moe/k20sby.webm|ZERO kara Hajimete|Mai Kuraki|38.6|235|Detective Conan
+Meitantei Conan|OP|7|https://nl.catbox.moe/fr65h5.webm|Mysterious Eyes|GARNET CROW|41.4|235|Detective Conan
+Meitantei Conan|OP|52|https://nl.catbox.moe/mvlo2y.webm|JUST BELIEVE YOU|all at once|23.5|235|Detective Conan
+Meitantei Conan|OP|33|https://nl.catbox.moe/3y6idc.webm|Miss Mystery|BREAKERZ|30.7|235|Detective Conan
+Gegege no Kitarou|OP|1|https://nl.catbox.moe/yobnqk.webm|Gegege no Kitarou|Ukadan|89.5|7619|Spooky Kitaro
+Meitantei Conan|OP|9|https://nl.catbox.moe/mdpkcp.webm|destiny|Miki Matsuhashi|34.4|235|Detective Conan
+Meitantei Conan|OP|27|https://nl.catbox.moe/zit2nn.webm|MAGIC|Rina Aiuchi|31.4|235|Detective Conan
+Meitantei Conan|OP|51|https://nl.catbox.moe/1grwyq.webm|Makka na Lip|WANDS|23.8|235|Detective Conan
+Yuusha Shirei Dagwon|OP|1|https://nl.catbox.moe/a3ruoa.webm|Kagayake!! Dagwon|Nieve|17.7|3505|The Brave Command Dagwon
+Meitantei Conan|OP|26|https://nl.catbox.moe/a0o87i.webm|Everlasting Luv|BREAKERZ|32.3|235|Detective Conan
+Meitantei Conan|OP|39|https://nl.catbox.moe/0wbhpk.webm|DYNAMITE|Mai Kuraki|40.0|235|Detective Conan
+Meitantei Conan|OP|22|https://nl.catbox.moe/46cpuc.webm|Ai wa Kurayami no Naka de|ZARD|29.4|235|Detective Conan
+Rurouni Kenshin: Meiji Kenkaku Romantan|OP|2|https://nl.catbox.moe/viw8b9.webm|½|Makoto Kawamoto|30.8|45|Rurouni Kenshin
+Meitantei Conan|OP|42|https://nl.catbox.moe/suv9jg.webm|Hane|Koshi Inaba|35.7|235|Detective Conan
+Bakusou Kyoudai Let's & Go!!|OP|2|https://nl.catbox.moe/ltro4n.webm|FLESH&BLOOD ~Futatsu no Omoi~|G-CRISIS|8.5|2705|Bakusou Kyoudai Let's & Go!!
+Meitantei Conan|OP|16|https://nl.catbox.moe/ch56n5.webm|Growing of my heart|Mai Kuraki|40.2|235|Detective Conan
+Meitantei Conan|OP|56|https://nl.catbox.moe/f3r9bn.webm|SPARKLE|Maki Ohguro|27.2|235|Detective Conan
+Doukyuusei 2|OP|1|https://nl.catbox.moe/44dtvy.webm|Irozuku Koro ni...|Hikari Tachibana|7.0|4842|Doukyuusei 2
+Meitantei Conan|OP|34|https://nl.catbox.moe/90lp8e.webm|Kimi no Namida ni Konna ni Koishiteru|Natsuiro|42.2|235|Detective Conan
+Meitantei Conan|OP|24|https://nl.catbox.moe/6cbwnn.webm|Mysterious|Naifu|32.6|235|Detective Conan
+Meitantei Conan|OP|49|https://nl.catbox.moe/ii1j9r.webm|Bara-iro no Jinsei|Mai Kuraki|33.8|235|Detective Conan
+Meitantei Conan|OP|4|https://nl.catbox.moe/onnl7p.webm|Unmei no Roulette Mawashite|ZARD|46.6|235|Detective Conan
+Meitantei Conan|OP|23|https://nl.catbox.moe/cxbiqb.webm|Ichibyou Goto ni Love for you|Mai Kuraki|34.8|235|Detective Conan
+Meitantei Conan|OP|1|https://nl.catbox.moe/e01fte.webm|Mune ga Dokidoki|THE HIGH-LOWS|47.8|235|Detective Conan
+Dragon Ball GT|OP|1|https://nl.catbox.moe/cfl3nm.webm|DAN DAN Kokoro Hikareteku|FIELD OF VIEW|61.9|225|Dragon Ball GT
+Meitantei Conan|OP|6|https://nl.catbox.moe/u1nkdx.webm|Girigiri chop|B'z|32.4|235|Detective Conan
+Meitantei Conan|OP|3|https://nl.catbox.moe/66tme3.webm|Nazo|Miho Komatsu|36.2|235|Detective Conan
+Marriage: Kekkon|OP|1|https://nl.catbox.moe/os0vxe.webm|Aisuru Anata ni Okuru Uta|Miki Kasamatsu|12.4|2082|Marriage: Kekkon
+Meitantei Conan|OP|20|https://nl.catbox.moe/f6aby5.webm|Namida no Yesterday|GARNET CROW|41.9|235|Detective Conan
+Meitantei Conan|OP|25|https://nl.catbox.moe/x5n6xh.webm|Revive|Mai Kuraki|47.8|235|Detective Conan
+Meitantei Conan|OP|36|https://nl.catbox.moe/6pj1n0.webm|Q&A|B'z|34.7|235|Detective Conan
+Meitantei Conan|OP|45|https://nl.catbox.moe/qq2o64.webm|Lie, Lie, Lie,|Maki Ohguro|27.0|235|Detective Conan
+Meitantei Conan|OP|46|https://nl.catbox.moe/6hlwcy.webm|Everything OK!!|Cellchrome|23.7|235|Detective Conan
+Meitantei Conan|OP|11|https://nl.catbox.moe/09niel.webm|I can't stop my love for you♥|Rina Aiuchi|35.8|235|Detective Conan
+Meitantei Conan|OP|32|https://nl.catbox.moe/0yhp2w.webm|Misty Mystery|GARNET CROW|48.7|235|Detective Conan
+Meitantei Conan|OP|31|https://nl.catbox.moe/vuhkmu.webm|Don't Wanna Lie|B'z|40.4|235|Detective Conan
+Power Dolls|OP|1|https://nl.catbox.moe/y1ul82.webm|Heaven|Kaori Moriwaka|10.9|1820|Power Dolls
+Tokumu Sentai Shinesman|OP|1|https://nl.catbox.moe/iixo90.webm|SHINE! Shinesman ~YOURE THE HERO~|Hironobu Kageyama|17.5|2097|The Special Duty Combat Unit Shinesman
+Meitantei Conan|OP|13|https://nl.catbox.moe/8hmni1.webm|Kimi to Yakusoku Shita Yasashii Ano Basho Made|U-ka saegusa IN db|26.9|235|Detective Conan
+Meitantei Conan|OP|5|https://nl.catbox.moe/zxqbsc.webm|TRUTH|TWO-MIX|34.9|235|Detective Conan
+Meitantei Conan|OP|17|https://nl.catbox.moe/zppqsn.webm|Shoudou|B'z|31.9|235|Detective Conan
+Meitantei Conan|OP|48|https://nl.catbox.moe/bp1bk6.webm|Timeline|dps|21.1|235|Detective Conan
+Meitantei Conan|OP|35|https://nl.catbox.moe/2iinkc.webm|TRY AGAIN|Mai Kuraki|33.1|235|Detective Conan
+Meitantei Conan|OP|8|https://nl.catbox.moe/4meq6f.webm|Koi wa Thrill, Shock, Suspense|Rina Aiuchi|36.9|235|Detective Conan
+Meitantei Conan|OP|37|https://nl.catbox.moe/tpag6y.webm|Butterfly Core|VALSHE|25.2|235|Detective Conan
+Meitantei Conan|OP|12|https://nl.catbox.moe/l97p6w.webm|Kaze no Lalala|Mai Kuraki|37.7|235|Detective Conan
+Meitantei Conan|OP|28|https://nl.catbox.moe/ql7s86.webm|As the Dew|GARNET CROW|38.8|235|Detective Conan
+Kidou Senshi Gundam: Dai 08 MS Shoutai|OP|1|https://nl.catbox.moe/in99aq.webm|Arashi no Naka de Kagayaite|Chihiro Yonekura|26.9|81|Mobile Suit Gundam: The 08th MS Team
+Doraemon: Nobita to Ginga Express|OP|1|https://nl.catbox.moe/b47b4j.webm|Doraemon no Uta|Satoko Yamano & Nobuyo Oyama|79.4|2675|Doraemon: Nobita to Ginga Express
+Meitantei Conan|OP|38|https://nl.catbox.moe/knpf20.webm|Greed|KNOCK OUT MONKEY|21.5|235|Detective Conan
+Meitantei Conan|OP|18|https://nl.catbox.moe/vpzyu4.webm|100 Mono Tobira|Rina Aiuchi & U-ka saegusa|24.6|235|Detective Conan
+Meitantei Conan|OP|43|https://nl.catbox.moe/1vgrxi.webm|Sekai wa Anata no Iro ni Naru|B'z|36.3|235|Detective Conan
+Meitantei Conan|OP|15|https://nl.catbox.moe/y9m43b.webm|Hoshi no Kagayaki yo|ZARD|38.0|235|Detective Conan
+Meitantei Conan|OP|50|https://nl.catbox.moe/b2mjtg.webm|ANSWER|Only this time|21.9|235|Detective Conan
+Meitantei Conan|OP|2|https://nl.catbox.moe/iz61wb.webm|Feel Your Heart|VELVET GARDEN|26.5|235|Detective Conan
+City Hunter: The Secret Service|OP|1|https://nl.catbox.moe/1mtn5g.webm|Otherwise|KONTA|9.6|1477|City Hunter: The Secret Service
+Meitantei Conan|OP|54|https://nl.catbox.moe/88w6qg.webm|YURA YURA|WANDS|27.0|235|Detective Conan
+Soukihei M.D. Geist 2|OP|1|https://nl.catbox.moe/p5xqp2.webm|Tsuki ga Naiteru|Yoshiaki Ohuchi|13.6|1286|M.D. Geist II: Death Force
+Meitantei Conan|OP|47|https://nl.catbox.moe/syfoc3.webm|Countdown|NormCore|24.4|235|Detective Conan
+Chocchan Monogatari|OP|1|https://nl.catbox.moe/5hbzot.webm|Habanera|Toyoko Nakajima with Shintomin Chorus|9.9|4201|Chocchan's Story
+Meitantei Conan|OP|21|https://nl.catbox.moe/skn2ja.webm|Glorious Mind|ZARD|43.0|235|Detective Conan
+Rurouni Kenshin: Meiji Kenkaku Romantan|OP|3|https://nl.catbox.moe/v3zin7.webm|Kimi ni Fureru dake de|CURIO|20.1|45|Rurouni Kenshin
+Meitantei Conan|OP|14|https://nl.catbox.moe/0wvv8s.webm|START|Rina Aiuchi|31.4|235|Detective Conan
+Meitantei Conan|OP|44|https://nl.catbox.moe/lqcs88.webm|Ikusen no Meikyuu de Ikusen no Nazo o Toite|BREAKERZ|29.0|235|Detective Conan
+Midori no Makibao|OP|1|https://nl.catbox.moe/z5ad9h.webm|Hashire Makibao|F・MAP|22.7|3550|Green Makibao, The Incredible Race Horse
+Gakuen Toshi Varanoir|OP|1|https://nl.catbox.moe/45u8z0.webm|Bridge|Chihiro Yonekura|13.0|3533|Gakuen Toshi Varanoir
+Bishoujo Senshi Sailor Moon Sailor Stars|OP|1|https://nl.catbox.moe/0fybql.webm|Sailor Star Song|Kae Hanazawa|25.0|996|Sailor Moon Sailor Stars

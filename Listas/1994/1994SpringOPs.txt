@@ -1,20 +1,21 @@
-Yamato Takeru|OP|2|https://nl.catbox.moe/9aqvkt.webm|Flower of Desert|Naoko Hamasaki|9.9
-Kidou Butouden G Gundam|OP|2|https://nl.catbox.moe/jjd7kn.webm|Trust You Forever|Yoshifumi Ushima|25.6
-Ginga Sengoku Gunyuuden Rai|OP|1|https://nl.catbox.moe/2w5flu.webm|Ikazuchi Densetsu|Norihiko Tanimoto|10.7
-New Cutey Honey|OP|2|https://nl.catbox.moe/p53l6d.webm|Cutey Honey (Eigo Version)|Mayukiss|24.2
-Soccer Fever|OP|1|https://nl.catbox.moe/9wn4v0.webm|BOOM BOOM AMERICA|Paolo Zavallone|25.3
-New Cutey Honey|OP|1|https://nl.catbox.moe/pyodab.webm|Cutey Honey|les 5-4-3-2-1|24.1
-Goal FH|OP|1|https://nl.catbox.moe/hnt95v.webm|Sunrise Itsuka wa|Dog Fight|6.0
-Haou Taikei Ryuu Knight|OP|2|https://nl.catbox.moe/49r69g.webm|RUN ~Kyou ga Kawaru Magic~|Hitomi Mieno|7.7
-Iria: Zeiram the Animation|OP|1|https://nl.catbox.moe/o9tnvk.webm|Tokete Iku Yume no Hate ni|Yayoi Goto|12.3
-Future GPX Cyber Formula Zero|OP|1|https://nl.catbox.moe/sy7nev.webm|Wind is High|Yumi Kinoshita|13.2
-Red Baron|OP|1|https://nl.catbox.moe/ki23q1.webm|Tatakae! Red Baron|Shinichi Ishihara|19.7
-Chou Kuseninarisou|OP|1|https://nl.catbox.moe/6ehhyw.webm|Third Love|Junko Inoue|6.6
-Haou Taikei Ryuu Knight|OP|1|https://nl.catbox.moe/vtaf95.webm|Good-bye Tears|Yumiko Takahashi|6.2
-Shirayuki Hime no Densetsu|OP|1|https://nl.catbox.moe/smreg3.webm|♡ no Mori e Tsuretette|Miki Sakai with Red Dolphins|9.4
-Kidou Butouden G Gundam|OP|1|https://nl.catbox.moe/4le61b.webm|Flying In The Sky|Yoshifumi Ushima|29.9
-Montana Jones|OP|1|https://nl.catbox.moe/1g78r8.webm|Boukensha-tachi|THE ALFEE|14.4
-Yamato Takeru|OP|1|https://nl.catbox.moe/nwo5lq.webm|Manatsu no Tobira|GLAY|6.9
-Tottemo! Luckyman|OP|1|https://nl.catbox.moe/x6x34i.webm|Luckyman no Uta|Aki Yashiro|19.8
-Crayon Shin-chan: Buriburi Oukoku no Hihou|OP|1|https://nl.catbox.moe/wdi0ob.webm|Ora wa Ninkimono|Akiko Yajima|48.4
-Karaoke Senshi Mike Jirou|OP|1|https://nl.catbox.moe/7slqh5.webm|Come on! Karaoke|Yoshie Hayasaka|8.8
+Montana Jones|OP|1|https://nl.catbox.moe/1g78r8.webm|Boukensha-tachi|ALFEE|9.0|3313|Montana Jones
+Yamato Takeru|OP|1|https://nl.catbox.moe/nwo5lq.webm|Manatsu no Tobira|GLAY|7.3|4773|Yamato Takeru
+Red Baron|OP|1|https://nl.catbox.moe/ki23q1.webm|Tatakae! Red Baron|Shinichi Ishihara|22.0|2283|Red Baron
+Ginga Sengoku Gunyuuden Rai|OP|1|https://nl.catbox.moe/2w5flu.webm|Ikazuchi Densetsu|Norihiko Tanimoto|11.2|3907|Thunder Jet
+Eiga Crayon Shin-chan: Buriburi Oukoku no Hihou|OP|1|https://nl.catbox.moe/wdi0ob.webm|Ora wa Ninkimono|Akiko Yajima|74.6|3745|Eiga Crayon Shin-chan: Buriburi Oukoku no Hihou
+Iria: Zeiram the Animation|OP|1|https://nl.catbox.moe/o9tnvk.webm|Tokete Iku Yume no Hate ni|Yayoi Goto|16.2|432|Iria: Zeiram the Animation
+Shin Cutey Honey|OP|2|https://nl.catbox.moe/p53l6d.webm|Cutey Honey (Eigo Version)|Mayukiss|32.3|2497|New Cutey Honey
+Dohyou no Oni-tachi|OP|1|https://nl.catbox.moe/18qdu9.webm|Dohyou no Oni|Shinichi Mori|5.6|17665|Dohyou no Oni-tachi
+Haou Taikei Ryuu Knight|OP|2|https://nl.catbox.moe/49r69g.webm|RUN ~Kyou ga Kawaru Magic~|Hitomi Mieno|9.2|1848|Lord of Lords Ryu Knight
+Tottemo! Luckyman|OP|1|https://nl.catbox.moe/x6x34i.webm|Luckyman no Uta|Aki Yashiro|24.8|3672|Tottemo! Luckyman
+Kidou Butouden G Gundam|OP|1|https://nl.catbox.moe/4le61b.webm|Flying In The Sky|Yoshifumi Ushima|25.9|96|Mobile Fighter G Gundam
+Kidou Butouden G Gundam|OP|2|https://nl.catbox.moe/jjd7kn.webm|Trust You Forever|Yoshifumi Ushima|23.9|96|Mobile Fighter G Gundam
+Haou Taikei Ryuu Knight|OP|1|https://nl.catbox.moe/vtaf95.webm|Good-bye Tears|Yumiko Takahashi|9.3|1848|Lord of Lords Ryu Knight
+Goal FH|OP|1|https://nl.catbox.moe/hnt95v.webm|Sunrise Itsuka wa|DOG FIGHT|7.4|5217|Goal Field Hunter
+Soccer Fever|OP|1|https://nl.catbox.moe/9wn4v0.webm|BOOM BOOM AMERICA|Paolo Zavallone|39.9|10774|Soccer Fever
+Karaoke Senshi Mike Jirou|OP|1|https://nl.catbox.moe/7slqh5.webm|Come on! Karaoke|Yoshie Hayasaka|12.1|5140|Karaoke Senshi Mike Jirou
+Shinseki GPX Cyber Formula Zero|OP|1|https://nl.catbox.moe/sy7nev.webm|WIND IS HIGH|Yumi Kinoshita|15.3|1393|Future GPX Cyber Formula Zero
+Shirayuki Hime no Densetsu|OP|1|https://nl.catbox.moe/smreg3.webm|♡ no Mori e Tsuretette|Miki Sakai with Red Dolphins|7.3|3809|The Legend of Snow White
+Chou Kuse ni Narisou|OP|1|https://nl.catbox.moe/6ehhyw.webm|Third Love|Junko Inoue|7.5|2771|I'll Make a Habit of It
+Shin Cutey Honey|OP|1|https://nl.catbox.moe/pyodab.webm|Cutey Honey|les 5-4-3-2-1|34.1|2497|New Cutey Honey
+Yamato Takeru|OP|2|https://nl.catbox.moe/9aqvkt.webm|Flower of Desert|Naoko Hamasaki|9.5|4773|Yamato Takeru
