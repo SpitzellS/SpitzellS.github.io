@@ -1,23 +1,23 @@
-Senkaiden Houshin Engi|OP|1|https://nl.catbox.moe/dn6rba.webm|WILL|Chihiro Yonekura|13.4
-10 Tokyo Warriors|OP|2|https://nl.catbox.moe/dpth2d.webm|Kimi ga Oshie te Kureta Koto|Manabi Mizuno|7.2
-Taiyou no Fune Sol Bianca|OP|1|https://nl.catbox.moe/7781eb.webm|To Be Free|Stella Furst|5.9
-Chiisana Kyoujin Microman: Daigekisen! Microman VS Saikyou Senshi Gorgon|OP|1|https://nl.catbox.moe/brvfys.webm|Big heart ~Microman no Theme~|Daichi Miura|14.8
-Tottoko Hamtarou Anime Dechu!|OP|1|https://nl.catbox.moe/hwuihp.webm|Hamtarou Tottoko Uta|Juri Ihata|12.6
-Kyoro-chan|OP|2|https://nl.catbox.moe/wodta4.webm|Kyoro-chan Deshu|Chacha|17.0
-Uchuu Kaizoku Mito no Daibouken: Futari no Joou-sama|OP|1|https://nl.catbox.moe/eetv0t.webm|COSMIC LOVE|aya with MITO CHOIR|6.6
-Alexander Senki|OP|1|https://nl.catbox.moe/0w13in.webm|Anata no Kiss o Oshiemasho ~You Were Mine~|Yuki Koyanagi|6.7
-Pikachu Tankentai|OP|1|https://nl.catbox.moe/roy36s.webm|Tankentai o Tsukurou!|Pokemon Kids|9.8
-Gravitation: Lyrics of Love|OP|1|https://nl.catbox.moe/a5u092.webm|Blind Game Again|BAD LUCK|21.3
-Papa to Odorou|OP|1|https://nl.catbox.moe/57lpuq.webm|Natsu-iro no Koi ni Kikaete|Kouji Kikkawa|6.9
-Koume-chan ga Iku!|OP|1|https://nl.catbox.moe/apus81.webm|C-B-A|Caramel|13.6
-Zoids|OP|1|https://nl.catbox.moe/8dzvlo.webm|Wild Flowers|RAMAR|17.7
-Colorful|OP|1|https://nl.catbox.moe/hwffzg.webm|Boku no Taion wa 37.5C|Yuko Miyamura|21.4
-Ai no Wakakusayama Monogatari|OP|1|https://nl.catbox.moe/e68355.webm|Princess Lipp|24COLORS|9.9
-Pocket Monsters: Maboroshi no Pokemon Lugia Bakutan|OP|1|https://nl.catbox.moe/jvwfgp.webm|Rival!|Rica Matsumoto|39.1
-Mahoutsukai Tai!|OP|1|https://nl.catbox.moe/my5ne7.webm|I Wanna Do More|Amii Ozaki|14.6
-Kakyuusei|OP|1|https://nl.catbox.moe/nvav56.webm|Every Brand-new Day|Mari Adachi|14.5
-Medarot|OP|1|https://nl.catbox.moe/8dgqc8.webm|Chie to Yuuki da! Medarot|Junko Takeuchi|19.6
-Kyoro-chan|OP|1|https://nl.catbox.moe/8gw1b5.webm|Halation Summer|Coconuts Musume|5.9
-Kachou Ouji|OP|1|https://nl.catbox.moe/2523ca.webm|CAUTIONARY WARNING|JOHN SYKES|18.1
-10 Tokyo Warriors|OP|1|https://nl.catbox.moe/lq2vi2.webm|Mo Chotto Tsuyoku|Pool|10.9
-Oruchuban Ebichu|OP|1|https://nl.catbox.moe/dvkh3r.webm|Nanda Kana|Kotono Mitsuishi|19.7
+Zoids|OP|1|https://nl.catbox.moe/8dzvlo.webm|Wild Flowers|RAMAR|16.8|763|Zoids
+Kakyuusei|OP|1|https://nl.catbox.moe/nvav56.webm|Every Brand-new Day|Mari Adachi|19.0|2609|Kakyuusei
+Mahoutsukai Tai!|OP|1|https://nl.catbox.moe/my5ne7.webm|I Wanna Do More|Amii Ozaki|19.8|630|Magic User's Club!
+Chiisana Kyoujin Microman: Daigekisen! Microman VS Saikyou Senshi Gorgon|OP|1|https://nl.catbox.moe/brvfys.webm|Big heart ~Microman no Theme~|Daichi Miura|20.7|null|Chiisana Kyoujin Microman: Daigekisen! Microman VS Saikyou Senshi Gorgon
+Tokyo Juushouden|OP|1|https://nl.catbox.moe/lq2vi2.webm|Mo Chotto Tsuyoku|Pool|15.4|1052|10 Tokyo Warriors
+Senkaiden Houshin Engi|OP|1|https://nl.catbox.moe/dn6rba.webm|WILL|Chihiro Yonekura|13.0|1108|Soul Hunter
+Gravitation: Lyrics of Love|OP|1|https://nl.catbox.moe/a5u092.webm|Blind Game Again|BAD LUCK|28.6|507|Gravitation: Lyrics of Love
+Colorful|OP|1|https://nl.catbox.moe/hwffzg.webm|Boku no Taion wa 37.5C|Yuko Miyamura|32.2|841|Colorful
+Taiyou no Fune Sol Bianca|OP|1|https://nl.catbox.moe/7781eb.webm|To Be Free|Stella Furst|9.2|1444|Sol Bianca: The Legacy
+Alexander Senki|OP|1|https://nl.catbox.moe/0w13in.webm|Anata no Kiss o Kazoemasho -You Were Mine-|Yuki Koyanagi|9.2|1442|Reign: The Conqueror
+Koume-chan ga Iku!|OP|1|https://nl.catbox.moe/apus81.webm|C-B-A|Caramel|14.7|6571|Here Comes Koume!
+Pikachu Tankentai|OP|1|https://nl.catbox.moe/roy36s.webm|Tankentai o Tsukurou!|Pokemon Kids|13.9|4792|Pikachu's Rescue Adventure
+Kyoro-chan|OP|2|https://nl.catbox.moe/panwon.webm|Kyoro-chan Deshu|Chacha|18.9|4375|Kyoro-chan
+Pocket Monsters: Maboroshi no Pokemon Lugia Bakutan|OP|1|https://nl.catbox.moe/jvwfgp.webm|Rival!|Rica Matsumoto|58.0|1117|Pokémon The Movie 2000
+Tokyo Juushouden|OP|2|https://nl.catbox.moe/dpth2d.webm|Kimi ga Oshiete Kureta Koto|Manabi Mizuno|10.3|1052|10 Tokyo Warriors
+Uchuu Kaizoku Mito no Daibouken: Futari no Joou-sama|OP|1|https://nl.catbox.moe/eetv0t.webm|COSMIC LOVE|aya|9.3|2700|Aoi & Mutsuki: A Pair of Queens!
+Papa to Odorou|OP|1|https://nl.catbox.moe/57lpuq.webm|Natsu-iro no Koi ni Kikaete|Koji Kikkawa|7.9|4742|Let's Dance With Papa
+Tottoko Hamtarou Anime Dechu!|OP|1|https://nl.catbox.moe/hwuihp.webm|Hamtarou Tottoko Uta|Juri Ihata|16.2|117557|Tottoko Hamtarou Anime Dechu!
+Oruchuban Ebichu|OP|1|https://nl.catbox.moe/dvkh3r.webm|Nandakana|Kotono Mitsuishi|22.2|1060|Ebichu Minds the House
+Kachou Ouji|OP|1|https://nl.catbox.moe/2523ca.webm|CAUTIONARY WARNING|JOHN SYKES|21.4|1025|The Legend of Black Heaven
+Kyoro-chan|OP|1|https://nl.catbox.moe/8gw1b5.webm|Halation Summer|Coconuts Musume|6.6|4375|Kyoro-chan
+Medarot|OP|1|https://nl.catbox.moe/8dgqc8.webm|Chie to Yuuki da! Medarot|Junko Takeuchi|27.2|1138|Medabots
+Ai no Wakakusayama Monogatari|OP|1|https://nl.catbox.moe/e68355.webm|Princess Lipp|24COLORS|12.9|6075|Little Women in Love

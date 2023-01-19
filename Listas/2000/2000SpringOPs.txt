@@ -1,26 +1,27 @@
-Ayashi no Ceres|OP|1|https://nl.catbox.moe/wy1d2x.webm|Scarlet|Junko Iwao|14.7|104|Ceres, Celestial Legend
-Love Hina|OP|1|https://nl.catbox.moe/hdzith.webm|Sakura Saku|Megumi Hayashibara|33.8|189|Love Hina
-Hidamari no Ki|OP|1|https://nl.catbox.moe/p64j2e.webm|Hidamari no ki~Manazashi~|Keiko Matsui|9.3|2694|Tree in the Sun
-NieA_7|OP|1|https://nl.catbox.moe/v8etg3.webm|Koko made Oide|SION|24.0|800|NieA under 7: Domestic Poor @nimation
-Yu-Gi-Oh! Duel Monsters|OP|1|https://nl.catbox.moe/y64ia0.webm|voice|CLOUD|19.2|481|Yu-Gi-Oh!
-Seikai no Senki|OP|1|https://nl.catbox.moe/y06rfe.webm|Seikai no Senki|Katsuhisa Hattori|16.4|396|Banner of the Stars
-Boys Be...|OP|2|https://nl.catbox.moe/a862bx.webm|Hatsukoi|Yuka Imai|10.0|105|Boys Be...
-Boys Be...|OP|1|https://nl.catbox.moe/8v3fwc.webm|Daijobu|Aki Maeda|13.9|105|Boys Be...
 Gensoumaden Saiyuuki|OP|1|https://nl.catbox.moe/g0mb8t.webm|FOR REAL|Hidenori Tokuyama|16.9|129|Saiyuki
-Gate Keepers|OP|1|https://nl.catbox.moe/m24jup.webm|Asu no Egao no Tame ni|Yumi Matsuzawa|14.8|127|Gate Keepers
-Time Bokan 2000: Kaitou Kiramekiman|OP|1|https://nl.catbox.moe/4fg9qz.webm|Kaitou Kiramekiman no Uta|Masayuki Yamamoto & Pink Piggies|6.3|5475|Time Bokan 2000: Kaitou Kiramekiman
-Yu-Gi-Oh! Duel Monsters|OP|2|https://nl.catbox.moe/1ytwdc.webm|Shuffle|Masami Okui|15.7|481|Yu-Gi-Oh!
-Tenshi Kinryouku|OP|1|https://nl.catbox.moe/mzl5em.webm|MESSIAH|Yayoi Yura|14.6|51|Angel Sanctuary
-Ginsoukikou Ordian|OP|1|https://nl.catbox.moe/3t8jzc.webm|Shinryaku -the Chariots VII-|OZWORLD|12.4|832|Platinumhugen Ordian
-Denshin Mamotte Shugogetten!|OP|1|https://nl.catbox.moe/fezl8k.webm|Wish|Mariko Kouda|11.4|660|Denshin Mamotte Shugogetten!
-Uchuujin Tanaka Taro|OP|1|https://nl.catbox.moe/6go5ui.webm|Tanaka de Shubiduwa|Gutch Yuzo|15.1|2566|Taro the Space Alien
-Yu-Gi-Oh! Duel Monsters|OP|4|https://nl.catbox.moe/c0zwx2.webm|WARRIORS|Yuuichi Ikusawa|19.9|481|Yu-Gi-Oh!
-Sakura Wars|OP|1|https://nl.catbox.moe/5er4gq.webm|Gekitei (Geki! Teikoku Kageki-dan)|Chisa Yokoyama & Teikoku Kageki-dan|37.0|561|Sakura Wars
-Doki Doki Densetsu Mahoujin Guruguru|OP|1|https://nl.catbox.moe/7scymw.webm|Dynamite Heaven|2Shy4U|13.2|332|Doki Doki Densetsu Magical Circle Guru-Guru
-Digimon Adventure 02|OP|1|https://nl.catbox.moe/p7lwmp.webm|Target ~Akai Shougeki~|Kouji Wada|29.7|1313|Digimon Adventure 02
-Yu-Gi-Oh! Duel Monsters|OP|5|https://nl.catbox.moe/wskbcx.webm|OVERLAP|Kimeru|19.9|481|Yu-Gi-Oh!
-Yu-Gi-Oh! Duel Monsters|OP|3|https://nl.catbox.moe/7edbc6.webm|WILD DRIVE|Masato Nagai|18.3|481|Yu-Gi-Oh!
-Denshin Mamotte Shugogetten!|OP|2|https://nl.catbox.moe/3k9fve.webm|Magic|Mariko Kouda|10.5|660|Denshin Mamotte Shugogetten!
-Crayon Shin-chan: Arashi o Yobu Jungle|OP|1|https://nl.catbox.moe/jkyz1r.webm|Tobe Tobe Onei-san|Akiko Yajima & Tesshou Genda|44.8|8362|Crayon Shin-chan: Arashi o Yobu Jungle
-Gensoumaden Saiyuuki|OP|2|https://nl.catbox.moe/p53fym.webm|STILL TIME|Hidenori Tokuyama|17.8|129|Saiyuki
-Transformers: Robots in Disguise|OP|1|https://nl.catbox.moe/dkiquz.webm|Honoo no Overdrive|Kouji Wada|13.9|2284|Transformers: Robots in Disguise
+Gate Keepers|OP|1|https://nl.catbox.moe/m24jup.webm|Asu no Egao no Tame ni|Yumi Matsuzawa|16.5|127|Gate Keepers
+Time Bokan 2000: Kaitou Kiramekiman|OP|1|https://nl.catbox.moe/4fg9qz.webm|Kaitou Kiramekiman no Uta|Masayuki Yamamoto & Pink Piggies|8.3|5475|Time Bokan 2000: Kaitou Kiramekiman
+Yu-Gi-Oh! Duel Monsters|OP|1|https://nl.catbox.moe/y64ia0.webm|voice|CLOUD|31.2|481|Yu-Gi-Oh!
+Eiga Crayon Shin-chan: Arashi o Yobu Jungle|OP|1|https://nl.catbox.moe/jkyz1r.webm|Tobe Tobe Onei-san|Akiko Yajima & Tesshou Genda|66.1|8362|Eiga Crayon Shin-chan: Arashi o Yobu Jungle
+Dokidoki♡Densetsu: Mahoujin Guruguru|OP|1|https://nl.catbox.moe/7scymw.webm|Dynamite Heaven|2Shy4U|13.4|332|Magical Circle Guru Guru 2
+Transformers: Robots in Disguise|OP|1|https://nl.catbox.moe/dkiquz.webm|Honoo no Overdrive|Kouji Wada|15.8|2284|Transformers: Robots in Disguise
+Yu-Gi-Oh! Duel Monsters|OP|3|https://nl.catbox.moe/7edbc6.webm|WILD DRIVE|Masato Nagai|30.2|481|Yu-Gi-Oh!
+Boys Be...|OP|1|https://nl.catbox.moe/8v3fwc.webm|Daijoubu|Aki Maeda|18.4|105|Boys Be...
+Denshin Mamotte Shugogetten!|OP|1|https://nl.catbox.moe/fezl8k.webm|Wish|Mariko Kouda|20.1|660|Denshin Mamotte Shugogetten!
+Denshin Mamotte Shugogetten!|OP|2|https://nl.catbox.moe/3k9fve.webm|Magic|Mariko Kouda|9.9|660|Denshin Mamotte Shugogetten!
+Sakura Taisen|OP|1|https://nl.catbox.moe/5er4gq.webm|Gekitei (Geki! Teikoku Kageki-dan)|Chisa Yokoyama & Teikoku Kageki-dan|52.8|561|Sakura Wars
+NieA_7|OP|1|https://nl.catbox.moe/v8etg3.webm|Koko made Oide|SION|40.3|800|NieA under 7: Domestic Poor @nimation
+Boys Be...|OP|2|https://nl.catbox.moe/a862bx.webm|Hatsukoi|Yuka Imai|12.2|105|Boys Be...
+Ayashi no Ceres|OP|1|https://nl.catbox.moe/wy1d2x.webm|Scarlet|Junko Iwao|15.6|104|Ceres, Celestial Legend
+Yu-Gi-Oh! Duel Monsters|OP|2|https://nl.catbox.moe/1ytwdc.webm|Shuffle|Masami Okui|28.0|481|Yu-Gi-Oh!
+Hero Hero-kun|OP|1|https://nl.catbox.moe/q4hr5n.webm|Mawari Himawari Hero Hero-kun|Ichiro Mizuki & Apple Pie + The 4-B's|11.5|11203|Hero Hero-kun
+Uchuujin Tanaka Taro|OP|1|https://nl.catbox.moe/6go5ui.webm|Tanaka de Shubiduwa|Gutch Yuzo|18.9|2566|Taro the Space Alien
+Hidamari no Ki|OP|1|https://nl.catbox.moe/p64j2e.webm|Hidamari no ki~Manazashi~|Keiko Matsui|11.4|2694|Tree in the Sun
+Yu-Gi-Oh! Duel Monsters|OP|5|https://nl.catbox.moe/wskbcx.webm|OVERLAP|Kimeru|32.5|481|Yu-Gi-Oh!
+Yu-Gi-Oh! Duel Monsters|OP|4|https://nl.catbox.moe/c0zwx2.webm|WARRIORS|Yuuichi Ikusawa|33.3|481|Yu-Gi-Oh!
+Ginsoukikou Ordian|OP|1|https://nl.catbox.moe/3t8jzc.webm|Shinryaku -the Chariots VII-|OZWORLD|17.5|832|Platinumhugen Ordian
+Tenshi Kinryouku|OP|1|https://nl.catbox.moe/mzl5em.webm|MESSIAH|Yayoi Yura|17.8|51|Angel Sanctuary
+Digimon Adventure 02|OP|1|https://nl.catbox.moe/p7lwmp.webm|Target ~Akai Shougeki~|Kouji Wada|45.4|1313|Digimon Adventure 02
+Gensoumaden Saiyuuki|OP|2|https://nl.catbox.moe/p53fym.webm|STILL TIME|Hidenori Tokuyama|17.2|129|Saiyuki
+Seikai no Senki|OP|1|https://nl.catbox.moe/y06rfe.webm|Seikai no Senki|Katsuhisa Hattori|22.1|396|Banner of the Stars
+Love Hina|OP|1|https://nl.catbox.moe/hdzith.webm|Sakura Saku|Megumi Hayashibara|57.7|189|Love Hina

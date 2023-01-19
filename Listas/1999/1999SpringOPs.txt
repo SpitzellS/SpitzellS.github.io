@@ -1,37 +1,38 @@
-Barbapapa Sekai o Mawaru|OP|1|https://nl.catbox.moe/yqo4sf.webm|Barbapapa Sekai o Mawaru|Mami Sekiya|20.0
-Monster Rancher|OP|1|https://nl.catbox.moe/sremtu.webm|Kaze ga Soyogu Basho|Miho Komatsu|14.5
-Power Stone|OP|1|https://nl.catbox.moe/yagaok.webm|Rise in my heart|Aya&chika from D&D|13.8
-Tenshi ni Narumon|OP|1|https://nl.catbox.moe/1as89s.webm|Datte, Daisuki!|COMA|11.0
-Tenamonya Voyagers|OP|1|https://nl.catbox.moe/tw37j8.webm|Geba Geba 90-pun! no Theme|Hiroshi Miyagawa|14.1
-Soreyuke! Uchuu Senkan Yamamoto Yohko|OP|1|https://nl.catbox.moe/fil3iv.webm|Tenshi no Kyuusoku|Masami Okui|9.7
-Kaikan Phrase|OP|2|https://nl.catbox.moe/l9tblq.webm|Datenshi BLUE|Λucifer|6.6
-Eden's Bowy|OP|1|https://nl.catbox.moe/6ugxen.webm|Everlasting Train -Owarinaki Tabibito-|Hekiru Shiina|11.8
-Monster Rancher|OP|3|https://nl.catbox.moe/24gabg.webm|Close to Your Heart|Rina Aiuchi|5.8
-Gokudo-kun Manyuki|OP|1|https://nl.catbox.moe/1p1asd.webm|Prism|BAISER|13.8
-Crayon Shin-chan: Bakuhatsu! Onsen Wakuwaku Daikessen|OP|1|https://nl.catbox.moe/y73kqj.webm|Tobe Tobe Onei-san|Akiko Yajima & Tesshou Genda|44.8
-Monster Rancher|OP|2|https://nl.catbox.moe/2zadkw.webm|picnic|rumania montevideo|9.0
-Masou Kishin Cybuster|OP|1|https://nl.catbox.moe/82wkyt.webm|Senshi yo, Tachiagare!|Masaaki Endoh|11.5
-Tokimeki Memorial: Forever With You|OP|2|https://nl.catbox.moe/paahkv.webm|Beginning|Mami Kingetsu|9.1
-Eden's Bowy|OP|2|https://nl.catbox.moe/lq6dt3.webm|-Akai Hana-You're gonna change to the flower|Hekiru Shiina|10.5
-Turn A Gundam|OP|1|https://nl.catbox.moe/p8mxyo.webm|Turn A Turn|Hideki Saijou|32.2
-D4 Princess|OP|1|https://nl.catbox.moe/oh8zz5.webm|Theme of D4|Kenji Kawai|13.6
-BuBu ChaCha|OP|1|https://nl.catbox.moe/m5z4so.webm|Kimi no Bubu ChaCha|Macolin & Pythagoras|16.4
-Turn A Gundam|OP|2|https://nl.catbox.moe/gjafru.webm|CENTURY COLOR|RAY-GUNS|24.9
-Betterman|OP|1|https://nl.catbox.moe/j6w80q.webm|Yume no Kakera|Uyontana|15.3
-Corrector Yui|OP|2|https://nl.catbox.moe/hdr39n.webm|Tori ni Naru Toki|Satsuki|15.8
-Corrector Yui|OP|1|https://nl.catbox.moe/eowvaa.webm|Eien to Iu Basho|Kyouko with Masayoshi Yamazaki & Shikao Suga|17.8
-GTO: The Animation|OP|2|https://nl.catbox.moe/0lj4ne.webm|Hitori no Yoru|Porno Graffitti|38.0
-Monster Rancher|OP|5|https://nl.catbox.moe/dlc6ad.webm|FLUSH|Takashi Utsunomiya|7.9
-Power Stone|OP|2|https://nl.catbox.moe/g8jb28.webm|Ashita ni Todoke|Like Uncolored Velvet|7.9
-Melty Lancer: The Animation|OP|1|https://nl.catbox.moe/gf1ibm.webm|Flying High|Yuki Matsuura|8.2
-GTO: The Animation|OP|1|https://nl.catbox.moe/l3yi36.webm|Driver's High|L'Arc~en~Ciel|39.8
-Shin Hakkenden|OP|1|https://nl.catbox.moe/z1keyg.webm|memories|ANGELA|12.2
-Monster Rancher|OP|4|https://nl.catbox.moe/owxiuu.webm|NAME|Takashi Utsunomiya|7.3
-City Hunter: Kinkyuu Namachuukei!? Kyouakuhan Saeba Ryou no Saigo|OP|1|https://nl.catbox.moe/gcbzjs.webm|illusion city|sex MACHINEGUNS|9.6
-Tokimeki Memorial: Forever With You|OP|1|https://nl.catbox.moe/1785wx.webm|Motto! Motto! Tokimeki|Mami Kingetsu|10.3
-Surfside High School|OP|1|https://nl.catbox.moe/xl2yc5.webm|She's so lovely|ALL I NEED|10.5
-Arc the Lad|OP|1|https://nl.catbox.moe/9nxxa3.webm|Arc the Lad ~Main Theme~|Masahiro Andou|12.3
-Seihou Tenshi Angel Links|OP|1|https://nl.catbox.moe/ll526i.webm|All My Soul|NAW NAW|11.1
-Dual! Parallel Lun-Lun Monogatari|OP|1|https://nl.catbox.moe/7ytxwj.webm|DUAL!|HARU＆SAYAKA from UNIVERS★LD|12.9
-To Heart|OP|1|https://nl.catbox.moe/iwk6yg.webm|Feeling Heart|Masami Nakatsukasa|12.9
-A.D. Police|OP|1|https://nl.catbox.moe/ns1rko.webm|Imaginary Girl|Infix|8.5
+Eden's Bowy|OP|2|https://nl.catbox.moe/lq6dt3.webm|-Akai Hana-You're gonna change to the flower|Hekiru Shiina|13.9|1189|Eden's Bowy
+Monster Farm|OP|3|https://nl.catbox.moe/24gabg.webm|Close to Your Heart|Rina Aiuchi|9.5|1469|Monster Rancher
+Arc the Lad|OP|1|https://nl.catbox.moe/9nxxa3.webm|Arc the Lad ~Main Theme~|Masahiro Andou|14.7|55|Arc the Lad
+Tokimeki Memorial: Forever With You|OP|2|https://nl.catbox.moe/paahkv.webm|Beginning|Mami Kingetsu|10.1|2179|Tokimeki Memorial: Forever With You
+Gokudou-kun Manyuuki|OP|1|https://nl.catbox.moe/1p1asd.webm|Prism|BAISER|13.4|2409|Gokudo
+Shin Hakkenden|OP|1|https://nl.catbox.moe/z1keyg.webm|memories|ANGELA|14.9|1823|Shin Hakkenden
+Great Teacher Onizuka|OP|2|https://nl.catbox.moe/0lj4ne.webm|Hitori no Yoru|Porno Graffitti|60.1|245|GTO: The Animation
+Power Stone|OP|2|https://nl.catbox.moe/g8jb28.webm|Ashita ni Todoke|Like Uncolored Velvet|8.1|163|Power Stone
+Corrector Yui|OP|1|https://nl.catbox.moe/eowvaa.webm|Eien to Iu Basho|Kyouko with Masayoshi Yamazaki & Shikao Suga|15.9|111|Corrector Yui
+A.D. Police|OP|1|https://nl.catbox.moe/ns1rko.webm|Imaginary Girl|Infix|10.9|1349|A.D. Police: To Protect and Serve
+Monster Farm|OP|5|https://nl.catbox.moe/dlc6ad.webm|FLUSH|Takashi Utsunomiya|10.7|1469|Monster Rancher
+Tenshi ni Narumon!|OP|1|https://nl.catbox.moe/1as89s.webm|Datte, Daisuki!|COMA|11.8|605|I'm Gonna Be An Angel!
+Masou Kishin Cybuster|OP|1|https://nl.catbox.moe/82wkyt.webm|Senshi yo, Tachiagare!|Masaaki Endoh|12.3|1899|Cybuster
+Melty Lancer: The Animation|OP|1|https://nl.catbox.moe/gf1ibm.webm|Flying High|Yuki Matsuura|9.7|1155|Melty Lancer: The Animation
+Betterman|OP|1|https://nl.catbox.moe/j6w80q.webm|Yume no Kakera|Uyontana|14.3|1136|Betterman
+Monster Farm|OP|2|https://nl.catbox.moe/2zadkw.webm|picnic|rumania montevideo|15.9|1469|Monster Rancher
+BuBu ChaCha|OP|1|https://nl.catbox.moe/m5z4so.webm|Kimi no Bubu ChaCha|Macolin & Pythagoras|18.5|4054|BuBu ChaCha
+Eden's Bowy|OP|1|https://nl.catbox.moe/6ugxen.webm|Everlasting Train -Owarinaki Tabibito-|Hekiru Shiina|9.7|1189|Eden's Bowy
+Kaikan Phrase|OP|1|https://nl.catbox.moe/9supin.webm|Survival|GLAY|11.7|1021|Kaikan Phrase
+Turn A Gundam|OP|1|https://nl.catbox.moe/p8mxyo.webm|Turn A Turn|Hideki Saijo|34.3|95|Turn A Gundam
+To Heart|OP|1|https://nl.catbox.moe/iwk6yg.webm|Feeling Heart|Masami Nakatsukasa|16.7|472|To Heart
+Surfside High School|OP|1|https://nl.catbox.moe/xl2yc5.webm|She's so lovely|ALL I NEED|9.8|16454|Surfside High School
+Soreyuke! Uchuu Senkan Yamamoto Yohko|OP|1|https://nl.catbox.moe/fil3iv.webm|Tenshi no Kyuusoku|Masami Okui|13.0|1618|Starship Girl Yamamoto Yohko
+Dual! Parallel Lun-Lun Monogatari|OP|1|https://nl.catbox.moe/7ytxwj.webm|DUAL!|HARU＆SAYAKA from UNIVERS★LD|15.1|992|Dual! Parallel Trouble Adventure
+Tenamonya Voyagers|OP|1|https://nl.catbox.moe/tw37j8.webm|Geba Geba 90-pun! no Theme|Hiroshi Miyagawa|18.5|773|Tenamonya Voyagers
+Tokimeki Memorial: Forever With You|OP|1|https://nl.catbox.moe/1785wx.webm|Motto! Motto! Tokimeki|Mami Kingetsu|10.3|2179|Tokimeki Memorial: Forever With You
+Power Stone|OP|1|https://nl.catbox.moe/yagaok.webm|Rise in my heart|Aya&chika from D&D|16.6|163|Power Stone
+Corrector Yui|OP|2|https://nl.catbox.moe/hdr39n.webm|Tori ni Naru Toki|Satsuki|12.7|111|Corrector Yui
+Great Teacher Onizuka|OP|1|https://nl.catbox.moe/l3yi36.webm|Driver's High|L'Arc~en~Ciel|54.1|245|GTO: The Animation
+Eiga Crayon Shin-chan: Bakuhatsu! Onsen Wakuwaku Daikessen|OP|1|https://nl.catbox.moe/y73kqj.webm|Tobe Tobe Onei-san|Akiko Yajima & Tesshou Genda|74.8|8361|Eiga Crayon Shin-chan: Bakuhatsu! Onsen Wakuwaku Daikessen
+City Hunter: Kinkyuu Namachuukei!? Kyouakuhan Saeba Ryou no Saigo|OP|1|https://nl.catbox.moe/gcbzjs.webm|illusion city|sex MACHINEGUNS|13.5|1479|City Hunter: Death of the Vicious Criminal Ryo Saeba
+Seihou Tenshi Angel Links|OP|1|https://nl.catbox.moe/ll526i.webm|All My Soul|NAW NAW|12.0|1226|Angel Links
+Monster Farm|OP|1|https://nl.catbox.moe/sremtu.webm|Kaze ga Soyogu Basho|Miho Komatsu|15.1|1469|Monster Rancher
+D4 Princess|OP|1|https://nl.catbox.moe/oh8zz5.webm|Theme of D4|Kenji Kawai|17.8|2723|D4 Princess
+Monster Farm|OP|4|https://nl.catbox.moe/owxiuu.webm|NAME|Takashi Utsunomiya|10.6|1469|Monster Rancher
+Kaikan Phrase|OP|2|https://nl.catbox.moe/l9tblq.webm|Datenshi BLUE|Λucifer|8.6|1021|Kaikan Phrase
+Turn A Gundam|OP|2|https://nl.catbox.moe/gjafru.webm|CENTURY COLOR|RAY-GUNS|21.2|95|Turn A Gundam
+Barbapapa Sekai o Mawaru|OP|1|https://nl.catbox.moe/yqo4sf.webm|Barbapapa Sekai o Mawaru|Mami Sekiya|24.3|2824|Barbapapa Around the World
