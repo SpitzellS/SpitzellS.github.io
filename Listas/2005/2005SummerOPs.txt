@@ -1,29 +1,31 @@
-Tide-Line Blue|OP|1|https://nl.catbox.moe/lgngmi.webm|Blue Treasure|Minami Kuribayashi|11.1
-Pani Poni Dash!|OP|3|https://nl.catbox.moe/t9ft5w.webm|Shoujo Q|Momotsuki Gakuen 1-nen C-gumi|18.2
-Pocket Monsters: Advance Generation - Mew to Hadou no Yuusha Lucario|OP|1|https://nl.catbox.moe/o3r3bj.webm|Battle Frontier|Akina Takaya|15.8
-Amaenaide yo!!|OP|1|https://nl.catbox.moe/3eu0f5.webm|Afurete Yuku no wa Kono Kimochi|Amae-taii!!|13.2
-Ghost in the Shell: Stand Alone Complex - The Laughing Man|OP|1|https://nl.catbox.moe/sffllw.webm|stamina rose|Gabriela Robin|11.3
-Pani Poni Dash!|OP|2|https://nl.catbox.moe/evzaa2.webm|Roulette Roulette|Momotsuki Gakuen 1-nen C-gumi|18.9
-D.C.S.S.: Da Capo Second Season|OP|1|https://nl.catbox.moe/cmjc6r.webm|Sakura-iro no Kisetsu|yozuca*|15.4
-Full Metal Panic! The Second Raid|OP|1|https://nl.catbox.moe/os675e.webm|Minamikaze|Mikuni Shimokawa|17.9
-Ginga Densetsu Weed|OP|1|https://nl.catbox.moe/inzcpz.webm|Ginga Densetsu WEED|Dohatsuten|18.8
-Shakugan no Shana|OP|1|https://nl.catbox.moe/s6zs5u.webm|Hishoku no Sora|Mami Kawada|36.3
-Okusama wa Mahou Shoujo|OP|1|https://nl.catbox.moe/o47b1b.webm|Home & Away|Melocure|12.6
-Air in Summer|OP|1|https://nl.catbox.moe/kjwjmg.webm|Tori no Uta|Lia|44.4
-Majokko Tsukune-chan|OP|1|https://nl.catbox.moe/gq1cpy.webm|Tsukune-chan no Flying Machine|Haruko Momoi|14.2
-Tsubasa Chronicle: Torikago no Kuni no Himegimi|OP|1|https://nl.catbox.moe/rc1gmm.webm|aerial|Kinya|13.7
-Shuffle!|OP|1|https://nl.catbox.moe/8sxb1b.webm|YOU|YURIA|22.3
-Okusama wa Joshikousei|OP|1|https://nl.catbox.moe/yaz40o.webm|Love Love! Chuっ Chuっ!|Ayako Kawasumi|9.1
-Sugar Sugar Rune|OP|1|https://nl.catbox.moe/ni831z.webm|Chocolat ni Muchuu|Karia Nomoto|32.5
-Gun X Sword|OP|1|https://nl.catbox.moe/9xa0n1.webm|GUN×SWORD|Kotaro Nakagawa|24.6
-Akahori Gedou Hour Rabuge|OP|1|https://nl.catbox.moe/d7tymv.webm|Nesshou!! Rabuge Night Fever|Love Pheromone & Gedou Otometai feat. Haruko Momoi & Hironobu Kageyama|13.6
-Play Ball|OP|1|https://nl.catbox.moe/z97g6a.webm|Kimi wa Nanika ga Dekiru ~Play Ball 2005~|The Loose Dogs|15.6
-PetoPeto-san|OP|1|https://nl.catbox.moe/zbgwl8.webm|Shiranainai Sora|Isako Saneyoshi|7.8
-Play Ball|OP|2|https://nl.catbox.moe/dxt4go.webm|Kimi wa Nanika ga Dekiru ~Play Ball 2006~|Tokyo 60WATTS|15.1
-Shakugan no Shana|OP|2|https://nl.catbox.moe/hdhrg5.webm|being|KOTOKO|20.4
-Gekijouban Hagane no Renkinjutsushi: Shamballa o Yuku Mono|OP|1|https://nl.catbox.moe/o3dxw3.webm|Link|L'Arc~en~Ciel|16.2
-Konjiki no Gash Bell!!: Mechavulcan no Raishuu|OP|1|https://nl.catbox.moe/xmbrpz.webm|Mienai Tsubasa|Takayoshi Tanimoto|19.8
-Kidou Shinsengumi Moeyo Ken|OP|1|https://nl.catbox.moe/xhmok4.webm|Toki no Musoubana|Hiromi Satou|9.3
-Kyoushoku Soukou Guyver|OP|1|https://nl.catbox.moe/imv35b.webm|Waiting For...|Yo Reiri|15.1
-Suzuka|OP|1|https://nl.catbox.moe/7rxwr1.webm|Start Line|COACH☆|15.0
-Pani Poni Dash!|OP|1|https://nl.catbox.moe/rdtxjy.webm|Kiiroi Vacances|Momotsuki Gakuen 1-nen C-gumi|24.5
+Ghost in the Shell: Stand Alone Complex - The Laughing Man|OP|1|https://nl.catbox.moe/sffllw.webm|stamina rose|Gabriela Robin|13.9|2449|Ghost in the Shell: Stand Alone Complex - The Laughing Man
+Ginga Densetsu Weed|OP|1|https://nl.catbox.moe/inzcpz.webm|Ginga Densetsu WEED|Dohatsuten|20.4|915|Ginga Legend Weed
+Kyoushoku Soukou Guyver|OP|1|https://nl.catbox.moe/imv35b.webm|Waiting For...|Yo Reiri|13.9|1374|Guyver: Bio-Booster Armor
+Play Ball|OP|2|https://nl.catbox.moe/dxt4go.webm|Kimi wa Nanika ga Dekiru ~Play Ball 2006~|Tokyo 60WATTS|18.7|3768|Play Ball
+Shakugan no Shana|OP|1|https://nl.catbox.moe/s6zs5u.webm|Hishoku no Sora|Mami Kawada|62.0|355|Burning-Eyed Shana
+Tide-Line Blue|OP|1|https://nl.catbox.moe/lgngmi.webm|Blue Treasure|Minami Kuribayashi|14.4|473|Tide-Line Blue
+Majokko Tsukune-chan|OP|1|https://nl.catbox.moe/gq1cpy.webm|Tsukune-chan no Flying Machine|Haruko Momoi|18.0|2457|Majokko Tsukune-chan
+Shuffle!|OP|1|https://nl.catbox.moe/8sxb1b.webm|YOU|YURIA|38.0|79|Shuffle!
+Okusama wa Mahou Shoujo|OP|1|https://nl.catbox.moe/o47b1b.webm|Home & Away|Melocure|13.3|614|Okusama wa Mahou Shoujo
+Play Ball|OP|1|https://nl.catbox.moe/z97g6a.webm|Kimi wa Nanika ga Dekiru ~Play Ball 2005~|The Loose Dogs|23.2|3768|Play Ball
+Akahori Gedou Hour Rabuge|OP|1|https://nl.catbox.moe/d7tymv.webm|Nesshou!! Rabuge Night Fever|Love Pheromone & Gedou Otometai feat. Haruko Momoi & Hironobu Kageyama|16.5|309|Akahori Gedou Hour Rabuge
+Soreike! Anpanman: Happy no Daibouken|OP|1|https://nl.catbox.moe/rmp3mz.webm|Anpanman no March|Dreaming|54.5|17215|Soreike! Anpanman: Happy no Daibouken
+Full Metal Panic! The Second Raid|OP|1|https://nl.catbox.moe/os675e.webm|Minamikaze|Mikuni Shimokawa|28.7|73|Full Metal Panic! The Second Raid
+Gun X Sword|OP|1|https://nl.catbox.moe/9xa0n1.webm|GUN×SWORD|Kotaro Nakagawa|28.7|411|Gun X Sword
+Air in Summer|OP|1|https://nl.catbox.moe/kjwjmg.webm|Tori no Uta|Lia|66.5|656|Air in Summer
+Gekijouban Hagane no Renkinjutsushi: Shamballa o Yuku Mono|OP|1|https://nl.catbox.moe/o3dxw3.webm|Link|L'Arc~en~Ciel|32.1|430|Fullmetal Alchemist: The Movie - Conqueror of Shamballa
+Tsubasa Chronicle: Torikago no Kuni no Himegimi|OP|1|https://nl.catbox.moe/rc1gmm.webm|aerial|Kinya|20.0|807|Tsubasa RESERVoir CHRoNiCLE the Movie: The Princess in the Birdcage Kingdom
+Shakugan no Shana|OP|2|https://nl.catbox.moe/hdhrg5.webm|being|KOTOKO|37.4|355|Burning-Eyed Shana
+Pani Poni Dash!|OP|3|https://nl.catbox.moe/t9ft5w.webm|Shoujo Q|Momotsuki Gakuen 1-nen C-gumi|19.6|490|Pani Poni Dash!
+Suzuka|OP|1|https://nl.catbox.moe/7rxwr1.webm|Start Line|COACH☆|19.6|390|Suzuka
+D.C.S.S.: Da Capo Second Season|OP|1|https://nl.catbox.moe/cmjc6r.webm|Sakura-iro no Kisetsu|yozuca*|20.9|291|D.C.S.S.: Da Capo Second Season
+PetoPeto-san|OP|1|https://nl.catbox.moe/zbgwl8.webm|Shiranainai Sora|Isako Saneyoshi|11.0|612|PetoPeto-san
+Pani Poni Dash!|OP|1|https://nl.catbox.moe/rdtxjy.webm|Kiiroi Vacances|Momotsuki Gakuen 1-nen C-gumi|29.8|490|Pani Poni Dash!
+Konjiki no Gash Bell!!: Mechavulcan no Raishuu|OP|1|https://nl.catbox.moe/xmbrpz.webm|Mienai Tsubasa|Takayoshi Tanimoto|25.9|911|Zatch Bell! The Movie 2: Attack of Mechavulcan
+Gakkou no Kaidan|OP|1|https://nl.catbox.moe/6d9usd.webm|Sugu Soba ni ~another world~|Takahashi Lisa|8.6|20888|Gakkou no Kaidan
+Pocket Monsters: Advance Generation - Mew to Hadou no Yuusha Lucario|OP|1|https://nl.catbox.moe/o3r3bj.webm|Battle Frontier|Akina Takaya|30.7|1526|Pokémon: Lucario and the Mystery of Mew
+Amaenaide yo!!|OP|1|https://nl.catbox.moe/3eu0f5.webm|Afurete Yuku no wa Kono Kimochi|Amae-taii!!|17.4|591|Ah My Buddha
+Pani Poni Dash!|OP|2|https://nl.catbox.moe/evzaa2.webm|Roulette Roulette|Momotsuki Gakuen 1-nen C-gumi|20.6|490|Pani Poni Dash!
+Sugar Sugar Rune|OP|1|https://nl.catbox.moe/ni831z.webm|Chocolat ni Muchuu|Karia Nomoto|43.2|1642|Sugar Sugar Rune
+Okusama wa Joshikousei|OP|1|https://nl.catbox.moe/yaz40o.webm|Love Love! Chuっ Chuっ!|Ayako Kawasumi|10.0|470|My Wife is a High School Girl
+Kidou Shinsengumi Moeyo Ken|OP|1|https://nl.catbox.moe/xhmok4.webm|Toki no Musoubana|Hiromi Satou|10.0|511|Moeyo Ken
