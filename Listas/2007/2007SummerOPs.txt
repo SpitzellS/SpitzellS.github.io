@@ -1,35 +1,35 @@
-Buzzer Beater|OP|1|https://nl.catbox.moe/hr56cb.webm|Hideyoshi no Theme "SC"|Koichiro Kameyama|18.3
-Moonlight Mile 2nd Season: Touch Down|OP|1|https://nl.catbox.moe/ufb855.webm|Main Theme|Kan Sawada|10.2
-Genius Party|OP|1|https://nl.catbox.moe/jc4h2t.webm|Genius Party Opening Theme|Kaoru Inoue|13.6
-ef: a tale of memories.|OP|1|https://nl.catbox.moe/7eyl6c.webm|Tear.|TENMON|13.8
-Moetan|OP|2|https://nl.catbox.moe/lfldll.webm|TOUGH GIRL|Eri Nakao & Marina Inoue|13.9
-Higurashi no Naku Koro ni Kai|OP|1|https://nl.catbox.moe/6gww6w.webm|Naraku no Hana|Eiko Shimamiya|29.6
-Kenkou Zenrakei Suiei-bu Umishou|OP|1|https://nl.catbox.moe/4a3e1s.webm|DOLPHIN☆JET|Ayane|14.2
-Moetan|OP|1|https://nl.catbox.moe/8xqlev.webm|Mahou Shoujo Magical-tan!|Yukari Tamura, Kaori Nazuka, Haruka Tomatsu|14.8
-Sky Girls|OP|1|https://nl.catbox.moe/pjgfxu.webm|Virgin's high|MELL|16.5
-Zombie-Loan|OP|1|https://nl.catbox.moe/ygdmk4.webm|Ookami no Nodo|The Birthday|16.4
-Clannad Film|OP|1|https://nl.catbox.moe/bkcbdj.webm|Mag Mell|eufonius|21.4
-Happy Happy Clover|OP|1|https://nl.catbox.moe/cchhxx.webm|Shiawase no Kakera|Marimomi|5.1
-ef: a tale of memories.|OP|2|https://nl.catbox.moe/ct4ett.webm|euphoric field|ELISA|23.1
-Aria the OVA: Arietta|OP|1|https://nl.catbox.moe/9ajsre.webm|Nana-iro no Sora o|SONOROUS|12.2
-ef: a tale of memories.|OP|3|https://nl.catbox.moe/7x0qu5.webm|euphoric field (Japanese ver.)|ELISA|31.4
-Mononoke|OP|1|https://nl.catbox.moe/dvbx5s.webm|Kagen no Tsuki|Ryouta Komatsu×Charlie Kosei|26.0
-Tokyo Majin Gakuen Kenpucho: Tou Dai-Ni-Maku|OP|1|https://nl.catbox.moe/xzb87r.webm|0:00A.M.|ACID|17.3
-Vexille: 2077 Nippon Sakoku|OP|1|https://nl.catbox.moe/tl73ko.webm|Close Your Eyes|Basement Jaxx feat. Linda Lewis|11.2
-Potemayo|OP|1|https://nl.catbox.moe/9xy8x2.webm|Katamichi Catchball|MOSAIC.WAV|13.2
-Bokusatsu Tenshi Dokuro-chan Second|OP|1|https://nl.catbox.moe/aanoz4.webm|Bokusatsu Tenshi Dokuro-chan 2007|Saeko Chiba|26.1
-Nanatsu-iro★Drops|OP|1|https://nl.catbox.moe/fsu0o0.webm|Shining stars bless☆|Kaori Utatsuki|16.9
-Sayonara Zetsubou Sensei|OP|2|https://nl.catbox.moe/f3hh4m.webm|Goin ni Mai Yeah~|Zetsubou Shoujo-tachi|17.2
-School Days|OP|1|https://nl.catbox.moe/87oiu1.webm|Innocent Blue|DeviceHigh|24.0
-Pocket Monsters Diamond & Pearl: Dialga vs. Palkia vs. Darkrai|OP|1|https://nl.catbox.moe/59ga7y.webm|Together2007|Fumie Akiyoshi|16.7
-Sayonara Zetsubou Sensei|OP|1|https://nl.catbox.moe/yqc5ck.webm|Hito Toshite Jiku ga Bureteiru|Kenji Ohtsuki to Zetsubou Shoujo-tachi|30.0
-Higurashi no Naku Koro ni Gaiden: Nekogoroshi-hen|OP|1|https://nl.catbox.moe/xr165r.webm|Higurashi no Naku Koro ni|Eiko Shimamiya|45.0
-Zero no Tsukaima: Futatsuki no Kishi|OP|1|https://nl.catbox.moe/okgnn1.webm|I SAY YES|ICHIKO|16.9
-Mushi-Uta|OP|1|https://nl.catbox.moe/m7jku1.webm|Mushi-Uta|Akatsuki|9.2
-Doujin Work|OP|1|https://nl.catbox.moe/wcfc49.webm|I~jan! Yuujou|MAKI|13.2
-Saishuu Shiken Kujira|OP|1|https://nl.catbox.moe/riw7q6.webm|turning world|eufonius|14.5
-Kodomo no Jikan: Anata ga Watashi ni Kureta Mono|OP|1|https://nl.catbox.moe/v6w8uf.webm|Otome Chikku Shoshinsha desu|Eri Kitamura, Kei Shindou, Mai Kadowaki|13.3
-Baccano!|OP|1|https://nl.catbox.moe/cf0028.webm|Gun's&Roses|Paradise Lunch|45.0
-Shigurui|OP|1|https://nl.catbox.moe/zigjsp.webm|Shigurui ~Opening Theme|Kiyoshi Yoshida|17.7
-Tokyo Majin Gakuen Kenpucho: Tou Dai-Ni-Maku|OP|2|https://nl.catbox.moe/srpqg8.webm|Prayer|ACID|9.9
-Code-E|OP|1|https://nl.catbox.moe/7nkvud.webm|E☆Scandal|Caoli Cano|11.1
+Shigurui|OP|1|https://nl.catbox.moe/zigjsp.webm|Shigurui ~Opening Theme|Kiyoshi Yoshida|25.5|2216|Shigurui: Death Frenzy
+Tokyo Majin Gakuen Kenpucho: Tou Dai Ni Maku|OP|2|https://nl.catbox.moe/srpqg8.webm|Prayer|ACID|12.7|2683|Tokyo Majin Gakuen Kenpucho: Tou 2nd Act
+Vexille: 2077 Nippon Sakoku|OP|1|https://nl.catbox.moe/tl73ko.webm|Close Your Eyes|Basement Jaxx feat. Linda Lewis|13.6|2746|Vexille: 2077 Isolation of Japan
+Higurashi no Naku Koro ni Kai|OP|1|https://nl.catbox.moe/6gww6w.webm|Naraku no Hana|Eiko Shimamiya|56.6|1889|When They Cry Kai
+Mushi-Uta|OP|1|https://nl.catbox.moe/m7jku1.webm|Mushi-Uta|Akatsuki|9.9|2603|Mushi-Uta
+Bokusatsu Tenshi Dokuro-chan Second|OP|1|https://nl.catbox.moe/aanoz4.webm|Bokusatsu Tenshi Dokuro-chan 2007|Saeko Chiba|42.1|2131|Bludgeoning Angel Dokuro-Chan 2
+Potemayo|OP|1|https://nl.catbox.moe/9xy8x2.webm|Katamichi Catch Ball|MOSAIC.WAV|15.8|2744|Potemayo
+Kenkou Zenrakei Suiei-bu Umishou|OP|1|https://nl.catbox.moe/4a3e1s.webm|DOLPHIN☆JET|Ayane|17.6|2602|Kenkou Zenrakei Suiei-bu Umishou
+Zero no Tsukaima: Futatsuki no Kishi|OP|1|https://nl.catbox.moe/okgnn1.webm|I SAY YES|ICHIKO|38.6|1840|The Familiar of Zero: Knight of the Twin Moons
+Baccano!|OP|1|https://nl.catbox.moe/cf0028.webm|Gun's & Roses|Paradise Lunch|76.4|2251|Baccano!
+Mononoke|OP|1|https://nl.catbox.moe/dvbx5s.webm|Kagen no Tsuki|Ryouta Komatsu×Charlie Kosei|41.2|2246|Mononoke
+Sayonara Zetsubou Sensei|OP|1|https://nl.catbox.moe/yqc5ck.webm|Hito Toshite Jiku ga Bureteiru|Kenji Ohtsuki to Zetsubou Shoujo-tachi|42.0|2605|Sayonara Zetsubou Sensei
+Doujin Work|OP|1|https://nl.catbox.moe/wcfc49.webm|I~ jan! Yuujou|MAKI|17.0|2166|Dojin Work
+Genius Party|OP|1|https://nl.catbox.moe/jc4h2t.webm|Genius Party Opening Theme|Kaoru Inoue|18.9|3508|Genius Party
+Moetan|OP|1|https://nl.catbox.moe/8xqlev.webm|Mahou Shoujo Magical-tan!|Yukari Tamura & Kaori Nazuka & Haruka Tomatsu|16.2|2367|Moetan
+Kodomo no Jikan: Anata ga Watashi ni Kureta Mono|OP|1|https://nl.catbox.moe/v6w8uf.webm|Otome Chikku Shoshinsha desu|Eri Kitamura, Kei Shindou, Mai Kadowaki|18.7|3121|Kodomo no Jikan: Anata ga Watashi ni Kureta Mono
+Sayonara Zetsubou Sensei|OP|2|https://nl.catbox.moe/f3hh4m.webm|Gouin ni Mai Yeah~|Zetsubou Shoujo-tachi|32.0|2605|Sayonara Zetsubou Sensei
+School Days|OP|1|https://nl.catbox.moe/87oiu1.webm|Innocent Blue|DeviceHigh|54.5|2476|School Days
+Higurashi no Naku Koro ni Gaiden: Nekogoroshi-hen|OP|1|https://nl.catbox.moe/xr165r.webm|Higurashi no Naku Koro ni|Eiko Shimamiya|80.2|2899|When They Cry Extra: Cat Killing Chapter
+Moetan|OP|2|https://nl.catbox.moe/lfldll.webm|TOUGH GIRL|Eri Nakao & Marina Inoue|17.6|2367|Moetan
+ef: a tale of memories.|OP|1|https://nl.catbox.moe/7eyl6c.webm|Tear.|TENMON|23.6|2924|ef: a tale of memories.
+ef: a tale of memories.|OP|3|https://nl.catbox.moe/7x0qu5.webm|euphoric field (Japanese)|TENMON feat. ELISA|49.7|2924|ef: a tale of memories.
+Code-E|OP|1|https://nl.catbox.moe/7nkvud.webm|E☆Scandal|Caoli Cano|13.6|2564|Code-E
+Buzzer Beater|OP|1|https://nl.catbox.moe/hr56cb.webm|Hideyoshi no Theme "SC"|Koichiro Kameyama|24.2|2684|Buzzer Beater
+Aria the OVA: Arietta|OP|1|https://nl.catbox.moe/9ajsre.webm|Nana-iro no Sora o|SONOROUS|17.7|2563|Aria the OVA: Arietta
+Nanatsu-iro★Drops|OP|1|https://nl.catbox.moe/fsu0o0.webm|Shining stars bless☆|Kaori Utatsuki|22.3|1688|Nanatsu-iro★Drops
+Clannad Film|OP|1|https://nl.catbox.moe/bkcbdj.webm|Mag Mell|eufonius|42.3|1723|Clannad: The Motion Picture
+Zombie-Loan|OP|1|https://nl.catbox.moe/ygdmk4.webm|Ookami no Nodo|The Birthday|22.6|2404|Zombie-Loan
+Happy Happy Clover|OP|1|https://nl.catbox.moe/cchhxx.webm|Shiawase no Kakera|Marimomi|7.2|5276|Happy Happy Clover
+Sky Girls|OP|1|https://nl.catbox.moe/pjgfxu.webm|Virgin's high!|MELL|20.7|2604|Sky Girls
+Pocket Monsters Diamond & Pearl: Dialga vs. Palkia vs. Darkrai|OP|1|https://nl.catbox.moe/59ga7y.webm|Together2007|Fumie Akiyoshi|31.2|2847|Pokémon: The Rise of Darkrai
+Moonlight Mile 2nd Season: Touch Down|OP|1|https://nl.catbox.moe/ufb855.webm|Main Theme|Kan Sawada|13.9|2929|Moonlight Mile 2nd Season: Touch Down
+ef: a tale of memories.|OP|2|https://nl.catbox.moe/ct4ett.webm|euphoric field|TENMON feat. ELISA|36.3|2924|ef: a tale of memories.
+Saishuu Shiken Kujira|OP|1|https://nl.catbox.moe/riw7q6.webm|turning world|eufonius|17.7|2967|Saishuu Shiken Kujira
+Tokyo Majin Gakuen Kenpucho: Tou Dai Ni Maku|OP|1|https://nl.catbox.moe/xzb87r.webm|0:00A.M.|ACID|22.1|2683|Tokyo Majin Gakuen Kenpucho: Tou 2nd Act
