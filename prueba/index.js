@@ -41,6 +41,8 @@ let minDiff = 0
 let maxDiff = 100
 let minAno
 let maxAno
+let minLet
+let maxLet
 
 let lista = null
 let lista2 = new Array()
@@ -329,6 +331,26 @@ function getVals2(){
     var displayElement = parent.getElementsByClassName("rangeValues2")[0];
         displayElement.innerHTML = slide1 + " - " + slide2
   }
+
+  function getVals3(){
+    // Get slider values
+
+    var parent = this.parentNode;
+    var slides = parent.getElementsByTagName("input");
+      var slide1 = parseFloat( slides[0].value );
+      var slide2 = parseFloat( slides[1].value );
+
+    // Neither slider will clip the other, so make sure we determine which is larger
+    if( slide1 > slide2 ) {
+        var tmp = slide2; slide2 = slide1; slide1 = tmp;
+    }
+
+    minLet = slide1
+    maxLet = slide2
+    var displayElement = parent.getElementsByClassName("valorletra")[0];
+    displayElement.innerHTML = String.fromCharCode(65 + slide1) + " - " + String.fromCharCode(65 + slide2)
+  }  
+  
   
 window.onload = function(){
     // Initialize Sliders
@@ -353,12 +375,23 @@ window.onload = function(){
               sliders2[y].oninput();
             }
           }
-        }    
+        }
+    var sliderSections3 = document.getElementsByClassName("sliderletra");
+        for( var x = 0; x < sliderSections3.length; x++ ){
+          var sliders3 = sliderSections3[x].getElementsByTagName("input");
+          for( var y = 0; y < sliders3.length; y++ ){
+            if( sliders3[y].type ==="range" ){
+              sliders3[y].oninput = getVals3;
+              // Manually trigger event first time to display values
+              sliders3[y].oninput();
+            }
+          }
+        }                  
+        
 }
 
 
 window.addEventListener("keydown", function(event) {
-
     if(event.keyCode == 39) {
         // Manipula el evento con KeyboardEvent.key
         nextSong()

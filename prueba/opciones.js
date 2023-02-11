@@ -203,7 +203,7 @@ function anadirLista(myArray2, temp, cantidad) {
 
 function anadirOpciones(myArray2, i, temp) {
     const node = document.createElement("option")
-    const textnode = document.createTextNode(myArray2[0] + ' OP ' + myArray2[2])
+    const textnode = document.createTextNode(myArray2[0] + ' ' + myArray2[1] + ' ' + myArray2[2])
     node.appendChild(textnode)
     option = document.getElementById('selectCancion').appendChild(node)
     option.value = myArray2[3]
