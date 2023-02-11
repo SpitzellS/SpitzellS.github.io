@@ -1,7 +1,7 @@
 //Funcion que cambia la cancion al clikear en una opcion
 function cambiarCancion()
 {
-    removeTrack()
+    //removeTrack()
     errorTrack = true
     var selectCancion =document.getElementById('selectCancion')
     var video = document.getElementById("video")

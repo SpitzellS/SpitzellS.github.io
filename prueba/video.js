@@ -38,8 +38,6 @@ function nextSong() {
 
     if (!loopBoolean) {
         if (!randomBoolean) {
-
-            errorRemove = removeTrack()
                         
             if(variosAnos) {
 
@@ -50,6 +48,7 @@ function nextSong() {
                     nextSong()
                 } else {
                     if(filtroDiff(lista2) && filtroLetra(lista2)) {
+                        //errorRemove = removeTrack()
                         video.play()
                     } else {
                         nextSong()
@@ -60,7 +59,7 @@ function nextSong() {
                     if(errorRemove) {
                         setTimeout(function(){
                             var video = document.getElementById("video")
-                            addTrack(lista2[posicion-1].name, video.duration)
+                            //addTrack(lista2[posicion-1].name, video.duration)
                         }, 3000)
                     }
 
@@ -75,6 +74,7 @@ function nextSong() {
                 posicion = y
  
                 if(filtroDiff(lista) && filtroLetra(lista)) {
+                    //errorRemove = removeTrack()
                     video.play()
                 } else {
                     nextSong()
@@ -85,7 +85,7 @@ function nextSong() {
                 if(errorRemove) {
                     setTimeout(function(){
                         var video = document.getElementById("video")
-                        addTrack(lista[posicion-1].name, video.duration)
+                        //addTrack(lista[posicion-1].name, video.duration)
                     }, 3000)
                 }
             }
@@ -100,9 +100,7 @@ function nextSong() {
 function beforeSong() {
     
     if (!loopBoolean) {
-        if(!errorBefore) {
-            errorRemove = removeTrack()
-        }
+
         if(variosAnos) {
                 y = posicion-2 < 0 ? cantidadTotal : posicion-1
                 posicion = y
@@ -113,6 +111,7 @@ function beforeSong() {
                 } else {
                     errorBefore = false
                     if(filtroDiff(lista2) && filtroLetra(lista2)) {
+                        //errorRemove = removeTrack()
                         video.play()
                     } else {
                         beforeSong()
@@ -122,7 +121,7 @@ function beforeSong() {
                     if(errorRemove) {
                         setTimeout(function(){
                             var video = document.getElementById("video")
-                            addTrack(lista2[posicion-1].name, video.duration)
+                            //addTrack(lista2[posicion-1].name, video.duration)
                         }, 3000)
                     }
                 }
@@ -132,6 +131,7 @@ function beforeSong() {
             posicion = y
 
             if(filtroDiff(lista) && filtroLetra(lista)) {
+                //errorRemove = removeTrack()
                 video.play()
             } else {
                 beforeSong()
@@ -141,7 +141,7 @@ function beforeSong() {
             if(errorRemove) {
                 setTimeout(function(){
                     var video = document.getElementById("video")
-                    addTrack(lista[posicion-1].name, video.duration)
+                    //addTrack(lista[posicion-1].name, video.duration)
                 }, 3000)
             }
         }
@@ -151,7 +151,6 @@ function beforeSong() {
  }
 
 function randomSong() {
-    errorRemove = removeTrack()
 
     if (variosAnos) {
             var seleccion = document.getElementById('selectCancion')
@@ -172,6 +171,7 @@ function randomSong() {
                 randomSong()
             } else {
                 if(filtroDiff(lista2) && filtroLetra(lista2)) {
+                    //errorRemove = removeTrack()
                     video.play()
                 } else {
                     randomSong()
@@ -181,7 +181,7 @@ function randomSong() {
                 if(errorRemove) {
                     setTimeout(function(){
                         var video = document.getElementById("video")
-                        addTrack(lista2[posicion-1].name, video.duration)
+                        //addTrack(lista2[posicion-1].name, video.duration)
                     }, 3000)
                 }
             }
@@ -201,6 +201,7 @@ function randomSong() {
         }
         posicion = x
         if(filtroDiff(lista) && filtroLetra(lista)) {
+            //errorRemove = removeTrack()
             video.play()
         } else {
             randomSong()
@@ -210,7 +211,7 @@ function randomSong() {
         if(errorRemove) {
             setTimeout(function(){
                 var video = document.getElementById("video")
-                addTrack(lista[posicion-1].name, video.duration)
+                //addTrack(lista[posicion-1].name, video.duration)
             }, 3000)
         }
     }
@@ -247,7 +248,7 @@ function filtroLetra(letraLista) {
     var titulo = letraLista[posicion-1].name
     var primeraLetra = titulo[0].charCodeAt(0) - 65
 
-    if(primeraLetra > minLet && primeraLetra < maxLet) {
+    if(primeraLetra >= minLet && primeraLetra <= maxLet) {
         document.title = letraLista[posicion-1].name
         info.innerHTML = "Video: " + letraLista[posicion-1].name + ' ' + 
                                 letraLista[posicion-1].tipo + ' ' + 
