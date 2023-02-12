@@ -44,26 +44,23 @@ function nextSong() {
                 y = posicion+1 > cantidadTotal ? 1 : posicion+1
                 posicion = y
 
-                if(lista2[posicion-1].eliminada) {
-                    nextSong()
+                if(filtroDiff(lista2) && filtroLetra(lista2)) {
+                    //errorRemove = removeTrack()
+                    console.log("A")
+                    video.play()
                 } else {
-                    if(filtroDiff(lista2) && filtroLetra(lista2)) {
-                        //errorRemove = removeTrack()
-                        video.play()
-                    } else {
-                        nextSong()
-                    }
-
-                    eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
-                    actualizarInfo()
-                    if(errorRemove) {
-                        setTimeout(function(){
-                            var video = document.getElementById("video")
-                            //addTrack(lista2[posicion-1].name, video.duration)
-                        }, 3000)
-                    }
-
+                    nextSong()
                 }
+
+                eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
+                actualizarInfo()
+                if(errorRemove) {
+                    setTimeout(function(){
+                        var video = document.getElementById("video")
+                        //addTrack(lista2[posicion-1].name, video.duration)
+                    }, 3000)
+                }
+
             } else {
                 if(eliminarBoolean) {
                     y = posicion > cantidad ? 1 : posicion
@@ -105,26 +102,22 @@ function beforeSong() {
                 y = posicion-2 < 0 ? cantidadTotal : posicion-1
                 posicion = y
 
-                if(lista2[posicion-1].eliminada) {
-                    errorBefore = true
-                    beforeSong()
+                errorBefore = false
+                if(filtroDiff(lista2) && filtroLetra(lista2)) {
+                    //errorRemove = removeTrack()
+                    video.play()
                 } else {
-                    errorBefore = false
-                    if(filtroDiff(lista2) && filtroLetra(lista2)) {
-                        //errorRemove = removeTrack()
-                        video.play()
-                    } else {
-                        beforeSong()
-                    }
-                    eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
-                    actualizarInfo()
-                    if(errorRemove) {
-                        setTimeout(function(){
-                            var video = document.getElementById("video")
-                            //addTrack(lista2[posicion-1].name, video.duration)
-                        }, 3000)
-                    }
+                    beforeSong()
                 }
+                eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
+                actualizarInfo()
+                if(errorRemove) {
+                    setTimeout(function(){
+                        var video = document.getElementById("video")
+                        //addTrack(lista2[posicion-1].name, video.duration)
+                    }, 3000)
+                }
+
 
         } else {
             y = posicion-2 < 0 ? cantidad : posicion-1
@@ -167,23 +160,19 @@ function randomSong() {
             }
             posicion = x
 
-            if(lista2[posicion-1].eliminada) {
-                randomSong()
+            if(filtroDiff(lista2) && filtroLetra(lista2)) {
+                //errorRemove = removeTrack()
+                video.play()
             } else {
-                if(filtroDiff(lista2) && filtroLetra(lista2)) {
-                    //errorRemove = removeTrack()
-                    video.play()
-                } else {
-                    randomSong()
-                }
-                eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
-                actualizarInfo()
-                if(errorRemove) {
-                    setTimeout(function(){
-                        var video = document.getElementById("video")
-                        //addTrack(lista2[posicion-1].name, video.duration)
-                    }, 3000)
-                }
+                randomSong()
+            }
+            eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
+            actualizarInfo()
+            if(errorRemove) {
+                setTimeout(function(){
+                    var video = document.getElementById("video")
+                    //addTrack(lista2[posicion-1].name, video.duration)
+                }, 3000)
             }
 
     } else {
@@ -243,12 +232,11 @@ function filtroDiff(diffLista) {
 }
 
 function filtroLetra(letraLista) {
-
     var letraBoolean = true
     var titulo = letraLista[posicion-1].name
     var primeraLetra = titulo[0].charCodeAt(0) - 65
 
-    if(primeraLetra >= minLet && primeraLetra <= maxLet) {
+    if(primeraLetra >= minLet && primeraLetra <= maxLet || minLet == -1 && primeraLetra <= minLet) {
         document.title = letraLista[posicion-1].name
         info.innerHTML = "Video: " + letraLista[posicion-1].name + ' ' + 
                                 letraLista[posicion-1].tipo + ' ' + 

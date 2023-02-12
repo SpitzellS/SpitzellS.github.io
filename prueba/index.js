@@ -353,6 +353,8 @@ function getVals2(){
   
   
 window.onload = function(){
+    document.getElementById("elegirSeason").style.visibility = "hidden"
+    
     // Initialize Sliders
     var sliderSections = document.getElementsByClassName("range-slider");
         for( var x = 0; x < sliderSections.length; x++ ){
