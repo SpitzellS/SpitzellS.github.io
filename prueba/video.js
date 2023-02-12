@@ -47,7 +47,6 @@ function nextSong() {
                 if(filtroDiff(lista2) && filtroLetra(lista2)) {
                     //errorRemove = removeTrack()
                     video.play()
-                    console.log(lista2[posicion-1])
                 } else {
                     nextSong()
                 }

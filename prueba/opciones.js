@@ -207,6 +207,7 @@ function anadirOpciones(myArray2, i, temp) {
 function anadirLista2(temp, cantidad) {
     cantidadTotal = cantidadTotal + cantidad
     anadirOpciones2(arrayOpciones,temp)
+    lista4 = lista2
 }
 
 function anadirOpciones2(opcionArray,i) {
@@ -272,66 +273,33 @@ function anadirOpciones2(opcionArray,i) {
     }
 }
 
-function anadirDiff() {
-    console.log(lista2[posicion-1])
-    if (lista2[posicion-1].difficulty > minDiff && lista2[posicion-1].difficulty < maxDiff) {
-        borrarOpciones("selectCancion")
-        for (j = 0; j < opcionArray.length; j++ ) {
-            let eliminada2
+function filtro() {
+    let contador = 0
+    lista2 = lista4
+    
+    let lista3 = new Array()
+    borrarOpciones("selectCancion")
+    for (j=0; j < lista2.length; j++) {
+        var titulo = lista2[j].name
+        var primeraLetra = titulo[0].charCodeAt(0) - 65
+        if (lista2[j].difficulty > minDiff && lista2[j].difficulty < maxDiff && primeraLetra >= minLet && primeraLetra <= maxLet || minLet == -1 && primeraLetra <= minLet) {
+                    if(!lista2[j].eliminada) {
+                        lista3[contador] = lista2[j]
+                        const node = document.createElement("option")
+                        const textnode = document.createTextNode(lista2[j].name + ' OP ' + lista2[j].number)
+                        //console.log(textnode)
+                        node.appendChild(textnode)
+                        option = document.getElementById('selectCancion').appendChild(node)
+                        option.value = lista2[j].link
+                        option.id = contador + 1
+                    
+                        //POR COMPROBAR
+                        option.className = lista2[j].id
 
-            if (localStorage.getItem('playlistSp')) {
-                let playlistSp = JSON.parse(localStorage.getItem('playlistSp'))
-                eliminada2 = playlistSp[arrayOpciones[j][3]] ? true : false
-                lista2[j] = new Cancion(
-                    arrayOpciones[j][0],
-                    arrayOpciones[j][1],
-                    arrayOpciones[j][2],
-                    arrayOpciones[j][3],
-                    arrayOpciones[j][4],
-                    arrayOpciones[j][5],
-                    arrayOpciones[j][6],
-                    eliminada2,
-                    j+1,
-                    null,
-                    arrayOpciones[j][7],
-                    arrayOpciones[j][8])
-                
-                if(!lista2[j].eliminada) {
-                    const node = document.createElement("option")
-                    const textnode = document.createTextNode(opcionArray[j][0] + ' OP ' + opcionArray[j][2])
-                    node.appendChild(textnode)
-                    option = document.getElementById('selectCancion').appendChild(node)
-                    option.value = opcionArray[j][3]
-                    option.id = j + 1
-                
-                    //POR COMPROBAR
-                    option.className = opcionArray[j][7]
-                }
-
-            } else {
-                lista2[j] = new Cancion(
-                    arrayOpciones[j][0],
-                    arrayOpciones[j][1],
-                    arrayOpciones[j][2],
-                    arrayOpciones[j][3],
-                    arrayOpciones[j][4],
-                    arrayOpciones[j][5],
-                    arrayOpciones[j][6],
-                    false,
-                    j+1,
-                    null,
-                    arrayOpciones[j][7],
-                    arrayOpciones[j][8])
-                const node = document.createElement("option")
-                const textnode = document.createTextNode(opcionArray[j][0] + ' OP ' + opcionArray[j][2])
-                node.appendChild(textnode)
-                option = document.getElementById('selectCancion').appendChild(node)
-                option.value = opcionArray[j][3]
-                option.id = j + 1
-            
-                //POR COMPROBAR
-                option.className = opcionArray[j][7]
-            }
+                        contador++
+                    }
         }
     }
+    lista2 = lista3
+    cantidadTotal = contador
 }

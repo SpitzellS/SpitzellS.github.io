@@ -46,6 +46,7 @@ let maxLet
 
 let lista = null
 let lista2 = new Array()
+let lista4 = new Array()
 let listaCancion = ''
 let myArray = ''
 let posicion = 0
@@ -188,7 +189,6 @@ function actualizarInfo() {
     //Todas las Seasons
     if (variosAnos || allSoloAno) {
         if (localStorage.getItem('playlistSp')) {
-            console.log("A")
             //console.log(JSON.parse(localStorage.getItem('playlistSp')))
             addInfo(lista2)
         } else {
@@ -247,7 +247,6 @@ function addInfo(infoLista) {
     englishTitle = document.getElementById('english')
     englishTitle.innerHTML = 'English: ' + infoLista[posicion-1].nameEnglish
 
-    console.log(tabla)
 }
 
 
