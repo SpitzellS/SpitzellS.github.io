@@ -43,7 +43,6 @@ function anadirAno() {
     anoElegido=document.getElementById('selectAno').value
 
     variosAnos = minAno == maxAno ? false : true
-
     if(variosAnos) {
         leerVariosAnos()
         document.getElementById("elegirSeason").style.visibility = "hidden"
@@ -52,15 +51,14 @@ function anadirAno() {
     }
 
     borrarOpciones('selectSeason')
-
-    resetSeason("Winter")
-    resetSeason("Spring")
-    resetSeason("Summer")
-    resetSeason("Fall")
-    resetSeason("All")
+    addSeasonOpcion("Winter")
+    addSeasonOpcion("Spring")
+    addSeasonOpcion("Summer")
+    addSeasonOpcion("Fall")
+    addSeasonOpcion("All")
 }
 
-function resetSeason(temporada) {
+function addSeasonOpcion(temporada) {
     opcion = document.getElementById('selectSeason')
 
     season = document.createElement("option")
@@ -76,9 +74,8 @@ function anadirSeason() {
     direccionGitHub = ''
     var seleccion=document.getElementById('selectSeason')
     elegido = seleccion.selectedIndex
-    
-    allSoloAno = elegido == 5 ? true : false
 
+    allSoloAno = elegido == 5 ? true : false
     if (allSoloAno) {
         let direccion1 = ''
         let direccion2 = ''
@@ -108,7 +105,6 @@ function leerVariosAnos() {
     for (i=minAno; i<maxAno+1; i++) {
         leerCadaAno(i)
     }
-
 }
 
 function leerCadaAno(ano) {
@@ -127,7 +123,6 @@ function leerCadaAno(ano) {
     leerTexto(direccion2, 1);
     leerTexto(direccion3, 2);
     leerTexto(direccion4, 3);
-
 }
 
 function leerTexto(direccion, temp) {
@@ -165,8 +160,6 @@ function leerTexto(direccion, temp) {
                 myArray2 = ordenarAlf(myArray2)
                 anadirLista(myArray2, temp, cantidad)
             }
-
-
         })
         .catch(function (response) {
             // "Not Found"
@@ -218,6 +211,70 @@ function anadirLista2(temp, cantidad) {
 
 function anadirOpciones2(opcionArray,i) {
     if(i==3) {
+        borrarOpciones("selectCancion")
+        for (j = 0; j < opcionArray.length; j++ ) {
+            let eliminada2
+
+            if (localStorage.getItem('playlistSp')) {
+                let playlistSp = JSON.parse(localStorage.getItem('playlistSp'))
+                eliminada2 = playlistSp[arrayOpciones[j][3]] ? true : false
+                lista2[j] = new Cancion(
+                    arrayOpciones[j][0],
+                    arrayOpciones[j][1],
+                    arrayOpciones[j][2],
+                    arrayOpciones[j][3],
+                    arrayOpciones[j][4],
+                    arrayOpciones[j][5],
+                    arrayOpciones[j][6],
+                    eliminada2,
+                    j+1,
+                    null,
+                    arrayOpciones[j][7],
+                    arrayOpciones[j][8])
+                
+                if(!lista2[j].eliminada) {
+                    const node = document.createElement("option")
+                    const textnode = document.createTextNode(opcionArray[j][0] + ' OP ' + opcionArray[j][2])
+                    node.appendChild(textnode)
+                    option = document.getElementById('selectCancion').appendChild(node)
+                    option.value = opcionArray[j][3]
+                    option.id = j + 1
+                
+                    //POR COMPROBAR
+                    option.className = opcionArray[j][7]
+                }
+
+            } else {
+                lista2[j] = new Cancion(
+                    arrayOpciones[j][0],
+                    arrayOpciones[j][1],
+                    arrayOpciones[j][2],
+                    arrayOpciones[j][3],
+                    arrayOpciones[j][4],
+                    arrayOpciones[j][5],
+                    arrayOpciones[j][6],
+                    false,
+                    j+1,
+                    null,
+                    arrayOpciones[j][7],
+                    arrayOpciones[j][8])
+                const node = document.createElement("option")
+                const textnode = document.createTextNode(opcionArray[j][0] + ' OP ' + opcionArray[j][2])
+                node.appendChild(textnode)
+                option = document.getElementById('selectCancion').appendChild(node)
+                option.value = opcionArray[j][3]
+                option.id = j + 1
+            
+                //POR COMPROBAR
+                option.className = opcionArray[j][7]
+            }
+        }
+    }
+}
+
+function anadirDiff() {
+    console.log(lista2[posicion-1])
+    if (lista2[posicion-1].difficulty > minDiff && lista2[posicion-1].difficulty < maxDiff) {
         borrarOpciones("selectCancion")
         for (j = 0; j < opcionArray.length; j++ ) {
             let eliminada2

@@ -145,6 +145,7 @@ function actualizarOpciones2(arrayOpciones) {
 
         if (localStorage.getItem('playlistSp')) {
             let playlistSp = JSON.parse(localStorage.getItem('playlistSp'))
+            
             eliminada2 = playlistSp[arrayOpciones[i][3]] ? true : false
             lista2[i] = new Cancion(
                 arrayOpciones[i][0],
@@ -183,7 +184,23 @@ function actualizarOpciones2(arrayOpciones) {
     }
 
 function actualizarInfo() {
-    
+
+    //Todas las Seasons
+    if (variosAnos || allSoloAno) {
+        if (localStorage.getItem('playlistSp')) {
+            console.log("A")
+            //console.log(JSON.parse(localStorage.getItem('playlistSp')))
+            addInfo(lista2)
+        } else {
+            addInfo(lista)
+        }
+    // Solo 1 Season
+    } else {
+        addInfo(lista)
+    }
+}
+
+function addInfo(infoLista) {
     let tabla = document.getElementById('tablaCancion')
     cont = tabla.childElementCount
 
@@ -202,99 +219,37 @@ function actualizarInfo() {
     node5 = document.createElement("td")
     node6 = document.createElement("td")
 
-    //Todas las Seasons
-    if (variosAnos || allSoloAno) {
-
-        if (localStorage.getItem('playlistSp')) {
-
-            tabla.appendChild(nodeSongName)
-            tr = tabla.lastChild
-            tr.appendChild(node3)
-            let songName = tr.lastChild
-            numero = Number(temp)
+    tabla.appendChild(nodeSongName)
+    tr = tabla.lastChild
+    tr.appendChild(node3)
+    let songName = tr.lastChild
+    numero = Number(temp)
     
-            textnode = document.createTextNode('Song: ' + lista2[posicion-1].songName)
-            songName.appendChild(textnode)
+    textnode = document.createTextNode('Song: ' + infoLista[posicion-1].songName)
+    songName.appendChild(textnode)
         
-            tabla.appendChild(nodeArtist)
-            tr = tabla.lastChild
-            tr.appendChild(node6)
-            let artist = tr.lastChild
-            textnode = document.createTextNode('Artist: ' + lista2[posicion-1].artist)
-            artist.appendChild(textnode)
+    tabla.appendChild(nodeArtist)
+    tr = tabla.lastChild
+    tr.appendChild(node6)
+    let artist = tr.lastChild
+    textnode = document.createTextNode('Artist: ' + infoLista[posicion-1].artist)
+    artist.appendChild(textnode)
         
-            tabla.appendChild(nodeDiff)
-            tr = tabla.lastChild
-            tr.appendChild(node5)
-            let diff = tr.lastChild
-            textnode = document.createTextNode('Diff: ' + lista2[posicion-1].difficulty)
-            diff.appendChild(textnode)
+    tabla.appendChild(nodeDiff)
+    tr = tabla.lastChild
+    tr.appendChild(node5)
+    let diff = tr.lastChild
+    textnode = document.createTextNode('Diff: ' + infoLista[posicion-1].difficulty)
+    diff.appendChild(textnode)
     
-            romajiTitle = document.getElementById('romaji')
-            romajiTitle.innerHTML = 'Romaji: ' + lista2[posicion-1].name
-            englishTitle = document.getElementById('english')
-            englishTitle.innerHTML = 'English: ' + lista2[posicion-1].nameEnglish
-        
-        } else {
-            tabla.appendChild(nodeSongName)
-            tr = tabla.lastChild
-            tr.appendChild(node3)
-            let songName = tr.lastChild
-            numero = Number(temp)
-    
-            textnode = document.createTextNode('Song: ' + lista2[posicion-1].songName)
-            songName.appendChild(textnode)
-        
-            tabla.appendChild(nodeArtist)
-            tr = tabla.lastChild
-            tr.appendChild(node6)
-            let artist = tr.lastChild
-            textnode = document.createTextNode('Artist: ' + lista2[posicion-1].artist)
-            artist.appendChild(textnode)
-        
-            tabla.appendChild(nodeDiff)
-            tr = tabla.lastChild
-            tr.appendChild(node5)
-            let diff = tr.lastChild
-            textnode = document.createTextNode('Diff: ' + lista2[posicion-1].difficulty)
-            diff.appendChild(textnode)
-    
-            romajiTitle = document.getElementById('romaji')
-            romajiTitle.innerHTML = 'Romaji: ' + lista2[posicion-1].name
-            englishTitle = document.getElementById('english')
-            englishTitle.innerHTML = 'English: ' + lista2[posicion-1].nameEnglish
+    romajiTitle = document.getElementById('romaji')
+    romajiTitle.innerHTML = 'Romaji: ' + infoLista[posicion-1].name
+    englishTitle = document.getElementById('english')
+    englishTitle.innerHTML = 'English: ' + infoLista[posicion-1].nameEnglish
 
-        }
-
-    // Solo 1 Season
-    } else {
-        tabla.appendChild(nodeSongName)
-        tr = tabla.lastChild
-        tr.appendChild(node3)
-        let songName = tr.lastChild
-        textnode = document.createTextNode('Song: ' + lista[posicion-1].songName)
-        songName.appendChild(textnode)
-    
-        tabla.appendChild(nodeArtist)
-        tr = tabla.lastChild
-        tr.appendChild(node6)
-        let artist = tr.lastChild
-        textnode = document.createTextNode('Artist: ' + lista[posicion-1].artist)
-        artist.appendChild(textnode)
-    
-        tabla.appendChild(nodeDiff)
-        tr = tabla.lastChild
-        tr.appendChild(node5)
-        let diff = tr.lastChild
-        textnode = document.createTextNode('Diff: ' + lista[posicion-1].difficulty)
-        diff.appendChild(textnode)
-
-        romajiTitle = document.getElementById('romaji')
-        romajiTitle.innerHTML = 'Romaji: ' + lista[posicion-1].name
-        englishTitle = document.getElementById('english')
-        englishTitle.innerHTML = 'English: ' + lista[posicion-1].nameEnglish
-    }
+    console.log(tabla)
 }
+
 
 function ordenarAlf(array) {
     array2 = array.sort()
@@ -354,7 +309,7 @@ function getVals2(){
   
 window.onload = function(){
     document.getElementById("elegirSeason").style.visibility = "hidden"
-    
+
     // Initialize Sliders
     var sliderSections = document.getElementsByClassName("range-slider");
         for( var x = 0; x < sliderSections.length; x++ ){
