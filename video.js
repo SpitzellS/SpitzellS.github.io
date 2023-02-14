@@ -38,30 +38,28 @@ function nextSong() {
 
     if (!loopBoolean) {
         if (!randomBoolean) {
-            if(allBoolean) {
+                        
+            if(variosAnos) {
 
                 y = posicion+1 > cantidadTotal ? 1 : posicion+1
                 posicion = y
 
-                if(lista2[posicion-1].eliminada) {
-                    nextSong()
+                if(filtroDiff(lista2) && filtroLetra(lista2)) {
+                    //errorRemove = removeTrack()
+                    video.play()
                 } else {
-                    if(lista2[posicion-1].difficulty > minDiff && lista2[posicion-1].difficulty < maxDiff) {
-                        document.title = lista2[posicion-1].name
-                        info.innerHTML = "Video: " + lista2[posicion-1].name + ' ' + 
-                                            lista2[posicion-1].tipo + ' ' + 
-                                            lista2[posicion-1].number
-                        video.src=lista2[posicion-1].link
-                        var pagAnilist=document.getElementById('atributo')
-                        pagAnilist.href = anilistURL + lista2[posicion-1].anilistID
-                        video.play()
-                    } else {
-                        nextSong()
-                    }
-                    eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
-                    actualizarInfo()
-
+                    nextSong()
                 }
+
+                eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
+                actualizarInfo()
+                if(errorRemove) {
+                    setTimeout(function(){
+                        var video = document.getElementById("video")
+                        //addTrack(lista2[posicion-1].name, video.duration)
+                    }, 3000)
+                }
+
             } else {
                 if(eliminarBoolean) {
                     y = posicion > cantidad ? 1 : posicion
@@ -71,14 +69,8 @@ function nextSong() {
                 }
                 posicion = y
  
-                if(lista[posicion-1].difficulty > minDiff && lista[posicion-1].difficulty < maxDiff) {
-                    document.title = lista[posicion-1].name
-                    info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
-                                        lista[posicion-1].tipo + ' ' + 
-                                        lista[posicion-1].number
-                    video.src=lista[posicion-1].link
-                    var pagAnilist=document.getElementById('atributo')
-                    pagAnilist.href = anilistURL + lista[posicion-1].anilistID
+                if(filtroDiff(lista) && filtroLetra(lista)) {
+                    //errorRemove = removeTrack()
                     video.play()
                 } else {
                     nextSong()
@@ -86,6 +78,12 @@ function nextSong() {
                 eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                 actualizarInfo()
 
+                if(errorRemove) {
+                    setTimeout(function(){
+                        var video = document.getElementById("video")
+                        //addTrack(lista[posicion-1].name, video.duration)
+                    }, 3000)
+                }
             }
         } else {
             randomSong()
@@ -93,54 +91,51 @@ function nextSong() {
     } else {
         accionReiniciar()
     }
-
  }
 
 function beforeSong() {
     
     if (!loopBoolean) {
-        if(allBoolean) {
+
+        if(variosAnos) {
                 y = posicion-2 < 0 ? cantidadTotal : posicion-1
                 posicion = y
 
-                if(lista2[posicion-1].eliminada) {
-                    beforeSong()
+                errorBefore = false
+                if(filtroDiff(lista2) && filtroLetra(lista2)) {
+                    //errorRemove = removeTrack()
+                    video.play()
                 } else {
-                    if(lista2[posicion-1].difficulty > minDiff && lista2[posicion-1].difficulty < maxDiff) {
-                        document.title = lista2[posicion-1].name
-                        info.innerHTML = "Video: " + lista2[posicion-1].name + ' ' + 
-                                            lista2[posicion-1].tipo + ' ' + 
-                                            lista2[posicion-1].number
-                        video.src=lista2[posicion-1].link
-                        var pagAnilist=document.getElementById('atributo')
-                        pagAnilist.href = anilistURL + lista2[posicion-1].anilistID
-                        video.play()
-                    } else {
-                        beforeSong()
-                    }
-                    eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
-                    actualizarInfo()
-
+                    beforeSong()
                 }
+                eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
+                actualizarInfo()
+                if(errorRemove) {
+                    setTimeout(function(){
+                        var video = document.getElementById("video")
+                        //addTrack(lista2[posicion-1].name, video.duration)
+                    }, 3000)
+                }
+
 
         } else {
             y = posicion-2 < 0 ? cantidad : posicion-1
             posicion = y
 
-            if(lista[posicion-1].difficulty > minDiff && lista[posicion-1].difficulty < maxDiff) {
-                document.title = lista[posicion-1].name
-                info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
-                                    lista[posicion-1].tipo + ' ' + 
-                                    lista[posicion-1].number
-                video.src=lista[posicion-1].link
-                var pagAnilist=document.getElementById('atributo')
-                pagAnilist.href = anilistURL + lista[posicion-1].anilistID
+            if(filtroDiff(lista) && filtroLetra(lista)) {
+                //errorRemove = removeTrack()
                 video.play()
             } else {
                 beforeSong()
             }
             eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
             actualizarInfo()
+            if(errorRemove) {
+                setTimeout(function(){
+                    var video = document.getElementById("video")
+                    //addTrack(lista[posicion-1].name, video.duration)
+                }, 3000)
+            }
         }
     } else {
         accionReiniciar()
@@ -148,7 +143,8 @@ function beforeSong() {
  }
 
 function randomSong() {
-    if (allBoolean) {
+
+    if (variosAnos) {
             var seleccion = document.getElementById('selectCancion')
             opciones = seleccion.options.length - 1
             let x = lista2[posicion-1].id
@@ -163,23 +159,19 @@ function randomSong() {
             }
             posicion = x
 
-            if(lista2[posicion-1].eliminada) {
-                randomSong()
+            if(filtroDiff(lista2) && filtroLetra(lista2)) {
+                //errorRemove = removeTrack()
+                video.play()
             } else {
-                if(lista2[posicion-1].difficulty > minDiff && lista2[posicion-1].difficulty < maxDiff) {
-                    document.title = lista2[posicion-1].name
-                    info.innerHTML = "Video: " + lista2[posicion-1].name + ' ' + 
-                                        lista2[posicion-1].tipo + ' ' + 
-                                        lista2[posicion-1].number
-                    video.src=lista2[posicion-1].link
-                    var pagAnilist=document.getElementById('atributo')
-                    pagAnilist.href = anilistURL + lista2[posicion-1].anilistID
-                    video.play()
-                    eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
-                } else {
-                    randomSong()
-                }
-                actualizarInfo()
+                randomSong()
+            }
+            eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
+            actualizarInfo()
+            if(errorRemove) {
+                setTimeout(function(){
+                    var video = document.getElementById("video")
+                    //addTrack(lista2[posicion-1].name, video.duration)
+                }, 3000)
             }
 
     } else {
@@ -196,20 +188,20 @@ function randomSong() {
             }
         }
         posicion = x
-        if(lista[posicion-1].difficulty > minDiff && lista[posicion-1].difficulty < maxDiff) {
-            document.title = lista[posicion-1].name
-            info.innerHTML = "Video: " + lista[posicion-1].name + ' ' + 
-                                lista[posicion-1].tipo + ' ' + 
-                                lista[posicion-1].number
-            video.src=lista[posicion-1].link
-            var pagAnilist=document.getElementById('atributo')
-            pagAnilist.href = anilistURL + lista[posicion-1].anilistID
+        if(filtroDiff(lista) && filtroLetra(lista)) {
+            //errorRemove = removeTrack()
             video.play()
-            eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
         } else {
             randomSong()
         }
+        eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
         actualizarInfo()
+        if(errorRemove) {
+            setTimeout(function(){
+                var video = document.getElementById("video")
+                //addTrack(lista[posicion-1].name, video.duration)
+            }, 3000)
+        }
     }
 }
 
@@ -219,4 +211,5 @@ function accionEliminar() {
     eliminada.value = "Eliminada"
     actualizarOpciones2(arrayOpciones)
     eliminarBoolean = true
+    nextSong()
 }

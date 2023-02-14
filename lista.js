@@ -3,11 +3,12 @@ function deletePerm() {
     if (!localStorage.getItem('playlistSp')) {
         localStorage.setItem('playlistSp', '{}')
 
-        if(allBoolean) {
+        if(variosAnos) {
+
             const webm = lista2[posicion-1].link
         
             const playlistSp = JSON.parse(localStorage.getItem('playlistSp'))
-    
+            
             localStorage.setItem('playlistSp', JSON.stringify({
                 ...playlistSp,
             [webm]: {
@@ -27,7 +28,7 @@ function deletePerm() {
         }
     } else {
         
-        if(allBoolean) {
+        if(variosAnos) {
             const webm = lista2[posicion-1].link
         
             const playlistSp = JSON.parse(localStorage.getItem('playlistSp'))

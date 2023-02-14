@@ -1,17 +1,17 @@
 //Funcion que cambia la cancion al clikear en una opcion
 function cambiarCancion()
 {
+    //removeTrack()
+    errorTrack = true
     var selectCancion =document.getElementById('selectCancion')
     var video = document.getElementById("video")
     posicion = selectCancion.selectedIndex
     cont3 = selectCancion.options[selectCancion.selectedIndex].id
     for (i=0; i < cont3; i++) {
         if(lista2[i].eliminada) {
-            console.log(lista2[i])
             posicion++
         }
     }
-    console.log(posicion)
     info.innerHTML = "Video: " + selectCancion.options[selectCancion.selectedIndex].text
     video.src = selectCancion.options[selectCancion.selectedIndex].value
     document.title = selectCancion.options[selectCancion.selectedIndex].text
@@ -22,7 +22,6 @@ function cambiarCancion()
     actualizarInfo()
     presionar()
     video.play()
-    console.log()
 }
 
 //Funcion que borra todas las opcions con el id pasado
@@ -38,14 +37,12 @@ function borrarOpciones(select) {
     list.appendChild(node2)
 }
 
-//Funcion que resetea el selectSeason
 function anadirAno() {
     cantidad = 0
     cantidadTotal = 0
     anoElegido=document.getElementById('selectAno').value
 
     variosAnos = minAno == maxAno ? false : true
-
     if(variosAnos) {
         leerVariosAnos()
         document.getElementById("elegirSeason").style.visibility = "hidden"
@@ -54,15 +51,14 @@ function anadirAno() {
     }
 
     borrarOpciones('selectSeason')
-
-    resetSeason("Winter")
-    resetSeason("Spring")
-    resetSeason("Summer")
-    resetSeason("Fall")
-    resetSeason("All")
+    addSeasonOpcion("Winter")
+    addSeasonOpcion("Spring")
+    addSeasonOpcion("Summer")
+    addSeasonOpcion("Fall")
+    addSeasonOpcion("All")
 }
 
-function resetSeason(temporada) {
+function addSeasonOpcion(temporada) {
     opcion = document.getElementById('selectSeason')
 
     season = document.createElement("option")
@@ -78,10 +74,9 @@ function anadirSeason() {
     direccionGitHub = ''
     var seleccion=document.getElementById('selectSeason')
     elegido = seleccion.selectedIndex
-    
-    allBoolean = elegido == 5 ? true : false
 
-    if (allBoolean) {
+    allSoloAno = elegido == 5 ? true : false
+    if (allSoloAno) {
         let direccion1 = ''
         let direccion2 = ''
         let direccion3 = ''
@@ -107,11 +102,9 @@ function anadirSeason() {
 
 function leerVariosAnos() {
     direccionGitHub = ''
-    allBoolean = true
     for (i=minAno; i<maxAno+1; i++) {
         leerCadaAno(i)
     }
-
 }
 
 function leerCadaAno(ano) {
@@ -130,7 +123,6 @@ function leerCadaAno(ano) {
     leerTexto(direccion2, 1);
     leerTexto(direccion3, 2);
     leerTexto(direccion4, 3);
-
 }
 
 function leerTexto(direccion, temp) {
@@ -156,36 +148,22 @@ function leerTexto(direccion, temp) {
             let myArray2 = new Array(cantidad)
 
             cantidad2 = cantidad
-            let playlistSp = JSON.parse(localStorage.getItem('playlistSp'))
-            let u = 0
-            for (i = 0; i < cantidad2; i++) {
-                
-                myArray2[i] = myArray[i-u].split('|')
-                //if (playlistSp[myArray2[i-u][3]]) {
-                //    u++
-                //    cantidad2--
-                //    i--
-                //}
-                
+            for (i = 0; i < cantidad2; i++) {               
+                myArray2[i] = myArray[i].split('|')
             }
             
             guardarLista(myArray2)
 
-            if(allBoolean && !variosAnos) {
+            if(allSoloAno || variosAnos) {
                 anadirLista2(temp, cantidad)
-            } else if (variosAnos){
-                anadirLista3(temp, cantidad)
             } else {
                 myArray2 = ordenarAlf(myArray2)
                 anadirLista(myArray2, temp, cantidad)
             }
-
-
         })
         .catch(function (response) {
             // "Not Found"
-            //console.log(response.statusText);
-            
+            //console.log(response.statusText);            
         });
 }
 
@@ -218,7 +196,7 @@ function anadirLista(myArray2, temp, cantidad) {
 
 function anadirOpciones(myArray2, i, temp) {
     const node = document.createElement("option")
-    const textnode = document.createTextNode(myArray2[0] + ' OP ' + myArray2[2])
+    const textnode = document.createTextNode(myArray2[0] + ' ' + myArray2[1] + ' ' + myArray2[2])
     node.appendChild(textnode)
     option = document.getElementById('selectCancion').appendChild(node)
     option.value = myArray2[3]
@@ -228,52 +206,11 @@ function anadirOpciones(myArray2, i, temp) {
 
 function anadirLista2(temp, cantidad) {
     cantidadTotal = cantidadTotal + cantidad
-    lista2 = new Array(arrayOpciones.length)
-    for (i = 0; i < arrayOpciones.length; i++) {
-        lista2[i] = new Cancion(
-            arrayOpciones[i][0],
-            arrayOpciones[i][1],
-            arrayOpciones[i][2],
-            arrayOpciones[i][3],
-            arrayOpciones[i][4],
-            arrayOpciones[i][5],
-            arrayOpciones[i][6],
-            false,
-            i+1,
-            temp,
-            arrayOpciones[i][7],
-            arrayOpciones[i][8]
-        )
-        if(temp == 3) {
-            anadirOpciones2(arrayOpciones[i], i)
-        }
-    }
+    anadirOpciones2(arrayOpciones,temp)
+    lista4 = lista2
 }
 
-function anadirOpciones2(opcionArray, i) {
-    if(!lista2[i].eliminada) {
-        const node = document.createElement("option")
-        const textnode = document.createTextNode(opcionArray[i][0] + ' OP ' + opcionArray[i][2])
-        node.appendChild(textnode)
-        option = document.getElementById('selectCancion').appendChild(node)
-        option.value = opcionArray[i][3]
-        option.id = i + 1
-    
-        //POR COMPROBAR
-        option.className = opcionArray[i][7]
-    } else {
-
-    }
-
-}
-
-function anadirLista3(temp, cantidad) {
-    cantidadTotal = cantidadTotal + cantidad
-
-    anadirOpciones3(arrayOpciones,temp)
-}
-
-function anadirOpciones3(opcionArray,i) {
+function anadirOpciones2(opcionArray,i) {
     if(i==3) {
         borrarOpciones("selectCancion")
         for (j = 0; j < opcionArray.length; j++ ) {
@@ -332,9 +269,37 @@ function anadirOpciones3(opcionArray,i) {
                 //POR COMPROBAR
                 option.className = opcionArray[j][7]
             }
-
         }
-
     }
+}
 
+function filtro() {
+    let contador = 0
+    lista2 = lista4
+    
+    let lista3 = new Array()
+    borrarOpciones("selectCancion")
+    for (j=0; j < lista2.length; j++) {
+        var titulo = lista2[j].name
+        var primeraLetra = titulo[0].charCodeAt(0) - 65
+        if (lista2[j].difficulty > minDiff && lista2[j].difficulty < maxDiff && primeraLetra >= minLet && primeraLetra <= maxLet || minLet == -1 && primeraLetra <= minLet) {
+                    if(!lista2[j].eliminada) {
+                        lista3[contador] = lista2[j]
+                        const node = document.createElement("option")
+                        const textnode = document.createTextNode(lista2[j].name + ' OP ' + lista2[j].number)
+                        //console.log(textnode)
+                        node.appendChild(textnode)
+                        option = document.getElementById('selectCancion').appendChild(node)
+                        option.value = lista2[j].link
+                        option.id = contador + 1
+                    
+                        //POR COMPROBAR
+                        option.className = lista2[j].id
+
+                        contador++
+                    }
+        }
+    }
+    lista2 = lista3
+    cantidadTotal = contador
 }

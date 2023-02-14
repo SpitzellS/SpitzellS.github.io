@@ -20,25 +20,33 @@ let countBorrado = 0
 let arrayLista = new Array(4)
 let arrayCantidad = new Array(4)
 let numero = 0
-let allBoolean = false
+
+let cue
 
 var arrayOpciones = new Array()
-//arrayOpciones = []
 
+//Booleans
 let randomBoolean = false
 let eliminarBoolean = false
 let loopBoolean = false
 let screenModeBoolean = false
+let allSoloAno = false
+let variosAnos = true
+let errorTrack = true
+let errorBefore = false
+let errorRemove = false
 
 //Sliders
 let minDiff = 0
 let maxDiff = 100
 let minAno
 let maxAno
-let variosAnos = true
+let minLet
+let maxLet
 
 let lista = null
 let lista2 = new Array()
+let lista4 = new Array()
 let listaCancion = ''
 let myArray = ''
 let posicion = 0
@@ -138,6 +146,7 @@ function actualizarOpciones2(arrayOpciones) {
 
         if (localStorage.getItem('playlistSp')) {
             let playlistSp = JSON.parse(localStorage.getItem('playlistSp'))
+            
             eliminada2 = playlistSp[arrayOpciones[i][3]] ? true : false
             lista2[i] = new Cancion(
                 arrayOpciones[i][0],
@@ -176,7 +185,22 @@ function actualizarOpciones2(arrayOpciones) {
     }
 
 function actualizarInfo() {
-    
+
+    //Todas las Seasons
+    if (variosAnos || allSoloAno) {
+        if (localStorage.getItem('playlistSp')) {
+            //console.log(JSON.parse(localStorage.getItem('playlistSp')))
+            addInfo(lista2)
+        } else {
+            addInfo(lista)
+        }
+    // Solo 1 Season
+    } else {
+        addInfo(lista)
+    }
+}
+
+function addInfo(infoLista) {
     let tabla = document.getElementById('tablaCancion')
     cont = tabla.childElementCount
 
@@ -195,99 +219,36 @@ function actualizarInfo() {
     node5 = document.createElement("td")
     node6 = document.createElement("td")
 
-    //Todas las Seasons
-    if (allBoolean) {
-
-        if (localStorage.getItem('playlistSp')) {
-
-            tabla.appendChild(nodeSongName)
-            tr = tabla.lastChild
-            tr.appendChild(node3)
-            let songName = tr.lastChild
-            numero = Number(temp)
-
-            textnode = document.createTextNode('Song: ' + lista2[posicion-1].songName)
-            songName.appendChild(textnode)
-        
-            tabla.appendChild(nodeArtist)
-            tr = tabla.lastChild
-            tr.appendChild(node6)
-            let artist = tr.lastChild
-            textnode = document.createTextNode('Artist: ' + lista2[posicion-1].artist)
-            artist.appendChild(textnode)
-        
-            tabla.appendChild(nodeDiff)
-            tr = tabla.lastChild
-            tr.appendChild(node5)
-            let diff = tr.lastChild
-            textnode = document.createTextNode('Diff: ' + lista2[posicion-1].difficulty)
-            diff.appendChild(textnode)
+    tabla.appendChild(nodeSongName)
+    tr = tabla.lastChild
+    tr.appendChild(node3)
+    let songName = tr.lastChild
+    numero = Number(temp)
     
-            romajiTitle = document.getElementById('romaji')
-            romajiTitle.innerHTML = 'Romaji: ' + lista2[posicion-1].name
-            englishTitle = document.getElementById('english')
-            englishTitle.innerHTML = 'English: ' + lista2[posicion-1].nameEnglish
+    textnode = document.createTextNode('Song: ' + infoLista[posicion-1].songName)
+    songName.appendChild(textnode)
         
-        } else {
-            tabla.appendChild(nodeSongName)
-            tr = tabla.lastChild
-            tr.appendChild(node3)
-            let songName = tr.lastChild
-            numero = Number(temp)
-    
-            textnode = document.createTextNode('Song: ' + lista2[posicion-1].songName)
-            songName.appendChild(textnode)
+    tabla.appendChild(nodeArtist)
+    tr = tabla.lastChild
+    tr.appendChild(node6)
+    let artist = tr.lastChild
+    textnode = document.createTextNode('Artist: ' + infoLista[posicion-1].artist)
+    artist.appendChild(textnode)
         
-            tabla.appendChild(nodeArtist)
-            tr = tabla.lastChild
-            tr.appendChild(node6)
-            let artist = tr.lastChild
-            textnode = document.createTextNode('Artist: ' + lista2[posicion-1].artist)
-            artist.appendChild(textnode)
-        
-            tabla.appendChild(nodeDiff)
-            tr = tabla.lastChild
-            tr.appendChild(node5)
-            let diff = tr.lastChild
-            textnode = document.createTextNode('Diff: ' + lista2[posicion-1].difficulty)
-            diff.appendChild(textnode)
+    tabla.appendChild(nodeDiff)
+    tr = tabla.lastChild
+    tr.appendChild(node5)
+    let diff = tr.lastChild
+    textnode = document.createTextNode('Diff: ' + infoLista[posicion-1].difficulty)
+    diff.appendChild(textnode)
     
-            romajiTitle = document.getElementById('romaji')
-            romajiTitle.innerHTML = 'Romaji: ' + lista2[posicion-1].name
-            englishTitle = document.getElementById('english')
-            englishTitle.innerHTML = 'English: ' + lista2[posicion-1].nameEnglish
+    romajiTitle = document.getElementById('romaji')
+    romajiTitle.innerHTML = 'Romaji: ' + infoLista[posicion-1].name
+    englishTitle = document.getElementById('english')
+    englishTitle.innerHTML = 'English: ' + infoLista[posicion-1].nameEnglish
 
-        }
-
-    // Solo 1 Season
-    } else {
-        tabla.appendChild(nodeSongName)
-        tr = tabla.lastChild
-        tr.appendChild(node3)
-        let songName = tr.lastChild
-        textnode = document.createTextNode('Song: ' + lista[posicion-1].songName)
-        songName.appendChild(textnode)
-    
-        tabla.appendChild(nodeArtist)
-        tr = tabla.lastChild
-        tr.appendChild(node6)
-        let artist = tr.lastChild
-        textnode = document.createTextNode('Artist: ' + lista[posicion-1].artist)
-        artist.appendChild(textnode)
-    
-        tabla.appendChild(nodeDiff)
-        tr = tabla.lastChild
-        tr.appendChild(node5)
-        let diff = tr.lastChild
-        textnode = document.createTextNode('Diff: ' + lista[posicion-1].difficulty)
-        diff.appendChild(textnode)
-
-        romajiTitle = document.getElementById('romaji')
-        romajiTitle.innerHTML = 'Romaji: ' + lista[posicion-1].name
-        englishTitle = document.getElementById('english')
-        englishTitle.innerHTML = 'English: ' + lista[posicion-1].nameEnglish
-    }
 }
+
 
 function ordenarAlf(array) {
     array2 = array.sort()
@@ -324,8 +285,30 @@ function getVals2(){
     var displayElement = parent.getElementsByClassName("rangeValues2")[0];
         displayElement.innerHTML = slide1 + " - " + slide2
   }
+
+  function getVals3(){
+    // Get slider values
+
+    var parent = this.parentNode;
+    var slides = parent.getElementsByTagName("input");
+      var slide1 = parseFloat( slides[0].value );
+      var slide2 = parseFloat( slides[1].value );
+
+    // Neither slider will clip the other, so make sure we determine which is larger
+    if( slide1 > slide2 ) {
+        var tmp = slide2; slide2 = slide1; slide1 = tmp;
+    }
+
+    minLet = slide1
+    maxLet = slide2
+    var displayElement = parent.getElementsByClassName("valorletra")[0];
+    displayElement.innerHTML = String.fromCharCode(65 + slide1) + " - " + String.fromCharCode(65 + slide2)
+  }  
+  
   
 window.onload = function(){
+    document.getElementById("elegirSeason").style.visibility = "hidden"
+
     // Initialize Sliders
     var sliderSections = document.getElementsByClassName("range-slider");
         for( var x = 0; x < sliderSections.length; x++ ){
@@ -348,12 +331,23 @@ window.onload = function(){
               sliders2[y].oninput();
             }
           }
-        }    
+        }
+    var sliderSections3 = document.getElementsByClassName("sliderletra");
+        for( var x = 0; x < sliderSections3.length; x++ ){
+          var sliders3 = sliderSections3[x].getElementsByTagName("input");
+          for( var y = 0; y < sliders3.length; y++ ){
+            if( sliders3[y].type ==="range" ){
+              sliders3[y].oninput = getVals3;
+              // Manually trigger event first time to display values
+              sliders3[y].oninput();
+            }
+          }
+        }                  
+        
 }
 
 
 window.addEventListener("keydown", function(event) {
-
     if(event.keyCode == 39) {
         // Manipula el evento con KeyboardEvent.key
         nextSong()
