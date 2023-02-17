@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Canciones </title>
-
 </head>
 <body>
 
@@ -16,20 +15,21 @@
     <script src="lista.js"></script>
     <script src="track.js"></script>
     <script src="filtros.js"></script>
-    <script>
-
-
-        // Agrega el subtítulo al video
-        //createSubtitle("Hola", 0, Infinity);
-    </script>
+    <script src="switchmp3.js"></script>
 
     <div id="modosPantalla">
         <input type="button" id="screenMode" onclick="darkMode()" value="Lightmode">
+        <a href="../amq2/recuperar.html">Recuperar</a>
+        <label onchange="switchMedia()">
+          <input type="radio" name="media" value="video" checked> Video
+        </label>
+        <label onchange="switchMedia()">
+          <input type="radio" name="media" value="audio"> Audio
+        </label>
     </div>
-
+    <br>
+    <a id ='atributo' target="_blank" href=''> <label id="info"> </label> </a>
     <div id="infovideo">
-        <a id ='atributo' target="_blank"
-        href=''> <label id="info"> </label> </a>
         <video id="video" width="700" height="350" controls>  
             <source src="">
         </video>

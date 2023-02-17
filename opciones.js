@@ -4,7 +4,6 @@ function cambiarCancion()
     //removeTrack()
     errorTrack = true
     var selectCancion =document.getElementById('selectCancion')
-    var video = document.getElementById("video")
     posicion = selectCancion.selectedIndex
     cont3 = selectCancion.options[selectCancion.selectedIndex].id
     for (i=0; i < cont3; i++) {
@@ -12,16 +11,14 @@ function cambiarCancion()
             posicion++
         }
     }
-    info.innerHTML = "Video: " + selectCancion.options[selectCancion.selectedIndex].text
-    video.src = selectCancion.options[selectCancion.selectedIndex].value
+    info.innerHTML = "Anime: " + selectCancion.options[selectCancion.selectedIndex].text
+    anadirsrc(lista2)
     document.title = selectCancion.options[selectCancion.selectedIndex].text
     temp = selectCancion.options[selectCancion.selectedIndex].className
     var pagAnilist=document.getElementById('atributo')
     pagAnilist.href = anilistURL + temp
     eliminada.value = "Eliminar"
     actualizarInfo()
-    presionar()
-    video.play()
 }
 
 //Funcion que borra todas las opcions con el id pasado
@@ -38,6 +35,7 @@ function borrarOpciones(select) {
 }
 
 function anadirAno() {
+    lista2 = new Array()
     cantidad = 0
     cantidadTotal = 0
     anoElegido=document.getElementById('selectAno').value
@@ -188,7 +186,8 @@ function anadirLista(myArray2, temp, cantidad) {
             i+1,
             temp,
             myArray2[i][7],
-            myArray2[i][8]
+            myArray2[i][8],
+            myArray2[i][9]
         )
         anadirOpciones(myArray2[i], i, temp)
     }
@@ -231,7 +230,9 @@ function anadirOpciones2(opcionArray,i) {
                     j+1,
                     null,
                     arrayOpciones[j][7],
-                    arrayOpciones[j][8])
+                    arrayOpciones[j][8],
+                    arrayOpciones[j][9]
+                    )
                 
                 if(!lista2[j].eliminada) {
                     const node = document.createElement("option")
@@ -258,7 +259,9 @@ function anadirOpciones2(opcionArray,i) {
                     j+1,
                     null,
                     arrayOpciones[j][7],
-                    arrayOpciones[j][8])
+                    arrayOpciones[j][8],
+                    arrayOpciones[j][9],
+                    )
                 const node = document.createElement("option")
                 const textnode = document.createTextNode(opcionArray[j][0] + ' OP ' + opcionArray[j][2])
                 node.appendChild(textnode)
