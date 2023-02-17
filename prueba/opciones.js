@@ -21,7 +21,6 @@ function cambiarCancion()
     eliminada.value = "Eliminar"
     actualizarInfo()
     presionar()
-    video.play()
 }
 
 //Funcion que borra todas las opcions con el id pasado
