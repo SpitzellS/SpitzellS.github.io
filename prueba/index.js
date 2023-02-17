@@ -82,7 +82,7 @@ function iniciar() {
     eliminada.addEventListener('click', accionEliminar)
     restaurar.addEventListener('click', restaurarTodo)
 
-    info.innerHTML = "Video: "
+    info.innerHTML = "Anime: "
     video.addEventListener("ended", nextSong, false)
 }
 

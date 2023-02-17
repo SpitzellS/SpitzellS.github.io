@@ -2,7 +2,7 @@ function filtroDiff(diffLista) {
     var diffBoolean = true
     if(diffLista[posicion-1].difficulty > minDiff && diffLista[posicion-1].difficulty < maxDiff) {
         document.title = diffLista[posicion-1].name
-        info.innerHTML = "Video: " + diffLista[posicion-1].name + ' ' + 
+        info.innerHTML = "Anime: " + diffLista[posicion-1].name + ' ' + 
                             diffLista[posicion-1].tipo + ' ' + 
                             diffLista[posicion-1].number
         //anadirsrc(diffLista)
@@ -21,7 +21,7 @@ function filtroLetra(letraLista) {
 
     if(primeraLetra >= minLet && primeraLetra <= maxLet || minLet == -1 && primeraLetra <= minLet) {
         document.title = letraLista[posicion-1].name
-        info.innerHTML = "Video: " + letraLista[posicion-1].name + ' ' + 
+        info.innerHTML = "Anime: " + letraLista[posicion-1].name + ' ' + 
                                 letraLista[posicion-1].tipo + ' ' + 
                                 letraLista[posicion-1].number
         //anadirsrc(letraLista)

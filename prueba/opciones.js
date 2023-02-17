@@ -12,7 +12,7 @@ function cambiarCancion()
             posicion++
         }
     }
-    info.innerHTML = "Video: " + selectCancion.options[selectCancion.selectedIndex].text
+    info.innerHTML = "Anime: " + selectCancion.options[selectCancion.selectedIndex].text
     video.src = selectCancion.options[selectCancion.selectedIndex].value
     document.title = selectCancion.options[selectCancion.selectedIndex].text
     temp = selectCancion.options[selectCancion.selectedIndex].className
