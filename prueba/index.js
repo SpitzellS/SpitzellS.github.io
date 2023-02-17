@@ -192,12 +192,7 @@ function actualizarInfo() {
 
     //Todas las Seasons
     if (variosAnos || allSoloAno) {
-        if (localStorage.getItem('playlistSp')) {
-            //console.log(JSON.parse(localStorage.getItem('playlistSp')))
-            addInfo(lista2)
-        } else {
-            addInfo(lista)
-        }
+        addInfo(lista2)
     // Solo 1 Season
     } else {
         addInfo(lista)
@@ -228,7 +223,6 @@ function addInfo(infoLista) {
     tr.appendChild(node3)
     let songName = tr.lastChild
     numero = Number(temp)
-    
     textnode = document.createTextNode('Song: ' + infoLista[posicion-1].songName)
     songName.appendChild(textnode)
         
