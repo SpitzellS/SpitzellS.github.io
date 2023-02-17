@@ -20,7 +20,6 @@ function cambiarCancion()
     pagAnilist.href = anilistURL + temp
     eliminada.value = "Eliminar"
     actualizarInfo()
-    presionar()
 }
 
 //Funcion que borra todas las opcions con el id pasado

@@ -1,13 +1,3 @@
-function presionar() {
-    if(!video.paused && !video.ended)   { 
-        video.pause()
-    } 
-    else 
-    { 
-        video.play()
-    } 
-}
-
 function accionReiniciar()
 {
   video.currentTime = 0;
