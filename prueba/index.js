@@ -1,5 +1,6 @@
 class Cancion {
-    constructor( name, tipo, number, link, songName, artist, difficulty, eliminada, id, season, anilistID, nameEnglish) {
+    constructor( name, tipo, number, link, songName, artist,
+        difficulty, eliminada, id, season, anilistID, nameEnglish, linkmp3) {
         this.name = name
         this.tipo = tipo
         this.number = number
@@ -12,6 +13,7 @@ class Cancion {
         this.season = season
         this.anilistID = anilistID
         this.nameEnglish = nameEnglish
+        this.linkmp3 = linkmp3
     }
 }
 
@@ -35,6 +37,7 @@ let variosAnos = true
 let errorTrack = true
 let errorBefore = false
 let errorRemove = false
+let audioBoolean = false
 
 //Sliders
 let minDiff = 0
@@ -80,10 +83,8 @@ function iniciar() {
     restaurar.addEventListener('click', restaurarTodo)
 
     info.innerHTML = "Video: "
-        
     video.addEventListener("ended", nextSong, false)
-    
- }
+}
 
 function contarLineas(str, sep) {
     const arr = str.split(sep);
@@ -130,7 +131,8 @@ function actualizarOpciones(myArray) {
             i+1,
             null,
             myArray2[i][7],
-            myArray2[i][8]
+            myArray2[i][8],
+            myArray2[i][9]
         )
         anadirOpciones(myArray2[i], i)
     }
@@ -160,7 +162,8 @@ function actualizarOpciones2(arrayOpciones) {
                 i+1,
                 null,
                 arrayOpciones[i][7],
-                arrayOpciones[i][8]
+                arrayOpciones[i][8],
+                arrayOpciones[i][9]
             )
         anadirOpciones2(arrayOpciones, i)
         } else {
@@ -176,7 +179,8 @@ function actualizarOpciones2(arrayOpciones) {
                 i+1,
                 null,
                 arrayOpciones[i][7],
-                arrayOpciones[i][8]
+                arrayOpciones[i][8],
+                arrayOpciones[i][9]
             )
         anadirOpciones2(arrayOpciones, i)
         }

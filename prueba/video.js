@@ -35,7 +35,6 @@ function random() {
 }
 
 function nextSong() {
-
     if (!loopBoolean) {
         if (!randomBoolean) {
                         
@@ -46,7 +45,7 @@ function nextSong() {
 
                 if(filtroDiff(lista2) && filtroLetra(lista2)) {
                     //errorRemove = removeTrack()
-                    video.play()
+                    anadirsrc(lista2)
                 } else {
                     nextSong()
                 }
@@ -71,7 +70,7 @@ function nextSong() {
  
                 if(filtroDiff(lista) && filtroLetra(lista)) {
                     //errorRemove = removeTrack()
-                    video.play()
+                    anadirsrc(lista)
                 } else {
                     nextSong()
                 }
@@ -104,7 +103,7 @@ function beforeSong() {
                 errorBefore = false
                 if(filtroDiff(lista2) && filtroLetra(lista2)) {
                     //errorRemove = removeTrack()
-                    video.play()
+                    anadirsrc(lista2)
                 } else {
                     beforeSong()
                 }
@@ -124,7 +123,7 @@ function beforeSong() {
 
             if(filtroDiff(lista) && filtroLetra(lista)) {
                 //errorRemove = removeTrack()
-                video.play()
+                anadirsrc(lista)
             } else {
                 beforeSong()
             }
@@ -161,7 +160,7 @@ function randomSong() {
 
             if(filtroDiff(lista2) && filtroLetra(lista2)) {
                 //errorRemove = removeTrack()
-                video.play()
+                anadirsrc(lista2)
             } else {
                 randomSong()
             }
@@ -190,7 +189,7 @@ function randomSong() {
         posicion = x
         if(filtroDiff(lista) && filtroLetra(lista)) {
             //errorRemove = removeTrack()
-            video.play()
+            anadirsrc(lista)
         } else {
             randomSong()
         }

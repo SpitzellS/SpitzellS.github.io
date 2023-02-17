@@ -1,12 +1,11 @@
 function filtroDiff(diffLista) {
-    console.log(posicion)
     var diffBoolean = true
     if(diffLista[posicion-1].difficulty > minDiff && diffLista[posicion-1].difficulty < maxDiff) {
         document.title = diffLista[posicion-1].name
         info.innerHTML = "Video: " + diffLista[posicion-1].name + ' ' + 
                             diffLista[posicion-1].tipo + ' ' + 
                             diffLista[posicion-1].number
-        video.src=diffLista[posicion-1].link
+        //anadirsrc(diffLista)
         var pagAnilist=document.getElementById('atributo')
         pagAnilist.href = anilistURL + diffLista[posicion-1].anilistID
     } else {
@@ -25,7 +24,7 @@ function filtroLetra(letraLista) {
         info.innerHTML = "Video: " + letraLista[posicion-1].name + ' ' + 
                                 letraLista[posicion-1].tipo + ' ' + 
                                 letraLista[posicion-1].number
-        video.src=letraLista[posicion-1].link
+        //anadirsrc(letraLista)
         var pagAnilist=document.getElementById('atributo')
         pagAnilist.href = anilistURL + letraLista[posicion-1].anilistID
     } else {

@@ -188,7 +188,8 @@ function anadirLista(myArray2, temp, cantidad) {
             i+1,
             temp,
             myArray2[i][7],
-            myArray2[i][8]
+            myArray2[i][8],
+            myArray2[i][9]
         )
         anadirOpciones(myArray2[i], i, temp)
     }
@@ -231,7 +232,9 @@ function anadirOpciones2(opcionArray,i) {
                     j+1,
                     null,
                     arrayOpciones[j][7],
-                    arrayOpciones[j][8])
+                    arrayOpciones[j][8],
+                    arrayOpciones[j][9]
+                    )
                 
                 if(!lista2[j].eliminada) {
                     const node = document.createElement("option")
@@ -258,7 +261,9 @@ function anadirOpciones2(opcionArray,i) {
                     j+1,
                     null,
                     arrayOpciones[j][7],
-                    arrayOpciones[j][8])
+                    arrayOpciones[j][8],
+                    arrayOpciones[j][9],
+                    )
                 const node = document.createElement("option")
                 const textnode = document.createTextNode(opcionArray[j][0] + ' OP ' + opcionArray[j][2])
                 node.appendChild(textnode)
