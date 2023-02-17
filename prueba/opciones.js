@@ -4,7 +4,6 @@ function cambiarCancion()
     //removeTrack()
     errorTrack = true
     var selectCancion =document.getElementById('selectCancion')
-    var video = document.getElementById("video")
     posicion = selectCancion.selectedIndex
     cont3 = selectCancion.options[selectCancion.selectedIndex].id
     for (i=0; i < cont3; i++) {
@@ -36,6 +35,7 @@ function borrarOpciones(select) {
 }
 
 function anadirAno() {
+    lista2 = new Array()
     cantidad = 0
     cantidadTotal = 0
     anoElegido=document.getElementById('selectAno').value
