@@ -1,5 +1,5 @@
 function deletePerm() {
-
+    console.log(lista2)
     if (!localStorage.getItem('playlistSp')) {
         localStorage.setItem('playlistSp', '{}')
 
@@ -10,7 +10,8 @@ function deletePerm() {
             localStorage.setItem('playlistSp', JSON.stringify({
                 ...playlistSp,
             [webm]: {
-                    eliminada: true
+                    eliminada: true,
+                    name: lista2[posicion-1].name
                 }
             }))
         } else {
@@ -20,7 +21,8 @@ function deletePerm() {
             localStorage.setItem('playlistSp', JSON.stringify({
                 ...playlistSp,
             [webm]: {
-                    eliminada: true
+                    eliminada: true,
+                    name: lista[posicion-1].name
                 }
             }))
         }
@@ -33,7 +35,8 @@ function deletePerm() {
             localStorage.setItem('playlistSp', JSON.stringify({
                 ...playlistSp,
             [webm]: {
-                    eliminada: true
+                    eliminada: true,
+                    name: lista2[posicion-1].name
                 }
             }))
         } else {
@@ -43,7 +46,8 @@ function deletePerm() {
             localStorage.setItem('playlistSp', JSON.stringify({
                 ...playlistSp,
             [webm]: {
-                    eliminada: true
+                    eliminada: true,
+                    name: lista[posicion-1].name
                 }
             }))
         }
