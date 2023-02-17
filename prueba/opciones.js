@@ -13,7 +13,7 @@ function cambiarCancion()
         }
     }
     info.innerHTML = "Anime: " + selectCancion.options[selectCancion.selectedIndex].text
-    video.src = selectCancion.options[selectCancion.selectedIndex].value
+    anadirsrc(lista2)
     document.title = selectCancion.options[selectCancion.selectedIndex].text
     temp = selectCancion.options[selectCancion.selectedIndex].className
     var pagAnilist=document.getElementById('atributo')

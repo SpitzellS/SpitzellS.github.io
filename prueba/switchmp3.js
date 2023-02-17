@@ -16,7 +16,12 @@ function createVideoPlayer() {
 function createAudioPlayer() {
     let mediaContainer = document.getElementById("infovideo") 
     let audio = document.createElement("audio")
-    audio.src = lista2[posicion-1].linkmp3
+    if(lista2[posicion-1]) {
+        audio.src = lista2[posicion-1].linkmp3
+    } else {
+        audio.src = ""
+    }
+    //audio.src = lista2[posicion-1].linkmp3
     audio.controls = true;
     mediaContainer.appendChild(audio)
     audio.play()
