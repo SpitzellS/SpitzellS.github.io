@@ -5,12 +5,12 @@ function filtroDiff(diffLista) {
         info.innerHTML = "Anime: " + diffLista[posicion-1].name + ' ' + 
                             diffLista[posicion-1].tipo + ' ' + 
                             diffLista[posicion-1].number
-        //anadirsrc(diffLista)
         var pagAnilist=document.getElementById('atributo')
         pagAnilist.href = anilistURL + diffLista[posicion-1].anilistID
     } else {
         diffBoolean = false
     }
+
     return diffBoolean
 }
 
@@ -24,7 +24,6 @@ function filtroLetra(letraLista) {
         info.innerHTML = "Anime: " + letraLista[posicion-1].name + ' ' + 
                                 letraLista[posicion-1].tipo + ' ' + 
                                 letraLista[posicion-1].number
-        //anadirsrc(letraLista)
         var pagAnilist=document.getElementById('atributo')
         pagAnilist.href = anilistURL + letraLista[posicion-1].anilistID
     } else {
