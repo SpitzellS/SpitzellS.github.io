@@ -182,7 +182,6 @@ function randomSong() {
 function accionEliminar() {
     deletePerm()
     cantidadTotal--
-    eliminada.value = "Eliminada"
     actualizarOpciones(lista2)
     eliminarBoolean = true
     nextSong()
