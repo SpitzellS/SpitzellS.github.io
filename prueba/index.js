@@ -18,6 +18,10 @@ class Cancion {
 }
 
 let countBorrado = 0
+let contAno=0
+let numAnos=0
+let cont7=0
+let cont8=0
 
 let arrayLista = new Array(4)
 let arrayCantidad = new Array(4)
@@ -25,7 +29,7 @@ let numero = 0
 
 let cue
 
-var arrayOpciones = new Array()
+let arrayOpciones = new Array()
 
 //Booleans
 let randomBoolean = false
@@ -40,6 +44,12 @@ let errorRemove = false
 let audioBoolean = false
 
 //Sliders
+let sliderSections1
+let slider1
+let sliderSections2
+let slider2
+let sliderSections3
+let slider3
 let minDiff = 0
 let maxDiff = 100
 let minAno
@@ -110,63 +120,35 @@ function lightMode() {
     element.className = "light-mode"
 }
 
-function actualizarOpciones(myArray) {
-    cantidad--
+function actualizarOpciones(opcionArray) {
+    cont8=0
     borrarOpciones('selectCancion')
-    let myArray2 = new Array(cantidad)
-    for (i = 0; i < cantidad; i++) {
-        myArray2[i] = myArray[i].split('|')
-    }
-    myarray2 = ordenarAlf(myArray2)
-    for (i = 0; i < cantidad; i++) {
-        lista[i] = new Cancion(
-            myArray2[i][0],
-            myArray2[i][1],
-            myArray2[i][2],
-            myArray2[i][3],
-            myArray2[i][4],
-            myArray2[i][5],
-            myArray2[i][6],
-            false,
-            i+1,
-            null,
-            myArray2[i][7],
-            myArray2[i][8],
-            myArray2[i][9]
-        )
-        anadirOpciones(myArray2[i], i)
-    }
-    option = document.getElementById('selectCancion')   
-}
-
-function actualizarOpciones2(arrayOpciones) {
-    cantidad--
-    borrarOpciones('selectCancion')
-
-    for (i = 0; i < arrayOpciones.length; i++) {
+    lista2 = new Array()
+    for (i = 0; i < opcionArray.length; i++) {
         let eliminada2
 
         if (localStorage.getItem('playlistSp')) {
-            let playlistSp = JSON.parse(localStorage.getItem('playlistSp'))
             
-            eliminada2 = playlistSp[arrayOpciones[i][3]] ? true : false
-            lista2[i] = new Cancion(
-                arrayOpciones[i][0],
-                arrayOpciones[i][1],
-                arrayOpciones[i][2],
-                arrayOpciones[i][3],
-                arrayOpciones[i][4],
-                arrayOpciones[i][5],
-                arrayOpciones[i][6],
-                eliminada2,
-                i+1,
-                null,
-                arrayOpciones[i][7],
-                arrayOpciones[i][8],
-                arrayOpciones[i][9]
-            )
-        anadirOpciones2(arrayOpciones, i)
+            let playlistSp = JSON.parse(localStorage.getItem('playlistSp'))
+            eliminada2 = playlistSp[opcionArray[i].link] ? true : false
+            if(!eliminada2) {
+                    lista2[i-cont8] = opcionArray[i] 
+                    console.log(lista2[i-cont8])
+                    const node = document.createElement("option")
+                    const textnode = document.createTextNode(opcionArray[i].name + ' OP ' + opcionArray[i].number)
+                    
+                    option = document.getElementById('selectCancion').appendChild(node)
+                    option.value = opcionArray[i].link
+                    option.id = i + 1
+                
+                    //POR COMPROBAR
+                    option.className = opcionArray[i].eliminada
+                    node.appendChild(textnode)  
+            } else {
+               cont8++
+            }
         } else {
+            console.log("NOENTRAR")
             lista2[i] = new Cancion(
                 arrayOpciones[i][0],
                 arrayOpciones[i][1],
@@ -185,11 +167,11 @@ function actualizarOpciones2(arrayOpciones) {
         anadirOpciones2(arrayOpciones, i)
         }
     }
-    option = document.getElementById('selectCancion') 
-    }
+    option = document.getElementById('selectCancion')
+    document.getElementById("contador").innerHTML = cantidadTotal
+}
 
 function actualizarInfo() {
-
     //Todas las Seasons
     if (variosAnos || allSoloAno) {
         addInfo(lista2)
@@ -197,6 +179,7 @@ function actualizarInfo() {
     } else {
         addInfo(lista)
     }
+    
 }
 
 function addInfo(infoLista) {
@@ -244,7 +227,6 @@ function addInfo(infoLista) {
     romajiTitle.innerHTML = 'Romaji: ' + infoLista[posicion-1].name
     englishTitle = document.getElementById('english')
     englishTitle.innerHTML = 'English: ' + infoLista[posicion-1].nameEnglish
-
 }
 
 
@@ -254,14 +236,13 @@ function ordenarAlf(array) {
 }
 
 function getVals(){
-    // Get slider values
-    var parent = this.parentNode;
-    var slides = parent.getElementsByTagName("input");
-      var slide1 = parseFloat( slides[0].value );
-      minDiff = slide1
-      var slide2 = parseFloat( slides[1].value );
-      maxDiff = slide2
-    // Neither slider will clip the other, so make sure we determine which is larger
+    var parent = this.parentNode
+    var slides = parent.getElementsByTagName("input")
+    var slide1 = parseFloat(slides[0].value)
+    var slide2 = parseFloat(slides[1].value)
+    minDiff = slide1
+    maxDiff = slide2
+
     if( slide1 > slide2 ){ var tmp = slide2; slide2 = slide1; slide1 = tmp; }
     
     var displayElement = parent.getElementsByClassName("rangeValues")[0];
@@ -269,11 +250,10 @@ function getVals(){
   }
 
 function getVals2(){
-
-    var parent = this.parentNode;
-    var slides = parent.getElementsByTagName("input");
-    var slide1 = parseFloat( slides[0].value );
-    var slide2 = parseFloat( slides[1].value );
+    var parent = this.parentNode
+    var slides = parent.getElementsByTagName("input")
+    var slide1 = parseFloat( slides[0].value )
+    var slide2 = parseFloat( slides[1].value )
 
     if( slide1 > slide2 ){ var tmp = slide2; slide2 = slide1; slide1 = tmp; }
 
@@ -289,11 +269,10 @@ function getVals2(){
 
     var parent = this.parentNode;
     var slides = parent.getElementsByTagName("input");
-      var slide1 = parseFloat( slides[0].value );
-      var slide2 = parseFloat( slides[1].value );
+    var slide1 = parseFloat( slides[0].value );
+    var slide2 = parseFloat( slides[1].value );
 
-    // Neither slider will clip the other, so make sure we determine which is larger
-    if( slide1 > slide2 ) {
+    if(slide1 > slide2) {
         var tmp = slide2; slide2 = slide1; slide1 = tmp;
     }
 
@@ -307,41 +286,22 @@ function getVals2(){
 window.onload = function(){
     document.getElementById("elegirSeason").style.visibility = "hidden"
 
-    // Initialize Sliders
-    var sliderSections = document.getElementsByClassName("range-slider");
-        for( var x = 0; x < sliderSections.length; x++ ){
-          var sliders = sliderSections[x].getElementsByTagName("input");
-          for( var y = 0; y < sliders.length; y++ ){
-            if( sliders[y].type ==="range" ){
-              sliders[y].oninput = getVals;
-              // Manually trigger event first time to display values
-              sliders[y].oninput();
+    sliders(sliderSections1, slider1, "range-slider", getVals)
+    sliders(sliderSections2, slider2, "range-slider2", getVals2)
+    sliders(sliderSections3, slider3, "sliderletra", getVals3)                 
+}
+
+function sliders(section, sladerName, tipo, funcion) {
+    section = document.getElementsByClassName(tipo)
+        for( var x = 0; x < section.length; x++ ){
+            sladerName = section[x].getElementsByTagName("input")
+          for( var y = 0; y < sladerName.length; y++ ){
+            if( sladerName[y].type ==="range" ){
+                sladerName[y].oninput = funcion
+                sladerName[y].oninput()
             }
-          }
         }
-    var sliderSections2 = document.getElementsByClassName("range-slider2");
-        for( var x = 0; x < sliderSections2.length; x++ ){
-          var sliders2 = sliderSections2[x].getElementsByTagName("input");
-          for( var y = 0; y < sliders2.length; y++ ){
-            if( sliders2[y].type ==="range" ){
-              sliders2[y].oninput = getVals2;
-              // Manually trigger event first time to display values
-              sliders2[y].oninput();
-            }
-          }
-        }
-    var sliderSections3 = document.getElementsByClassName("sliderletra");
-        for( var x = 0; x < sliderSections3.length; x++ ){
-          var sliders3 = sliderSections3[x].getElementsByTagName("input");
-          for( var y = 0; y < sliders3.length; y++ ){
-            if( sliders3[y].type ==="range" ){
-              sliders3[y].oninput = getVals3;
-              // Manually trigger event first time to display values
-              sliders3[y].oninput();
-            }
-          }
-        }                  
-        
+    }      
 }
 
 

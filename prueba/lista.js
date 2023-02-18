@@ -1,5 +1,4 @@
 function deletePerm() {
-    console.log(lista2)
     if (!localStorage.getItem('playlistSp')) {
         localStorage.setItem('playlistSp', '{}')
 

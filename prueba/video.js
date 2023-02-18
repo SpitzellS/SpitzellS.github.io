@@ -26,21 +26,18 @@ function random() {
 
 function nextSong() {
     if (!loopBoolean) {
-        if (!randomBoolean) {
-                        
+        if (!randomBoolean) {          
             if(variosAnos) {
-
+                var seleccion = document.getElementById('selectCancion')
+                cantidadTotal = seleccion.options.length-1
                 y = posicion+1 > cantidadTotal ? 1 : posicion+1
                 posicion = y
-
                 if(filtroDiff(lista2) && filtroLetra(lista2)) {
                     //errorRemove = removeTrack()
                     anadirsrc(lista2)
                 } else {
                     nextSong()
                 }
-
-                eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                 actualizarInfo()
                 if(errorRemove) {
                     setTimeout(function(){
@@ -64,7 +61,6 @@ function nextSong() {
                 } else {
                     nextSong()
                 }
-                eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                 actualizarInfo()
 
                 if(errorRemove) {
@@ -85,8 +81,9 @@ function nextSong() {
 function beforeSong() {
     
     if (!loopBoolean) {
-
         if(variosAnos) {
+                var seleccion = document.getElementById('selectCancion')
+                cantidadTotal = seleccion.options.length-1
                 y = posicion-2 < 0 ? cantidadTotal : posicion-1
                 posicion = y
 
@@ -97,7 +94,6 @@ function beforeSong() {
                 } else {
                     beforeSong()
                 }
-                eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
                 actualizarInfo()
                 if(errorRemove) {
                     setTimeout(function(){
@@ -105,8 +101,6 @@ function beforeSong() {
                         //addTrack(lista2[posicion-1].name, video.duration)
                     }, 3000)
                 }
-
-
         } else {
             y = posicion-2 < 0 ? cantidad : posicion-1
             posicion = y
@@ -117,7 +111,6 @@ function beforeSong() {
             } else {
                 beforeSong()
             }
-            eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
             actualizarInfo()
             if(errorRemove) {
                 setTimeout(function(){
@@ -132,19 +125,13 @@ function beforeSong() {
  }
 
 function randomSong() {
-
     if (variosAnos) {
             var seleccion = document.getElementById('selectCancion')
             opciones = seleccion.options.length - 1
-            let x = lista2[posicion-1].id
+            let x = posicion
             eliminadaBoolean = true
-            while (x == lista2[posicion-1].id || eliminadaBoolean) {
-                x = Math.floor((Math.random() * opciones+1));
-                eliminadaBoolean = false
-                if (lista2[x-1].eliminada == true) {
-                    x == lista2[posicion+1].id
-                    eliminadaBoolean = true
-                }
+            while (x == posicion) {
+                x = Math.floor((Math.random() * opciones+1))
             }
             posicion = x
 
@@ -154,7 +141,6 @@ function randomSong() {
             } else {
                 randomSong()
             }
-            eliminada.value = lista2[posicion-1].eliminada ? "Eliminada" : "Eliminar"
             actualizarInfo()
             if(errorRemove) {
                 setTimeout(function(){
@@ -183,7 +169,6 @@ function randomSong() {
         } else {
             randomSong()
         }
-        eliminada.value = lista[posicion-1].eliminada ? "Eliminada" : "Eliminar"
         actualizarInfo()
         if(errorRemove) {
             setTimeout(function(){
@@ -196,9 +181,9 @@ function randomSong() {
 
 function accionEliminar() {
     deletePerm()
-    lista2[posicion-1].eliminada = true 
+    cantidadTotal--
     eliminada.value = "Eliminada"
-    actualizarOpciones2(arrayOpciones)
+    actualizarOpciones(lista2)
     eliminarBoolean = true
     nextSong()
 }

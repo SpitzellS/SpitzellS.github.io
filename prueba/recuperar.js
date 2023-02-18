@@ -1,4 +1,3 @@
-//const webm = lista2[posicion-1].link
 let json = localStorage.getItem('playlistSp')
 let playlistSp = JSON.parse(json)
 

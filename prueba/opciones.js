@@ -5,12 +5,7 @@ function cambiarCancion()
     errorTrack = true
     var selectCancion =document.getElementById('selectCancion')
     posicion = selectCancion.selectedIndex
-    cont3 = selectCancion.options[selectCancion.selectedIndex].id
-    for (i=0; i < cont3; i++) {
-        if(lista2[i].eliminada) {
-            posicion++
-        }
-    }
+
     info.innerHTML = "Anime: " + selectCancion.options[selectCancion.selectedIndex].text
     anadirsrc(lista2)
     document.title = selectCancion.options[selectCancion.selectedIndex].text
@@ -46,14 +41,13 @@ function anadirAno() {
         document.getElementById("elegirSeason").style.visibility = "hidden"
     } else {
         document.getElementById("elegirSeason").style.visibility = "visible"
+        borrarOpciones('selectSeason')
+        addSeasonOpcion("Winter")
+        addSeasonOpcion("Spring")
+        addSeasonOpcion("Summer")
+        addSeasonOpcion("Fall")
+        addSeasonOpcion("All")
     }
-
-    borrarOpciones('selectSeason')
-    addSeasonOpcion("Winter")
-    addSeasonOpcion("Spring")
-    addSeasonOpcion("Summer")
-    addSeasonOpcion("Fall")
-    addSeasonOpcion("All")
 }
 
 function addSeasonOpcion(temporada) {
@@ -99,6 +93,7 @@ function anadirSeason() {
 }
 
 function leerVariosAnos() {
+    contAno=0
     direccionGitHub = ''
     for (i=minAno; i<maxAno+1; i++) {
         leerCadaAno(i)
@@ -117,10 +112,10 @@ function leerCadaAno(ano) {
     direccion4 = direccion + ano + '/' + ano + 'Fall' + 'OPs.txt'
 
     arrayOpciones = []
-    leerTexto(direccion1, 0);
-    leerTexto(direccion2, 1);
-    leerTexto(direccion3, 2);
-    leerTexto(direccion4, 3);
+    leerTexto(direccion1, 0)
+    leerTexto(direccion2, 1)
+    leerTexto(direccion3, 2)
+    leerTexto(direccion4, 3)
 }
 
 function leerTexto(direccion, temp) {
@@ -152,11 +147,16 @@ function leerTexto(direccion, temp) {
             
             guardarLista(myArray2)
 
-            if(allSoloAno || variosAnos) {
-                anadirLista2(temp, cantidad)
-            } else {
-                myArray2 = ordenarAlf(myArray2)
-                anadirLista(myArray2, temp, cantidad)
+            if(variosAnos) {
+                if(variosAnos) {
+                    anadirLista2(temp, cantidad)
+                    cantidadTotal=arrayOpciones.length-cont7
+                } else if(allSoloAno) {
+                    anadirLista2(temp, cantidad)
+                } else {
+                    myArray2 = ordenarAlf(myArray2)
+                    anadirLista(myArray2, temp, cantidad)
+                }
             }
         })
         .catch(function (response) {
@@ -204,49 +204,52 @@ function anadirOpciones(myArray2, i, temp) {
 }
 
 function anadirLista2(temp, cantidad) {
-    cantidadTotal = cantidadTotal + cantidad
+    cantidadTotal += cantidad
     anadirOpciones2(arrayOpciones,temp)
     lista4 = lista2
 }
 
-function anadirOpciones2(opcionArray,i) {
-    if(i==3) {
+function anadirOpciones2(opcionArray,cont) {
+    cont7=0
+    if(cont==3) {
         borrarOpciones("selectCancion")
         for (j = 0; j < opcionArray.length; j++ ) {
             let eliminada2
-
             if (localStorage.getItem('playlistSp')) {
                 let playlistSp = JSON.parse(localStorage.getItem('playlistSp'))
-                eliminada2 = playlistSp[arrayOpciones[j][3]] ? true : false
-                lista2[j] = new Cancion(
-                    arrayOpciones[j][0],
-                    arrayOpciones[j][1],
-                    arrayOpciones[j][2],
-                    arrayOpciones[j][3],
-                    arrayOpciones[j][4],
-                    arrayOpciones[j][5],
-                    arrayOpciones[j][6],
-                    eliminada2,
-                    j+1,
-                    null,
-                    arrayOpciones[j][7],
-                    arrayOpciones[j][8],
-                    arrayOpciones[j][9]
-                    )
-                
-                if(!lista2[j].eliminada) {
-                    const node = document.createElement("option")
-                    const textnode = document.createTextNode(opcionArray[j][0] + ' OP ' + opcionArray[j][2])
-                    node.appendChild(textnode)
-                    option = document.getElementById('selectCancion').appendChild(node)
-                    option.value = opcionArray[j][3]
-                    option.id = j + 1
-                
-                    //POR COMPROBAR
-                    option.className = opcionArray[j][7]
-                }
+                eliminada2 = playlistSp[opcionArray[j][3]] ? true : false
+                if(!eliminada2) {
+                    lista2[j-cont7] = new Cancion(
+                        opcionArray[j][0],
+                        opcionArray[j][1],
+                        opcionArray[j][2],
+                        opcionArray[j][3],
+                        opcionArray[j][4],
+                        opcionArray[j][5],
+                        opcionArray[j][6],
+                        eliminada2,
+                        j+1,
+                        null,
+                        opcionArray[j][7],
+                        opcionArray[j][8],
+                        opcionArray[j][9]
+                        )
 
+                        const node = document.createElement("option")
+                        const textnode = document.createTextNode(opcionArray[j][0] + ' OP ' + opcionArray[j][2])
+                        option = document.getElementById('selectCancion').appendChild(node)
+                        option.value = opcionArray[j][3]
+                        option.id = j + 1
+                    
+                        //POR COMPROBAR
+                        option.className = opcionArray[j][7]
+                        node.appendChild(textnode)             
+                } else {
+                    cont7++
+                    cantidadTotal--
+                }
             } else {
+                console.log("NO ENTRAR")
                 lista2[j] = new Cancion(
                     arrayOpciones[j][0],
                     arrayOpciones[j][1],
@@ -268,12 +271,13 @@ function anadirOpciones2(opcionArray,i) {
                 option = document.getElementById('selectCancion').appendChild(node)
                 option.value = opcionArray[j][3]
                 option.id = j + 1
-            
                 //POR COMPROBAR
                 option.className = opcionArray[j][7]
             }
         }
+        document.getElementById("contador").innerHTML = cantidadTotal
     }
+    
 }
 
 function filtro() {
@@ -298,7 +302,6 @@ function filtro() {
                     
                         //POR COMPROBAR
                         option.className = lista2[j].id
-
                         contador++
                     }
         }
