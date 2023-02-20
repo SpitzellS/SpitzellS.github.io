@@ -8,7 +8,6 @@ class Cancion {
         this.songName = songName
         this.artist = artist
         this.difficulty = difficulty
-        this.eliminada = eliminada
         this.id = id
         this.season = season
         this.anilistID = anilistID
@@ -25,7 +24,6 @@ let cont8=0
 
 let arrayLista = new Array(4)
 let arrayCantidad = new Array(4)
-let numero = 0
 
 let cue
 
@@ -139,9 +137,7 @@ function actualizarOpciones(opcionArray) {
                     option = document.getElementById('selectCancion').appendChild(node)
                     option.value = opcionArray[i].link
                     option.id = i + 1
-                
-                    //POR COMPROBAR
-                    option.className = opcionArray[i].eliminada
+                    option.className = opcionArray[i].id
                     node.appendChild(textnode)  
             } else {
                cont8++
@@ -155,7 +151,6 @@ function actualizarOpciones(opcionArray) {
                 arrayOpciones[i][4],
                 arrayOpciones[i][5],
                 arrayOpciones[i][6],
-                eliminada2,
                 i+1,
                 null,
                 arrayOpciones[i][7],
@@ -203,7 +198,6 @@ function addInfo(infoLista) {
     tr = tabla.lastChild
     tr.appendChild(node3)
     let songName = tr.lastChild
-    numero = Number(temp)
     textnode = document.createTextNode('Song: ' + infoLista[posicion-1].songName)
     songName.appendChild(textnode)
         

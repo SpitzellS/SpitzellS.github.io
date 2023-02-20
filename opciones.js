@@ -3,16 +3,14 @@ function cambiarCancion()
 {
     //removeTrack()
     errorTrack = true
-    var selectCancion =document.getElementById('selectCancion')
+    var selectCancion = document.getElementById('selectCancion')
     posicion = selectCancion.selectedIndex
 
-    info.innerHTML = "Anime: " + selectCancion.options[selectCancion.selectedIndex].text
+    info.innerHTML = "Anime: " + selectCancion.options[posicion].text
     anadirsrc(lista2)
-    document.title = selectCancion.options[selectCancion.selectedIndex].text
-    temp = selectCancion.options[selectCancion.selectedIndex].className
+    document.title = selectCancion.options[posicion].text
     var pagAnilist=document.getElementById('atributo')
-    pagAnilist.href = anilistURL + temp
-    eliminada.value = "Eliminar"
+    pagAnilist.href = anilistURL + selectCancion.options[posicion].className
     actualizarInfo()
 }
 
@@ -40,7 +38,8 @@ function anadirAno() {
         leerVariosAnos()
         document.getElementById("elegirSeason").style.visibility = "hidden"
     } else {
-        document.getElementById("elegirSeason").style.visibility = "visible"
+        document.getElementById("elegirSeason").style.visibility = "hidden"
+        //document.getElementById("elegirSeason").style.visibility = "visible"
         borrarOpciones('selectSeason')
         addSeasonOpcion("Winter")
         addSeasonOpcion("Spring")
@@ -182,7 +181,6 @@ function anadirLista(myArray2, temp, cantidad) {
             myArray2[i][4],
             myArray2[i][5],
             myArray2[i][6],
-            false,
             i+1,
             temp,
             myArray2[i][7],
@@ -227,7 +225,6 @@ function anadirOpciones2(opcionArray,cont) {
                         opcionArray[j][4],
                         opcionArray[j][5],
                         opcionArray[j][6],
-                        eliminada2,
                         j+1,
                         null,
                         opcionArray[j][7],
@@ -240,8 +237,6 @@ function anadirOpciones2(opcionArray,cont) {
                         option = document.getElementById('selectCancion').appendChild(node)
                         option.value = opcionArray[j][3]
                         option.id = j + 1
-                    
-                        //POR COMPROBAR
                         option.className = opcionArray[j][7]
                         node.appendChild(textnode)             
                 } else {
@@ -257,7 +252,6 @@ function anadirOpciones2(opcionArray,cont) {
                     arrayOpciones[j][4],
                     arrayOpciones[j][5],
                     arrayOpciones[j][6],
-                    false,
                     j+1,
                     null,
                     arrayOpciones[j][7],
@@ -270,7 +264,6 @@ function anadirOpciones2(opcionArray,cont) {
                 option = document.getElementById('selectCancion').appendChild(node)
                 option.value = opcionArray[j][3]
                 option.id = j + 1
-                //POR COMPROBAR
                 option.className = opcionArray[j][7]
             }
         }
@@ -289,7 +282,6 @@ function filtro() {
         var titulo = lista2[j].name
         var primeraLetra = titulo[0].charCodeAt(0) - 65
         if (lista2[j].difficulty > minDiff && lista2[j].difficulty < maxDiff && primeraLetra >= minLet && primeraLetra <= maxLet || minLet == -1 && primeraLetra <= minLet) {
-                    if(!lista2[j].eliminada) {
                         lista3[contador] = lista2[j]
                         const node = document.createElement("option")
                         const textnode = document.createTextNode(lista2[j].name + ' OP ' + lista2[j].number)
@@ -297,13 +289,11 @@ function filtro() {
                         option = document.getElementById('selectCancion').appendChild(node)
                         option.value = lista2[j].link
                         option.id = contador + 1
-                    
-                        //POR COMPROBAR
                         option.className = lista2[j].id
                         contador++
-                    }
         }
     }
     lista2 = lista3
     cantidadTotal = contador
+    document.getElementById("contador").innerHTML = cantidadTotal
 }
