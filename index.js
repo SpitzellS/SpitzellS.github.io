@@ -1,6 +1,6 @@
 class Cancion {
     constructor( name, tipo, number, link, songName, artist,
-        difficulty, eliminada, id, season, anilistID, nameEnglish, linkmp3) {
+        difficulty, id, season, anilistID, nameEnglish, linkmp3) {
         this.name = name
         this.tipo = tipo
         this.number = number
