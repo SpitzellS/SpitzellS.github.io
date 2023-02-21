@@ -1,6 +1,7 @@
 #miTabla {
     border-collapse: collapse;
     width: 100%;
+    text-align: center;
   }
   
   #miTabla td, #miTabla th {
@@ -18,4 +19,8 @@
     text-align: left;
     background-color: #4CAF50;
     color: white;
+  }
+  
+  #miTabla tr.video {
+    background-color: #f0f0f0;
   }

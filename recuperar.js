@@ -10,10 +10,32 @@ function creaTabla() {
         const celdaName = document.createElement('td')
         const celdaBoton = document.createElement('td')
         const boton = document.createElement('button')
+        celdaURL.addEventListener('click', (event) => {
+          var filaClickeada = event.target.parentNode
+          var filaVideo = document.createElement('tr')
+          var celdaCerrar = document.createElement('td')
+          var botonCerrar = document.createElement('button')
+          botonCerrar.textContent = 'Cerrar'
 
+          botonCerrar.addEventListener('click', (event2) => {
+              event2.target.parentNode.parentNode.remove()
+          });
+          celdaCerrar.appendChild(botonCerrar)
+
+          var video = document.createElement("video")
+          video.width = "600"
+          video.height = "280"
+          video.id = "video"
+          video.controls
+          video.src = url
+          video.controls = true
+          video.play()
+          filaVideo.appendChild(video)
+          filaVideo.appendChild(celdaCerrar)
+          filaClickeada.parentNode.insertBefore(filaVideo, filaClickeada.nextSibling)
+      });
         celdaName.textContent = playlistSp[url].name
         nuevaFila.appendChild(celdaName)
-
         celdaURL.textContent = url
         nuevaFila.appendChild(celdaURL)
 
@@ -41,7 +63,6 @@ function buscador() {
         var mostrar = false
         for (var j=0; j < celdas.length; j++) {
           var texto = celdas[j].textContent.toUpperCase()
-          console.log(texto.indexOf(filter))
           if (texto.indexOf(filter) > -1) {
             mostrar = true
             break
