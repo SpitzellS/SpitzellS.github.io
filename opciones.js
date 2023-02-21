@@ -281,16 +281,19 @@ function filtro() {
     for (j=0; j < lista2.length; j++) {
         var titulo = lista2[j].name
         var primeraLetra = titulo[0].charCodeAt(0) - 65
-        if (lista2[j].difficulty > minDiff && lista2[j].difficulty < maxDiff && primeraLetra >= minLet && primeraLetra <= maxLet || minLet == -1 && primeraLetra <= minLet) {
-                        lista3[contador] = lista2[j]
-                        const node = document.createElement("option")
-                        const textnode = document.createTextNode(lista2[j].name + ' OP ' + lista2[j].number)
-                        node.appendChild(textnode)
-                        option = document.getElementById('selectCancion').appendChild(node)
-                        option.value = lista2[j].link
-                        option.id = contador + 1
-                        option.className = lista2[j].id
-                        contador++
+        if ((lista2[j].difficulty > minDiff && lista2[j].difficulty < maxDiff) &&
+            ((primeraLetra >= minLet && primeraLetra <= maxLet) ||
+            (minLet == -1 && primeraLetra <= minLet))) {
+            console.log(lista2[j].difficulty)
+            lista3[contador] = lista2[j]
+            const node = document.createElement("option")
+            const textnode = document.createTextNode(lista2[j].name + ' OP ' + lista2[j].number)
+            node.appendChild(textnode)
+            option = document.getElementById('selectCancion').appendChild(node)
+            option.value = lista2[j].link
+            option.id = contador + 1
+            option.className = lista2[j].id
+            contador++
         }
     }
     lista2 = lista3
