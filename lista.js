@@ -54,5 +54,9 @@ function deletePerm() {
 }
 
 function restaurarTodo() {
-    localStorage.removeItem('playlistSp')
+    if (confirm("¿Estás seguro de que quieres restaurar todas las canciones elimindas?")) {
+        localStorage.removeItem('playlistSp')
+      } else {
+
+      }
 }

@@ -36,9 +36,8 @@ function anadirAno() {
     variosAnos = minAno == maxAno ? false : true
     if(variosAnos) {
         leerVariosAnos()
-        document.getElementById("elegirSeason").style.visibility = "hidden"
+        //document.getElementById("elegirSeason").style.visibility = "hidden"
     } else {
-        document.getElementById("elegirSeason").style.visibility = "hidden"
         //document.getElementById("elegirSeason").style.visibility = "visible"
         borrarOpciones('selectSeason')
         addSeasonOpcion("Winter")
@@ -146,7 +145,6 @@ function leerTexto(direccion, temp) {
             
             guardarLista(myArray2)
 
-            if(variosAnos) {
                 if(variosAnos) {
                     anadirLista2(temp, cantidad)
                     cantidadTotal=arrayOpciones.length-cont7
@@ -156,7 +154,6 @@ function leerTexto(direccion, temp) {
                     myArray2 = ordenarAlf(myArray2)
                     anadirLista(myArray2, temp, cantidad)
                 }
-            }
         })
         .catch(function (response) {
             // "Not Found"
@@ -270,33 +267,4 @@ function anadirOpciones2(opcionArray,cont) {
         document.getElementById("contador").innerHTML = cantidadTotal
     }
     
-}
-
-function filtro() {
-    let contador = 0
-    lista2 = lista4
-    
-    let lista3 = new Array()
-    borrarOpciones("selectCancion")
-    for (j=0; j < lista2.length; j++) {
-        var titulo = lista2[j].name
-        var primeraLetra = titulo[0].charCodeAt(0) - 65
-        if ((lista2[j].difficulty > minDiff && lista2[j].difficulty < maxDiff) &&
-            ((primeraLetra >= minLet && primeraLetra <= maxLet) ||
-            (minLet == -1 && primeraLetra <= minLet))) {
-            console.log(lista2[j].difficulty)
-            lista3[contador] = lista2[j]
-            const node = document.createElement("option")
-            const textnode = document.createTextNode(lista2[j].name + ' OP ' + lista2[j].number)
-            node.appendChild(textnode)
-            option = document.getElementById('selectCancion').appendChild(node)
-            option.value = lista2[j].link
-            option.id = contador + 1
-            option.className = lista2[j].id
-            contador++
-        }
-    }
-    lista2 = lista3
-    cantidadTotal = contador
-    document.getElementById("contador").innerHTML = cantidadTotal
 }
