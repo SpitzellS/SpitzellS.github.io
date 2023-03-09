@@ -3,8 +3,9 @@ let playlistSp = JSON.parse(json)
 
 function creaTabla() {
     const tabla = document.querySelector('#miTabla tbody')
+    var cont = 0
     for (const url in playlistSp) {
-
+        cont++
         const nuevaFila = document.createElement('tr')
         const celdaURL = document.createElement('td')
         const celdaName = document.createElement('td')
@@ -51,6 +52,7 @@ function creaTabla() {
             
         tabla.appendChild(nuevaFila)
       }
+      contador(cont)
 }
 
 function buscador() {
@@ -58,6 +60,7 @@ function buscador() {
     let tabla = document.querySelector('#miTabla tbody')
     let filas = tabla.getElementsByTagName("tr")
     let filter = input.value.toUpperCase()
+    var cont = 0
     for (var i=0; i < filas.length; i++) {
         var celdas = filas[i].getElementsByTagName("td")
         var mostrar = false
@@ -69,11 +72,18 @@ function buscador() {
           }
         }
         if (mostrar) {
+          cont++
           filas[i].style.display = ""
         } else {
           filas[i].style.display = "none"
         }
       }
+    contador(cont)  
 }
+
+function contador(cant) {
+  document.getElementById("contRec").innerHTML = cant
+}
+
 
 window.addEventListener('load', creaTabla, false)
