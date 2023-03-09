@@ -27,19 +27,6 @@ body {
     margin-right: 32em;
     display: block;
     position: relative;
-
-}
-
-#tabla {
-    border-collapse: collapse;
-    float: left;
-    display: none;
-    top: 78px;
-    position: relative;
-}
-
-#desaprender {
-  display: none;
 }
 
 .dark-mode {
@@ -59,7 +46,47 @@ th,td {
     padding: 10px;
     position: relative;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.right-top {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.right-bottom {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
  
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #06c;
+  transition: width 0.3s ease-in-out;
+}
+
 @mixin range-slider($width, $height, $input-top, $input-bg-color, $input-thumb-color, $float:none, $input-height:20px, $input-border-radius:14px) {
     position: relative;
     width: $width;
@@ -147,3 +174,5 @@ th,td {
   section.range-slider {
     @include range-slider(300px, 300px, 50px, #F1EFEF, #413F41, left);
   }
+
+
