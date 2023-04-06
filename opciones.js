@@ -110,13 +110,13 @@ function leerCadaAno(ano) {
     direccion4 = direccion + ano + '/' + ano + 'Fall' + 'OPs.txt'
 
     arrayOpciones = []
-    leerTexto(direccion1, 0)
-    leerTexto(direccion2, 1)
-    leerTexto(direccion3, 2)
-    leerTexto(direccion4, 3)
+    leerTexto(direccion1, 0, ano)
+    leerTexto(direccion2, 1, ano)
+    leerTexto(direccion3, 2, ano)
+    leerTexto(direccion4, 3, ano)
 }
 
-function leerTexto(direccion, temp) {
+function leerTexto(direccion, temp, ano) {
     borrarOpciones('selectCancion')
     let listaCancion
 
@@ -139,7 +139,8 @@ function leerTexto(direccion, temp) {
             let myArray2 = new Array(cantidad)
 
             cantidad2 = cantidad
-            for (i = 0; i < cantidad2; i++) {               
+            for (i = 0; i < cantidad2; i++) {     
+                myArray[i] += "|" + ano
                 myArray2[i] = myArray[i].split('|')
             }
             
@@ -182,7 +183,8 @@ function anadirLista(myArray2, temp, cantidad) {
             temp,
             myArray2[i][7],
             myArray2[i][8],
-            myArray2[i][9]
+            myArray2[i][9],
+            myArray2[i][10]
         )
         anadirOpciones(myArray2[i], i, temp)
     }
@@ -226,7 +228,8 @@ function anadirOpciones2(opcionArray,cont) {
                         null,
                         opcionArray[j][7],
                         opcionArray[j][8],
-                        opcionArray[j][9]
+                        opcionArray[j][9],
+                        opcionArray[j][10]
                         )
 
                         const node = document.createElement("option")

@@ -1,6 +1,6 @@
 class Cancion {
     constructor( name, tipo, number, link, songName, artist,
-        difficulty, id, season, anilistID, nameEnglish, linkmp3) {
+        difficulty, id, season, anilistID, nameEnglish, linkmp3, animeAno) {
         this.name = name
         this.tipo = tipo
         this.number = number
@@ -13,6 +13,7 @@ class Cancion {
         this.anilistID = anilistID
         this.nameEnglish = nameEnglish
         this.linkmp3 = linkmp3
+        this.animeAno = animeAno
     }
 }
 
@@ -155,7 +156,8 @@ function actualizarOpciones(opcionArray) {
                 null,
                 arrayOpciones[i][7],
                 arrayOpciones[i][8],
-                arrayOpciones[i][9]
+                arrayOpciones[i][9],
+                arrayOpciones[i][10]
             )
         anadirOpciones2(arrayOpciones, i)
         }
@@ -189,10 +191,12 @@ function addInfo(infoLista) {
     nodeSongName = document.createElement("tr")
     nodeDiff = document.createElement("tr")
     nodeArtist = document.createElement("tr")
+    nodeAno = document.createElement("tr")
 
     node3 = document.createElement("td")
     node5 = document.createElement("td")
     node6 = document.createElement("td")
+    node7 = document.createElement("td")
 
     tabla.appendChild(nodeSongName)
     tr = tabla.lastChild
@@ -215,6 +219,13 @@ function addInfo(infoLista) {
     textnode = document.createTextNode('Diff: ' + infoLista[posicion-1].difficulty)
     diff.appendChild(textnode)
     
+    tabla.appendChild(nodeAno)
+    tr = tabla.lastChild
+    tr.appendChild(node7)
+    let anoTabla = tr.lastChild
+    textnode = document.createTextNode('Año: ' + infoLista[posicion-1].animeAno)
+    anoTabla.appendChild(textnode)
+
     romajiTitle = document.getElementById('romaji')
     romajiTitle.innerHTML = 'Romaji: ' + infoLista[posicion-1].name
     englishTitle = document.getElementById('english')
