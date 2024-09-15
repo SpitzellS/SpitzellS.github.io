@@ -64,7 +64,7 @@ function iniciarBotones() {
     info.innerHTML = " "
     video.addEventListener("ended", randomSong, false)
     document.getElementById('settings').onclick = function() {
-        window.location.href = 'C:/Users/braya/Visual/TrainAMQ/index.html';
+        window.location.href = 'https://spitzells.github.io';
     }
 
     let volumeSlider = document.getElementById("volumeSlider");
