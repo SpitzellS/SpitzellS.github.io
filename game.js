@@ -173,12 +173,15 @@ function lightMode() {
     element.className = "light-mode"
 }
 
+
 document.getElementById("enlaceEliminar").addEventListener("click", function(event) {
     event.preventDefault(); // Evita que el enlace se abra de inmediato
 
-    const jsonArray = encodeURIComponent(JSON.stringify(state.lista)); // Codificar el array como string JSON
+    const jsonArray = JSON.stringify(state.lista); // Convertir el array a string JSON
+    localStorage.setItem('dataToSend', jsonArray); // Guardar los datos en localStorage
 
-    const url = this.href + "?data=" + jsonArray; // Concatenar el JSON a la URL como parámetro
+    // Generar una URL con un identificador para recuperar los datos del almacenamiento local
+    const url = this.href;
 
     window.open(url, '_blank'); // Abrir la nueva ventana o pestaña con la URL generada
 });
