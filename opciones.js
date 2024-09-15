@@ -117,13 +117,13 @@ function anadirOpciones2(idsCoincidentes) {
     const selectCancion = document.getElementById('selectCancion');
 
     state.lista2.forEach((cancion, j) => {
-        if (idsCoincidentes.includes(cancion.anilistID) && !(cancion.link in (JSON.parse(localStorage.getItem('playlistSpTrain')) || {}))) {
+        if (idsCoincidentes.includes(cancion.aniListId) && !(cancion.video720 in (JSON.parse(localStorage.getItem('playlistSpTrain')) || {}))) {
             state.lista[ii] = cancion;
             const option = document.createElement("option");
-            option.value = cancion.link;
+            option.value = cancion.video720;
             option.id = j + 1;
-            option.className = cancion.id;
-            option.textContent = cancion.name + ' ' + cancion.tipo + ' ' + cancion.number;
+            option.className = cancion.aniListId;
+            option.textContent = cancion.animeRomajiName + ' ' + typeSong[cancion.songType-1] + ' ' + cancion.songTypeNumber;
 
             selectCancion.appendChild(option);
             state.cantidadTotal++;

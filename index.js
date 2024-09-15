@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     playButton.addEventListener("click", function() {
+        //window.location.href = "C:/Users/braya/Visual/TrainAMQ/game.html";
         window.location.href = "https://spitzells.github.io/game.html";
     });
     

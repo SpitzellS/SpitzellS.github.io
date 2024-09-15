@@ -52,7 +52,7 @@ function filtroDiff(diffLista) {
         document.title = currentSong.animeEnglishName;
         //info.innerHTML = `${currentSong.name} ${currentSong.tipo} ${currentSong.number}`;
         const pagAnilist = document.getElementById('atributo');
-        pagAnilist.href = anilistURL + currentSong.anilistID;
+        pagAnilist.href = anilistURL + currentSong.aniListId;
     }
 
     return diffBoolean;
@@ -64,7 +64,7 @@ function guardarID(entries) {
 
     // Llena id1Set con los IDs de state.lista2
     state.lista2.forEach(element => {
-        id1Set.add(element.anilistID);
+        id1Set.add(element.aniListId);
     });
 
     // Llena id2Set con los IDs de las entradas completadas
@@ -72,8 +72,14 @@ function guardarID(entries) {
         id2Set.add(element.media.id.toString());
     });
 
-    // Convierte ambos sets a arrays y devuelve la intersección
-    return Array.from(new Set([...id1Set].filter(id => id2Set.has(id))));
+    // Convertir id2Set a números enteros
+    const id2SetAsNumbers = new Set([...id2Set].map(id => parseInt(id, 10)));
+
+    // Filtrar id1Set y convertir valores a enteros para comparar
+    const commonIds = Array.from(new Set([...id1Set].filter(id => id2SetAsNumbers.has(id))));
+
+
+    return commonIds;
 }
 
 function revealPhase() {

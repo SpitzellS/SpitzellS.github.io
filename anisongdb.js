@@ -2,9 +2,9 @@
 function anisongdbDataSearch(seasonItem, ano) {
     let mode = "season";
     let query = seasonItem + " " + ano;
-    let ops = true;
-    let eds = false;
-    let ins = false;
+    let ops = state.settings.op;
+    let eds = state.settings.ed;
+    let ins = state.settings.in;
     let partial = true;
     let ignoreDuplicates = false;
     let arrangement = false;
@@ -79,7 +79,7 @@ function handleData(data) {
                 songArtist: song.songArtist,
                 songName: song.songName,
                 songType: Object({ O: 1, E: 2, I: 3 })[song.songType[0]],
-                songTypeNumber: song.songType[0] === "I" ? null : parseInt(song.songType.split(" ")[1]),
+                songTypeNumber: song.songType[0] === "I" ? '' : parseInt(song.songType.split(" ")[1]),
                 songDifficulty: song.songDifficulty,
                 animeType: song.animeType,
                 animeVintage: song.animeVintage,
