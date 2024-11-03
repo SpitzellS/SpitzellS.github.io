@@ -99,12 +99,12 @@ function anadirsrc(src) {
     const player = createPlayer(state.audioBoolean ? "audio" : "video");
     player.src = catboxURL + src[state.posicion - 1]?.[state.audioBoolean ? "audio" : "video720"] || "";
     player.addEventListener("loadedmetadata", function() {
-        const maxStart = Math.min(60, Math.max(0, player.duration - 30));
+        const maxStart = Math.max(0, player.duration - state.settings.seconds-1);
         state.tiempoStartSong = Math.random() * maxStart
         player.currentTime = state.tiempoStartSong
         player.play()
         player.addEventListener('timeupdate', function checkTime() {
-            if (player.currentTime >= state.tiempoStartSong + parseInt(state.settings.seconds)) {
+            if (player.currentTime >= state.tiempoStartSong +  Math.min(player.duration-5, state.settings.seconds)) {
                 mostrarInfoCancion();
                 revealPhase()
                 player.removeEventListener('timeupdate', checkTime)
