@@ -15,8 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const anoRangeMax = document.getElementById("anoRangeMax");
     const anoValueMax = document.getElementById("anoValueMax");
     const userName = document.getElementById("userName");
-    
-    // Nuevas referencias a los checkboxes
     const opCheckbox = document.getElementById("opCheckbox");
     const edCheckbox = document.getElementById("edCheckbox");
     const inCheckbox = document.getElementById("inCheckbox");

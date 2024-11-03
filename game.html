@@ -10,8 +10,8 @@
 <body>
     <div id="modosPantalla">
         <button id="settings">Settings</button>
-        <input type="button" id="screenMode" onclick="darkMode()" value="Lightmode">
-        <input type="button" id="restaurar" value="Restaurar">  
+        <input type="button" id="screenMode" onclick="toggleMode()" value="Lightmode">
+        <input type="button" id="restaurarTodo" value="Restaurar">  
         <a target="_blank" href="../recuperar.html">Recuperar</a>
         <a id="enlaceEliminar" target="_blank" href="../eliminar.html">Eliminar</a>
         <label onchange="switchMedia()">
@@ -56,9 +56,9 @@
     </div>
 
     <div id="botones">
-        <input type="button" id="start" value="Inicio">
-        <input type="button" id="reveal" value="Revelar">
-        <input type="button" id="eliminada" value="Eliminar">
+        <input type="button" id="randomSong" value="Inicio">
+        <input type="button" id="displayAll" value="Revelar">
+        <input type="button" id="eliminarSong" value="Eliminar">
     </div>
 
     <script src="game.js"></script>
