@@ -1,33 +1,48 @@
 function anisongdbDataSearch(seasonItem, ano) {
+    let mode = "season";
     let query = seasonItem + " " + ano;
-    const ops = state.settings.op;
-    const eds = state.settings.ed;
-    const ins = state.settings.in;
-    
-    if (query) {
-        return getAnisongdbData(query, ops, eds, ins);
+    let ops = state.settings.op;
+    let eds = state.settings.ed;
+    let ins = state.settings.in;
+    let partial = true;
+    let ignoreDuplicates = false;
+    let arrangement = false;
+    let maxOtherPeople = 5;
+    let minGroupMembers = 1;
+
+    if (query && !isNaN(maxOtherPeople) && !isNaN(minGroupMembers)) {
+        return getAnisongdbData(seasonItem, ano, ops, eds, ins, partial, ignoreDuplicates, arrangement, maxOtherPeople, minGroupMembers);
     }
 
     return Promise.resolve();
 }
 
-function getAnisongdbData(query, ops, eds, ins) {
-    let url = `https://anisongdb.com/api/filter_season?${new URLSearchParams({ season: query })}`;
-    query = query.trim();
-    query = query.charAt(0).toUpperCase() + query.slice(1).toLowerCase();
-    let data = {
-        method: "GET",
-        headers: { Accept: "application/json", "Content-Type": "application/json" },
-    }
+// fetch JSON desde GitHub
+function getAnisongdbData(seasonItem, ano, ops, eds, ins, partial, ignoreDuplicates, arrangement, maxOtherPeople, minGroupMembers) {
+    // Convertir "Fall 2020" a "2020Fall"
+    const fileName = `${ano}${capitalizeFirstLetter(seasonItem)}`;
+    const url = `https://raw.githubusercontent.com/Spitzell2/Spitzell2.github.io/main/Listas/${fileName}.json`;
 
-    return fetch(url, data)
-        .then(res => res.ok ? res.json() : Promise.reject(res.status))
+    return fetch(url)
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error(`No se pudo obtener el archivo JSON desde GitHub: ${res.status}`);
+            }
+            return res.json();
+        })
         .then((json) => {
             handleData(json);
             songList = songList.filter((song) => songTypeFilter(song, ops, eds, ins));
             state.lista2 = state.lista2.concat(songList);
         })
-        .catch(console.error);
+        .catch((err) => {
+            console.error('Error al cargar JSON de GitHub:', err);
+            songList = [];
+        });
+}
+
+function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 }
 
 function handleData(data) {
