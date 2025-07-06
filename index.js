@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
             seconds: 25,
             difficultyMin: 0,
             difficultyMax: 100,
-            anoMin: 2020,
+            anoMin: 2017,
             anoMax: 2024,
             user: "",
             op: true,
