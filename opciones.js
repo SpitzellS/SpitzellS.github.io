@@ -74,7 +74,7 @@ function cambiarCancion() {
     state.posicion = selectCancion.selectedIndex;
     info.innerHTML = " "
     anadirsrc(state.lista);
-    document.title = selectCancion.options[state.posicion].text;
+    //document.title = selectCancion.options[state.posicion].text;
     document.getElementById('atributo').href = `${anilistURL}${selectCancion.options[state.posicion].className}`;
     actualizarInfo();
 }
