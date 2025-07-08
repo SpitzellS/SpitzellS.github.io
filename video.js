@@ -41,7 +41,7 @@ function filtroDiff(diffLista) {
     const diffBoolean = parseFloat(songDifficulty) > parseFloat(difficultyMin) && parseFloat(songDifficulty) < parseFloat(difficultyMax);
   
     if (diffBoolean) {
-      //document.title = animeEnglishName;
+      document.title = animeEnglishName;
       document.getElementById('atributo').href = anilistURL + aniListId;
     }
     return diffBoolean;
