@@ -10,16 +10,18 @@ function anisongdbDataSearch(seasonItem, ano) {
     let maxOtherPeople = 5;
     let minGroupMembers = 1;
 
+    let difficultyMin = parseInt(state.settings.difficultyMin || 0);
+    let difficultyMax = parseInt(state.settings.difficultyMax || 100);
+
     if (query && !isNaN(maxOtherPeople) && !isNaN(minGroupMembers)) {
-        return getAnisongdbData(seasonItem, ano, ops, eds, ins, partial, ignoreDuplicates, arrangement, maxOtherPeople, minGroupMembers);
+        return getAnisongdbData(seasonItem, ano, ops, eds, ins, partial, ignoreDuplicates, arrangement, maxOtherPeople, minGroupMembers, difficultyMin, difficultyMax);
     }
 
     return Promise.resolve();
 }
 
 // fetch JSON desde GitHub
-function getAnisongdbData(seasonItem, ano, ops, eds, ins, partial, ignoreDuplicates, arrangement, maxOtherPeople, minGroupMembers) {
-    // Convertir "Fall 2020" a "2020Fall"
+function getAnisongdbData(seasonItem, ano, ops, eds, ins, partial, ignoreDuplicates, arrangement, maxOtherPeople, minGroupMembers, difficultyMin, difficultyMax) {
     const fileName = `${ano}${capitalizeFirstLetter(seasonItem)}`;
     const url = `https://raw.githubusercontent.com/Spitzell2/Spitzell2.github.io/main/Listas/${fileName}.json`;
 
@@ -32,7 +34,10 @@ function getAnisongdbData(seasonItem, ano, ops, eds, ins, partial, ignoreDuplica
         })
         .then((json) => {
             handleData(json);
-            songList = songList.filter((song) => songTypeFilter(song, ops, eds, ins));
+            songList = songList.filter((song) =>
+                songTypeFilter(song, ops, eds, ins) &&
+                difficultyFilter(song, difficultyMin, difficultyMax)
+            );
             state.lista2 = state.lista2.concat(songList);
         })
         .catch((err) => {
@@ -91,4 +96,9 @@ function songTypeFilter(song, ops, eds, ins) {
     if (eds && type === 2) return true;
     if (ins && type === 3) return true;
     return false;
+}
+
+function difficultyFilter(song, min, max) {
+    if (!song.songDifficulty || isNaN(song.songDifficulty)) return false;
+    return song.songDifficulty >= min && song.songDifficulty <= max;
 }
