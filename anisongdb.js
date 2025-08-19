@@ -4,24 +4,20 @@ function anisongdbDataSearch(seasonItem, ano) {
     let ops = state.settings.op;
     let eds = state.settings.ed;
     let ins = state.settings.in;
-    let partial = true;
-    let ignoreDuplicates = false;
-    let arrangement = false;
-    let maxOtherPeople = 5;
-    let minGroupMembers = 1;
+    let rebroadcast = state.settings.rebroadcast;
 
     let difficultyMin = parseInt(state.settings.difficultyMin || 0);
     let difficultyMax = parseInt(state.settings.difficultyMax || 100);
 
-    if (query && !isNaN(maxOtherPeople) && !isNaN(minGroupMembers)) {
-        return getAnisongdbData(seasonItem, ano, ops, eds, ins, partial, ignoreDuplicates, arrangement, maxOtherPeople, minGroupMembers, difficultyMin, difficultyMax);
+    if (query) {
+        return getData(seasonItem, ano, ops, eds, ins, rebroadcast, difficultyMin, difficultyMax);
     }
 
     return Promise.resolve();
 }
 
 // fetch JSON desde GitHub
-function getAnisongdbData(seasonItem, ano, ops, eds, ins, partial, ignoreDuplicates, arrangement, maxOtherPeople, minGroupMembers, difficultyMin, difficultyMax) {
+function getData(seasonItem, ano, ops, eds, ins, rebroadcast, difficultyMin, difficultyMax) {
     const fileName = `${ano}${capitalizeFirstLetter(seasonItem)}`;
     const url = `https://raw.githubusercontent.com/Spitzell2/Spitzell2.github.io/main/Listas/${fileName}.json`;
 
@@ -35,7 +31,7 @@ function getAnisongdbData(seasonItem, ano, ops, eds, ins, partial, ignoreDuplica
         .then((json) => {
             handleData(json);
             songList = songList.filter((song) =>
-                songTypeFilter(song, ops, eds, ins) &&
+                songTypeFilter(song, ops, eds, ins, rebroadcast) &&
                 difficultyFilter(song, difficultyMin, difficultyMax)
             );
             state.lista2 = state.lista2.concat(songList);
@@ -90,8 +86,12 @@ function handleData(data) {
     songList = songList.filter((song) => song.audio || song.video480 || song.video720);
 }
 
-function songTypeFilter(song, ops, eds, ins) {
+function songTypeFilter(song, ops, eds, ins, rebroadcast) {
     let type = song.songType;
+
+    if (!rebroadcast && song.rebroadcast) {
+        return false;
+    }
     if (ops && type === 1) return true;
     if (eds && type === 2) return true;
     if (ins && type === 3) return true;
