@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const opCheckbox = document.getElementById("opCheckbox");
     const edCheckbox = document.getElementById("edCheckbox");
     const inCheckbox = document.getElementById("inCheckbox");
+    const rebroadcastCheckbox = document.getElementById("rebroadcastCheckbox");
+
 
     let defaultSettings;
 
@@ -33,7 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
             user: settingsJSON.user,
             op: settingsJSON.op,
             ed: settingsJSON.ed,
-            in: settingsJSON.in
+            in: settingsJSON.in,
+            rebroadcast: settingsJSON.rebroadcast
         };
 
         // Cargar valores en los campos correspondientes
@@ -46,6 +49,8 @@ document.addEventListener("DOMContentLoaded", function() {
         opCheckbox.checked = settingsJSON.op;
         edCheckbox.checked = settingsJSON.ed;
         inCheckbox.checked = settingsJSON.in;
+        rebroadcastCheckbox.checked = settingsJSON.rebroadcast;
+
 
         // Actualizar los valores de los spans correspondientes
         document.getElementById("secondsValue").textContent = settingsJSON.seconds;
@@ -59,12 +64,13 @@ document.addEventListener("DOMContentLoaded", function() {
             seconds: 25,
             difficultyMin: 0,
             difficultyMax: 100,
-            anoMin: 1985,
+            anoMin: 2010,
             anoMax: 2024,
             user: "",
             op: true,
             ed: true,
-            in: true
+            in: true,
+            rebroadcast: false
         };
     }
 
@@ -99,6 +105,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const opChecked = opCheckbox.checked;
         const edChecked = edCheckbox.checked;
         const inChecked = inCheckbox.checked;
+        const rebroadcastChecked = rebroadcastCheckbox.checked;
+
         
         const settings = {
             seconds: secondsValue,
@@ -109,7 +117,8 @@ document.addEventListener("DOMContentLoaded", function() {
             user: userValue,
             op: opChecked,
             ed: edChecked,
-            in: inChecked
+            in: inChecked,
+            rebroadcast: rebroadcastChecked
         };
         
         localStorage.setItem('settingsTrain', JSON.stringify(settings));
@@ -135,6 +144,3 @@ document.addEventListener("DOMContentLoaded", function() {
         anoValueMax.textContent = anoRangeMax.value;
     });
 });
-
-
-
