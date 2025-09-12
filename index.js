@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
             difficultyMin: 0,
             difficultyMax: 100,
             anoMin: 1985,
-            anoMax: 2024,
+            anoMax: 2025,
             user: "",
             op: true,
             ed: true,
@@ -144,4 +144,5 @@ document.addEventListener("DOMContentLoaded", function() {
         anoValueMax.textContent = anoRangeMax.value;
     });
 });
+
 
