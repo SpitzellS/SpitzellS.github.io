@@ -19,7 +19,7 @@ function anisongdbDataSearch(seasonItem, ano) {
 // fetch JSON desde GitHub
 function getData(seasonItem, ano, ops, eds, ins, rebroadcast, difficultyMin, difficultyMax) {
     const fileName = `${ano}${capitalizeFirstLetter(seasonItem)}`;
-    const url = `https://raw.githubusercontent.com/Spitzell2/Spitzell2.github.io/main/Listas/${fileName}.json`;
+    const url = `https://raw.githubusercontent.com/SpitzellS/SpitzellS.github.io/main/Listas/${fileName}.json`;
 
     return fetch(url)
         .then((res) => {
@@ -102,3 +102,4 @@ function difficultyFilter(song, min, max) {
     if (!song.songDifficulty || isNaN(song.songDifficulty)) return false;
     return song.songDifficulty >= min && song.songDifficulty <= max;
 }
+
