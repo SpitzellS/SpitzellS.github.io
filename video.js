@@ -100,19 +100,29 @@ function switchMedia() {
 
 function anadirsrc(src) {
     const player = createPlayer(state.audioBoolean ? "audio" : "video");
-    player.src = catboxURL + src[state.posicion - 1]?.[state.audioBoolean ? "audio" : "video720"] || "";
+
+    const current = src[state.posicion - 1];
+
+    const mediaFile = state.audioBoolean
+        ? current?.audio
+        : current?.video720 || current?.video480;
+
+    player.src = mediaFile ? catboxURL + mediaFile : "";
+
     player.addEventListener("loadedmetadata", function() {
-        const maxStart = Math.max(0, player.duration - state.settings.seconds-1);
-        state.tiempoStartSong = Math.random() * maxStart
-        player.currentTime = state.tiempoStartSong
-        player.play()
+        const maxStart = Math.max(0, player.duration - state.settings.seconds - 1);
+        state.tiempoStartSong = Math.random() * maxStart;
+        player.currentTime = state.tiempoStartSong;
+        player.play();
+
         player.addEventListener('timeupdate', function checkTime() {
-            if (player.currentTime >= state.tiempoStartSong +  Math.min(player.duration-5, state.settings.seconds)) {
+            if (player.currentTime >= state.tiempoStartSong + Math.min(player.duration - 5, state.settings.seconds)) {
                 mostrarInfoCancion();
-                revealPhase()
-                player.removeEventListener('timeupdate', checkTime)
+                revealPhase();
+                player.removeEventListener('timeupdate', checkTime);
             }
         });
     });
 }
+
 
