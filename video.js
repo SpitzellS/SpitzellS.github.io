@@ -14,10 +14,17 @@ function eliminarSong() {
 
 function deletePerm() {
     let playlistSp = JSON.parse(localStorage.getItem(playlistName) || '{}');
-    let webm = state.lista[state.posicion - 1].video720
-    let name = state.lista[state.posicion - 1].animeRomajiName
-    playlistSp[webm] = { eliminada: true, name: name }
-    localStorage.setItem(playlistName, JSON.stringify(playlistSp))
+
+    const current = state.lista[state.posicion - 1];
+
+    const webm = current.video720 || current.video480;
+    const name = current.animeRomajiName;
+
+    if (!webm) return; // seguridad por si no hay ningún video
+
+    playlistSp[webm] = { eliminada: true, name: name };
+
+    localStorage.setItem(playlistName, JSON.stringify(playlistSp));
 }
 
 function esEliminada(cancion) {
@@ -102,7 +109,6 @@ function anadirsrc(src) {
     const player = createPlayer(state.audioBoolean ? "audio" : "video");
 
     const current = src[state.posicion - 1];
-    console.log(current)
     const mediaFile = state.audioBoolean
         ? current?.audio
         : current?.video720 || current?.video480;
@@ -124,6 +130,7 @@ function anadirsrc(src) {
         });
     });
 }
+
 
 
 
