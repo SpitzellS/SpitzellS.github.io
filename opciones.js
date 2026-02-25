@@ -42,7 +42,9 @@ function llenarSelect(selectId, lista) {
     borrarOpciones(selectId);
     lista.forEach((opcion, index) => {
         const optionElement = document.createElement('option');
-        optionElement.value = opcion.video720;
+        //optionElement.value = opcion.video720;
+        const mediaFile = opcion.video720 || opcion.video480;
+        optionElement.value = mediaFile || "";
         optionElement.id = index + 1;
         optionElement.className = opcion.aniListId;
         optionElement.textContent = `${opcion.animeRomajiName} ${typeSong[opcion.songType - 1]} ${opcion.songTypeNumber}`;
@@ -53,7 +55,9 @@ function llenarSelect(selectId, lista) {
 function anadirOpciones2(idsCoincidentes) {
     const cancionesFiltradas = state.lista2.filter(cancion => 
         idsCoincidentes.includes(cancion.aniListId) &&
-        !estaEnPlaylist(cancion.video720)
+        //!estaEnPlaylist(cancion.video720)
+        const mediaFile = cancion.video720 || cancion.video480;
+        !estaEnPlaylist(mediaFile)                                                  
     );
     state.lista = cancionesFiltradas;
     llenarSelect('selectCancion', cancionesFiltradas);
@@ -61,9 +65,11 @@ function anadirOpciones2(idsCoincidentes) {
 }
 
 function anadirOpciones3() {
-    const cancionesFiltradas = state.lista2.filter(cancion => 
-        !estaEnPlaylist(cancion.video720)
-    );
+    const cancionesFiltradas = state.lista2.filter(cancion => {
+        const mediaFile = cancion.video720 || cancion.video480;
+        return !estaEnPlaylist(mediaFile);
+    });
+
     state.lista = cancionesFiltradas;
     llenarSelect('selectCancion', cancionesFiltradas);
     document.getElementById("contador").innerHTML = state.lista.length;
@@ -88,3 +94,4 @@ function borrarOpciones(selectId) {
     const select = document.getElementById(selectId);
     select.innerHTML = '<option value="">--</option>';
 }
+
