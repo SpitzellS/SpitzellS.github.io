@@ -102,7 +102,7 @@ function anadirsrc(src) {
     const player = createPlayer(state.audioBoolean ? "audio" : "video");
 
     const current = src[state.posicion - 1];
-
+    console.log(current)
     const mediaFile = state.audioBoolean
         ? current?.audio
         : current?.video720 || current?.video480;
@@ -124,5 +124,6 @@ function anadirsrc(src) {
         });
     });
 }
+
 
 
