@@ -90,7 +90,10 @@ function switchMedia() {
     const mediaType = radioButtons[0].checked ? "video" : "audio";
     state.audioBoolean = mediaType === "audio";
     const player = createPlayer(mediaType);
-    player.src = state.lista[state.posicion - 1]?.[state.audioBoolean ? "audio" : "video720"] || "";
+    const current = state.lista[state.posicion - 1];
+    player.src = state.audioBoolean
+        ? current?.audio || ""
+        : current?.video720 || current?.video480 || "";
     player.play();
     player.addEventListener("ended", randomSong);
 }
@@ -112,3 +115,4 @@ function anadirsrc(src) {
         });
     });
 }
+
