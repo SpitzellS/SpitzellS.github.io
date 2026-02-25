@@ -53,12 +53,12 @@ function llenarSelect(selectId, lista) {
 }
 
 function anadirOpciones2(idsCoincidentes) {
-    const cancionesFiltradas = state.lista2.filter(cancion => 
-        idsCoincidentes.includes(cancion.aniListId) &&
-        //!estaEnPlaylist(cancion.video720)
+    const cancionesFiltradas = state.lista2.filter(cancion => {
         const mediaFile = cancion.video720 || cancion.video480;
-        !estaEnPlaylist(mediaFile)                                                  
-    );
+        return idsCoincidentes.includes(cancion.aniListId) &&
+               !estaEnPlaylist(mediaFile);
+    });
+
     state.lista = cancionesFiltradas;
     llenarSelect('selectCancion', cancionesFiltradas);
     document.getElementById("contador").textContent = state.lista.length;
@@ -94,4 +94,5 @@ function borrarOpciones(selectId) {
     const select = document.getElementById(selectId);
     select.innerHTML = '<option value="">--</option>';
 }
+
 
