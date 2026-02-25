@@ -28,11 +28,15 @@ function deletePerm() {
 }
 
 function esEliminada(cancion) {
-    if (localStorage.getItem(playlistName)) {
-        const playlistSp = JSON.parse(localStorage.getItem(playlistName));
-        return playlistSp[cancion.video720] ? true : false;
-    }
-    return false;
+    if (!localStorage.getItem(playlistName)) return false;
+
+    const playlistSp = JSON.parse(localStorage.getItem(playlistName));
+
+    const mediaFile = cancion.video720 || cancion.video480;
+
+    if (!mediaFile) return false;
+
+    return !!playlistSp[mediaFile];
 }
 
 function restaurarTodo() {
@@ -130,6 +134,7 @@ function anadirsrc(src) {
         });
     });
 }
+
 
 
 
