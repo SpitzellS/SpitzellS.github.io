@@ -18,6 +18,7 @@ if (jsonArray) {
         tabla.innerHTML = ""; // Limpiar la tabla antes de actualizarla
 
         for (let i = start; i < end && i < filteredPlaylist.length; i++) {
+            const mediaFile = array[url].video720 || array[url].video480;
             const url = filteredPlaylist[i];
             const nuevaFila = document.createElement('tr');
             const celdaURL = document.createElement('td');
@@ -42,7 +43,8 @@ if (jsonArray) {
                 video.height = "280";
                 video.id = "video";
                 video.controls = true;
-                video.src = catboxURL + array[url].video720;
+                //video.src = catboxURL + array[url].video720;
+                video.src = mediaFile ? catboxURL + mediaFile : "";
                 video.play();
                 filaVideo.appendChild(video);
                 filaVideo.appendChild(celdaCerrar);
@@ -51,13 +53,16 @@ if (jsonArray) {
 
             celdaName.textContent = array[url].animeRomajiName;
             nuevaFila.appendChild(celdaName);
-            celdaURL.textContent = array[url].video720;
+            //celdaURL.textContent = array[url].video720;
+            celdaURL.textContent = mediaFile || "Sin video";
             nuevaFila.appendChild(celdaURL);
 
             boton.textContent = 'Eliminar';
             boton.addEventListener('click', () => {
                 let playlistSp = JSON.parse(localStorage.getItem('playlistSpTrain') || '{}');
-                let webm = array[url].video720;
+                //let webm = array[url].video720;
+                let webm = mediaFile;
+                if (!webm) return;
                 let name = array[url].animeRomajiName;
                 playlistSp[webm] = { eliminada: true, name: name };
                 localStorage.setItem('playlistSpTrain', JSON.stringify(playlistSp));
@@ -168,4 +173,5 @@ if (jsonArray) {
 
     window.addEventListener('load', creaTabla, false);
 }
+
 
